@@ -1,0 +1,421 @@
+---
+  title: Wash Analytics Success
+  description: An EverWash membership gains you access to monthly unlimited car wash plans at your neighborhood’s best car washes. Wash Smart. Save Hard.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  sitemap:
+    ignore: true
+  layout: 'base-noindex.njk'
+---
+
+<!-- Start of Confirmation Form Modal -->
+<button
+  class="btn btn-primary d-none"
+  type="button"
+  data-toggle="modal"
+  data-target="#formConfirmation"
+  id="triggerFormConfirmation">
+  Learn More
+</button>
+<div class="modal fade partnerModal" id="formConfirmation" tabindex="-1" aria-label="Message Sent" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fal fa-times"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs">
+            <i class="fas fa-envelope-open-text"></i>
+            <h3>Your form was <br/>successfully submited</h3>
+            <p>
+              Thanks for your interest! An EverWash representative will be in contact with you
+              shortly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Confirmation Form Modal -->
+<main id="omnixBody">
+  {% include 'partner-nav.njk' %}
+  <!-- Hero -->
+  <section id="omnixHero">
+    <div class="container">
+      <div class="row d-c">
+        <div class="col-lg-7">
+          <img src="../img/logos/omnix_2.png" alt="omnix logo" class="img-fluid"/>
+          <h1 class="brand-nubolts">
+            Leveraging
+            <span class="gradient-text-01">vehicle analytics</span>
+            for your business
+          </h1>
+          <p>
+            omniX synthesizes the physical interactions of your business and returns real-time insights to boost throughput and
+            revenue.
+          </p>
+          <button class="btn btn-accent" type="button" data-toggle="modal" data-target="#omnixModal">
+            Learn More
+          </button>
+        </div>
+        <div class="col-lg-5">
+          <img src="../img/omnix/hero_cropped.png" alt="omnix vehicle analytics for car washes" class="img-fluid"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="omnixModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row" id="contactSalesForm">
+            <div class="col-lg-5">
+              <img src="../img/logos/omnix-white.png" alt="EverWash logo" class="img-fluid"/>
+              <button type="button" class="close d-lg-none" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  <i class="fal fa-times"></i>
+                </span>
+              </button>
+              <p>Fill out the form or contact us.</p>
+              <div>
+                <p>
+                  <i class="fas fa-phone-alt"></i>
+                  <a href="tel:8554927477">(855) 492-7477</a>
+                </p>
+                <p>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:sales@everwash.com">sales@everwash.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div id="omnixModalHeader">
+                <h5>Learn More</h5>
+                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="fal fa-times"></i>
+                  </span>
+                </button>
+              </div>
+              <p>
+                Interested in learning more about omniX? Fill out the form below for a demo of how omniX can increase the overall
+                profitability of your wash.
+              </p>
+              <form
+                id="omnixFormData"
+                name="omniX Form"
+                method="POST"
+                action="../wash-owners/wash-analytics-success.html"
+                data-form="formData"
+                netlify
+                netlify-honeypot="bot-field">
+                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+                <input type="hidden" name="formName" value="omniX Form" aria-hidden="true"/>
+                <div class="bot-field">
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field"/>
+                  </label>
+                </div>
+                <div class="input-row">
+                  <div class="input-wrapper">
+                    <input
+                      name="name"
+                      id="name"
+                      class="form-control"
+                      type="text"
+                      required="required"
+                      placeholder=" "
+                      aria-label="Enter your first name"/>
+                    <label for="name">First Name</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input
+                      name="last-name"
+                      id="lastName"
+                      class="form-control"
+                      type="text"
+                      required="required"
+                      placeholder=" "
+                      aria-label="Enter your last name"/>
+                    <label for="lastNameInput">Last Name</label>
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <input name="email" id="email" class="form-control" type="email" required="required" placeholder=" "/>
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-wrapper">
+                  <input name="phone" id="phone" class="form-control" type="tel" required="required" placeholder=" "/>
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input-wrapper">
+                  <textarea name="message" id="message" class="form-control" rows="5" placeholder=" "></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <div class="d-c">
+                  <button class="btn btn-primary" onclick="submitBtn();" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer"> <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+        >
+            Close
+        </button> </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- omniX Features -->
+  <section id="omnixOffers">
+    <div class="container text-center">
+      <h3 class="text-center">What
+        <span class="gradient-text-01">omniX</span>
+        offers</h3>
+      <p class="text-left">
+        It’s nearly impossible to get intelligent visibility on a business’s physical interactions. There are no ‘eyes’ on the
+        business to tell us how you are actually doing in a cost effective and efficient way.<br/><br/>
+        omniX can be ready in hours to work for you. Increase conversions and revenue, improve the efficiency of your
+        operations, and detect fraud, all without any integration.
+      </p>
+      <img src="../img/omnix/isometric-car-wash.webp" alt="data analytics for car washes" class="img-fluid"/>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.74 61.2" height="45px" width="45px">
+              <defs></defs>
+              <g id="Icons">
+                <g><path
+                    class="cls-1"
+                    d="M21.89,41.41c-5.47,0-9.9,4.43-9.9,9.9s4.43,9.9,9.9,9.9,9.9-4.43,9.9-9.9-4.43-9.9-9.9-9.9Zm6.27,11.27h-4.9v4.9h-2.75v-4.9h-4.9v-2.75h4.9v-4.9h2.75v4.9h4.9v2.75Z"/><path
+                    class="cls-1"
+                    d="M60.4,25.81h-2.61c2.33-2.03,3.8-5,3.8-8.32,0-6.1-4.96-11.06-11.05-11.06s-11.05,4.96-11.05,11.06c0,3.32,1.48,6.3,3.8,8.32h-.03c2.32,2.2,3.77,5.3,3.77,8.74v12.4h19.7v-14.79c0-3.5-2.85-6.35-6.35-6.35Zm-3.95-5.71c-1.27,1.92-3.43,3.02-5.91,3.02s-4.63-1.1-5.91-3.02c-.14-.21-.11-.48,.06-.66,.17-.18,.45-.22,.66-.09,2.32,1.41,3.87,1.6,5.19,1.6s2.87-.19,5.19-1.6c.21-.13,.49-.09,.66,.09,.17,.18,.2,.45,.06,.66Z"/><path
+                    class="cls-1"
+                    d="M34.98,25.75h-2.52c2.76-2.73,4.48-6.51,4.48-10.69C36.94,6.75,30.19,0,21.89,0S6.84,6.75,6.84,15.05c0,4.18,1.71,7.96,4.48,10.69h-2.52c-4.85,0-8.8,3.95-8.8,8.8v20.02H9.64c-.28-1.04-.44-2.13-.44-3.26s.16-2.21,.44-3.26h-3.13v-13.5c0-1.26,1.03-2.29,2.29-2.29h26.19c1.26,0,2.29,1.03,2.29,2.29v13.5h-3.13c.28,1.04,.44,2.13,.44,3.26s-.16,2.21-.44,3.26h9.64v-20.02c0-4.85-3.95-8.8-8.8-8.8Zm-13.09-2.15c-4.71,0-8.54-3.83-8.54-8.54s3.83-8.54,8.54-8.54,8.54,3.83,8.54,8.54-3.83,8.54-8.54,8.54Z"/><path
+                    class="cls-1"
+                    d="M21.89,18.29c-1.47,0-3.18-.21-5.75-1.77-.23-.14-.54-.1-.73,.1-.19,.2-.22,.5-.07,.73,1.41,2.13,3.8,3.35,6.54,3.35s5.13-1.22,6.54-3.35c.15-.23,.13-.53-.07-.73-.19-.2-.49-.24-.73-.1-2.57,1.56-4.28,1.77-5.75,1.77Z"/> </g>
+              </g>
+            </svg>
+          </div>
+          <h6>Increase Membership</h6>
+        </div>
+        <div class="col-sm-6">
+          <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.26 52.24" height="45px" width="45px">
+              <defs></defs>
+              <g id="Icons">
+                <g><path
+                    class="cls-1"
+                    d="M55.1,42.42h-2.12c1.89-1.65,3.1-4.07,3.1-6.78,0-4.96-4.04-9-9-9s-9,4.04-9,9c0,2.7,1.2,5.12,3.1,6.78h-2.12c-2.85,0-5.16,2.32-5.16,5.16v4.65h26.37v-4.65c0-2.85-2.32-5.16-5.17-5.16Zm-3.21-4.65c-1.04,1.56-2.79,2.46-4.81,2.46s-3.77-.9-4.81-2.46c-.11-.17-.09-.39,.05-.54,.14-.15,.36-.18,.54-.07,1.89,1.15,3.15,1.3,4.22,1.3s2.33-.16,4.22-1.3c.17-.11,.4-.08,.54,.07,.14,.15,.16,.37,.05,.54Z"/><polygon
+                    class="cls-1"
+                    points="42.25 15.24 27.01 0 11.76 15.24 17.69 21.17 22.82 16.04 22.82 52.24 31.2 52.24 31.2 19.54 31.2 16.04 36.32 21.17
+                      42.25 15.24"/><rect class="cls-1" x="11.41" y="24.97" width="8.38" height="27.27"/><rect class="cls-1" y="30.4" width="8.38" height="21.84"/> </g>
+              </g>
+            </svg>
+          </div>
+          <h6>Increase Conversion Rates</h6>
+        </div>
+        <div class="col-sm-6">
+          <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.6 48.1" height="45px" width="45px">
+              <defs></defs>
+              <g id="Icons">
+                <g><path
+                    class="cls-1"
+                    d="M70.95,4.64c-6.18-6.18-16.25-6.18-22.43,0-5.79,5.79-6.16,14.99-1.09,21.22l-5.33,5.33c-2.09-1.24-4.7-1.24-6.79,0l-4.65-4.65c1.52-2.56,1.2-5.9-.99-8.1-2.6-2.6-6.81-2.6-9.41,0-2.2,2.2-2.52,5.55-.99,8.1l-9.21,9.21c-2.56-1.52-5.9-1.21-8.1,.99-2.6,2.6-2.6,6.81,0,9.41,2.6,2.6,6.81,2.6,9.41,0,2.2-2.2,2.52-5.54,.99-8.1l9.21-9.21c2.09,1.24,4.7,1.24,6.79,0l4.65,4.65c-1.52,2.56-1.2,5.9,.99,8.1,2.6,2.6,6.81,2.6,9.41,0,2.2-2.2,2.52-5.55,.99-8.1l5.33-5.33c2.9,2.36,6.45,3.54,10,3.54,4.06,0,8.12-1.55,11.21-4.64,3-3,4.65-6.98,4.65-11.22s-1.65-8.22-4.65-11.22Zm-2.86,19.57c-4.61,4.61-12.11,4.61-16.72,0-4.61-4.61-4.61-12.11,0-16.72,4.61-4.61,12.11-4.61,16.72,0,2.23,2.23,3.46,5.2,3.46,8.36s-1.23,6.13-3.46,8.36Z"/><path
+                    class="cls-1"
+                    d="M59.41,7.2c-3.92,0-6.4,1.62-7.64,3.97l4.36,2.18c.51-1.03,1.49-1.67,2.55-1.67,.91,0,1.64,.39,1.64,1.15,0,1.49-3.16,2.38-3.16,5.34h5.05c0-1.89,3.92-2.55,3.92-6.3,0-3.06-2.87-4.68-6.71-4.68Z"/><path
+                    class="cls-1"
+                    d="M59.68,19.16c-1.91,0-3.23,1.25-3.23,2.89s1.32,2.94,3.23,2.94,3.23-1.32,3.23-2.94-1.32-2.89-3.23-2.89Z"/> </g>
+              </g>
+            </svg>
+          </div>
+          <h6>Predict Volume</h6>
+        </div>
+        <div class="col-sm-6">
+          <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.85 57.6" height="45px" width="45px">
+              <defs></defs>
+              <g id="Icons">
+                <g><path
+                    class="cls-1"
+                    d="M24.23,43.98c-1.75,0-3.76-.57-5.26-1.46l-1.73,3.92c1.37,.84,3.58,1.46,5.85,1.59v2.16h3.21v-2.27c3.53-.62,5.31-2.76,5.31-5.22,0-5.88-8.82-4.28-8.82-6.2,0-.55,.5-1,2.07-1,1.39,0,2.87,.39,4.44,1.18l1.62-3.9c-1.3-.73-2.94-1.16-4.62-1.32v-2.18h-3.21v2.23c-3.74,.52-5.6,2.69-5.6,5.26,0,5.95,8.82,4.33,8.82,6.33,0,.55-.55,.87-2.07,.87Z"/><path
+                    class="cls-1"
+                    d="M41.81,21.89v-4.51C41.81,7.8,34.01,0,24.42,0S7.04,7.8,7.04,17.38v4.51H0V57.6H48.85V21.89h-7.04Zm-29.4-4.51c0-6.62,5.39-12.01,12.01-12.01s12.01,5.39,12.01,12.01v4.51H12.41v-4.51Zm31.07,34.85H5.37V27.26H43.48v24.97Z"/> </g>
+              </g>
+            </svg>
+          </div>
+          <h6>Prevent Loss & Fraud</h6>
+        </div>
+        <div class="col-sm-6">
+          <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 47.97" height="45px" width="45px">
+              <defs></defs>
+              <g id="Icons">
+                <g>
+                  <g><path
+                      class="cls-1"
+                      d="M37.8,35.23c-3.27,4.01-8.24,6.57-13.81,6.57-9.84,0-17.82-7.98-17.82-17.82S14.14,6.17,23.98,6.17c5.57,0,10.55,2.56,13.81,6.57,1.18-1.72,2.62-3.24,4.26-4.51C37.66,3.19,31.19,0,23.98,0,10.74,0,0,10.74,0,23.98s10.74,23.98,23.98,23.98c7.21,0,13.67-3.19,18.07-8.22-1.64-1.27-3.08-2.8-4.26-4.51Z"/><rect class="cls-1" x="30.79" y="22.47" width="3.51" height="7.44"/><rect class="cls-1" x="19.42" y="16.21" width="3.51" height="13.7"/><rect class="cls-1" x="25.1" y="18.49" width="3.51" height="11.42"/><rect class="cls-1" x="13.73" y="22.47" width="3.51" height="7.44"/> </g><path
+                    class="cls-1"
+                    d="M54.25,6.24c-9.8,0-17.75,7.95-17.75,17.75s7.95,17.75,17.75,17.75,17.75-7.95,17.75-17.75-7.95-17.75-17.75-17.75Zm0,29.25c-6.34,0-11.5-5.16-11.5-11.5s5.16-11.5,11.5-11.5,11.5,5.16,11.5,11.5-5.16,11.5-11.5,11.5Z"/><rect class="cls-1" x="53.14" y="31.18" width="2.23" height="3"/><rect class="cls-1" x="53.14" y="13.78" width="2.23" height="3"/><rect class="cls-1" x="44.15" y="22.87" width="3" height="2.23"/><rect class="cls-1" x="61.45" y="22.87" width="3" height="2.23"/><rect class="cls-1" x="51.22" y="21.51" width="8.34" height="2.67" transform="translate(.07 45.86) rotate(-45)"/><rect class="cls-1" x="50.22" y="14.9" width="2.67" height="12.76" transform="translate(.05 42.68) rotate(-45)"/> </g>
+              </g>
+            </svg>
+          </div>
+          <h6>Increase Efficiency</h6>
+        </div>
+        <div class="col-sm-6">
+          <div class="icon-container">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.66 54.59" height="45px" width="45px">
+              <defs></defs>
+              <g id="Icons">
+                <g><path class="cls-1" d="M43.96,15.62l6.09-3.51C45.45,5.23,37.83,.56,29.1,0V7.03c6.14,.53,11.5,3.81,14.87,8.59Z"/><path
+                    class="cls-1"
+                    d="M51.82,15.17l-6.09,3.52c1.22,2.61,1.93,5.51,1.93,8.58,0,1.21-.13,2.38-.33,3.53l6.8,1.82c.34-1.73,.53-3.52,.53-5.35,0-4.34-1.02-8.45-2.83-12.1Z"/><path
+                    class="cls-1"
+                    d="M27.33,47.59c-1.21,0-2.38-.13-3.53-.33l-1.82,6.8c1.73,.34,3.52,.53,5.35,.53,12,0,22.22-7.78,25.88-18.56l-6.8-1.82c-2.85,7.79-10.31,13.38-19.08,13.38Z"/><path
+                    class="cls-1"
+                    d="M7,27.26C7,16.65,15.18,7.93,25.56,7.03V0C11.31,.92,0,12.79,0,27.26c0,12,7.78,22.22,18.56,25.88l1.82-6.8c-7.79-2.85-13.38-10.31-13.38-19.08Z"/><rect class="cls-1" x="22.12" y="18.47" width="4" height="15.61"/><rect class="cls-1" x="15.64" y="25.6" width="4" height="8.48"/><rect class="cls-1" x="28.6" y="21.07" width="4" height="13.02"/><rect class="cls-1" x="35.08" y="25.6" width="4" height="8.48"/> </g>
+              </g>
+            </svg>
+          </div>
+          <h6>Cut Labor Costs</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How It Works -->
+  <section id="omnixHow">
+    <div class="container">
+      <h3>How it works</h3>
+      <p>
+        At omniX labs, our platform transforms your existing cameras into a trusted set of eyes and intelligent business
+        advisor. We securely connect to your cameras, analyze your video streams live, and give you back synthesized analytics
+        and insights via our platform, or if you prefer, our API.
+      </p>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="text-center">
+            <img src="../img/omnix/icons/vision.webp" alt="omnix camera insights for car washes icon" class="img-fluid"/>
+            <h6>Visibility</h6>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="text-center">
+            <img src="../img/omnix/icons/analytics.webp" alt="omnix car wash analytics icon" class="img-fluid"/>
+            <h6>Analytics</h6>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="text-center">
+            <img src="../img/omnix/icons/deep-learning.webp" alt="car wash deep learning icon" class="img-fluid"/>
+            <h6>Deep Learning</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Insights -->
+  <section id="omnixInsights">
+    <div class="container">
+      <h2>Take your business to the next level</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../img/payment.jpg" alt="paying for car wash with mobile apple pay" class="img-fluid"/>
+        </div>
+        <div class="col-lg-6">
+          <h5>Sales Insights</h5>
+          <p>
+            Membership is the fastest way to grow revenue & profits, and become resilient. omniX Labs is the most powerful tool on
+            the market to grow your membership. Your sales attendants have no intel on non-members, and this leads to low conversion
+            rates. Know more and convert customers into members at a much higher rate with omniX Labs.
+          </p>
+          <ul>
+            <li>Arm attendants with real-time data on each customer</li>
+            <li>
+              Know non-member patterns and allow your attendants to target the right
+                            customers
+            </li>
+            <li>
+              Sell more memberships more efficiently, and watch your profits
+                            grow!
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h5>Member Insights</h5>
+          <p>
+            You will understand who is visiting your business, when they visit, and how they use the wash like never before. These
+            metrics surface of what omniX Labs can unlock for you.
+          </p>
+          <ul>
+            <li>
+              Maximize customers and member value and experience by analyzing packages and promotions that best align with their
+              behavior
+            </li>
+            <li>Validate members by license plate to eliminate misuse</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img src="../img/driver.jpeg" alt="member getting a car wash" class="img-fluid"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../img/attendant-uncropped.jpeg" alt="omnix car wash attendant smiling" class="img-fluid"/>
+        </div>
+        <div class="col-lg-6">
+          <h5>Labor Insights</h5>
+          <p>
+            Who are your top performers on staff, how many people should you staff tomorrow? How long are cars on your lot? Are
+            certain attendants holding up your lines and your business? If you don’t have these answers, don’t worry. omniX Labs has
+            you covered. Now you can know exactly how seasonality, local events, weather, and timing affect your volume for
+            tomorrow.
+          </p>
+          <ul>
+            <li>
+              Staff the right people at the right time once our neural network learns your customer and member
+              behavior
+            </li>
+            <li>
+              Know your “Wheels on, Wheels off” time and improve your
+                            throughput
+            </li>
+            <li>Eliminate rewash fraud by employees</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA See omniX in action -->
+  <section id="omnixCta">
+    <div class="container slide-up on-scroll-animation">
+      <h3 class="brand-nubolts">See
+        <span>omniX</span>
+        in action</h3>
+      <p>
+        Click here to schedule a consultation. We will show you the power of omniX and its potential for your
+                business.
+      </p>
+      <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#omnixModal">
+        Learn More
+      </button>
+    </div>
+  </section>
+</main>

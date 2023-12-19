@@ -1,0 +1,291 @@
+---
+  title: EverWash | The Clean Ride Solution for Busy Moms
+  description: An EverWash membership gains you access to monthly unlimited car wash plans at your neighborhood’s best car washes. Wash Smart. Save Hard.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://app.everwash.com/img/fbsharer2.jpg
+  layout: 'affiliate-base-2.njk'
+---
+
+<link rel="stylesheet" type="text/css" href="/css/affiliates.css" />
+<main id="macaroniKidsMain">
+  <section id="hero">
+    <div class="container">
+      <div class="row d-c">
+        <div class="col-lg-7 col-md-7">
+          <img class="img-fluid dual-logos" src="{{ logos }}" alt="" />
+          <h1 class="display-1">
+            The
+            <span class="gradient-periwinkle-turquoise"
+              >Clean Car Solution
+            </span>
+            That Makes You Smile
+          </h1>
+          <p class="lead bold">
+            {{ offerStatement | safe }}
+          </p>
+          <p class="disclaimer">
+            {{ offerDisclaimer }}
+          </p>
+          <small class="text-danger location-search-error"
+            >Please enter a valid zip code.</small
+          >
+          <form
+            action="javascript:void(0);"
+            class="form-inline location-search-container"
+          >
+            <div class="form-group">
+              <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <input
+                  type="text"
+                  class="form-control location-search-field"
+                  id="washSearch"
+                  aria-label="Enter your zipcode to find a car wash"
+                  placeholder="Enter your zipcode"
+                />
+              </div>
+              <button
+                class="btn btn-secondary location-search-btn"
+                type="button"
+              >
+                Find a Car Wash
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 col-md-5">
+          <img
+            src="/img/bubbles-mockup.png"
+            alt="EverWash app mockup on iphone"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="aboutUs">
+    <div class="container">
+      <div class="row d-c">
+        <div class="col-lg-6">
+          <img
+            src="/img/happy-people-collage.png"
+            alt="Collage of happy people in cars"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-3 gradient-periwinkle-turquoise">EverWash</h2>
+          <h3>Keep your car clean every day.</h3>
+          <p>Life gets messy - and cars and vans get messy too.</p>
+          {#
+          <ul class="pl-3">
+            <li>Unlimited washes. One low monthly price.</li>
+            <li>Easy to manage membership using the EverWash App</li>
+            <li>
+              Unbeatable savings. Wash for a fraction of the pay-per-wash price.
+            </li>
+            <li>No strings attached. Cancel or freeze any time.</li>
+          </ul>
+          <br />
+          #}
+          <p>
+            For about the cost of only two car washes, an EverWash membership at
+            your neighborhood car wash gives you unlimited car washes each
+            month. That’s right! Wash your car whenever you want.
+          </p>
+          {#
+          <a
+            class="btn btn-white btn-radius btn-lg btn-font"
+            href="https://app.everwash.com/#locations/affinity/{{ offerCode }}"
+            role="button"
+            ><span class="px-3">Find a Car Wash</span></a
+          >
+          #}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="howItWorks">
+    <div class="container">
+      <h2 class="display-3">Getting Started is Easy</h2>
+      <div class="row">
+        <div class="col-lg-6 text-center img-col" id="">
+          <div id="howItWorksImgContainer" class="d-c">
+            <div class="step-img-container" id="stepOneImg">
+              <img
+                src="/img/man-holding-phone-3.png"
+                alt="Man downloading an app on his phone"
+                class="img-fluid d-none d-xl-block d-lg-block"
+              />
+            </div>
+            <div class="step-img-container" id="stepTwoImg">
+              <img
+                src="/img/login.png"
+                alt="Login Screen of EverWash unlimited car washes app"
+                class="img-fluid d-none d-xl-block d-lg-block"
+              />
+            </div>
+            <div class="step-img-container" id="stepThreeImg">
+              <img
+                src="/img/wash_location_map.png"
+                alt="Locations map of EverWash unlimited car washes app"
+                class="img-fluid d-none d-xl-block d-lg-block"
+              />
+            </div>
+            <div class="step-img-container" id="stepFourImg">
+              <img
+                src="/img/phone-mockup-edit.png"
+                alt="EverWash Unlimited Car Wash plans"
+                class="img-fluid d-none d-xl-block d-lg-block"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="step-card" id="howItWorksStepOne">
+            <div class="mobile-img-container d-lg-none">
+              <img
+                src="/img/man-holding-phone-3.png"
+                alt="Man looking at his phone"
+                class="img-fluid"
+              />
+            </div>
+
+            <h6 class="step-card-name">Step 1</h6>
+            <p>Download the EverWash App</p>
+          </div>
+          <div class="step-card" id="howItWorksStepTwo">
+            <div class="mobile-img-container d-lg-none">
+              <img
+                src="/img/login.png"
+                alt="Login Screen of EverWash unlimited car washes app"
+                class="img-fluid d-lg-none"
+              />
+            </div>
+
+            <h6 class="step-card-name">Step 2</h6>
+            <p>Create an account</p>
+          </div>
+          <div class="step-card" id="howItWorksStepThree">
+            <div class="mobile-img-container d-lg-none">
+              <img
+                src="/img/wash_location_map.png"
+                alt="Locations map of EverWash unlimited car washes app"
+                class="img-fluid d-lg-none"
+              />
+            </div>
+
+            <h6 class="step-card-name">Step 3</h6>
+            <p>Find a location near you</p>
+          </div>
+          <div class="step-card" id="howItWorksStepFour">
+            <div class="mobile-img-container d-lg-none">
+              <img
+                src="/img/phone-mockup-edit.png"
+                alt="EverWash Unlimited Car Wash plans"
+                class="img-fluid d-lg-none"
+              />
+            </div>
+
+            <h6 class="step-card-name">Step 4</h6>
+            <p>Select a plan and start washing</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="display-3">And Start Washing!</h2>
+    </div>
+  </section>
+  <section id="valueProp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 center-vertically">
+          <img
+            src="/img/illustrations/car-wash-scene-2.png"
+            alt="EverWash illustration of unlimited car wash membership app in use"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <h2 class="display-4">Adjust Your Plan as Your Needs Change</h2>
+          <ul>
+            <li>No long-term contracts. Cancel anytime.</li>
+            <li>Place your membership on hold.</li>
+            <li>Upgrade or change your membership plan.</li>
+            <li>Add additional vehicles at a discounted price.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="reviews">
+    <div class="container">
+      <h3 class="display-4">What Members Are Saying</h3>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="reviewContainer">
+            <i class="fas fa-quote-left"></i>
+            <p class="reviewContent">
+              I love having a car wash membership! I never have to worry about
+              having cash or my bank card on me for the machine. I don't even
+              have to roll my window to scan the code -
+              <span>it literally could not be easier</span>.
+            </p>
+            <h4 class="reviewName">JoBlack67</h4>
+            <h5 class="reviewSubline">EverWash User</h5>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="reviewContainer">
+            <i class="fas fa-quote-left"></i>
+            <p class="reviewContent">
+              My wife and I both have our cars on the EverWash app. It works. It
+              is convenient, we don't have to have a sticker/tag on the
+              windshield for a reader to pick up. It reads the phone instead. It
+              is fast and I don't even have to put my window down.
+              <span>Scan the QR code and go!</span>
+            </p>
+            <h4 class="reviewName">G-Baker</h4>
+            <h5 class="reviewSubline">EverWash User</h5>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="reviewContainer">
+            <i class="fas fa-quote-left"></i>
+            <p class="reviewContent">
+              <span>Easy to use!</span>
+              You don't eve have to roll down your window for scanning; it scans
+              right through the glass to maintain social distancing. You cancel
+              your membership at anytime with no strings attached right on the
+              app. I recommended the app and service to all!
+            </p>
+            <h4 class="reviewName">Neak1007</h4>
+            <h5 class="reviewSubline">EverWash User</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="endingCTA">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="/img/illustrations/car-wash-scene-1.png"
+            alt="EverWash illustration of a car wash with unlimited car wash membership"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 center-vertically">
+          <h3 class="display-4">Let's Get Started!</h3>
+          <a
+            href="https://app.everwash.com/#locations/affinity/{{ offerCode }}"
+            class="btn btn-primary-rebrand"
+            >Find a car wash</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

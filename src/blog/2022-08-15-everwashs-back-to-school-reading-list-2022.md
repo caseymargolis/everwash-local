@@ -1,0 +1,40 @@
+---
+title: EverWash's Back to School Reading List 2022
+description: It's never too late to be a student and learn something new! Check
+  out our list, pick up a book, and let us know what's on your Back to School
+  Reading List.
+author: Max Pulcini
+date: 2022-08-15T16:00:12.512Z
+tags:
+  - post
+  - blog
+  - reading
+  - books
+  - school
+  - learning
+image: /img/blog/everwash-reading-list.jpg
+imageAlt: Treat your car and your brain to some TLC with this reading list
+---
+At EverWash, we encourage our members to not only give their cars the TLC they deserve but also their brains! That's why we put together this Back to School Reading List to provide some interesting, educational, and entertaining reading material for you as the school year kicks off across the country. 
+
+![Life is an open book!](/img/blog/open-books.png "Life is an open book!")
+
+It's never too late to be a student and learn something new! Check out our list, pick up a book, and let us know what's on your Back to School Reading List.
+
+1. **"Zen and the Art of Motorcycle Maintenance" by Robert M. Pirsig**: It makes you want to take a trip, learn a new skill, and reconsider how you look at life. [Buy on Amazon](https://www.amazon.com/Zen-Art-Motorcycle-Maintenance-Inquiry/dp/0060589469)
+2. **"Spider-Man: Life Story" by Chip Zdarsky**: For the comic book fans out there (because those are books too!)... A retelling of classic Peter Parker adventures, told as if he aged on a single, continuous timeline since being bitten by a radioactive spider in Amazing Fantasy #15 in 1962. [Buy on Amazon](https://www.amazon.com/Spider-Man-Life-Story-Chip-Zdarsky/dp/1302917331)
+3. **"The Agony and the Ecstasy" by Irving Stone:** An amazing and engrossing book about the life of Michelangelo. Great for fans of art and history. [Buy on Amazon](https://www.amazon.com/The-Agony-and-Ecstasy-audiobook/dp/B007IWFHOC/ref=sr_1_1?keywords=agony+and+ecstasy+book&qid=1660580481&s=books&sprefix=agony%2Cstripbooks%2C65&sr=1-1)
+4. **"Ready Player One" by Ernest Cline:** This story is set in 2045 but also entails a worldwide VR scavenger hunt simulation set in the 80s, and the winner receives the game creator's estate worth about $500 billion. The book is better than the movie! [Buy on Amazon](https://www.amazon.com/Ready-Player-One-Ernest-Cline-audiobook/dp/B005HG7BWC/ref=sr_1_1?keywords=ready+player+one&qid=1660580509&s=audible&sprefix=ready+player%2Caudible%2C63&sr=1-1)
+5. **"The Four Agreements: A Practical Guide to Personal Freedom" by Don Miguel Ruiz:** Based on ancient Toltec wisdom, this book offers guidance into a new experience of freedom, true happiness, and love. Discover potential life-changing wisdom between these two covers. [Buy on Amazon](https://www.amazon.com/Four-Agreements-Practical-Personal-Freedom/dp/1878424319)
+6. **"Tuesdays With Morrie" by Mitch Albom:** Have you ever longed to reconnect with someone special in your life? Author Mitch Albom does that with a beloved college professor in this book, collecting lessons on how to live life from his respected mentor in the twilight of his life. [Buy on Amazon](https://www.amazon.com/Tuesdays-Morrie-Greatest-Lesson-Anniversary/dp/076790592X/ref=sr_1_1?keywords=tuesdays+with+morrie&qid=1660580601&s=books&sprefix=tuesda%2Cstripbooks%2C64&sr=1-1)
+7. **"Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics" by Daniel James Brown:** Great for sports and history buffs, this book combines a little-known but interesting slice of history with great character development and storytelling. [Buy on Amazon](https://www.amazon.com/Boys-Boat-Americans-Berlin-Olympics/dp/0143125478/ref=sr_1_1?keywords=boys+in+the+boat&qid=1660580615&s=books&sprefix=boys+in+th%2Cstripbooks%2C62&sr=1-1)
+8. **"A Salty Piece of Land" by Jimmy Buffett:** A quick read that can help you hang onto summer a bit longer. Buffet's bestseller chronicles treasure hunters, rock stars, sailors, seaplane pilots, pirates, and even a ghost or two. [Buy on Amazon](https://www.amazon.com/Salty-Piece-Land-Jimmy-Buffett/dp/031605996X/ref=sr_1_1?keywords=salty+piece+of+land&qid=1660581128&s=books&sprefix=salty+p%2Cstripbooks%2C71&sr=1-1)
+9. **"The Forgotten Island" by David Sodergren:** If you like Stranger Things, you might want to check out this book. It's a throwback to 80's summer horror with mystery and fright! [Buy on Amazon](https://www.amazon.com/Forgotten-Island-Horror-Novel/dp/1718173466/ref=sr_1_1?keywords=forgotten+island&qid=1660581142&s=books&sprefix=forgotten+is%2Cstripbooks%2C77&sr=1-1)
+10. **"Switch On Your Brain" by Caroline Leaf:** In this book, Dr. Leaf proposes that our minds are very powerful and capable of controlling our brains. She emphasizes that we have the power to choose to build up healthy thoughts and tear down toxic ones. The book is very inspiring and makes you think differently about how you see life and everything that surrounds you. [Buy on Amazon](https://www.amazon.com/Switch-Your-Brain-Happiness-Thinking/dp/0801018390/ref=sr_1_1?keywords=switch+on+your+brain&qid=1660581158&s=books&sprefix=switch+on+%2Cstripbooks%2C67&sr=1-1)
+11. **"The Library at Mount Char" by Scott Hawkins:** It has everything you want in a book, and things you didn't know you wanted: Action, adventure, metaphysics… It has things to make you laugh, things to make you cry, things to make you say WTF, things I can't accurately describe. The list goes on and on! [Buy on Amazon](https://www.amazon.com/Library-at-Mount-Char-audiobook/dp/B00XV0XR7Y/ref=sr_1_1?crid=10J5TDN4EBZ5L&keywords=library+at+mount+char+by+scott+hawkins&qid=1660581194&s=books&sprefix=library+%2Cstripbooks%2C74&sr=1-1)
+12. **"1776" by David McCullough:** This gives you an unflinching look into the start of the revolutionary war and the concerns and thoughts of the leaders that drive our fledgling nation. It’s not just the fluffy stuff from history books, it’s the real humans behind the characters we all know. [Buy on Amazon](https://www.amazon.com/1776-David-McCullough-audiobook/dp/B0009S2F0G/ref=sr_1_1?crid=3II8YY05XS3HK&keywords=1776+david+mccullough&qid=1660581211&s=audible&sprefix=177%2Caudible%2C67&sr=1-1)
+13. **"Lies My Teacher Told Me: Everything Your American History Textbook Got Wrong" by James W. Loewen:** Piggybacking off the last book recommendation, this history book dives into a series of moments in U.S. history you might think you know well but need to revisit. [Buy on Amazon](https://www.amazon.com/Lies-My-Teacher-Told-2nd/dp/B07T15Q8TM/ref=sr_1_1?keywords=lies+my+teacher+told+me&qid=1660581224&s=audible&sprefix=lies+m%2Caudible%2C62&sr=1-1)
+14. **"Because Internet: Understanding the New Rules of Language" by Gretchen McCulloch:** With the constant changes happening on the Internet and social media, this guide to internet-speak can help you understand how you're communicating online and why language can shift so dramatically in a connected world. [Buy on Amazon](https://www.amazon.com/Because-Internet-audiobook/dp/B07RHC94XK/ref=sr_1_1?keywords=because+internet&qid=1660581249&s=audible&sprefix=because+int%2Caudible%2C62&sr=1-1)
+15. **"Educated" by Tarra Westover:** Could you imagine setting foot into a classroom for the first time at age 17? That's what Tarra Westover did following an isolated childhood. The book explores her struggles and triumphs, ultimately leading her to places like Harvard and Cambridge University. Proof that it's never too late to start learning. [Buy on Amazon](https://www.amazon.com/Educated-Tara-Westover-audiobook/dp/B075F68BFV/ref=sr_1_1?crid=3JTHHZ37Y0E6T&keywords=educated&qid=1660581264&s=audible&sprefix=educated%2Caudible%2C64&sr=1-1)
+
+Share any of your Back to School Reading List recommendations or your favorite books in general with us on [Facebook](https://www.facebook.com/EverWash) or [Instagram](https://www.instagram.com/everwashcc/?hl=en)! Tag us in a picture of your favorite book cover, we'd love to see what you're checking out!

@@ -1,0 +1,108 @@
+---
+  title: Sales Success | EverWash - Delightful wash experiences at every touchpoint
+  description: EverWash partners with local car washes to better wash experiences at every touchpoint. Our app helps our customers save money and enjoy their cars.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  sitemap:
+    ignore: true
+  layout: 'base-noindex.njk'
+---
+
+<!-- Start of Confirmation Form Modal -->
+<button
+  class="btn btn-primary d-none"
+  type="button"
+  data-toggle="modal"
+  data-target="#formConfirmation"
+  id="triggerFormConfirmation">
+  Learn More</button>
+<div
+  class="modal fade partnerModal"
+  id="formConfirmation"
+  tabindex="-1"
+  aria-labelledby="Form Submission Confirmation"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fal fa-times"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs">
+            <i class="fas fa-envelope-open-text"></i>
+            <h3>Your form was <br/>successfully submited</h3>
+            <p>
+              Thanks for your interest! An EverWash representative will be in contact with you
+                            shortly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Confirmation Form Modal -->
+<main id="salesBody">
+  {% include 'partner-nav.njk' %}
+  <!-- Hero -->
+  <section id="contactSales">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5">
+          <h1 class="brand-nubolts">Get in Touch with Sales</h1>
+          <p>EverWash’s platform is designed to help you succeed by:</p>
+          <ul>
+            <li>
+              <i class="fas fa-check"></i>Reducing customer wait times</li>
+            <li>
+              <i class="fas fa-check"></i>Improving customer loyalty</li>
+            <li>
+              <i class="fas fa-check"></i>Growing your membership base</li>
+            <li>
+              <i class="fas fa-check"></i>Marketing to your customers on your behalf</li>
+            <li>
+              <i class="fas fa-check"></i>Giving you peace of mind</li>
+          </ul>
+          <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+          <div>
+            <p>
+              <a href="mailto:sales@everwash.com">
+                <i class="fas fa-envelope"></i>
+                <span class="link-dark">sales@everwash.com</span>
+              </a>
+            </p>
+            <p>
+              <a href="tel:8554927477">
+                <i class="fas fa-phone-alt"></i>
+                <span class="link-dark">(855)-492-7477</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-7" id="partnerFormCol">
+          <div class="form-container">
+            <img src="/img/illustrations/car-wash-scene-2.png" alt="" class="img-fluid"/>
+            <h4>Get Started with EverWash</h4>
+            <p>
+              Get a demo of how the EverWash platform can increase the overall profitability of your wash.
+            </p>
+            <form
+              id="salesForm"
+              name="Sales Form"
+              method="POST"
+              action="/wash-owners/sales-success.html"
+              netlify
+              netlify-honeypot="bot-field">
+              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+              <input type="hidden" name="formName" value="Sales Form" aria-hidden="true"/>
+              {% include 'wash-owner-form.njk' %}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

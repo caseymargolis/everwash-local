@@ -1,0 +1,292 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Quicksand&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito+Sans:wght@700&display=swap');
+    /* VARIABLES 
+    ===========================*/
+    :root {
+      --font-family-headings: 'Nunito Sans', sans-serif;
+      --font-family-body: 'Mukta', sans-serif;
+      --primary: #1E50FF;
+      --secondary: #141464;
+      --highlight: #00E1E1;
+      --transparent: transparent;
+      --white: #FFFFFF;
+      --gray-100: #F8F9FA;
+      --gray-200: #E9ECEF;
+      --gray-300: #DEE2E6;
+      --gray-400: #CED4DA;
+      --gray-500: #ADB5BD;
+      --gray-600: #6C757D;
+      --gray-700: #495057;
+      --gray-800: #343A40;
+      --gray-900: #212529;
+      --black: #000000;
+      --red: #BF4A46;
+      --purple: #6A3BB1;
+      --green: #20BDA8;
+      --orange: #FF9900;
+      --yellow: #EFF636;
+      --gold: #FCF0A2;
+      --rgb-primary: 30, 80, 255;
+      --rgb-secondary: 20, 20, 100;
+      --rgb-highlight: 0, 225, 225;
+      --rgb-transparent: transparent;
+      --rgb-white: 255, 255, 255;
+      --rgb-gray-100: 248, 249, 250;
+      --rgb-gray-200: 233, 236, 239;
+      --rgb-gray-300: 222, 226, 230;
+      --rgb-gray-400: 206, 212, 218;
+      --rgb-gray-500: 173, 181, 189;
+      --rgb-gray-600: 108, 117, 125;
+      --rgb-gray-700: 73, 80, 87;
+      --rgb-gray-800: 52, 58, 64;
+      --rgb-gray-900: 33, 37, 41;
+      --rgb-black: 0, 0, 0;
+      --rgb-red: 191, 74, 70;
+      --rgb-purple: 106, 59, 177;
+      --rgb-green: 32, 189, 168;
+      --rgb-orange: 255, 153, 0;
+      --rgb-yellow: 239, 246, 54;
+      --rgb-gold: 252, 240, 162;
+    }
+        
+        /* BASICS */
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+
+        body {
+          font-family: var(--font-family-body);
+          letter-spacing: 0.05rem;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+          font-family: var(--font-family-headings);
+          letter-spacing: normal;
+          font-weight: bold;
+        }
+        .bold{
+          font-weight: bold;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
+        .sub-shadow-text {
+          text-shadow: 1px 1px 2px #333;
+        }
+
+        /* BUTTONS */
+        .btn-orange {
+          background: var(--gray-100);
+          color: var(--gray-900)!important;
+        }
+
+        .btn-orange:hover {
+          background: var(--gray-300);
+          color: var(--gray-900);
+        }
+        .btn-blue{
+          background: var(--primary);
+        }
+        .btn-blue:hover{
+          background: rgba(var(--rgb-primary), 0.8);
+          color: var(--white)
+        }
+        .btn-blue-dark{
+          background: var(--secondary);
+        }
+        .btn-blue-dark:hover{
+          background: rgba(var(--rgb-secondary), 0.8);
+          color: var(--white);
+        }
+
+        .btn-radius {
+          border-radius: 25px;
+          overflow: hidden;
+        }
+
+        .btn-font {
+          font-family: var(--font-family-body);
+          color: #fff;
+        }
+
+        /* HERO SECTION */
+        #heroJawn {
+          padding: 10% 0;
+          background-image:  url(https://cdn.everwash.com/img/everwash-abenity-heropng6053c3ead11f2.jpg);
+          background-position: right;
+          background-size: cover;
+          background-repeat: no-repeat;
+          color: #333;
+        }
+        #heroJawn h1{
+          color: var(--secondary);
+          margin-bottom: 5%;
+          font-size: 2rem;
+        }
+
+        #heroJawn .row {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #heroJawn .btn {
+          margin-bottom: 10%;
+        }
+
+        #heroJawn .col-lg-5 div iframe {
+          border-radius: 32px;
+          border: solid 1px #cccccc;
+        }
+
+        /* DISCRIPTION */
+        #discription {
+          padding: 5% 0;
+          text-align: center;
+          color: #fff;
+          background: rgb(235, 96, 27);
+          background: radial-gradient(circle, rgba(235, 96, 27, 1) 5%, rgba(219, 86, 19, 1) 95%);
+        }
+
+        #discription .row {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .disclaimer{
+          font-size: 0.7rem;
+          text-align: justify;
+        }
+
+        /* EASY SIGN UP SECTION */
+        #easySignUp {
+          padding: 10% 0;
+          background: var(--gray-100);
+        }
+
+        #easySignUp .row {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #easySignUp h2 {
+          color: var(--secondary);
+        }
+
+        #easySignUp ul li {
+          border: none;
+          font-size: 1.25rem;
+          background: var(--gray-100);
+        }
+
+        #easySignUp span {
+          font-weight: bold;
+          font-family: var(--font-family-headings);
+        }
+
+        #easySignUp a span {
+          font-family: var(--font-family-body);
+          font-weight: normal;
+        }
+
+        /* SUBMIT FORM */
+        #submitForm {
+          padding: 10% 0;
+          background: rgb(var(--rgb-primary));
+          background: radial-gradient(circle, rgba(var(--rgb-primary), 1) 5%, rgba(var(--rgb-secondary), 1) 95%);
+          color: #fff;
+        }
+
+        #submitForm h2 {
+          text-shadow: 1px 1px 2px #333;
+          text-transform: uppercase;
+        }
+
+        #submitForm .row {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #submitForm input {
+          margin: 5%;
+          padding: 2%;
+          width: 90%;
+        }
+
+        #submitForm .col-lg-5 {
+          background: var(--gray-100);
+          padding: 2%;
+          /* margin: 5%; */
+          border-radius: 32px;
+          /* display: flex;
+      align-items: center;
+      justify-content: center; */
+        }
+
+        #submitForm form {
+          align-items: center;
+          justify-self: center;
+        }
+
+        /* MEDIA QUERIES */
+        @media(max-width: 1024px) {
+          #heroJawn {
+          background-position: center;
+        }
+        }
+
+        @media(max-width: 991px) {}
+
+        @media(max-width: 768px) {
+          #heroJawn {
+          background-position: center;
+        }
+        }
+
+        @media(max-width: 425px) {
+          #heroJawn {
+          background-position: left;
+        }
+        }
+
+        @media(max-width: 415px) {
+          .shrink-it {
+            font-size: 1.5rem;
+          }
+          #heroJawn .btn {
+            margin-bottom: 20%;
+          }
+
+          #heroJawn img {
+            margin-bottom: 10%;
+          }
+
+          #submitForm .col-lg-5 {
+            margin: 3%;
+          }
+
+          #easySignUp .btn {
+            display: block;
+          }
+
+          #discription {
+            padding: 20% 0;
+          }
+        }
+
+        @media(max-width: 320px) {}
+  </style>

@@ -1,0 +1,121 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    margin-top: 0;
+    background-color: var(--accent);
+}
+h1,h2,h3,h4,h5{
+    color: var(--secondary);
+}
+.h1-font{
+    font-family: var(--font-family-headings);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+#get-started h2, #footer h4.lead{
+    color: var(--white);
+}
+.sub-head{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+#hero{
+    margin-top: 5%;
+}
+#visiting{
+    margin-top: 10%;
+}
+#visiting-scwa{
+    margin-top: 3%;
+}
+.menu-text{
+    font-size: .8rem;
+}
+.disclaimer-link a{
+    color: var(--white);
+}
+#footer h3,h4{
+    color: var(--white);
+}
+#semi-circle{
+    border-radius: 0% 100% 0% 0%;
+    padding-left: 5%;
+    padding-top: 10%;
+    background: var(--primary);
+}
+#submitSuccess{
+    display: none;
+}
+#scwaMain h3, #scwaMain p{
+    margin-bottom: 3rem;
+}
+#scwaMain h3{
+    font-size: 2rem;
+}
+#scwaMain p{
+    font-size: 1.5rem;
+}
+#scwaMain #get-started-promo p{
+    font-size: 1rem;
+}
+#scwaBanner{
+    background-image: url(../img/landers/scwa-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    padding: 10rem;
+}
+#scwaContent{
+    padding: 5%;
+}
+#dallasSkyline{
+    background-image: url(../img/landers/dallas-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100vw;
+    padding: 0;
+}
+#dallasSkyline .col-lg-8, #dallasSkyline .col-lg{
+    padding: 0;
+}
+/* CONTACT FORM
+========================= */
+#get-started, #get-started-promo {
+    padding: 64px 0;
+    color: #fefefe;
+    background-image: linear-gradient(rgba(var(--rgb-secondary), 0.7), rgba(var(--rgb-secondary), 0.7)), url(../img/hero_images/get-started-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .get-started-blue{
+    background: var(--primary);
+    border-radius: 25px;
+    padding: 5%;
+  }
+  #get-started button, #get-started-promo button {
+    width: 200px;
+    height: 50px;
+    /* font-size: 1rem; */
+    text-transform: uppercase;
+    /* margin-left: 50%; */
+    margin-top: 32px;
+    border-radius: 25px;
+    
+  }
+  input.form-control, select.form-control {
+    height: 50px;
+    font-family: var(--font-family-body);
+    font-size: 20px;
+  }
+  #get-started form label, #get-started-promo form label{
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }

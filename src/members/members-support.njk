@@ -1,0 +1,125 @@
+---
+  title: Expert Support for EverWash Members | Get Help with Your EverWash Account
+  description: Find quick and easy support for your EverWash membership with our Members Support page. Manage your account, troubleshoot issues, and get answers to your questions. Get the most out of your car wash experience!
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  sitemap:
+    priority: 0.64
+  layout: 'base.njk'
+---
+
+<main
+  id="memberSupportBody">
+  <!-- Support Navigation Breadcrumb -->
+  <section class="supportNav">
+    <div class="container">
+      <div aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../support.html">EverWash Help</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Members
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  {%include 'member-support-faq.njk'%}
+  <!-- Support Contact Form -->
+  <section id="supportContactForm">
+    <div class="container">
+      <h2>Still need help? Get in touch!</h2>
+      <p>
+        Fill out the form or contact us directly and our team will get back to you as soon as
+                        possible.
+      </p>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="d-c">
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:support@everwash.com">support@everwash.com</a>
+            </p>
+            <p>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:2156188808">(215) 618-8808</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <form
+            id="memberSupportForm"
+            name="Member Support Form"
+            method="POST"
+            action="./members/members-support-success.html"
+            netlify
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Member Support Assistance Request"/>
+            <input type="hidden" name="formName" value="Member Support Form" aria-hidden="true"/>
+            <div class="bot-field">
+              <label>
+                Don't fill this out if you're human: <input name="bot-field"/>
+              </label>
+            </div>
+            <div class="input-wrapper">
+              <input name="name" id="name" class="form-control" type="text" required="required" placeholder=" "/>
+              <label for="name">Full Name</label>
+            </div>
+            <div class="input-group">
+              <div class="input-wrapper">
+                <input name="email" id="email" class="form-control" type="email" required="required" placeholder=" "/>
+                <label for="email">EverWash Account Email</label>
+              </div>
+              <div
+                class="input-group-append"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Enter the email you have associated with your EverWash account.">
+                <span>
+                  <i class="fal fa-exclamation-circle"></i>
+                </span>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <input name="phone" id="phone" class="form-control" type="tel" required="required" placeholder=" "/>
+              <label for="phone">Phone</label>
+            </div>
+            <select class="form-control" name="type-of-help" id="" required="required">
+              <option value="" disabled="" selected="">
+                What type of help do you need?
+              </option>
+              <option value="Billing">Billing</option>
+              <option value="Technical">Technical</option>
+              <option value="Update Account">Update Account</option>
+              <option value="General/Other">General/Other</option>
+            </select>
+            <div class="input-wrapper">
+              <textarea name="issue" id="memberSupportMsg" cols="" rows="5" placeholder=" "></textarea>
+              <label for="memberSupportMsg">Tell us about the issue</label>
+            </div>
+            <p class="disclaimer">
+              * This form is specifically for EverWash members who wish to contact EverWash about membership support assistance. If
+              you are a current EverWash Wash Partner looking for support, please visit the
+              <a href="../wash-owners/wash-owners-support.html">Wash Owners Support page</a>
+              contact our Wash Owner Support Team at
+              <a href="mailto:support@everwash.com">support@everwash.com</a>
+              or call
+              <a href="tel:2156188808">215-618-8808</a>
+              to speak with an
+                                                        agent.
+            </p>
+            <div class="d-c">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <!-- START Motion Chat Script --> 
+    <script src="https://jetspring-mo2-vcc.sahosted.com:443/api/chat/websites/55/snippet?token=4sNRBdNskMCUlES8rIsHGNqhrGXXFMTt"></script> 
+<!-- START Motion Chat Script -->

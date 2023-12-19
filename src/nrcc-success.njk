@@ -1,0 +1,329 @@
+---
+  title: EverWash | NRCC Atlantic City, NJ
+  description: Visit EverWash at NRCC and discover new tools and strategies for growing your business in the car wash industry.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  layout: 'base.njk'
+---
+
+<link rel="stylesheet" type="text/css" href="/css/distributors.css"/>
+<link rel="stylesheet" type="text/css" href="/css/mailer.css"/>
+<main
+  id="nrccMain" class="expo-lander">
+  <!-- Start of Confirmation Form Modal -->
+  <button
+    class="btn btn-blue d-none"
+    type="button"
+    data-toggle="modal"
+    data-target="#formConfirmation"
+    id="triggerFormConfirmation">
+    Learn More</button>
+  <div class="modal fade partnerModal" id="formConfirmation" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fal fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs">
+              <i class="fas fa-envelope-open-text"></i>
+              <h3>Your form was <br/>successfully submited</h3>
+              <p>
+                Thanks for your interest! An EverWash representative will be in contact with you shortly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Confirmation Form Modal -->
+  <!-- Start of Lead Form Modal -->
+  <div
+    class="modal fade popup-lead-form"
+    id="partnerFormCol"
+    tabindex="-1"
+    aria-labelledby="Contact Us"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content form-container">
+        <div class="modal-body">
+          <div id="analyticsModalHeader">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fal fa-times"></i>
+              </span>
+            </button>
+          </div>
+          <h4 class="popup-form-heading">Learn More About EverWash</h4>
+          <p>
+            Get a demo of how the EverWash platform can increase the overall profitability of your
+            wash.
+          </p>
+          <form
+            id="nrccLeadForm"
+            name="NRCC Lead Form"
+            method="POST"
+            action="./nrcc-success.html"
+            data-form="formData"
+            netlify
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="formName" value="NRCC Lead Form" aria-hidden="true"/>
+            {% include 'wash-owner-form.njk' %}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Lead Form Modal -->
+  <!-- Hero -->
+  <section id="expoHero">
+    <video autoplay muted loop id="video-bg">
+      <source src="/img/car-wash-drive-thru.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <p class="highlighted-font">Atlantic City, NJ  · Oct 2-4, 2023</p>
+        <div id="clockContainer" class="text-white">
+          <div id="timeContainer">
+            <div class="clock-input-container">
+              <p class="clock-input"></p>
+              <p class="time-unit">Day(s)</p>
+            </div>
+            <span>
+              :
+            </span>
+            <div class="clock-input-container">
+              <p class="clock-input"></p>
+              <p class="time-unit">Hour(s)</p>
+            </div>
+            <span>
+              :
+            </span>
+            <div class="clock-input-container">
+              <p class="clock-input"></p>
+              <p class="time-unit">Minute(s)</p>
+            </div>
+            <span>
+              :
+            </span>
+            <div class="clock-input-container">
+              <p class="clock-input"></p>
+              <p class="time-unit">Second(s)</p>
+            </div>
+          </div>
+        </div>
+        <h1>EverWash At NRCC · Booth 204</h1>
+        <div id="conventionDayMessage">
+          <h2>It's Showtime!</h2>
+          <p>
+            You're going to love the cutting-edge new tools we're showcasing at out booth. We also have some pretty awesome swag
+            waiting for you!
+          </p>
+        </div>
+        <p class="highlighted-font">
+          Grow Your Recurring Revenue
+          <i class="far fa-arrow-down"></i>
+        </p>
+      </div>
+    </section>
+    <!-- Book an appointment with Experts -->
+    <section id="expoExperts">
+      <div class="container">
+        <h2 class="headline">Elevate Your
+          <span>Peace Of Mind</span>
+        </h2>
+        <p>
+          To achieve success and peace of mind in the competitive car wash industry, owners and operators must be proactive. By
+          utilizing real-time data, they can make informed decisions that will keep customers happy and loyal. EverWash's
+          membership platform offers the necessary tools to ensure steady revenue, streamlined operations, and exceptional
+          customer service.
+        </p>
+        <h3>
+          Meet with an analytics, membership growth, or retention expert at NRCC!
+        </h3>
+        <button class="btn btn-highlight" type="button" data-toggle="modal" data-target="#partnerFormCol">Connect with us</button>
+        <img
+          src="/img/nrcc-2023-experts.png"
+          alt="EverWash NRCC Car Wash growth experts for unlimited car washes"
+          class="img-fluid"/>
+        <p id="scheduleAhead">
+          Unable to schedule a convenient time? Stop by our booth as a walk-in appointment.
+        </p>
+      </div>
+    </section>
+    <!-- EverWash Benefits -->
+    <section id="expoBenefits">
+      <div class="container">
+        <h2>LOOKING TO EXPAND YOUR CAR WASH'S
+          <span>POTENTIAL</span>?</h2>
+        <div class="row">
+          <div class="col-lg-4 col-sm-4">
+            <div>
+              <div class="img-container">
+                <img
+                  src="/img/illustrations/car-wash-scene-3.png"
+                  alt="Car Wash integrated with vehicle intelligence service"
+                  class="img-fluid"/>
+              </div>
+              <p>
+                Turn more customers to members with the industry's leading membership program.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <div>
+              <div class="img-container">
+                <img src="/img/illustrations/car-wash-scene-2.png" alt="Customer at Car Wash scanning membership" class="img-fluid"/>
+              </div>
+              <p>
+                Know your customers, unlock sales potential, and improve operations.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <div>
+              <div class="img-container">
+                <img src="/img/illustrations/car-wash-scene-1.png" alt="Car Wash with Unlimited Membership Program" class="img-fluid"/>
+              </div>
+              <p>
+                Reduce Cancellations and keep more members with exceptional customer service.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p>
+          Visit
+          <span>Booth #204</span>
+          to learn how we help wash operators define success and drive ROI. Get some cool swag too!
+        </p>
+      </div>
+    </section>
+    <!-- omniX Partnerships -->
+    <section id="expoPartnerships">
+      <div class="container">
+        <?xml
+        version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg
+          version="1.1"
+          id="Layer_2_00000102516537146319332490000006893075979912536508_"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 117 117"
+          style="enable-background: new 0 0 117 117"
+          xml:space="preserve">
+          <style type="text/css">
+            .st0 {
+              fill: #eeec46;
+            }
+          </style>
+          <g id="Icons">
+            <path
+              class="st0"
+              d="M97.4,48.7v4.5l-2.8-1.5L77.6,19l-7.1,2.2l-2.3-4.8L52.9,14l-2.8,4.8l-6-3.6L40,22.1l-1-0.6l-6.6,11.1l1.2,0.7
+                l-3.7,6.3l0.8,0.5l-3.8,6.3l2.2,1.3l-9.4,5.2v-4.2L0,60.5V103l19.7-11.8v-3.9l30.7-18.2l14.3-0.2l32.7,19.5v2.8L117,103V60.5
+                L97.4,48.7z M55.4,19.4l9.4,1.5l0.9,1.8l-5.9,1.8l-5.4-3.2C54.3,21.3,55.4,19.4,55.4,19.4z
+                M45.8,21.9l1.8,1l0,0l1.3,0.8l4.6,2.7 l0,0l2.7,1.6l-1.6,2.7l-10.4-6.2L45.8,21.9L45.8,21.9z
+                M40.7,28.3l13.8,8.2l-1.6,2.7l-6.8-4l0,0l-2.8-1.7l-1.1-0.7L39.1,31 C39.1,31,40.7,28.3,40.7,28.3z
+                M37.8,35.9l1.6,1l0,0l1.8,1.1l0.6,0.3l0,0l1.8,1.1l5.4,3.2l-1.1,2.1l-11.3-6.7 C36.6,37.9,37.8,35.9,37.8,35.9z
+                M33.6,44.7l1.2-2l0.9,0.5l0,0l4.2,2.5l0,0l3,1.8l-1.2,2.1L39,47.9l0,0L34.1,45l0,0L33.6,44.7 L33.6,44.7z
+                M48.9,64.2L19.7,81.6V58.5L34,50.6l0,0l9.6,5.7l3.6-6.4l2.5,1.5l3.6-6.4l1.4,0.8l6.6-11.1l-2.5-1.5l2.5-4.1l13.8-4.3
+                l1.8,3.5l-9.5,4.9l2.3,4.4l9.5-4.9l1.3,2.6L71,40.3l2.3,4.4l9.6-4.9l1.3,2.6l-9.6,4.9l2.3,4.4l9.6-4.9l1.8,3.4l-3.4,2l0,0
+                L65.2,63.5l0,0L64.4,64l-7.8,0.1l0,0C56.6,64.1,48.9,64.2,48.9,64.2z M97.4,82.7L70,66.4l19.8-11.6l7.5,4V82.7z"/>
+          </g>
+        </svg>
+        <h3>Illuminating Partnerships</h3>
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="/img/ox-acquire-lockup.png" alt="Logo lockup of omniX Labs and Acquire Video." class="img-fluid"/>
+          </div>
+          <div class="col-lg-7">
+            <h4>Acquire Video and omniX Labs</h4>
+            <p>
+              Access the ultimate visibility solution through our partnership with Acquire Video.
+                                          Get
+              <strong>real-time sales and operational insights</strong>
+              with top-of-the-line camera equipment and omniX Labs' AI-powered platform. Personalize your customer experience with
+              Sales Navigator and WOWO™ Wheels On Wheel Off, and increase membership sales and retention. Contact omniX Labs to learn
+              more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EverWash Booth Hours -->
+    <section id="expoHours">
+      <div class="container">
+        <h3>
+          <span>BOOTH 204</span>
+          &#903; Stop by and say "hi!"</h3>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="hours-card">
+              <div class="expo-date">
+                <p>Oct 2</p>
+                <p>Monday</p>
+              </div>
+              <h4>Virtual Carwash Tour</h4>
+              <p>3:30P - 6:00P</p>
+              <h4>Simoniz Celebration</h4>
+              <p>6:30P – 8:30P</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="hours-card">
+              <div class="expo-date">
+                <p>Oct 3</p>
+                <p>Tuesday</p>
+              </div>
+              <h4>Educational Sessions</h4>
+              <p>7:45A – 11:45A</p>
+              <h4>Exhibit Hours</h4>
+              <p>1:00P – 6:00P</p>
+              <h4>EverWash After Party</h4>
+              <p>9:00P – Midnight<br>
+                  <span id="afterPartyInfo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Hard Rock Cafe Backstage<br>
+                      <a href="https://everwashafterparty.rsvpify.com" class="link-dark" target="_blank">Learn More &amp; RSVP</a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="hours-card">
+                  <div class="expo-date">
+                    <p>Oct 4</p>
+                    <p>Wednesday</p>
+                  </div>
+                  <h4>Educational Sessions</h4>
+                  <p>8:30A – 10:00A</p>
+                  <h4>Exhibit Hours</h4>
+                  <p>10:00A – 1:00P</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Page Call To Action -->
+          <div class="container expoCta">
+            <div class="row">
+              <div class="col-lg-6">
+                <img
+                  src="/img/illustrations/peace-of-mind.png"
+                  alt="A man in a meditation pose thinking about his car wash."
+                  class="img-fluid"></div>
+                <div class="col-lg-6">
+                  <h3>Let's Connect</h3>
+                  <p>Find out more about how EverWash can help boost your car wash's profits!</p>
+                  <button class="btn btn-highlight" type="button" data-toggle="modal" data-target="#partnerFormCol">Connect with us</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>

@@ -1,0 +1,64 @@
+---
+    layout: affiliate-base.njk
+---
+    <!-- HERO SECTION -->
+    <section id="heroJawn">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <img class="img-fluid" src="{{logos}}" alt="">
+            <h1 class="shrink-it">The app that keeps your car happy!</h1>
+            <p class="lead">EverWash partners with your favorite local car wash to bring you:</p>
+              <ul class="pl-3">
+                <li>Unlimited washes. One low monthly price.</li>
+                <li>Easy to manage membership using the EverWash App.</li>
+                <li>Unbeatable savings. Wash for a fraction of the pay-per-wash price.</li>
+                <li>No strings attached. Cancel or freeze any time.</li>
+              </ul><br>
+              <p class="lead bold">
+                {{offerStatement}}
+               </p>
+            <a class="btn btn-blue btn-radius btn-lg btn-font" href="https://app.everwash.com/#locations/affinity/{{offerCode}}"
+              role="button"><span class="px-3">Find a Car Wash</span></a>
+          </div>
+          <div class="col-lg-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="{{video}}" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBMIT FORM -->
+    <section id="submitForm">
+      <div id="container" class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2 class="display-4 shrink-it">Didn't find a car wash in your area?</h2>
+            <p class="lead pr-3">EverWash is always adding new wash partners across the country. If you didn't find a participating location nearby, let us know where you’re located and we’ll let you know when we have a participating car wash near you. You’ll be able to use your discount once we’re up and running at that location.</p>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <form class="" name="Philadelphia Union Form" method="POST" action="#" netlify>
+
+              <input
+                    type="hidden"
+                    name="Subject"
+                    data-email-subject="emailSubject"
+                    value="New Union Form Submission"/>
+
+              <input type="text" class="form-control email-input" name="email" placeholder="Email">
+
+              <input type="text" class="form-control" name="zip" placeholder="Zip Code">
+
+              <button type="submit" class="btn btn-block btn-lg btn-font btn-blue btn-radius"
+                data-event="submit-lander-form">
+                <span class="px-3">Submit</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  

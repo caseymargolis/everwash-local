@@ -1,0 +1,28 @@
+{
+  "name": "everwash",
+  "version": "1.0.0",
+  "description": "These are the starting files used by [EverWash](https://www.everwash.com) to create the main consumer facing website. The website is built using JAMstack.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everwash/everwash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimbateverwash/everwash/issues"
+  },
+  "homepage": "https://github.com/dimbateverwash/everwash#readme",
+  "devDependencies": {
+    "-": "^0.0.1",
+    "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0"
+  }
+}

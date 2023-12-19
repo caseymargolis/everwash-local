@@ -1,0 +1,996 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Nubolts Rounded";
+  font-weight: bold;
+  src: url("font/Nubolts-Rounded-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nubolts Rounded";
+  font-weight: normal;
+  src: url("font/Nubolts-Rounded.ttf");
+}
+
+@font-face {
+  font-family: "Nubolts Rounded Outline";
+  font-weight: normal;
+  src: url("font/Nubolts-Rounded-Regular-Outline.ttf");
+}
+
+@font-face {
+  font-family: "Nubolts Rounded Outline";
+  font-weight: bold;
+  src: url("font/Nubolts-Rounded-Bold-Outline.ttf");
+}
+
+/************************************ 
+*********** VARIABLES *************
+*************************************/
+:root {
+  --primary-rebrand: #141c52;
+  --secondary-rebrand: #28d5cb;
+  --highlight-rebrand: #f1ee80;
+  --accent-rebrand: #8194ec;
+  --rgb-primary-rebrand: 20, 28, 82;
+  --rgb-secondary-rebrand: 40, 213, 203;
+  --rgb-highlight-rebrand: 238, 236, 70;
+  --rgb-accent-rebrand: 129, 148, 236;
+  --rgb-gray-300: 222, 226, 230;
+  --font-family-primary: "Nubolts Rounded";
+  --font-family-primary-outline: "Nubolts Rounded Outline";
+  --font-family-secondary: "Montserrat";
+}
+
+/************************************ 
+*********** BASICS *************
+*************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nubolts Rounded";
+  font-weight: normal;
+}
+p,
+li {
+  font-family: "Montserrat";
+}
+
+/************************************ 
+*********** BUTTONS *************
+*************************************/
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: none !important;
+}
+
+.distributor-landing .btn {
+  font-family: "Montserrat", sans-serif;
+}
+
+.distributor-landing .btn:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0);
+  color: var(--white);
+}
+
+.btn-primary-rebrand {
+  background: var(--primary-rebrand);
+  color: var(--white);
+}
+
+.btn-primary-rebrand:hover {
+  color: var(--white);
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary-rebrand a {
+  color: var(--white);
+}
+
+.btn-secondary-rebrand {
+  background: var(--secondary-rebrand);
+  color: var(--white);
+}
+
+.btn-secondary-rebrand a {
+  color: var(--white);
+}
+
+.btn-highlight-rebrand {
+  background: var(--highlight-rebrand);
+  color: var(--white);
+}
+
+.btn-highlight-rebrand a {
+  color: var(--white);
+}
+
+.btn-accent-rebrand {
+  background: var(--accent-rebrand);
+  color: var(--white);
+}
+
+.btn-accent-rebrand a {
+  color: var(--white);
+}
+
+/************************************ 
+*********** DISTRIBUTOR LANDING PAGES BASE *************
+*************************************/
+
+section {
+  padding-top: max(5%, 4rem);
+  padding-bottom: max(5%, 4rem);
+}
+
+/************************************ 
+*********** MACARONI KIDS *************
+*************************************/
+.gradient-periwinkle-turquoise {
+  background: -webkit-linear-gradient(0deg, #8194ec 1.28%, #28d5cb 80.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#macaroniKidsMain .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#macaroniKidsMain h1,
+#macaroniKidsMain h2,
+#macaroniKidsMain h3 {
+  margin-bottom: 2%;
+}
+
+#macaroniKidsMain img {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+#macaroniKidsMain .dual-logos {
+  margin-bottom: 2%;
+  margin-top: 5%;
+  max-width: 450px;
+}
+
+#macaroniKidsMain #hero {
+  background-image: url("/img/macaroni-kids-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#macaroniKidsMain #hero .lead {
+  font-weight: 400 !important;
+}
+
+@media (min-width: 1650px) {
+  #macaroniKidsMain #hero .container {
+    max-width: 1600px;
+  }
+}
+
+#macaroniKidsMain h1 {
+  line-height: 1.1;
+  font-size: 7.5rem;
+}
+
+@media (max-width: 1650px) {
+  #macaroniKidsMain h1 {
+    font-size: 5.5rem;
+  }
+}
+
+#macaroniKidsMain h2,
+#macaroniKidsMain h3 {
+  font-size: 5rem;
+}
+
+#macaroniKidsMain #hero .col-lg-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#macaroniKidsMain #hero .form-group {
+  box-shadow: none !important;
+  background: var(--gray-200) !important;
+}
+#macaroniKidsMain #hero .location-search-field {
+  background: var(--gray-200) !important;
+}
+#macaroniKidsMain #aboutUs {
+  background-image: url("/img/gradient-wave-bg.png");
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: var(--white);
+}
+
+#macaroniKidsMain #aboutUs h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#macaroniKidsMain #aboutUs img {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#macaroniKidsMain #aboutUs span {
+  font-weight: bold;
+  color: var(--secondary-rebrand);
+}
+
+#macaroniKidsMain #aboutUs .col-lg-6 {
+  padding-left: 8%;
+}
+
+#macaroniKidsMain #aboutUs .gradient-periwinkle-turquoise {
+  background: -webkit-linear-gradient(0deg, #8194ec 1.28%, #28d5cb 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#macaroniKidsMain #howItWorks img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#macaroniKidsMain #howItWorks h2 {
+  text-align: center;
+}
+#macaroniKidsMain #howItWorks h2:first-child {
+  margin-bottom: max(2rem, 5%);
+}
+#macaroniKidsMain #howItWorks h2:last-child {
+  margin-top: max(2rem, 5%);
+}
+#macaroniKidsMain #howItWorks {
+  padding-bottom: 0;
+}
+#macaroniKidsMain #howItWorks .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#macaroniKidsMain #steps {
+  background: linear-gradient(
+    158.72deg,
+    rgba(190, 255, 248, 1) 5.48%,
+    rgba(190, 202, 255, 1) 94.3%
+  );
+}
+#macaroniKidsMain #steps .step-card-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 1.5rem;
+  color: var(--primary-rebrand);
+}
+
+#macaroniKidsMain #steps h2:first-child {
+  margin-bottom: 10%;
+}
+
+#macaroniKidsMain #steps h2:last-child {
+  margin-top: 10%;
+}
+#macaroniKidsMain #steps .step-card-visual {
+  transition: opacity 0.35s;
+  position: absolute;
+  opacity: 0;
+  margin-left: 0;
+}
+
+#macaroniKidsMain #steps img {
+  height: 400px;
+  max-height: 80vh;
+}
+#macaroniKidsMain #steps #stepOneImg {
+  opacity: 1;
+}
+#macaroniKidsMain #steps #stepOneImg #stepOneMockup {
+  z-index: -1;
+}
+#macaroniKidsMain #steps #stepOneImg #app-links {
+  z-index: 1;
+}
+
+#macaroniKidsMain #steps .step-card {
+  margin-right: 10%;
+  margin-bottom: 17vh;
+  border-radius: 12px;
+}
+#macaroniKidsMain #steps .step-card:first-child {
+  margin-top: 10vh;
+}
+#macaroniKidsMain #steps .step-card:last-child {
+  margin-bottom: 10vh;
+}
+#macaroniKidsMain #app-links {
+  position: absolute;
+  top: 40%;
+  left: -50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#macaroniKidsMain #app-links a:first-child {
+  margin-left: 15px;
+}
+
+#macaroniKidsMain #steps h2,
+#macaroniKidsMain #reviews h3,
+#macaroniKidsMain #cleanCarEnemiesPoll h3,
+#macaroniKidsMain #cleanCarEnemiesPoll p {
+  text-align: center;
+}
+
+#macaroniKidsMain #cleanCarEnemiesPoll {
+  background: #f7f5a8;
+  color: var(--primary-rebrand);
+}
+
+#macaroniKidsMain #cleanCarEnemiesPoll h3 {
+  margin-bottom: 3%;
+}
+
+#macaroniKidsMain #cleanCarEnemiesPoll p {
+  margin: auto;
+  margin-bottom: 2%;
+  max-width: 750px;
+}
+
+#macaroniKidsMain #cleanCarEnemiesPoll .col-lg-12:first-of-type img {
+  max-width: 700px;
+  margin-bottom: 4%;
+}
+
+#macaroniKidsMain #cleanCarEnemiesPoll .col-lg-12 {
+  display: flex;
+  align-items: center;
+}
+
+#macaroniKidsMain #cleanCarEnemiesPoll img {
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+  margin-top: 2%;
+}
+
+#macaroniKidsMain #aboutUs h3,
+#macaroniKidsMain #steps .step-card-name {
+  font-family: var(--font-family-secondary);
+}
+
+#macaroniKidsMain #valueProp h2 {
+  font-size: 4rem;
+}
+
+#macaroniKidsMain #valueProp ul {
+  list-style: none;
+}
+#macaroniKidsMain #valueProp li {
+  margin: 1rem 0 1rem 1.8rem;
+}
+#macaroniKidsMain #valueProp li::before {
+  position: absolute;
+  left: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f00c";
+  color: #7083ce;
+}
+
+#macaroniKidsMain #valueProp i {
+  margin-right: 1rem;
+  color: var(--secondary-rebrand);
+}
+
+#macaroniKidsMain #reviews {
+  background: linear-gradient(rgba(20, 28, 82, 0.7), rgba(20, 28, 82, 0.7)),
+    url("/img/Street_Map_Dark_RGB_No_Locations.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#macaroniKidsMain #reviews h3 {
+  color: var(--white);
+  margin-bottom: max(5%, 2rem);
+}
+
+#macaroniKidsMain #reviews .reviewName,
+#macaroniKidsMain #reviews .reviewSubline {
+  font-family: var(--font-family-secondary) !important;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+#macaroniKidsMain #reviews .reviewName {
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+#macaroniKidsMain #reviews .reviewSubline {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
+
+#macaroniKidsMain #reviews .col-lg-4 {
+  margin-bottom: 3rem;
+}
+
+#macaroniKidsMain .reviewContainer {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 10%;
+  height: 100%;
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+}
+#macaroniKidsMain .reviewContent span {
+  font-weight: 600;
+  color: var(--secondary-rebrand);
+}
+#macaroniKidsMain .reviewContainer i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-rebrand);
+}
+
+.center-vertically {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#macaroniKidsMain #endingCTA h3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
+  .distributor-landing h1 {
+    font-size: 4rem;
+  }
+  .distributor-landing h2 {
+    font-size: 3rem;
+  }
+  .distributor-landing ul li {
+    font-size: 0.9rem !important;
+  }
+  #macaroniKidsMain h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  #macaroniKidsMain #howItWorks h2 {
+    margin: 0 !important;
+  }
+  .distributor-landing .hero-text {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+  }
+  #macaroniKidsMain #aboutUs {
+    background-size: 135% 100%;
+  }
+  #macaroniKidsMain #aboutUs img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #macaroniKidsMain #steps .step-card {
+    margin-bottom: 10% !important;
+    margin-top: 10% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7% 5%;
+    text-align: center;
+  }
+  #macaroniKidsMain #steps img {
+    max-height: 300px;
+  }
+
+  #macaroniKidsMain #steps #appStoreLink {
+    margin-top: -30px;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 767px) {
+  #macaroniKidsMain h1 {
+    font-size: 4rem;
+  }
+  #macaroniKidsMain h2 {
+    font-size: 3.5rem !important;
+  }
+  #macaroniKidsMain h3 {
+    font-size: 3rem;
+  }
+  #macaroniKidsMain #hero .row {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #macaroniKidsMain #endingCTA h3,
+  #macaroniKidsMain #endingCTA .btn {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  #macaroniKidsMain #hero .form-group {
+    background: none !important;
+  }
+  .compressed-btn-group {
+    display: none !important;
+  }
+  .distributor-landing h1 {
+    font-size: 3.5rem;
+  }
+  .distributor-landing h2 {
+    font-size: 2.5rem !important;
+  }
+  .distributor-landing .logo-group img {
+    height: 45px;
+  }
+
+  .distributor-landing .logo-group .vertical-line {
+    height: 35px;
+  }
+  #macaroniKidsMain section {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+/************************************ 
+*********** GEOFENCED PROMOS *************
+*************************************/
+
+:root {
+  --robin-hood-primary: #82b749;
+  --robin-hood-secondary: #a9e34e;
+  --robin-hood-highlight: #d8f251;
+  --rgb-robin-hood-primary: 130, 183, 73;
+  --geopromo-sale: #da0101;
+  --cw-express-primary: #f50000;
+  --cw-express-secondary: #2e375f;
+  --rgb-cw-express-primary: 245, 0, 0;
+  --rgb-cw-express-secondary: 46, 55, 95;
+  --supreme-cw-primary: #32b0ff;
+  --supreme-cw-secondary: #19378e;
+  --rgb-supreme-cw-primary: 50, 176, 255;
+  --rgb-supreme-cw-secondary: 25, 55, 142;
+}
+
+.geo-promo-page .btn {
+  background: var(--robin-hood-primary);
+  color: var(--white);
+  width: 200px;
+}
+.geo-promo-page .btn:hover {
+  background: #73a53d;
+}
+.geo-promo-page p {
+  font-size: 1.1rem;
+}
+
+/* Hero */
+
+.geo-promo-page h1,
+.geo-promo-page h2,
+.geo-promo-page h3,
+.geo-promo-page h4,
+.geo-promo-page h5,
+.geo-promo-page h6 {
+  font-family: var(--font-family-body);
+  letter-spacing: normal;
+  font-weight: 600;
+  margin-bottom: max(1.5%, 1.5rem);
+}
+
+.geo-promo-page section {
+  padding-top: max(4%, 3rem);
+  padding-bottom: max(4%, 3rem);
+}
+#geo-promo-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#geo-promo-hero .container {
+  padding-top: max(3%, 2rem);
+  padding-bottom: max(3%, 3rem);
+}
+#geo-promo-hero .container > .row {
+  flex-wrap: wrap-reverse;
+}
+#geo-promo-hero .container .row > div:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+#geo-promo-hero h1 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+#geo-promo-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+#geo-promo-hero .geo-promo-brand-logo {
+  padding: 1rem 0 1.5rem 0;
+  object-fit: contain;
+}
+#geo-promo-hero p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Plans */
+.geo-promo-card {
+  background: #f7ea01;
+  padding: 1.5rem 2rem;
+  margin-bottom: 0;
+  border-radius: 7px;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.geo-promo-card p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+.geo-promo-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.geo-promo-card h3 span {
+  font-weight: 800;
+}
+#geo-promo-plans {
+  padding-top: 0;
+
+  text-align: center;
+  background: rgba(var(--rgb-robin-hood-primary), 0.1);
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #geo-promo-plans #geo-promo-plans-container {
+    max-width: 600px;
+  }
+}
+
+#geo-promo-plans h2 {
+  font-size: 2rem;
+}
+#geo-promo-plans h2 span {
+  color: var(--robin-hood-primary);
+  font-weight: 700;
+}
+#geo-promo-plans-container .row {
+  justify-content: center;
+}
+#geo-promo-plans-container .row > div {
+  margin-bottom: 2rem;
+}
+.geo-promo-plan {
+  background: var(--white);
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  margin: 1rem auto;
+  border-radius: 7px;
+  box-shadow: 0px 0px 18px 0px rgba(82, 82, 82, 0.15);
+  height: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.geo-promo-plan p,
+.geo-promo-plan li {
+  font-size: 0.95rem;
+}
+.geo-promo-plan-name,
+.geo-promo-plan-price {
+  margin-bottom: 1rem !important;
+}
+.geo-promo-plan-name {
+  font-weight: 700 !important;
+}
+.geo-promo-plan-price {
+  color: var(--geopromo-sale);
+  font-size: 0.95rem;
+  font-weight: 400 !important;
+  vertical-align: top;
+}
+.geo-promo-plan-price span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.geo-promo-plan-price .full-price {
+  color: var(--gray-600);
+  text-decoration: line-through;
+  font-weight: 600;
+  /* font-size: 1.4rem; */
+  margin-right: 0.5rem;
+}
+.geo-promo-plan ul {
+  text-align: left;
+  width: auto;
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+.geo-promo-plan ul li {
+  width: auto;
+  display: block;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.geo-promo-plan ul li::before {
+  color: var(--robin-hood-primary);
+  left: -0.8rem;
+}
+.geo-promo-plan ul li::before {
+}
+/* How it Works */
+#geo-promo-walkthrough h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: max(3%, 3rem);
+}
+
+#geo-promo-walkthrough .geo-promo-walkthrough-step {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.geo-promo-walkthrough-step p:first-of-type {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  line-height: 2.5rem;
+}
+.geo-promo-walkthrough-step p:last-of-type {
+  font-size: 1.2rem;
+}
+/* Testimonial */
+.geo-promo-testimonial {
+  text-align: center;
+  padding: max(4%, 3rem) 3rem;
+  margin: auto;
+  margin-top: max(5%, 4rem);
+  background: var(--robin-hood-primary);
+  color: var(--white);
+  border-radius: 10px;
+  width: 90%;
+}
+
+.geo-promo-testimonial p:first-of-type {
+  font-size: 1.2rem;
+}
+.geo-promo-testimonial p:last-of-type {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.geo-promo-testimonial-rating {
+  color: yellow;
+  margin-bottom: 1.3rem;
+}
+/* CTA */
+#geo-promo-cta {
+  text-align: center;
+  background: rgba(var(--rgb-robin-hood-primary), 0.1);
+}
+#geo-promo-cta h2 {
+  margin-bottom: 1rem;
+}
+#geo-promo-cta h2 span {
+  color: var(--robin-hood-primary);
+  font-weight: 700;
+}
+#geo-promo-cta h3 {
+  font-size: 1.2rem;
+}
+#geo-promo-cta p {
+  margin-bottom: 1.5rem;
+}
+/* Business Info */
+#geo-promo-business-info {
+  margin: auto;
+  background: var(--gray-50);
+}
+#geo-promo-business-info #direction {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 3rem;
+}
+#geo-promo-business-info h2 {
+  font-size: 1.6rem;
+}
+.geo-promo-info-card {
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+.geo-promo-info-card i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+}
+.geo-promo-info-card a,
+.geo-promo-info-card p {
+  font-size: 1.1rem;
+}
+#map_canvas {
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Desktops */
+@media (max-width: 1200px) {
+}
+
+/* Laptops */
+@media (max-width: 992px) {
+  #geo-promo-hero {
+    text-align: center;
+  }
+  #geo-promo-hero .geo-promo-brand-logo {
+    max-width: 80px;
+  }
+
+  #geo-promo-walkthrough {
+    text-align: center;
+  }
+  .geo-promo-walkthrough-step {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+}
+
+/* Large Mobile Phones */
+@media (max-width: 576px) {
+  .geo-promo-page #geo-promo-hero {
+    padding-bottom: 0;
+  }
+  .geo-promo-page h2 {
+    font-size: 2rem !important;
+  }
+  #geo-promo-plans {
+    margin-top: 0;
+  }
+  .geo-promo-card {
+    position: static;
+    transform: none;
+    margin-bottom: 2rem;
+    border-radius: 0;
+  }
+}
+/* Robin Hood Car Wash */
+#robinHoodMain #geo-promo-hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url(/img/robin-hood-cw-2.jpg);
+
+  color: var(--white);
+}
+#robinHoodMain #geo-promo-hero h1,
+#robinHoodMain #geo-promo-hero span {
+  color: var(--robin-hood-secondary);
+}
+/* Car Wash Express */
+#cwExpressMain #geo-promo-hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(67, 39, 39, 0.688),
+      rgba(73, 22, 22, 0.2)
+    ),
+    url(/img/car-wash-express-2.jpg);
+
+  color: var(--white);
+}
+
+#cwExpressMain .btn {
+  background: var(--cw-express-primary) !important;
+}
+
+@media (max-width: 992px) {
+  #cwExpressMain #geo-promo-hero .geo-promo-brand-logo {
+    max-width: 300px;
+  }
+}
+#cwExpressMain #geo-promo-plans h2 span {
+  color: var(--cw-express-primary);
+}
+#cwExpressMain #geo-promo-plans {
+  background: var(--cw-express-secondary);
+}
+#cwExpressMain #geo-promo-cta h2 span {
+  color: var(--cw-express-primary);
+}
+#cwExpressMain .geo-promo-testimonial {
+  background: #cb1e1e;
+}
+#cwExpressMain #geo-promo-cta {
+  background: var(--cw-express-secondary);
+  color: var(--white);
+}
+#cwExpressMain #geo-promo-cta h2 span {
+  color: var(--cw-express-primary);
+}
+
+/* Supreme Car Wash */
+#supremeCwMain #geo-promo-hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/img/supreme-cw-2.jpg);
+
+  color: var(--white);
+}
+
+#supremeCwMain .btn {
+  background: var(--supreme-cw-primary) !important;
+}
+
+@media (max-width: 992px) {
+  #supremeCwMain #geo-promo-hero .geo-promo-brand-logo {
+    max-width: 300px;
+  }
+}
+#supremeCwMain #geo-promo-plans h2 span {
+  color: var(--supreme-cw-primary);
+}
+#supremeCwMain #geo-promo-plans {
+  margin-top: 0;
+  background: #f0f2f7;
+}
+#supremeCwMain #geo-promo-cta h2 span {
+  color: var(--supreme-cw-primary);
+}
+#supremeCwMain .geo-promo-testimonial {
+  background: var(--supreme-cw-primary);
+}
+#supremeCwMain #geo-promo-cta {
+  background: var(--supreme-cw-secondary);
+  color: var(--white);
+}
+#supremeCwMain #geo-promo-cta h2 span {
+  color: var(--supreme-cw-primary);
+}

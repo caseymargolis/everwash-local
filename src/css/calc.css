@@ -1,0 +1,178 @@
+#revCalc .container-fluid {
+  padding: 0;
+}
+#revCalc .btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+#revCalc .btn-secondary {
+  background-color: var(--gray-500) !important;
+  border-color: var(--gray-500) !important;
+}
+#formSection {
+  padding: 7% 12%;
+  background: url(../img/hero_images/revenue-calculator-hero.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#affiliateFormSection {
+  padding: 7% 12%;
+  background: linear-gradient(
+      180deg,
+      rgba(var(--rgb-white), 0.75),
+      rgba(var(--rgb-primary), 0.9)
+    ),
+    url(../img/hero_images/car_wash_bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#calcCoBrand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+#formSection h1,
+#formSection p,
+#affiliateFormSection h1,
+#affiliateFormSection p {
+  color: var(--white);
+  text-align: center;
+}
+#formSection h1,
+#affiliateFormSection h1 {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+#formSection p,
+#affiliateFormSection p {
+  margin-bottom: 5%;
+}
+#frmCalculator .col-4 {
+  display: flex;
+  justify-content: center;
+}
+#frmCalculator .row:first-child {
+  justify-content: center;
+  color: var(--white);
+}
+#frmCalculator .row:nth-child(2) {
+  justify-content: center;
+}
+#breakdownSm .calc_annual_ew_membership_conversion_revenue {
+  font-size: 4.5rem;
+  font-family: var(--font-family-bold);
+  color: var(--primary);
+}
+#breakdownSm h2 {
+  margin-top: 5%;
+}
+.percentages {
+  margin-right: 0;
+}
+#breakdown {
+  text-align: center;
+  justify-content: center;
+  margin: 0 10%;
+}
+#breakdown span {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-family: var(--font-family-bold);
+}
+#breakdown .row {
+  padding: 2%;
+  align-items: center;
+}
+#breakdown .row:nth-last-of-type(odd) {
+  background-color: var(--gray-200);
+  border-radius: 10px;
+}
+#results #table {
+  margin: 0 15%;
+}
+#results h2,
+#results h3 {
+  text-align: center;
+}
+#results div:first-child {
+  text-align: center;
+}
+#results h3:first-child {
+  font-size: 1.7rem;
+}
+#table p {
+  font-size: 0.75rem;
+}
+table {
+  overflow-x: auto;
+}
+.table th {
+  border-top: none;
+  text-align: center;
+}
+#revCalc .table thead tr th:nth-child(2) {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 10px 10px 0 0;
+  margin: 3%;
+}
+#revCalc .table thead tr th:nth-child(4) {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 10px 10px 0 0;
+  margin-left: 3%;
+}
+#revCalc .table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--accent);
+}
+#revCalc tbody tr td:last-child {
+  font-family: var(--font-family-bold);
+  color: var(--secondary);
+}
+#revCalc .math-symbol {
+  font-size: 1.5rem;
+}
+#revCalc .calc_grand_total,
+.calc_revenue_increase {
+  font-family: var(--font-family-bold);
+  font-size: 2rem;
+  color: var(--primary);
+}
+/************************************ 
+*********** MEDIA QUERIES*************
+*************************************/
+/* Large Laptop */
+@media (max-width: 1440px) {
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  #formSection h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large Phone */
+@media (max-width: 425px) {
+  #revCalc table {
+    display: block;
+    width: 100%;
+  }
+  #revCalc #results {
+    margin: 0;
+  }
+}
+
+/* Medium Phone */
+@media (max-width: 375px) {
+}
+
+/* Small Phone */
+@media (max-width: 320px) {
+}

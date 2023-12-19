@@ -1,0 +1,388 @@
+---
+  title: Revenue Forecasting | Delightful wash experiences at every touchpoint
+  description: Use our revenue calculator to estimate how much revenue your car wash can generate with EverWash's car wash membership program.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  layout: 'rev-forecast-base.njk'
+---
+    <main> 
+      <section id="revCalc">
+        <div class="container-fluid">
+          <div id="affiliateFormSection">
+            <div id="calcCoBrand">
+              <img class="img-fluid" src="./img/logos/EW_ACN CoBrand logo.png" alt="">
+            </div>
+            <h1>REVENUE CALCULATOR</h1>
+            <p>
+              Enter your Annual Car Count (total cars washed in one year) and
+              your Annual Car Wash Revenue and we’ll calculate how much
+              additional recurring revenue EverWash can generate for your wash.
+            </p>
+            <form id="frmCalculator">
+              <div class="row">
+                <span class="col-lg-3 col-md-4">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="txtCount"
+                      placeholder=""
+                      type="number"
+                      required="required"
+                      pattern="[0-9]*"
+                    />
+                    <label for="txtCount">Annual Car Count</label>
+                  </div>
+                </span>
+
+                <span class="col-lg-3 col-md-4">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="txtRevenue"
+                      placeholder=""
+                      type="number"
+                      required="required"
+                      pattern="[0-9]*"
+                    />
+                    <label for="txtRevenue">Annual Car Wash Revenue</label>
+                  </div>
+                </span>
+              </div>
+
+              <div class="row mt-3">
+                <span class="col-4 text-center">
+                  <button id="btnSubmit" class="btn btn-light">
+                    Calculate
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+
+          <div id="results" class="d-none mt-5">
+            <!--d-none-->
+            <div id="breakdownSm">
+              <h3 class="">
+                Your wash's new recurring revenue stream from EverWash monthly
+                members
+              </h3>
+              <span class="calc_annual_ew_membership_conversion_revenue"></span>
+              <p>
+                Annual Revenue Based on a
+                <span class="calc_percentage"></span> Customer-To-Member
+                Conversion Rate
+              </p>
+
+              <h2>Here's the math</h2>
+              <p>Pick your conversion rate:</p>
+              <div class="percentages row d-c">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button
+                    type="button"
+                    class="btn btn-secondary calc_percentage_button"
+                    data-value="0.1"
+                  >
+                    10%
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary calc_percentage_button"
+                    data-value="0.15"
+                  >
+                    15%
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary calc_percentage_button"
+                    data-value="0.2"
+                  >
+                    20%
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!--// Averages //-->
+            <div id="table">
+              <table class="table table-striped mt-5">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Industry Average*</th>
+                    <th class="spacer"></th>
+                    <th>Your Car Wash</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Annual Car Count</td>
+                    <td>45,750</td>
+                    <td class="spacer"></td>
+                    <td class="calc_total_washes"></td>
+                  </tr>
+                  <tr>
+                    <td>Annual Car Wash Revenue</td>
+                    <td>$686,250</td>
+                    <td class="spacer"></td>
+                    <td class="calc_total_revenue"></td>
+                  </tr>
+                  <tr>
+                    <td>Annual Price Per Wash</td>
+                    <td>$15</td>
+                    <td class="spacer"></td>
+                    <td class="calc_average_wash_price"></td>
+                  </tr>
+                  <tr>
+                    <td>Annual Visits/Washes per Customer per Year</td>
+                    <td>4</td>
+                    <td class="spacer"></td>
+                    <td class="calc_average_wash_amount"></td>
+                  </tr>
+                  <tr>
+                    <td>Total Unique Customers</td>
+                    <td>11,437</td>
+                    <td class="spacer"></td>
+                    <td class="calc_unique_customers"></td>
+                  </tr>
+                  <tr>
+                    <td>Average Revenue per Customer per Year</td>
+                    <td>$60</td>
+                    <td class="spacer"></td>
+                    <td class="calc_average_amount_per_customer"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="mt-5 text-center">
+                *Average Tunnel Car Wash, Source: US Census Bureau, IRS, MSSP
+                (Market Segment Specialization Program), Professional Car
+                Washing & Detailing, Statistic Brain.
+              </p>
+            </div>
+            <hr />
+            <div id="breakdown">
+              <h2 class="mt-5">Don't believe these numbers? Check the math.</h2>
+
+              <h3 class="mt-5">Your Average Price Per Wash</h3>
+              <div class="row mt-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_total_revenue"></span>
+                  <p>Annual Car Wash Revenue</p>
+                </div>
+                <div class="col-lg col-md col-sm math-symbol">&divide;</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_total_washes"></span>
+                  <p>Annual Car Count</p>
+                </div>
+                <div class="col-lg col-md col-sm math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_wash_price"></span>
+                  <p>Average Price Per Wash</p>
+                </div>
+              </div>
+
+              <h3 class="mt-5">Your Total Unique Customer Base</h3>
+              <div class="row mt-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_total_washes"></span>
+                  <p>Annual Car Count</p>
+                </div>
+                <div class="col math-symbol">&divide;</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_wash_amount"></span>
+                  <p>Average Visits/Washes per Customer per Year</p>
+                </div>
+                <div class="col math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_unique_customers"></span>
+                  <p>Total Unique Customers</p>
+                </div>
+              </div>
+
+              <h3 class="mt-5">Average Revenue per Customer per Year</h3>
+              <div class="row mt-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_wash_price"></span>
+                  <p>Average Price Per Wash</p>
+                </div>
+                <div class="col math-symbol">&times;</div>
+                <div class="co-lg-3 col-md-3 col-sm-6l">
+                  <span class="calc_average_wash_amount"></span>
+                  <p>Average Visits/Washes per Customer per Year</p>
+                </div>
+                <div class="col math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_amount_per_customer"></span>
+                  <p>Average Revenue per Customer per Year</p>
+                </div>
+              </div>
+
+              <h3 class="mt-5">
+                Let's Double Check to See If These Numbers<br />Are Accurate to
+                your Annual Car Wash Revenue
+              </h3>
+              <div class="row mt-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_unique_customers"></span>
+                  <p>Total Unique Customers</p>
+                </div>
+                <div class="col math-symbol">&times;</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_amount_per_customer"></span>
+                  <p>Average Revenue per Customer per Year</p>
+                </div>
+                <div class="col math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_total_revenue"></span>
+                  <p>Annual Car Wash Revenue</p>
+                </div>
+              </div>
+
+              <h3 class="mt-5">
+                Now Let's Calculate the Average Revenue per EverWash Member per
+                Year
+              </h3>
+              <div class="row mt-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_wash_price"></span>
+                  <p>Average Price Per Wash</p>
+                </div>
+                <div class="col math-symbol">&times;</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_membership_multiplier"></span>
+                  <p>Membership Multiplier</p>
+                </div>
+                <div class="col math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_ew_monthly_membership_price"></span>
+                  <p>Average Monthly EverWash Price</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_ew_monthly_membership_price"></span>
+                  <p>Average Monthly EverWash Price</p>
+                </div>
+                <div class="col math-symbol">&times;</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span>12</span>
+                  <p>Months of the Year</p>
+                </div>
+                <div class="col math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_ew_annual_membership_price"></span>
+                  <p>Average EverWash Member Revenue per Year</p>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-3">
+                <div class="col-8 row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <span class="calc_average_amount_per_customer"></span>
+                    <p>Average Pay-Per-Wash Customer</p>
+                  </div>
+                  <div class="col">vs.</div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <span
+                      class="calc_average_ew_annual_membership_price"
+                    ></span>
+                    <p>Average EverWash Member</p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="mt-5">
+                Finally, Here's how much your new EverWash revenue stream will
+                generate by converting <span class="calc_percentage"></span> of
+                your car wash's unique customer base.
+              </h3>
+              <div class="row mt-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_percent_unique_customers"></span>
+                  <p>
+                    <span class="calc_percentage"></span> of Unique Customers
+                  </p>
+                </div>
+                <div class="col math-symbol">&times;</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_average_ew_annual_membership_price"></span>
+                  <p>Average EverWash Member Value</p>
+                </div>
+                <div class="col math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span
+                    class="calc_annual_ew_membership_conversion_revenue"
+                  ></span>
+                  <p>Total Yearly EverWash Member Revenue</p>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-3">
+                <div class="col-5 row">
+                  <div class="col">
+                    <span
+                      class="calc_annual_ew_membership_conversion_revenue"
+                    ></span>
+                    <p>
+                      Annual MEMBERSHIP revenue based on a <br /><span
+                        class="calc_percentage"
+                      ></span>
+                      customer-to-member conversion rate
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-5 mb-5">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_total_revenue"></span>
+                  <p>Annual Pay-Per-Wash Revenue</p>
+                </div>
+                <div class="col math-symbol">+</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_annual_ew_membership_conversion_revenue"></span>
+                  <p>Annual EverWash Member Revenue</p>
+                </div>
+                <div class="col math-symbol">=</div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <span class="calc_grand_total"></span>
+                  <p>Total Annual Revenue</p>
+                </div>
+              </div>
+            </div>
+            <div class="percentages row justify-content-center mt-5">
+              <h3 class="text-center">Your Results</h3>
+              <div class="col-lg-8 row">
+                <div class="col text-center">
+                  <span class="calc_grand_total"></span>
+                  <p>
+                    Total annual revenue including membership.<br />Based on a
+                    15% customer-to-member conversion rate.
+                  </p>
+                </div>
+                <div class="col text-center">
+                  <span class="calc_revenue_increase"></span>
+                  <p>Revenue Increase with EverWash</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Get Started -->
+      <section id="ewGetStarted">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Partner with Everwash and Boost your Car Wash</h2>
+              <p>Discover how EverWash can increase your car wash's revenue.</p>
+              <a href="wash-owners/sales.html" class="btn btn-blue"
+                >Get Started</a
+              >
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+        </div>
+      </section>
+    </main>

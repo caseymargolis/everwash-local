@@ -1,0 +1,74 @@
+---
+  title: Newsroom
+  description: Stay up-to-date with the latest news and press releases from EverWash. Learn about our latest partnerships, innovations, and industry insights. Discover how EverWash is leading the way in revolutionizing the car wash industry.
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  sitemap:
+    priority: 0.8
+  layout: 'base.njk'
+---
+
+<main id="newsMain">
+  <!-- Hero Section -->
+  <section id="newsHero">
+    <div class="container">
+      <h1 class="brand-nubolts">EverWash Newsroom</h1>
+      <h2>Get the latest news and announcements from EverWash</h2>
+      <div class="article-search-form">
+        <div id="search"></div>
+      </div>
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
+      />
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"
+      ></script>
+      <script type="text/javascript">
+        algoliasearchNetlify({
+          appId: "G48FVNDGXU",
+          apiKey: "cb6a5aaafd00200cb4b5635bca187b62",
+          siteId: "7b6d9df2-4352-4e0e-a1cd-488331730322",
+          hitsPerPage: "10",
+          branch: "main",
+          selector: "div#search",
+        });
+      </script>
+    </div>
+  </section>
+  <!-- Blog Articles -->
+  <!-- Latest Article -->
+  <section id="headlinePost">
+    <div class="container">
+      <h3>Latest News</h3>
+      <div class="row article-row">
+        {%- for post in collections.newsroom | reverse -%} {%if loop.index0 < 1
+        %} {%include 'latest-article.njk'%} {%endif%} {%- endfor -%}
+      </div>
+    </div>
+  </section>
+  <!-- Featured Articles -->
+  <section id="featuredArticles">
+    <div class="container">
+      <h2>Featured Stories</h2>
+      <div class="row article-row">
+        {% set count = 0 %} {%- for post in collections.featured | reverse -%}
+        {% if post.data.tags.includes("newsroom") and count < 3 %} {%include
+        'article-snippet.njk'%} {% set count = count + 1 %} {%endif%} {%- endfor
+        -%}
+      </div>
+    </div>
+  </section>
+  <!-- All Articles -->
+  <section id="allArticles">
+    <div class="container on-scroll-animation slide-up">
+      <h2>Read More</h2>
+      <div class="row article-row">
+        {%- for post in collections.newsroom | reverse -%} {%include
+        'article-snippet.njk'%} {%- endfor -%}
+      </div>
+      <button id="showMoreBtn" class="btn">Show More +</button>
+    </div>
+  </section>
+</main>

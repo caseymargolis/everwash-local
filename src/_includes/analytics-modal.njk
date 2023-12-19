@@ -1,0 +1,111 @@
+<div class="modal fade" id="analyticsModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <img src="../img/logos/EverWash_HorizontalLogo_RGB_White.png" alt="EverWash logo" class="img-fluid"/>
+            <button type="button" class="close d-lg-none" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fal fa-times"></i>
+              </span>
+            </button>
+            <p>Fill out the form or contact us.</p>
+            <div>
+              <p>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:8554927477">(855) 492-7477</a>
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:sales@everwash.com">sales@everwash.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="analyticsModalHeader">
+              <h5>Learn More</h5>
+              <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  <i class="fal fa-times"></i>
+                </span>
+              </button>
+            </div>
+            <p>
+              Interested in learning more about analytics? Fill out the form below for a demo of how analytics can increase the
+              overall profitability of your wash.
+            </p>
+            <form
+              id="analyticsFormData"
+              name="Analytics and Intelligence Form"
+              method="POST"
+              data-form="formData"
+              netlify
+              netlify-honeypot="bot-field">
+              {# <input
+                                            type="hidden"
+                                            name="Subject"
+                                            data-email-subject="emailSubject"
+                                            value="New omniX Lead"
+                                          /> #}
+              <input type="hidden" name="formName" value="analytics Form" aria-hidden="true"/>
+              <div class="bot-field">
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field"/>
+                </label>
+              </div>
+              <div class="input-row">
+                <div class="input-wrapper">
+                  <input
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    type="text"
+                    required="required"
+                    placeholder=" "
+                    aria-label="Enter your first name"/>
+                  <label for="name">First Name</label>
+                </div>
+                <div class="input-wrapper">
+                  <input
+                    name="last-name"
+                    id="lastName"
+                    class="form-control"
+                    type="text"
+                    required="required"
+                    placeholder=" "
+                    aria-label="Enter your last name"/>
+                  <label for="lastNameInput">Last Name</label>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <input name="email" id="email" class="form-control" type="email" required="required" placeholder=" "/>
+                <label for="email">Email</label>
+              </div>
+              <div class="input-wrapper">
+                <input name="phone" id="phone" class="form-control" type="tel" required="required" placeholder=" "/>
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-wrapper">
+                <textarea name="message" id="message" class="form-control" rows="5" placeholder=" "></textarea>
+                <label for="message">Message</label>
+              </div>
+              <div class="d-c">
+                <button class="btn btn-primary" onclick="submitBtn();" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer"> <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+      >
+            Close
+      </button> </div> -->
+    </div>
+  </div>
+</div>

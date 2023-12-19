@@ -1,0 +1,234 @@
+[[headers]]
+  for = "/apple-app-site-association"
+  [headers.values]
+  Cache-Control = '''
+      public,
+      max-age=0'''
+  Content-Type = "application/json"
+  X-Content-Type-Options = "nosniff"
+
+  [[redirects]]
+    from = "/apple-app-site-association"
+    to = "/apple-app-site-association.json"
+    status = 200
+    force = true
+
+  [[redirects]]
+    from = "/app"
+    to = "https://app.everwash.com/app"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "http://everwash.com/*"
+    to = "https://everwash.com/:splat"
+    status = 301
+    force = true
+
+
+
+  [[redirects]]
+    from = "/invite-friend"
+    to = "https://app.everwash.com/#invite"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/gift"
+    to = "https://app.everwash.com/#gift-card"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/payment-info"
+    to = "https://app.everwash.com/#payment-info"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/membership-plans/:id"
+    to = "https://app.everwash.com/#membership-plans/:id"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/locations"
+    to = "https://app.everwash.com/#locations"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/memberships"
+    to = "https://app.everwash.com/#memberships"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/memberships/:id"
+    to = "https://app.everwash.com/#memberships/:id"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/membership"
+    to = "https://app.everwash.com/#membership"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/membership/:id"
+    to = "https://app.everwash.com/#membership/:id"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/faq"
+    to = "https://app.everwash.com/#support"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/map"
+    to = "https://app.everwash.com/#locations"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/change-plan"
+    to = "https://app.everwash.com/#change-plan"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/change-plan/:id"
+    to = "https://app.everwash.com/#change-plan/:id"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/edit-details"
+    to = "https://app.everwash.com/#memberships/:id"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/edit-details/:id"
+    to = "https://app.everwash.com/#car-details/edit/:id"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/redeem-gift"
+    to = "https://app.everwash.com/#account"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/invite"
+    to = "https://app.everwash.com/invite"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "https://www.everwash.com/groupon"
+    to = "https://app.everwash.com/groupon"
+    status = 301
+    force = true
+
+
+
+  [[redirects]]
+    from = "/landers/emb"
+    to = "https://www.everwash.com/landers/14820"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/abenity"
+    to = "https://www.everwash.com/landers/19720"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/aca"
+    to = "https://www.everwash.com/landers/18324"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/bhub"
+    to = "https://www.everwash.com/landers/11188"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/fond"
+    to = "https://www.everwash.com/landers/15376"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/lifemart"
+    to = "https://www.everwash.com/landers/14731"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/myezcarcare"
+    to = "https://www.everwash.com/landers/16970"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/perksatwork"
+    to = "https://www.everwash.com/landers/19774"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/perkspot"
+    to = "https://www.everwash.com/landers/12704"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/landers/save30"
+    to = "https://www.everwash.com/landers/10343"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/blog/2023-02-22-everwash-unveils-car-wash-marketing-plan-for-fist-half-of-2023-1/"
+    to = "/blog/2023-02-22-everwash-unveils-car-wash-marketing-plan-for-first-half-of-2023-1/"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/blog/2023-03-01-everwash-employee-spotlight/"
+    to = "/blog/2023-03-02-everwash-employee-spotlight-michelle-kingston/"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/blog/2023-05-22-todd-rendle-named-to-philadelphia-business-journal%E2%80%99s-23-cfo-of-the-year-list/"
+    to = "/newsroom/2023-05-22-todd-rendle-named-to-philadelphia-business-journal%E2%80%99s-23-cfo-of-the-year-list/"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/blog/2023-04-19-omnix-ceo-named-among-top-ceo%E2%80%99s-in-image-recognition-space/"
+    to = "/newsroom/2023-04-19-omnix-ceo-named-among-top-ceo%E2%80%99s-in-image-recognition-space/"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/about/a-letter-from-the-scotts"
+    to = "/about"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/www.everwash.com/privacy-policy"
+    to = "/privacy-policy"
+    status = 301
+    force = true

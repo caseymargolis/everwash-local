@@ -1,0 +1,66 @@
+---
+  title: Contact EverWash Sales Team for Car Wash Membership Programs and Analytics Solutions
+  description: Ready to level up your car wash business? Partner with EverWash for innovative analytics and membership technology. Our Sales Team can help you get started today.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  sitemap:
+    priority: 0.64
+  layout: 'base.njk'
+---
+
+<main id="salesBody">
+  {% include 'partner-nav.njk' %}
+  <!-- Hero -->
+  <section id="contactSales">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5">
+          <h1 class="brand-nubolts">Get in Touch with Sales</h1>
+          <p>EverWash’s platform is designed to help you succeed by:</p>
+          <ul>
+            <li>Reducing customer wait times</li>
+            <li>Improving customer loyalty</li>
+            <li>Growing your membership base</li>
+            <li>Marketing to your customers on your behalf</li>
+            <li>Giving you peace of mind</li>
+          </ul>
+          <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+          <div>
+            <p>
+              <a href="mailto:sales@everwash.com">
+                <i class="fas fa-envelope"></i>
+                <span class="link-dark">sales@everwash.com</span>
+              </a>
+            </p>
+            <p>
+              <a href="tel:8554927477">
+                <i class="fas fa-phone-alt"></i>
+                <span class="link-dark">(855)-492-7477</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-7" id="partnerFormCol">
+          <div class="form-container">
+            <img src="/img/illustrations/car-wash-scene-2.png" alt="" class="img-fluid"/>
+            <h4>Get Started with EverWash</h4>
+            <p>
+              Get a demo of how the EverWash platform can increase the overall profitability of your wash.
+            </p>
+            <form
+              id="salesForm"
+              name="Sales Form"
+              method="POST"
+              action="/wash-owners/sales-success.html"
+              netlify
+              netlify-honeypot="bot-field">
+              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+              <input type="hidden" name="formName" value="Sales Form" aria-hidden="true"/>
+              {% include 'wash-owner-form.njk' %}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

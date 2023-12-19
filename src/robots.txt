@@ -1,0 +1,62 @@
+# robots.txt for https://www.everwash.com/
+
+# Designed by Lisa in California.
+# Developed by Matthew and Lisa of EverWash.
+# Special thanks to Nugget, Kiki, and Frankie.
+
+# Algolia-Crawler-Verif: B67B060EE000257B
+
+User-agent: *
+Disallow: /.gitignore
+Disallow: /everwash-case-study.pdf
+Disallow: /everwash-white-paper.pdf
+Disallow: /wash-owners/white-paper.html
+Disallow: /wash-owners/revenue-calculator.html
+Disallow: /wash-owners/resources.html
+Disallow: /accessibility.html
+Disallow: /admin/
+Disallow: /help_rn.html
+
+User-agent: Algolia Crawler
+Allow: /blog/
+Allow: /newsroom/
+Disallow: /careers/*
+Disallow: /members/*
+Disallow: /support/*
+Disallow: /wash-owners/*
+Disallow: /distributors/*
+Disallow: /about/*
+Disallow: /sitemap/*
+
+User-agent: Algolia Crawler
+Disallow: /wash-owners
+Disallow: /members
+Disallow: /about
+Disallow: /support
+Disallow: /blog.html
+Disallow: /newsroom
+Disallow: /sitemap
+Disallow: /distributors
+Disallow: /macaroni-kids
+
+
+Sitemap: https://www.everwash.com/sitemap.xml
+
+
+
+#            =#%#*-       .:=+*#####*+=:.                                                                                                               
+#           *%%%%%%-   .=#%%%%%%%%%%%%%%%#=.                                                                                                            
+#           +%%%%%%- :*%%%%%%%%%%%%%%%%%%%%%*:                                                                                                          
+#            -+**+:.*%%%%%#============+#%%%%%*.                                                                                              ::        
+#   .=*###*+:     .#%%%%%= .===========. *%%%%%#.      :+++++++++=                                ++=      ++.     -++:                      *%%=       
+#  +%%%%%%%%%#:  .#%%%%%* .#%%%%%%%%%%%#. #%%%%%#.     +%%#******+                ..      .    .. +%%*    +%%#    :%%#                 ..    *%%= ..    
+# *%%%%%%%%%%%%. +%%=:::. -=============- ::::+%%+     +%%+      :%%*    .#%# :+#%%%%#= .%%%#+%%%%.#%%=  :%%%%+   #%%. -*%%%%#+%%= .+%%%%%*- *%%#%%%%#+ 
+# %%%%%%%%%%%%%- %%%*+. .==.           .==. .+#%%#     +%%#+++++. -%%+   #%#.+%%+:..=%%# -+%%%=::: .%%%. #%*+%%- +%%- *%%*-:-+%%%+ *%%*..-+: *%%#=:-*%%*
+# =%%%%%%%%%%%#..%%%%%: .**.           .**. -%%%%%     +%%#+++++.  =%%- +%%:.%%%*****%%%- -%%#      =%%*+%#. #%#=%%+ -%%#     +%%+ :*%%%*+:  *%%=   :%%%
+#  =%%%%%%%%%*.  %%%%%:     -*=-:::-=*:     -%%%%#     +%%+         =%%+%%: .%%%-.....:.  -%%*       +%%%%:  .%%%%#  :%%#.    *%%+  . :-*%%* *%%=   :%%%
+#    -=***+=.    +%%%%-       :=+*+=:       =%%%%=     +%%#+++++++   =%%%-   :#%%+===#%*  -%%*        #%%+    -%%%.   +%%%*++#%%%+.%%*=-+%%# *%%=   :%%%
+#                 #%%%*.   -------------   :#%%%#      :+++++++++=    =+-      -=***+=-   .++-        .++      =+:     .=+***=-++: .=+***+=  -++:    ++=
+#                 .#%%%+::-%%%%%%%%%%%%#-::+%%%#.                                                                                                       
+#                   +%%%%%%%%%%%%%%%%%%%%%%%%%=                                                                                                         
+#                    .+%%%%%%%%%%%%%%%%%%%%%+.                                                                                                          
+#                       -*%%%%%%%%%%%%%%#+-                                                                                                             

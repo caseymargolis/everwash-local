@@ -1,0 +1,14 @@
+{
+	"webcredentials": {
+		"apps": [ "A46DR6UZN3.com.everwashcarclub.everwash", "com.everwashcarclub.everwash" ]
+	},
+	"applinks": {
+		"apps": [],
+		"details": [
+		    {
+		        "appID": "A46DR6UZN3.com.everwashcarclub.everwash",
+		        "paths": ["/invite-friend", "/gift", "/payment-info", "/membership-plans/*", "/locations", "/memberships/*", "/memberships", "/faq", "/map", "/change-plan/*", "/edit-details/*", "/redeem-gift"]
+		    }
+		]
+	}   
+}

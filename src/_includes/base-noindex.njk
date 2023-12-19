@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KWSZNGG");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- Primary Meta Tags -->
+    <title>{{ title }}</title>
+    <meta name="title" content="EverWash - The Better Way to Wash Your Car" />
+    <meta name="description" content="{{ description }}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.everwash.com{{ page.url }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="{{ image }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://www.everwash.com{{ page.url }}"
+    />
+    <meta property="twitter:title" content="{{ title }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:image" content="{{ image }}" />
+    <!-- Prevent Cache Across Browsers -->
+    {# <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" /> #}
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/img/favicon/safari-pinned-tab.svg"
+      color="#141c52"
+    />
+    <meta name="msapplication-TileColor" content="#141c52" />
+    <meta name="theme-color" content="#ffffff" />
+    {% include 'cdn-css.njk' %}
+    <!-- CSS Dir -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/accordion.css" />
+    <link rel="stylesheet" type="text/css" href="/css/mailer.css" />
+    <link rel="stylesheet" type="text/css" href="/css/calc.css" />
+    <link rel="stylesheet" type="text/css" href="/css/cs-wp.css" />
+    <link rel="canonical" href="https://www.everwash.com{{page.url}}" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "EverWash",
+        "alternateName": "EverWash Car Club",
+        "url": "https://www.everwash.com",
+        "logo": "https://d33wubrfki0l68.cloudfront.net/a79a5f9e99bcd60a55132b72268195a63057f34c/f5d5c/img/everwash_logo_blue_hor.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "2156818808",
+            "contactType": "technical support",
+            "areaServed": ["US", "GU"],
+            "availableLanguage": "en"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "8554927477",
+            "contactType": "sales",
+            "areaServed": ["US", "GU"],
+            "availableLanguage": "en"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "support@everwash.com",
+            "contactType": "technical support",
+            "areaServed": ["US", "GU"],
+            "availableLanguage": "en"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "sales@everwash.com",
+            "contactType": "sales",
+            "areaServed": ["US", "GU"],
+            "availableLanguage": "en"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/EverWash",
+          "https://twitter.com/EverWash",
+          "https://www.instagram.com/everwashcc/",
+          "https://www.youtube.com/channel/UCv3ZMElXRnResR_Dv9dd1GA",
+          "https://www.linkedin.com/company/everwash/"
+        ]
+      }
+    </script>
+    <!-- WebSights Tracking -->
+    <script>
+      (function () {
+        var zi = document.createElement("script");
+        zi.type = "text/javascript";
+        zi.async = true;
+        zi.referrerPolicy = "unsafe-url";
+        zi.src = "https://ws.zoominfo.com/pixel/62277ad0063474001ab2a78d";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(zi, s);
+      })();
+    </script>
+  </head>
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KWSZNGG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% include 'header.njk' %}
+
+    {{ content | safe }}
+
+    {% include 'footer.njk' %}
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    {% include 'cdn-js.njk' %}
+    <!-- JS Dir -->
+    <script src="/js/mailer.js"></script>
+    <script src="/js/calc.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/blog.js"></script>
+    <script>
+      $("#myTab a").on("click", function (event) {
+        event.preventDefault();
+        $(this).tab("show");
+      });
+    </script>
+    <!-- WebSights Tracking -->
+    <noscript>
+      <img
+        src="https://ws.zoominfo.com/pixel/62277ad0063474001ab2a78d"
+        width="1"
+        height="1"
+        style="display: none"
+      />
+    </noscript>
+  </body>
+</html>

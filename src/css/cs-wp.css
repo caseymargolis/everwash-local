@@ -1,0 +1,73 @@
+/************************************ 
+*********** CASE STUDY *************
+*************************************/
+#caseStudyHero {
+  padding: 7% 0;
+  color: var(--white);
+  background: url(../img/hero_images/highway.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#caseStudyHero h1 {
+  font-family: var(--font-family-headings);
+  font-weight: 400;
+  /* letter-spacing: 0.015em; */
+  font-size: 4.3rem;
+  line-height: 1.1;
+}
+
+/************************************ 
+  *********** WHITE PAPER *************
+  *************************************/
+#whitePaperHero {
+  padding: 7% 0;
+  background: url(../img/hero_images/white-paper-hero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+#whitePaperHero h1,
+#whitePaperHero p {
+  margin-bottom: 5%;
+}
+
+/************************************ 
+*********** MEDIA QUERIES*************
+*************************************/
+/* Large Laptop */
+@media (max-width: 1440px) {
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  #vetOperators .col-lg-6:last-child {
+    height: 500px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Large Phone */
+@media (max-width: 425px) {
+  /* #caseStudyBody h1 {
+    font-size: 2rem;
+  } */
+  #caseStudyBody h3 {
+    font-size: 1.85rem !important;
+  }
+  #caseStudyBody h4 {
+    font-size: 1.85rem !important;
+  }
+}
+
+/* Medium Phone */
+@media (max-width: 375px) {
+}
+
+/* Small Phone */
+@media (max-width: 320px) {
+}

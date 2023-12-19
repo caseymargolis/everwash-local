@@ -1,0 +1,261 @@
+---
+  title: 'EverWash Webinar | Selling Your Car Wash Business: Beneath the Surface of the Good, the Bad, and the Ugly'
+  description: Discover how you can get the best value out of selling your car wash. Join our free webinar on October 17.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  layout: 'base-noindex.njk'
+---
+
+<!-- Start of Confirmation Form Modal -->
+<button
+    class="btn btn-blue d-none"
+    type="button"
+    data-toggle="modal"
+    data-target="#formConfirmation"
+    id="triggerFormConfirmation">
+    Learn More</button>
+<div class="modal fade partnerModal" id="formConfirmation" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <i class="fal fa-times"></i>
+                </span>
+            </button>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3>Thank you for registering</h3>
+                        <p>
+                            You're all set! Prior to the webinar, you'll receive an email with a link to join the webinar. We're excited to have you
+                            join us for this informative event!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Confirmation Form Modal -->
+<main
+    class="webinarMain" id="sellingCwBusinessWebinar">
+    <!-- Webinar Hero -->
+    <section class="webinarHero">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                    <img
+                        src="/img/illustrations/car-wash-scene-20.png"
+                        alt="An illustration of a car wash with a car driving through."
+                        class="img-fluid">
+                    <h1>Selling Your Car Wash Business: Beneath the Surface of
+                        <span>the Good, the Bad, and the Ugly</span>
+                    </h1>
+                    <p>As a car wash operator, are you considering selling your business now or in the future? If so, you’re invited to our
+                        exclusive webinar on successfully navigating the process of selling your car wash. From valuation to operational
+                        excellence, we will guide you through the entire process, beginning to end. Whether you're considering a sale or ready
+                        to take the plunge, this webinar is for you.</p>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="form-container">
+                        <h2>Join Our Webinar</h2>
+                        <p>
+                            Sign up for our exclusive webinar:
+                        </p>
+                        <form
+                            id="webinarForm_selling-your-business"
+                            name="Webinar Form – Selling Your Car Wash Business"
+                            method="POST"
+                            action="/webinar/selling-your-car-wash-business-success.html"
+                            netlify
+                            netlify-honeypot="bot-field">
+                            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+                            <input type="hidden" name="formName" value="Webinar Form – Selling Your Car Wash Business" aria-hidden="true"/>
+                            <div class="bot-field">
+                                <label>
+                                    Don't fill this out if you're human: <input name="bot-field"/>
+                                </label>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-wrapper">
+                                    <input
+                                        name="first-name"
+                                        id="firstNameInput"
+                                        class="form-control"
+                                        type="text"
+                                        required="required"
+                                        placeholder=" "
+                                        aria-label="Enter your first name"/>
+                                    <label for="firstNameInput">First Name</label>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input
+                                        name="last-name"
+                                        id="lastNameInput"
+                                        class="form-control"
+                                        type="text"
+                                        required="required"
+                                        placeholder=" "
+                                        aria-label="Enter your last name"/>
+                                    <label for="lastNameInput">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <input
+                                    name="email"
+                                    id="email"
+                                    class="form-control"
+                                    type="email"
+                                    required="required"
+                                    placeholder=" "
+                                    aria-label="Enter your email"/>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input
+                                    name="phone"
+                                    id="phone"
+                                    class="form-control"
+                                    type="tel"
+                                    required="required"
+                                    placeholder=" "
+                                    aria-label="Enter your phone number"/>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input
+                                    name="car-wash-name"
+                                    id="carWashName"
+                                    class="form-control"
+                                    type="text"
+                                    required="required"
+                                    placeholder=" "
+                                    aria-label="Enter your car wash name"/>
+                                <label for="carWashName">Car Wash Name</label>
+                            </div>
+                            <select class="form-control" name="job-role" id="jobRole">
+                                <option value="" disabled="" selected="">
+                                    Job Role
+                                </option>
+                                <option value="C-Level">C-Level</option>
+                                <option value="VP">VP</option>
+                                <option value="Director">Director</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Other">
+                                    Other
+                                </option>
+                            </select>
+                            <div class="form-agreement-wrapper"><input type="checkbox" name="Agreement" id="webinarAgreement" required>
+                                <label for="webinarAgreement">By signing up for this webinar, you consent to receive email correspondence regarding
+                                    future webinars and various product offerings.</label>
+                            </div>
+                            <div class="d-c">
+                                <button class="btn btn-black btn-large" type="submit">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Webinar Details -->
+    <section class="webinarDetails">
+        <div class="container">
+            <h2>Webinar Details</h2>
+            <p>
+                <strong>Date:</strong>
+                Tuesday, October 17th</p>
+            <p>
+                <strong>Time:</strong>
+                12:00 PM (EDT)</p>
+            <p>
+                <strong>Moderator:</strong>
+                Max Pulcini, Director of Marketing and Communications at EverWash</p>
+            <p>
+                <strong>Guest Speaker:</strong>
+                Harry Caruso, Founder and CEO of Car Wash Advisory Group</p>
+        </div>
+        <div class="container webinarOutline">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h2>What You'll Learn</h2>
+                    <p>
+                        <strong>Value Assessment and Investor Engagement:</strong>
+                        Learn to evaluate your car wash's value and understand how it influences investor interest, driving effective
+                        engagement.</p>
+                    <p>
+                        <strong>Strategies for Buyer Conversion:</strong>
+                        Differentiate you and your wash and unpack tactics to convert potential interest into solid offers.</p>
+                    <p>
+                        <strong>Strategic Selling and Operational Excellence:</strong>
+                        Embrace an offensive selling approach through membership programs, customer support, and operational efficiency, all
+                        contributing to a compelling selling strategy.</p>
+                    <p>
+                        <strong>Financial Dynamics and Market Impact:</strong>
+                        Explore the intersection of Wall Street and the car wash industry, uncovering how financial dynamics impact your selling
+                        potential.</p>
+                </div>
+                <div class="col-lg-5">
+                    <img
+                        src="/img/illustrations/car-wash-advisory-collab.png"
+                        alt="An illustration of a car wash. The webinar is a collaboration with Car Wash Advisory."
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Webinar Speakers -->
+    <section class="webinarSpeakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="webinar-speaker-card">
+                        <div class="webinar-speaker-header">
+                            <img
+                                src="/img/harry-caruso.jpg"
+                                alt="Harry Caruso, Founder and CEO of Car Wash Advisory Group"
+                                class="img-fluid webinar-speaker-img">
+                            <div>
+                                <h3>Harry Caruso</h3>
+                                <p>Founder and CEO</p>
+                                <p>Car Wash Advisory Group</p>
+                            </div>
+                        </div>
+                        <p>
+                            <strong>Meet Our Guest Speaker:</strong>
+                            Harry Caruso</p>
+                        <p>Harry H. Caruso, a visionary with a blend of Industrial Engineering and Finance, has maneuvered through the intricate
+                            financial landscape. Starting from the peaks of Investment Banking at Citi, he scaled the heights of financial
+                            technology and investment, even pioneering machine learning endeavors. Harry's expertise and securities-level licensure
+                            make him the trusted compass to navigate your car wash transition.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="webinar-speaker-card">
+                        <div class="webinar-speaker-header">
+                            <img
+                                src="/img/max-pulcini.jpg"
+                                alt="Max Pulcini, Director of Marketing & Communications at EverWash"
+                                class="img-fluid webinar-speaker-img">
+                            <div>
+                                <h3>Max Pulcini</h3>
+                                <p>Director of Marketing & Communications</p>
+                                <p>EverWash</p>
+                            </div>
+                        </div>
+                        <p>
+                            <strong>Meet Our Moderator:</strong>
+                            Max Pulcini</p>
+                        <p>At EverWash, Max oversees communications strategy, content creation, press relations, and channel partnerships. A
+                            native of South Jersey, and a Philadelphia resident since 2009, Max joined EverWash following a career in journalism,
+                            which led to by-lines in Philadelphia-based publications such as Spirit News, Philadelphia City Paper, and Billy Penn,
+                            as well as national news outlets like The Daily Beast.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
