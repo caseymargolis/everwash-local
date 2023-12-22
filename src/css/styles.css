@@ -316,6 +316,7 @@ a:hover {
 
 .btn-primary:hover {
   background: var(--secondary);
+  border-color: #8194ec;
 }
 .btn-primary:focus {
   background: var(--primary) !important;
@@ -503,6 +504,7 @@ button.navbar-toggler {
 #navbar .btn {
   font-size: 0.85rem;
   font-weight: 600;
+  border: solid 1px #141C52;
 }
 .navbar .btn {
   text-transform: uppercase;
@@ -565,6 +567,7 @@ button.navbar-toggler {
 .navbar #loginBtn:hover {
   background: var(--secondary);
   color: var(--white);
+  border-color: #8194ec;
 }
 /* Moble Menu Button */
 #nav-icon3 {
