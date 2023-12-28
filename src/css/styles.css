@@ -7058,9 +7058,9 @@ section#partnerCalc-new {
   flex-direction: column;
   position: relative;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(195,195,195,1);
-  -moz-box-shadow: 0px 0px 10px 5px rgba(195,195,195,1);
-  box-shadow: 0px 0px 10px 5px rgba(195,195,195,1);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
+  box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
 }
 #partnerCalc-new .partnerCalcModule label {
   font-weight: 600;
@@ -7192,6 +7192,47 @@ section#partnerIndustry {
   position: absolute;
   left: 0;
   bottom: -5px;
+}
+#partnerIndustry div.item {
+  background:#fff;
+  padding: 7.5% 10%;
+  border-radius: 10px;
+  display: flex;
+  min-height: 195px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#partnerIndustry div.item img {
+  max-height: 50px;
+  max-width: 50px;
+}
+#partnerIndustry div.item p {
+  color: #141C52;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18.5px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  letter-spacing: -0.25px;
+}
+#partnerIndustry .owl-carousel .owl-nav {
+  display: none;
+}
+#partnerIndustry .owl-carousel .owl-dots {
+  margin-top: 30px;
+}
+#partnerIndustry .owl-carousel .owl-dots button.owl-dot span {
+  background:#28D5CB;
+  width: 11.5px;
+  height: 11.5px;
+}
+#partnerIndustry .owl-carousel .owl-dots button.owl-dot:hover span {
+  background:#141C52;
+}
+#partnerIndustry .owl-carousel .owl-dots button.owl-dot.active span {
+  background:#141C52;
 }
 
 @media only screen and (max-width: 767px) {
