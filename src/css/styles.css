@@ -7053,10 +7053,10 @@ section#partnerCalc-new {
   font-size:35.5px;
   line-height: 50px;
   font-weight: 600;
+  margin-bottom: max(5%, 3.5rem);
 }
 #partnerCalc-new .partnerCalcModule {
   padding: 15% 10%;
-  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -7112,16 +7112,31 @@ section#partnerCalc-new {
   font-weight: 600;
   font-size: 15px;
 }
+#partnerCalc-new #results {
+  margin-top: -10px !important;
+}
 #partnerCalc-new #breakdownSm {
   text-align: left;
   display: block !important;
 }
 #partnerCalc-new #breakdownSm span {
-  color: 28D5CB;
+  color: #28D5CB !important;
   font-size: 75px;
+  font-weight: bold;
+  position: relative;
+}
+#partnerCalc-new #breakdownSm span:after {
+  content: "";
+  width: 100%;
+  height: 3.5px;
+  background: #28D5CB;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
 }
 #partnerCalc-new #partnerCalcResultsContainer p {
   color: #141c52;
   font-weight: 600;
   font-size: 12.5px;
+  margin-top: 50px;
 }
