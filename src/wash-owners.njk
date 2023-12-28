@@ -108,6 +108,40 @@
         </div>
       </div>
     </div>
+  </section>
+  <!-- CTA -->
+  <section id="partnerCTA-new">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form-container">
+            <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+            <h4>Get Started with EverWash</h4>
+            <p>
+              Get a demo of how the EverWash platform can increase the overall profitability of your wash.
+            </p>
+            <form
+              id="washOwnerForm"
+              name="Wash Owner Form"
+              method="POST"
+              action="/wash-owners-success.html"
+              netlify
+              netlify-honeypot="bot-field">
+              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+              <input type="hidden" name="formName" value="Wash Owner Form" aria-hidden="true"/>
+              {% include 'wash-owner-form.njk' %}
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <div>
+            <h5>Membership is the most profitable way to grow and protect your business by creating recurring revenue and ensuring customer loyalty.</h5>
+            <h4>Let us educate you.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>  
 </main>
 
@@ -115,7 +149,7 @@
 <main
   id="partnerMain">
   <!-- Hero -->
-  <section id="partnerHero">
+  <section id="partnerHero" style="display:none;">
     <div class="container">
       <div class="row">
         <div class="col-lg-6" id="partnerHeroHeading">
@@ -334,7 +368,7 @@
       </div>
     </section>
     <!-- Revenue Calculator -->
-    <section id="partnerCalc">
+    <section id="partnerCalc" style="display:none;">
       <div class="container">
         <h2>Revenue Calculator</h2>
         <h3>How much money are you leaving on the table?</h3>

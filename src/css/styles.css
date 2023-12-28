@@ -7175,7 +7175,7 @@ section#partnerIndustry {
   text-align: center;
   font-size:35.5px;
   line-height: 45px;
-  margin-bottom: max(5%, 4.5rem);
+  margin-bottom: max(5%, 3.5rem);
   margin-top: 15px;
   max-width: 800px;
   margin-left: auto;
@@ -7236,5 +7236,94 @@ section#partnerIndustry {
 }
 
 @media only screen and (max-width: 767px) {
-  
+  #partnerIndustry h2 {
+    margin-bottom: max(5%, 2.5rem);
+  }
+}
+
+section#partnerCTA-new {
+  background-image: url("/img/new-update/partner_cta_background.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#partnerCTA-new div.form-container {
+  background: #fff;
+  padding: 7.5%;
+  border-radius: 15px;
+  text-align: center;
+}
+#partnerCTA-new div.form-container img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+#partnerCTA-new div.form-container h4 {
+  font-size: 17.5px;
+}
+#partnerCTA-new div.form-container p {
+  font-size: 13.5px;
+}
+#partnerCTA-new div.form-container p.disclaimer {
+  font-size: 8.5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#partnerCTA-new div.form-container form .input-wrapper label, #partnerCTA-new div.form-container form select.form-control {
+  font-size: 13.5px;
+}
+#partnerCTA-new div.form-container form .input-wrapper input, #partnerCTA-new div.form-container form .input-wrapper textarea {
+  padding-top: 1.95rem;
+  margin-bottom: 1.15rem;
+}
+#partnerCTA-new div.form-container form select.form-control {
+  max-height: 50px;
+  margin-bottom: 0.15rem;
+}
+#partnerCTA-new div.form-container form button.btn {
+  padding: 0.75rem 2.5rem !important;
+  font-weight: 600;
+}
+#partnerCTA-new .col-lg-5 {
+  display: flex;
+  align-items: center;
+}
+#partnerCTA-new .col-lg-5 h5 {
+  font-size: 27.5px;
+  color: #fff;
+  line-height: 1.35em;
+}
+#partnerCTA-new .col-lg-5 h4 {
+  margin-top: 35px;
+  font-size: 33.5px;
+  color: #2BD5CB;
+  position: relative;
+  font-weight: bold;
+  width: max-content;
+}
+#partnerCTA-new .col-lg-5 h4:after {
+  content: "";
+  width: 100%;
+  height: 4.5px;
+  background: #F3F183;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+@media only screen and (max-width: 991px) {
+  #partnerCTA-new div.form-container {
+   margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #partnerCTA-new .col-lg-5 h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #partnerCTA-new .col-lg-5 h4 {
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
