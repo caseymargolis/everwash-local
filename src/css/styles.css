@@ -6895,7 +6895,6 @@ section#homeHero-new {
   background:#fcfa6c ;
   color: #141c52;
 }
-
 @media only screen and (max-width: 767px) {
   #homeHero-new div.col-sm-8, #homeHero-new div.col-sm-4 {
     flex: none;
@@ -7016,13 +7015,11 @@ section#partnerHero-new {
   font-weight: 600;
   margin-top: 20px;
 }
-
 @media only screen and (max-width: 999px) {
   #partnerHero-new div.col-sm-8 h1 {
     font-size: 45px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   #partnerHero-new div.col-sm-8, #partnerHero-new div.col-sm-4 {
     flex: none;
@@ -7053,7 +7050,7 @@ section#partnerCalc-new {
   font-size:35.5px;
   line-height: 50px;
   font-weight: 600;
-  margin-bottom: max(5%, 3.5rem);
+  margin-bottom: max(5%, 4.5rem);
 }
 #partnerCalc-new .partnerCalcModule {
   padding: 15% 10%;
@@ -7139,4 +7136,30 @@ section#partnerCalc-new {
   font-weight: 600;
   font-size: 12.5px;
   margin-top: 50px;
+}
+@media only screen and (max-width: 992px) {
+  #partnerCalc-new #breakdownSm span {
+    font-size: 50px !important;
+  }
+  #partnerCalc-new .partnerCalcModule {
+    margin-bottom: 4.5rem;
+  }
+  #partnerCalc-new h2 {
+    margin-bottom: max(5%, 1.5rem);
+  }
+}
+@media only screen and (max-width: 767px) {
+  section#partnerCalc-new {
+    background-position: bottom right;
+  }
+  #partnerCalc-new h2 {
+    line-height: 45px;
+  }
+  #partnerCalc-new .partnerCalcModule .btn {
+    font-size: 1.05rem;
+  }
+}
+
+section#partnerIndustry {
+  background: #F5F6FC;
 }
