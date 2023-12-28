@@ -6822,7 +6822,7 @@ margin-right: 1rem;
 section#homeHero-new {
   padding: 0!important;
 }
-#homeHero-new {
+#homeHero-new .container {
   max-width: 100%;
 }
 #homeHero-new .row {
