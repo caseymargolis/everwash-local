@@ -7,6 +7,83 @@
     priority: 0.8
   layout: 'base.njk'
 ---
+<main
+  id="partnerMain">
+  <!-- Hero -->
+  <section id="partnerHero-new">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="info-box">
+            <h4>CAR WASH OWNERS:</h4>
+            <h1>Membership can grow your revenue by <span>90%</span></h1>
+            <p>within the first <span>12 months</span> of launching your membership program.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="info-box">
+            <img src="/img/new-update/wash_owner_banner_image.png" alt="Car Wash Customers" class="img-fluid">
+            <h6>User Our</h6>
+            <a href="/members.html" class="btn btn-blue">Revenue Calculator</a>
+            <p>to see how much money you're leaving on the table.</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-- Revenue Calculator -->
+  <section id="partnerCalc">
+    <div class="container">
+      <h2>Revenue Calculator</h2>
+      <h3>How much money are you leaving on the table?</h3>
+      <p class="subheading">Estimate how much additional recurring revenue EverWash can generate for your wash.</p>
+      <div class="row">
+        <div class="col-lg-5">
+          <form action="" id="frmCalculator" class="partnerCalcModule text-dark">
+            <label for="annualCarCountInput">Annual Car Count:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtCount"
+              type="number"
+              required="required"
+              pattern="[0-9]*"
+              placeholder="Number of Cars"/>
+            <label for="annualWashRevenue">Annual Car Wash Revenue:</label>
+            <div class="input-container">
+              <span>$</span>
+              <input
+                type="text"
+                class="form-control"
+                id="txtRevenue"
+                type="number"
+                required="required"
+                pattern="[0-9]*"
+                placeholder="Annual Revenue"/>
+            </div>
+            <button class="btn btn-accent btn-large" id="btnSubmit">Estimate Earnings</button>
+          </form>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6" id="partnerCalcResultsContainer">
+          <h4>Additional Annual Revenue:</h4>
+          <div
+            id="results" class="mt-3">
+            <!--d-none-->
+            <div id="breakdownSm">
+              <span class="calc_annual_ew_membership_conversion_revenue gradient-text-01">$0</span>
+            </div>
+          </div>
+          <p>
+            Based on a 15% Customer-To-Member Conversion Rate.
+          </p>
+          {# <a href="" class="link-light">Learn how we estimate your earnings</a> #}
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </section>
+</main>
 
 {% include 'partner-nav.njk' %}
 <main
