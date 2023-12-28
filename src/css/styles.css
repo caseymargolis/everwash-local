@@ -7031,3 +7031,97 @@ section#partnerHero-new {
     padding: 10%;
   }
 }
+
+section#partnerCalc-new {
+  background-image: url("/img/new-update/revenue_calculator_background.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#partnerCalc-new .row {
+  display: flex;
+  align-items: center;
+}
+#partnerCalc-new h3 {
+  text-align: center;
+  font-size:17.5px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+#partnerCalc-new h2 {
+  text-align: center;
+  font-size:35.5px;
+  line-height: 50px;
+  font-weight: 600;
+}
+#partnerCalc-new .partnerCalcModule {
+  padding: 15% 10%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(195,195,195,1);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(195,195,195,1);
+  box-shadow: 0px 0px 10px 5px rgba(195,195,195,1);
+}
+#partnerCalc-new .partnerCalcModule label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1.05rem;
+}
+#partnerCalc-new .partnerCalcModule input {
+  padding: 1rem 0.5rem;
+  margin-bottom: 3.5rem;
+  outline: 0;
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent !important;
+  border-radius: 0;
+  border-bottom: 1px solid var(--gray-500) !important;
+}
+#partnerCalc-new .partnerCalcModule .input-container {
+  display: flex;
+}
+#partnerCalc-new .partnerCalcModule input#txtRevenue {
+  padding: 1rem 1.5rem;
+  margin-left: -10px;
+}
+#partnerCalc-new .partnerCalcModule .input-container span {
+  position: relative;
+  top: 7.5px;
+  left: 10px;
+  z-index: 1;
+  font-weight: 600;
+}
+#partnerCalc-new .partnerCalcModule .btn {
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: #141c52 !important;
+  padding: 0.75rem 2.5rem !important;
+}
+#partnerCalc-new .partnerCalcModule .btn:hover {
+  background: #F3F183 !important;
+  color: #141c52 !important;
+}
+#partnerCalc-new #partnerCalcResultsContainer h4 {
+  color: #141c52;
+  font-weight: 600;
+  font-size: 15px;
+}
+#partnerCalc-new #breakdownSm {
+  text-align: left;
+  display: block !important;
+}
+#partnerCalc-new #breakdownSm span {
+  color: 28D5CB;
+  font-size: 75px;
+}
+#partnerCalc-new #partnerCalcResultsContainer p {
+  color: #141c52;
+  font-weight: 600;
+  font-size: 12.5px;
+}
