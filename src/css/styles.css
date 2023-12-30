@@ -7355,6 +7355,10 @@ section#partnerReviews-new {
 #partnerReviews-new .owl-carousel .item-video {
   height: 300px;
 }
+#partnerReviews-new .item-video .owl-video-wrapper {
+  border-radius: 15px;
+  border: solid 10px #28D5CB;
+}
 #partnerReviews-new .owl-carousel .owl-dots button.owl-dot {
   margin-top: 30px;
 }
@@ -7393,6 +7397,26 @@ section#partnerReviews-new {
 }
 #partnerReviews-new .owl-carousel .owl-nav .owl-prev:focus, #partnerReviews-new .owl-carousel .owl-nav .owl-next:focus {
   outline: none !important;
+}
+@media only screen and (min-width: 1000px) {
+  #partnerReviews-new .owl-item.active:nth-child(1) .item-video, #partnerReviews-new .owl-item.active:nth-child(3) .item-video {
+    perspective:400px;
+    transform: scale(0.85);
+  }
+  #partnerReviews-new .owl-item.active:nth-child(1) .item-video .owl-video-wrapper {
+    animation: y-axis-animation 1000s ease-in-out 0s infinite;
+  }
+  @keyframes y-axis-animation {
+    from {transform: rotateY(20deg);}
+    to {transform: rotateY(-20deg);}
+  }
+  #partnerReviews-new .owl-item.active:nth-child(3) .item-video .owl-video-wrapper {
+    animation: y-axis-animation1 1000s ease-in-out 0s infinite;
+  }
+  @keyframes y-axis-animation1 {
+    from {transform: rotateY(-20deg);}
+    to {transform: rotateY(20deg);}
+  }
 }
 
 section#partnerMembershipstory {
