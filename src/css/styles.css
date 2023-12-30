@@ -7502,3 +7502,73 @@ section#partnerMembershipstory h5 {
     margin-bottom: 20px;
   }
 }
+
+section#partnerMembershipsuccess {
+  background: #141C52;
+}
+#partnerMembershipsuccess h2 {
+  color: #fff;
+  font-size: 41.5px;
+  line-height: 48.5px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#partnerMembershipsuccess h2 span {
+  color: #F3F183;
+  position: relative;
+}
+#partnerMembershipsuccess h2 span:after {
+  content: "";
+  width: 100%;
+  height: 4.5px;
+  background: #28D5CB;
+  position: absolute;
+  left: 0;
+  bottom: -3.5px;
+}
+#partnerMembershipsuccess .infobox img {
+  max-height: 50px;
+  margin-bottom: 15px;
+}
+#partnerMembershipsuccess .infobox h5 {
+  color: #141C52;
+  font-size: 17.5px;
+  line-height: 25px;
+  font-weight: bold;
+}
+#partnerMembershipsuccess .infobox hr {
+  background: #141C52;
+  height: 1.5px;
+}
+#partnerMembershipsuccess .infobox p {
+  color: #000;
+  font-size: 12.5px;
+  line-height: 20px;
+  text-align: left;
+}
+#partnerMembershipsuccess .infobox h6 {
+  color: #000;
+  font-size: 12.5px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: left;
+  letter-spacing: 0.25px;
+}
+#partnerMembershipsuccess .infobox {
+  border-radius: 15px;
+  padding: 7.5%;
+  text-align: center;
+  min-height: 435px;
+}
+#partnerMembershipsuccess .infobox.col_1 {
+  background: #C4CBEB;
+}
+#partnerMembershipsuccess .infobox.col_2 {
+  background: #ACF4F0;
+}
+#partnerMembershipsuccess .infobox.col_3 {
+  background: #FFFEBC;
+}  
