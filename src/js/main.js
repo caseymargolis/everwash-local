@@ -892,28 +892,43 @@ $(function() {
   });
 });
 
-$('.owl-carousel.video-items').owlCarousel({
-  merge:true,
-  loop:true,
-  margin:20,
-  video:true,
-  lazyLoad:true,
-  center:true,
-  responsive:{
-    0:{
-        items:1,
-        nav:true
-    },
-    600:{
-        items:2,
-        nav:false
-    },
-    1000:{
-        items:3,
-        nav:true,
-        loop:false
+$(function() {
+  $('.owl-carousel.video-items').owlCarousel({
+    merge:true,
+    loop:true,
+    margin:20,
+    video:true,
+    lazyLoad:true,
+    center:true,
+    responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      600:{
+          items:2,
+          nav:false
+      },
+      1000:{
+          items:3,
+          nav:true,
+          loop:false
+      }
     }
-  }
-})
+  });
+});
 
+$(function() {
+  setInterval(function () {
+    var i = 1;
+    $('#partnerReviews-new .owl-stage .owl-item').each(function(){
+      if($(this).hasClass('active')) {
+        $(this).attr('data-number', i);
+        i = i + 1;
+      } else {
+        $(this).attr('data-number', 0);
+      }
+    });
+  }, 500);
+});
 
