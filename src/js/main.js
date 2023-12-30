@@ -929,6 +929,6 @@ $(function() {
         $(this).attr('data-number', 0);
       }
     });
-  }, 500);
+  }, 300);
 });
 
