@@ -7589,4 +7589,79 @@ section#partnerMembershipsuccess {
     font-size: 30px;
     line-height: 38.5px;
   }
-}  
+}
+
+section#partnerOmnix-new {
+  background: #F5F6FC;
+}
+#partnerOmnix-new h2 {
+  color: #14225C;
+  font-size: 39.5px;
+  line-height: 50px;
+  margin-bottom: 50px;
+  max-width: 500px;
+}
+#partnerOmnix-new h2 span {
+  position: relative;
+}
+#partnerOmnix-new h2 span:after {
+  content: "";
+  width: 100%;
+  height: 4.5px;
+  background: #28D5CB;
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
+}
+#partnerOmnix-new h5 {
+  color: #14225C;
+  font-size: 20px;
+  line-height: 25.5px;
+  margin-bottom: 20px;
+  max-width: 450px;
+}
+#partnerOmnix-new p {
+  color: #14225C;
+  font-size: 15.5px;
+  line-height: 23.5px;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+}
+#partnerOmnix-new a.btn-blue {
+  background: #141c52;
+  color: #fff;
+  min-width: 225px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+#partnerOmnix-new a.btn-blue:hover {
+  background:#F3F183 ;
+  color: #141c52;
+}
+#partnerOmnix-new .imagebox {
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  #partnerOmnix-new div.infobox {
+    text-align: center;
+  }
+  #partnerOmnix-new h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #partnerOmnix-new h5 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #partnerOmnix-new .imagebox {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #partnerOmnix-new h2 {
+    font-size: 33.5px;
+    margin-bottom: 35px;
+    line-height: 45px;
+  }
+}

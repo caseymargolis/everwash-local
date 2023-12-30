@@ -262,10 +262,31 @@
         </div>
       </div>
     </div>
-  </section>    
+  </section>
+
+  <!-- OmniX -->
+  <section id="partnerOmnix-new">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="infobox">
+            <h2>Know your <span>customers</span> like you know yourself</h2>
+            <h5>Automate many of the tasks associated with managing a car wash.</h5>
+            <p>Your customers deserve more than just a good wash experience. Your customers deserve the best possible experience.
+              Completely managed by our platform, you can predict outcomes better and ensure your business is running at its best.
+            </p>
+            <a href="/wash-owners/wash-analytics.html" class="btn btn-blue">Learn More</a>
+          </div>  
+        </div>
+        <div class="col-lg-6">
+          <div class="imagebox">
+            <img src="/img/new-update/know-customers.png" alt="Car Wash analytics using cameras" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>    
 </main>
 
-{% include 'partner-nav.njk' %}
 <main
   id="partnerMain">
   <!-- Hero -->
@@ -286,7 +307,7 @@
       </div>
     </section>
     {# Rotating Carousel #}
-    <section id="partnerCarouselSection">
+    <section id="partnerCarouselSection" style="display:none;">
       <div class="container">
         <div id="partnerCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -340,7 +361,7 @@
       </div>
     </section>
     <!-- What EverWash Does -->
-    <section id="partnerOffers">
+    <section id="partnerOffers" style="display:none;">
       <div class="container">
         <h2>It’s all here for you to
           <span class="gradient-text-01">keep growing</span>
@@ -538,7 +559,7 @@
     </div>
   </section>
   <!-- How EverWash Markets Car Washes -->
-  <section id="partnerMarketing">
+  <section id="partnerMarketing" style="display:none;">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -554,7 +575,7 @@
     </div>
   </section>
   <!-- OmniX -->
-  <section id="partnerOmnix">
+  <section id="partnerOmnix" style="display: none;">
     <div class="container">
       <h2>Know your customers like you know yourself</h2>
       <div class="row">
@@ -571,7 +592,7 @@
       </div>
     </section>
     <!-- Distributors -->
-    <section id="partnerDistributors">
+    <section id="partnerDistributors" style="display:none;">
       <div class="container">
         <h2>We’re thankful to work with amazing partners</h2>
         <p>EverWash reaches millions of consumers to washes like yours through exclusive partnerships with
@@ -680,7 +701,7 @@
       </div>
     </section>
     <!-- News -->
-    <section id="partnerNews">
+    <section id="partnerNews" style="display:none;">
       <div class="container">
         <div class="row">
           <div class="col-lg-12" id="partnerNewsHeading">
@@ -700,10 +721,9 @@
       </div>
     </div>
   </section>
-  <!-- Common Questions -->
-  {% include 'wash-owner-faq.njk' %}
+
   <!-- CTA -->
-  <section id="partnerCTA">
+  <section id="partnerCTA" style="display:none;">
     <div class="container">
       <div class="col-lg-12" id="partnerFormCol">
         <div class="form-container">
