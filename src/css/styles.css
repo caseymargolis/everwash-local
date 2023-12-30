@@ -7537,6 +7537,9 @@ section#partnerMembershipsuccess {
   font-size: 17.5px;
   line-height: 25px;
   font-weight: bold;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #partnerMembershipsuccess .infobox hr {
   background: #141C52;
@@ -7571,4 +7574,19 @@ section#partnerMembershipsuccess {
 }
 #partnerMembershipsuccess .infobox.col_3 {
   background: #FFFEBC;
+}
+@media only screen and (max-width: 991px) {
+  #partnerMembershipsuccess h2 {
+    margin-bottom: 15px;
+  }
+  #partnerMembershipsuccess .infobox {
+    min-height: max-content;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #partnerMembershipsuccess h2 {
+    font-size: 30px;
+    line-height: 38.5px;
+  }
 }  
