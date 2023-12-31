@@ -7349,11 +7349,14 @@ section#partnerReviews-new {
   padding-left:45px;
   padding-right: 45px; 
 }
-#partnerReviews-new .video-items {
+#partnerReviews-new #owl-carousel-video {
   margin-top: 50px;
 }
 #partnerReviews-new .owl-carousel .item-video {
   height: 300px;
+}
+#partnerReviews-new .owl-carousel .item-video iframe {
+  height: calc(300px - 20px);
 }
 #partnerReviews-new .item-video .owl-video-wrapper {
   border-radius: 15px;
@@ -7399,6 +7402,15 @@ section#partnerReviews-new {
   outline: none !important;
 }
 @media only screen and (min-width: 1000px) {
+  #partnerReviews-new #owl-carousel-video .owl-video-play-icon {
+    display: none; 
+  }
+  #partnerReviews-new #owl-carousel-video .owl-item.active[data-number="2"] .owl-video-play-icon {
+    display: block; 
+  }
+  #partnerReviews-new #owl-carousel-video .owl-video-play-icon.hide {
+    display: none !important; 
+  }
   #partnerReviews-new .owl-item.active[data-number="1"] .item-video, #partnerReviews-new .owl-item.active[data-number="3"] .item-video {
     perspective:400px;
     transform: scale(0.85);

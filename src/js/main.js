@@ -869,56 +869,47 @@ window.addEventListener("beforeunload", function(event) {
 
 // Owl Carousel
 $(function() {
-  var owl = $(".owl-carousel");
-  owl.owlCarousel({
+  $('#owl-carousel-infobox').owlCarousel({
     margin: 15,
     loop: true,
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
-            nav:true
         },
         600:{
             items:2,
-            nav:false
         },
         1000:{
             items:3,
-            nav:true,
-            loop:false
         }
     }
   });
-});
 
-$(function() {
-  $('.owl-carousel.video-items').owlCarousel({
+  $('#owl-carousel-video').owlCarousel({
+    items: 1,
     merge:true,
     loop:true,
-    margin:20,
+    margin:10,
     video:true,
     lazyLoad:true,
     center:true,
-    responsive:{
-      0:{
-          items:1,
-          nav:true
+    responsive: {
+      320: {
+        items: 1,
+        nav: true
       },
-      600:{
-          items:2,
-          nav:false
+      560: {
+        items: 2,
+        nav: true
       },
-      1000:{
-          items:3,
-          nav:true,
-          loop:false
+      992: {
+        items: 3,
+        nav: true
       }
     }
   });
-});
-
-$(function() {
+  
   setInterval(function () {
     var i = 1;
     $('#partnerReviews-new .owl-stage .owl-item').each(function(){
@@ -927,6 +918,11 @@ $(function() {
         i = i + 1;
       } else {
         $(this).attr('data-number', 0);
+      }
+
+      var iframe_check = $(this).find('.item-video .owl-video-wrapper iframe').length;
+      if(iframe_check) {
+        $(this).find('.item-video .owl-video-wrapper .owl-video-play-icon').addClass('hide');
       }
     });
   }, 300);
