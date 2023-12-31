@@ -877,7 +877,7 @@ $(function() {
         0:{
             items:1,
         },
-        600:{
+        768:{
             items:2,
         },
         1000:{
@@ -895,15 +895,15 @@ $(function() {
     lazyLoad:true,
     center:true,
     responsive: {
-      320: {
+      0: {
         items: 1,
         nav: true
       },
-      560: {
+      768: {
         items: 2,
         nav: true
       },
-      992: {
+      1000: {
         items: 3,
         nav: true
       }
