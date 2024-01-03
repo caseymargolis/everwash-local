@@ -872,7 +872,7 @@ window.addEventListener("beforeunload", function(event) {
 // Owl Carousel
 $(function() {
   $('#owl-carousel-infobox').owlCarousel({
-    margin: 15,
+    margin: 5,
     loop: true,
     responsiveClass:true,
     autoplay:true,
