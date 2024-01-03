@@ -914,6 +914,7 @@ button.navbar-toggler {
   width: 215px;
   padding: 0 3.5rem;
   border-left: 1px solid var(--gray-300);
+  margin-bottom: 0!important;
 }
 #homeStats .stats-container h2:first-child {
   border-left: none;
@@ -7416,14 +7417,14 @@ section#partnerReviews-new {
     transform: scale(0.85);
   }
   #partnerReviews-new .owl-item.active[data-number="1"] .item-video .owl-video-wrapper {
-    animation: y-axis-animation 1000s ease-in-out 0s infinite;
+    animation: y-axis-animation 10000s ease-in-out 0s infinite;
   }
   @keyframes y-axis-animation {
     from {transform: rotateY(20deg);}
     to {transform: rotateY(-20deg);}
   }
   #partnerReviews-new .owl-item.active[data-number="3"] .item-video .owl-video-wrapper {
-    animation: y-axis-animation1 1000s ease-in-out 0s infinite;
+    animation: y-axis-animation1 10000s ease-in-out 0s infinite;
   }
   @keyframes y-axis-animation1 {
     from {transform: rotateY(-20deg);}
