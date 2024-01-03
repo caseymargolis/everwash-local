@@ -868,12 +868,16 @@ window.addEventListener("beforeunload", function(event) {
 });
 
 
+
 // Owl Carousel
 $(function() {
   $('#owl-carousel-infobox').owlCarousel({
     margin: 15,
     loop: true,
     responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1,
