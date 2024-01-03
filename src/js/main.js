@@ -285,6 +285,7 @@ function addTopBar() {
         color: white;
         text-align: center;
         padding: 10px;
+        display: none !important;
       }
       .text-part1, .text-part2 {
         color: white;
