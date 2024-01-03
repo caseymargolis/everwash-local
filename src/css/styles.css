@@ -6867,7 +6867,7 @@ section#homeHero-new {
 #homeHero-new div.col-sm-4 {
   background: #9AAAEB;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   flex: 0 0 40%;
   max-width: 40%;
