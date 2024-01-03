@@ -7205,6 +7205,14 @@ section#partnerIndustry {
   align-items: center;
   text-align: center;
 }
+#partnerIndustry div.owl-item {
+  padding: 10px;
+}
+#partnerIndustry div.carousel-shadow {
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
+  box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
+}
 #partnerIndustry div.item img {
   max-height: 50px;
   max-width: 50px;
