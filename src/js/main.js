@@ -914,6 +914,12 @@ $(function() {
       }
     }
   });
+
+  $('#owl-carousel-video div.owl-item').each(function(){
+    var poster_img = $(this).find('.owl-video-wrapper .owl-video-tn').attr('srctype');
+    console.log(poster_img);
+    $(this).find('.owl-video-wrapper').css('background-image', 'url(https:' + poster_img + ')');
+  });
   
   setInterval(function () {
     var i = 1;

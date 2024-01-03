@@ -7370,6 +7370,8 @@ section#partnerReviews-new {
 #partnerReviews-new .item-video .owl-video-wrapper {
   border-radius: 15px;
   border: solid 10px #28D5CB;
+  background-size: cover;
+  background-position: center;
 }
 #partnerReviews-new .owl-carousel .owl-dots button.owl-dot {
   margin-top: 30px;
