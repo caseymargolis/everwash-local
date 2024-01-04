@@ -138,7 +138,7 @@
               action="/wash-owners-success.html"
               netlify
               netlify-honeypot="bot-field">
-              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Form Submission"/>
               <input type="hidden" name="formName" value="Wash Owner Form" aria-hidden="true"/>
               {% include 'wash-owner-form.njk' %}
             </form>
@@ -313,14 +313,14 @@
             <strong>Excel at Membership with EverWash!</strong>
           </p>
           <form
-            id="washOwnerForm"
-            name="Wash Owner Form"
+            id="washOwnerPopup"
+            name="Wash Owner Popup Form"
             method="POST"
             action="/wash-owners-success.html"
             netlify
             netlify-honeypot="bot-field">
-            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
-            <input type="hidden" name="formName" value="Wash Owner Form" aria-hidden="true"/>
+            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Popup Form Submission"/>
+            <input type="hidden" name="formName" value="Wash Owner Popup Form" aria-hidden="true"/>
             {% include 'wash-owner-form.njk' %}
           </form>
         </div>
