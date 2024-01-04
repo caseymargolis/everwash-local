@@ -7733,10 +7733,13 @@ section#partnerOmnix-new {
   margin-bottom: 25px;
 }
  #excelmembershipModal .form-container h4 {
-  font-size: 19.5px;
+  font-size: 20.5px;
 }
 #excelmembershipModal .form-container p {
   font-size: 13.5px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #excelmembershipModal .form-container p.disclaimer {
   font-size: 8.5px;

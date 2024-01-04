@@ -876,7 +876,7 @@ $(function() {
     loop: true,
     responsiveClass:true,
     autoplay:true,
-    autoplayTimeout:1500,
+    autoplayTimeout:3500,
     autoplayHoverPause:true,
     responsive:{
         0:{
