@@ -22,6 +22,11 @@ const calculator = {
     console.log(calculator);
     if (calculator.validateFields() === true) {
       calculator.calculate();
+
+      // After 2.5s, form popup display
+      setTimeout(function() {
+        $('#excelFormview').click();
+      }, 2500);
     }
     return false;
   },
@@ -195,6 +200,4 @@ function countUpRevenue(element, target) {
     }
   };
   updateCount();
-  
-  $('#excelFormview').click();
 }
