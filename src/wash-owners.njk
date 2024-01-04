@@ -61,6 +61,7 @@
                 placeholder="Annual Revenue"/>
             </div>
             <button class="btn btn-accent btn-large" id="btnSubmit">Estimate Earnings</button>
+            <button style="display: none;" id ="excelFormview" data-toggle="modal" data-target="#excelmembershipModal">Form View</button>
           </form>
         </div>
         <div class="col-lg-1"></div>
@@ -292,6 +293,41 @@
       </div>
     </section>    
 </main>
+
+<!-- Excel Membership With EverWash Form -->
+<div class="modal fade" id="excelmembershipModal" tabindex="-1" aria-label="Excel Membership With EverWash Form" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fal fa-times"></i>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-container">
+          <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+          <h4>Excel at Membership with EverWash</h4>
+          <p>
+            Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+          </p>
+          <form
+            id="washOwnerForm"
+            name="Wash Owner Form"
+            method="POST"
+            action="/wash-owners-success.html"
+            netlify
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+            <input type="hidden" name="formName" value="Wash Owner Form" aria-hidden="true"/>
+            {% include 'wash-owner-form.njk' %}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <main
   id="partnerMain">

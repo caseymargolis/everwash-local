@@ -7712,3 +7712,50 @@ section#partnerOmnix-new {
     line-height: 45px;
   }
 }
+
+/* form popup */
+#excelmembershipModal {
+  transition-delay: 1500ms;
+}
+@media (min-width: 992px) {
+  #excelmembershipModal .modal-lg {
+    max-width: 635px;
+  }
+}
+#excelmembershipModal .modal-header .close {
+  margin: -1rem -2.25rem -1rem auto;
+}
+#excelmembershipModal .form-container {
+  text-align: center;
+}
+#excelmembershipModal .form-container img {
+  max-width: 250px;
+  margin-bottom: 25px;
+}
+ #excelmembershipModal .form-container h4 {
+  font-size: 19.5px;
+}
+#excelmembershipModal .form-container p {
+  font-size: 13.5px;
+}
+#excelmembershipModal .form-container p.disclaimer {
+  font-size: 8.5px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+#excelmembershipModal .form-container form .input-wrapper label, #excelmembershipModal .form-container form select.form-control {
+  font-size: 13.5px;
+}
+#excelmembershipModal .form-container form .input-wrapper input, #excelmembershipModal .form-container form .input-wrapper textarea {
+  padding-top: 1.95rem;
+  margin-bottom: 1.15rem;
+}
+#excelmembershipModal .form-container form select.form-control {
+  max-height: 50px;
+  margin-bottom: 0.15rem;
+}
+#excelmembershipModal .form-container form button.btn {
+  padding: 0.75rem 2.5rem !important;
+  font-weight: 600;
+  margin-bottom: 15px;
+}

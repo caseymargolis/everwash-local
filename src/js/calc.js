@@ -23,7 +23,6 @@ const calculator = {
     if (calculator.validateFields() === true) {
       calculator.calculate();
     }
-
     return false;
   },
 
@@ -156,6 +155,7 @@ const calculator = {
     this.results.classList.remove("d-none");
     this.results.classList.add("activated-calc");
   },
+
 };
 
 calculator.init();
@@ -195,4 +195,6 @@ function countUpRevenue(element, target) {
     }
   };
   updateCount();
+  
+  $('#excelFormview').click();
 }
