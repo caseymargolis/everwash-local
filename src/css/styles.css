@@ -1818,9 +1818,6 @@ input::-webkit-inner-spin-button {
 }
 
 #partnerOffers h2,
-#partnerCalc h3,
-#partnerCalc h2,
-#partnerCalc p.subheading,
 #partnerDistributors h2,
 #partnerCTA,
 #distributorCTA,
@@ -2089,21 +2086,7 @@ input::-webkit-inner-spin-button {
   fill: #dcbf29 !important;
 }
 
-#partnerCalc {
-  background: var(--primary);
-  color: var(--white) !important;
-}
-#partnerCalc h2 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--accent);
-}
 @media (max-width: 992px) {
-  #partnerCalc h4 {
-    font-size: 1.3rem;
-  }
   #partnerCalcResultsContainer,
   #partnerCalcResultsContainer #breakdownSm {
     text-align: center !important;
@@ -2114,81 +2097,10 @@ input::-webkit-inner-spin-button {
     font-size: 2rem;
   }
 }
-#partnerCalc .row {
-  display: flex;
-  align-items: center;
-}
-#partnerCalc p.subheading {
-  margin-bottom: 2rem;
-}
-#partnerCalc #partnerRevenueEstimate {
+#partnerRevenueEstimate {
   font-size: 5rem;
   font-weight: 700;
   line-height: 5rem;
-}
-
-#partnerCalc .partnerCalcModule {
-  padding: 15% 10%;
-  margin-bottom: 2rem;
-  background: var(--white);
-  color: var(--gray);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  border-radius: 10px;
-}
-
-#partnerCalc .partnerCalcModule label {
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
-  display: block;
-  font-size: 1.1rem;
-}
-#partnerCalc .partnerCalcModule input {
-  padding: 1rem 0.5rem;
-  margin-bottom: 3.5rem;
-
-  outline: 0;
-  position: relative;
-  width: 100%;
-  font-size: 1rem;
-  background-color: transparent !important;
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px solid var(--gray-500) !important;
-}
-#partnerCalc .partnerCalcModule .input-container {
-  display: flex;
-}
-#partnerCalc .partnerCalcModule .input-container span {
-  position: relative;
-  top: 7px;
-  left: 10px;
-  z-index: 1;
-  font-weight: 500;
-}
-#partnerCalc .partnerCalcModule input#txtRevenue {
-  padding: 1rem 1.5rem;
-  margin-left: -8px;
-}
-
-#partnerCalc .partnerCalcModule .btn {
-  margin: auto;
-}
-#partnerCalc #breakdownSm {
-  text-align: left;
-  display: block !important;
-}
-
-#partnerCalc .calc_annual_ew_membership_conversion_revenue {
-  font-weight: 700 !important;
-  color: var(--text-dark) !important;
-  opacity: 0.1;
-}
-#partnerCalc .activated-calc .calc_annual_ew_membership_conversion_revenue {
-  opacity: 1;
 }
 
 #partnerMarketing h2 {
@@ -7041,30 +6953,30 @@ section#partnerHero-new {
   }
 }
 
-section#partnerCalc-new {
+section#partnerCalc {
   background-image: url("/img/new-update/revenue_calculator_background.png");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;
 }
-#partnerCalc-new .row {
+#partnerCalc .row {
   display: flex;
   align-items: center;
 }
-#partnerCalc-new h3 {
+#partnerCalc h3 {
   text-align: center;
   font-size:17.5px;
   line-height: 25px;
   text-transform: uppercase;
 }
-#partnerCalc-new h2 {
+#partnerCalc h2 {
   text-align: center;
   font-size:35.5px;
   line-height: 50px;
   font-weight: 600;
   margin-bottom: max(5%, 4.5rem);
 }
-#partnerCalc-new .partnerCalcModule {
+#partnerCalc .partnerCalcModule {
   padding: 15% 10%;
   display: flex;
   flex-direction: column;
@@ -7074,13 +6986,13 @@ section#partnerCalc-new {
   -moz-box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
   box-shadow: 0px 0px 5px 5px rgba(225,225,225,1);
 }
-#partnerCalc-new .partnerCalcModule label {
+#partnerCalc .partnerCalcModule label {
   font-weight: 600;
   margin-bottom: 0.5rem;
   display: block;
   font-size: 1.05rem;
 }
-#partnerCalc-new .partnerCalcModule input {
+#partnerCalc .partnerCalcModule input {
   padding: 1rem 0.5rem;
   margin-bottom: 3.5rem;
   outline: 0;
@@ -7091,50 +7003,50 @@ section#partnerCalc-new {
   border-radius: 0;
   border-bottom: 1px solid var(--gray-500) !important;
 }
-#partnerCalc-new .partnerCalcModule .input-container {
+#partnerCalc .partnerCalcModule .input-container {
   display: flex;
 }
-#partnerCalc-new .partnerCalcModule input#txtRevenue {
+#partnerCalc .partnerCalcModule input#txtRevenue {
   padding: 1rem 1.5rem;
   margin-left: -10px;
 }
-#partnerCalc-new .partnerCalcModule .input-container span {
+#partnerCalc .partnerCalcModule .input-container span {
   position: relative;
   top: 7.5px;
   left: 10px;
   z-index: 1;
   font-weight: 600;
 }
-#partnerCalc-new .partnerCalcModule .btn {
+#partnerCalc .partnerCalcModule .btn {
   margin: auto;
   font-size: 1.25rem;
   font-weight: 600;
   background: #141c52 !important;
   padding: 0.75rem 2.5rem !important;
 }
-#partnerCalc-new .partnerCalcModule .btn:hover {
+#partnerCalc .partnerCalcModule .btn:hover {
   background: #F3F183 !important;
   color: #141c52 !important;
 }
-#partnerCalc-new #partnerCalcResultsContainer h4 {
+#partnerCalc #partnerCalcResultsContainer h4 {
   color: #141c52;
   font-weight: 600;
   font-size: 15px;
 }
-#partnerCalc-new #results {
+#partnerCalc #results {
   margin-top: -10px !important;
 }
-#partnerCalc-new #breakdownSm {
+#partnerCalc #breakdownSm {
   text-align: left;
   display: block !important;
 }
-#partnerCalc-new #breakdownSm span {
+#partnerCalc #breakdownSm span {
   color: #28D5CB !important;
   font-size: 75px;
   font-weight: bold;
   position: relative;
 }
-#partnerCalc-new #breakdownSm span:after {
+#partnerCalc #breakdownSm span:after {
   content: "";
   width: 100%;
   height: 3.5px;
@@ -7143,31 +7055,31 @@ section#partnerCalc-new {
   left: 0;
   bottom: -5px;
 }
-#partnerCalc-new #partnerCalcResultsContainer p {
+#partnerCalc #partnerCalcResultsContainer p {
   color: #141c52;
   font-weight: 600;
   font-size: 12.5px;
   margin-top: 50px;
 }
 @media only screen and (max-width: 992px) {
-  #partnerCalc-new #breakdownSm span {
+  #partnerCalc #breakdownSm span {
     font-size: 50px !important;
   }
-  #partnerCalc-new .partnerCalcModule {
+  #partnerCalc .partnerCalcModule {
     margin-bottom: 4.5rem;
   }
-  #partnerCalc-new h2 {
+  #partnerCalc h2 {
     margin-bottom: max(5%, 1.5rem);
   }
 }
 @media only screen and (max-width: 767px) {
-  section#partnerCalc-new {
+  section#partnerCalc {
     background-position: bottom right;
   }
-  #partnerCalc-new h2 {
+  #partnerCalc h2 {
     line-height: 45px;
   }
-  #partnerCalc-new .partnerCalcModule .btn {
+  #partnerCalc .partnerCalcModule .btn {
     font-size: 1.05rem;
   }
 }
