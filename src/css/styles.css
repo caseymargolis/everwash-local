@@ -7807,7 +7807,7 @@ section#partnerOmnix-new {
   padding: 0.75rem 2.5rem !important;
   font-weight: 600;
 }
-#omnixModal #omnixModalHeader .header-content {
+#omnixModalHeader .header-content {
   display: flex;
   width: 100%;
   justify-content: end;
