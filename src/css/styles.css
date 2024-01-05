@@ -7765,3 +7765,50 @@ section#partnerOmnix-new {
   font-weight: 600;
   margin-bottom: 15px;
 }
+
+/* Standard form style */
+#standard-form {
+  text-align: center;
+  margin-top: -10px;
+}
+#standard-form img {
+  min-width: 175px !important;
+  margin-bottom: 20px !important;
+}
+#standard-form h5 {
+  font-size: 17.5px !important;
+  margin-bottom: 0.75rem !important;
+}
+#standard-form p {
+  font-size: 13.5px !important;
+  max-width: 450px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  line-height: 1.35em;
+}
+#standard-form p.disclaimer {
+  font-size: 8.5px !important;
+  margin-top: 15px !important;
+  margin-bottom: 20px !important;
+  text-align: center;
+}
+#standard-form .input-wrapper label, #standard-form select.form-control {
+  font-size: 13.5px;
+}
+#standard-form .input-wrapper input, #standard-form .input-wrapper textarea {
+  padding-top: 1.95rem;
+  margin-bottom: 1.15rem;
+}
+#standard-form select.form-control {
+  max-height: 50px;
+  margin-bottom: 0.15rem;
+}
+#standard-form button.btn {
+  padding: 0.75rem 2.5rem !important;
+  font-weight: 600;
+}
+#omnixModal #omnixModalHeader .header-content {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
