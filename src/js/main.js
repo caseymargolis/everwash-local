@@ -922,7 +922,7 @@ $(function() {
   
   setInterval(function () {
     var i = 1;
-    $('#partnerReviews-new .owl-stage .owl-item').each(function(){
+    $('#partnerReviews .owl-stage .owl-item').each(function(){
       if($(this).hasClass('active')) {
         $(this).attr('data-number', i);
         i = i + 1;
