@@ -1763,11 +1763,6 @@ input::-webkit-inner-spin-button {
     padding-left: 25px;
     padding-right: 25px;
   }
-  #partnerHero .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   #membersMain h2,
   #membersMain h3 {
     font-size: 2rem;
@@ -1824,51 +1819,6 @@ input::-webkit-inner-spin-button {
 #whitePaperCTA,
 #caseStudyCTA {
   text-align: center;
-}
-
-#partnerHero {
-  padding-top: max(2%, 5rem) !important;
-  padding-bottom: max(2%, 5rem) !important;
-  color: var(--white);
-  position: relative;
-  background-image: linear-gradient(
-      rgba(var(--rgb-primary), 0.5),
-      rgba(var(--rgb-primary), 0.5)
-    ),
-    url("/img/Street_Map_Dark_RGB_No_Locations.png");
-  background-size: cover;
-}
-@media (min-width: 1400px) {
-  #partnerHero .container {
-    max-width: 1400px;
-  }
-}
-
-#partnerHeroHeading {
-  max-width: 600px;
-  margin: auto;
-}
-#partnerHero .gradient-text-01 {
-  position: relative;
-}
-
-#partnerHero img {
-  border-radius: 10px;
-  width: 600px;
-  max-width: 100%;
-  margin: 3rem auto;
-}
-#partnerHero form input,
-#partnerHero form select {
-  background: var(--gray-100);
-  border: none;
-  margin-bottom: 1.2rem;
-}
-
-#partnerHero p {
-  font-weight: 500;
-  margin-bottom: 1.75rem;
-  font-size: 1.25rem;
 }
 
 #partnerCarouselSection .container,
@@ -1967,10 +1917,6 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 992px) {
-  #partnerHero img {
-    position: relative;
-    left: -7%;
-  }
   #partnerCarousel .carousel-card::after {
     top: 0;
   }
@@ -2505,7 +2451,7 @@ input::-webkit-inner-spin-button {
 *********** GET STARTED SECTION *************
 *************************************/
 #ewGetStarted {
-  background: url(../img/cta-bg-2.png);
+  background: url(../img/new-update/cta-bg-2_update.png);
   background-position: left;
   background-repeat: no-repeat;
   padding: 10% 0;
@@ -6835,18 +6781,18 @@ section#homeHero-new {
 }
 
 /* Wash Owners New Page Custom CSS */
-section#partnerHero-new {
+section#partnerHero {
   padding: 0!important;
 }
-#partnerHero-new .container {
+#partnerHero .container {
   max-width: 100%;
   padding: 0!important;
 }
-#partnerHero-new .row {
+#partnerHero .row {
   align-items: stretch;
   margin: 0 !important;
 }
-#partnerHero-new div.col-sm-8 {
+#partnerHero div.col-sm-8 {
   background-image: url("/img/new-update/wash_owner_banner_background.png");
   background-position: center left;
   background-repeat: no-repeat;
@@ -6858,7 +6804,7 @@ section#partnerHero-new {
   align-items: center;
   justify-content: center;
 }
-#partnerHero-new div.col-sm-8 h4 {
+#partnerHero div.col-sm-8 h4 {
   color: #28D5CB;
   font-size: 25px;
   font-weight: bold;
@@ -6866,7 +6812,7 @@ section#partnerHero-new {
   width: max-content;
   margin-bottom: 45px;
 }
-#partnerHero-new div.col-sm-8 h4:after {
+#partnerHero div.col-sm-8 h4:after {
   content: "";
   width: 100%;
   height: 2.5px;
@@ -6875,7 +6821,7 @@ section#partnerHero-new {
   left: 0;
   bottom: -3.5px;
 }
-#partnerHero-new div.col-sm-8 h1 {
+#partnerHero div.col-sm-8 h1 {
   color: #FFF;
   font-size: 60px;
   font-weight: 600;
@@ -6883,21 +6829,21 @@ section#partnerHero-new {
   line-height: 1.15em;
   margin-bottom: 50px;
 }
-#partnerHero-new div.col-sm-8 h1 span {
+#partnerHero div.col-sm-8 h1 span {
   color: #28D5CB;
   font-weight: bold;
 }
-#partnerHero-new div.col-sm-8 P {
+#partnerHero div.col-sm-8 P {
   color: #FFFFFF;
   font-size: 20px;
   line-height: 30px;
   max-width: 500px;
   font-weight: 600;
 }
-#partnerHero-new div.col-sm-8 P span {
+#partnerHero div.col-sm-8 P span {
   color: #28D5CB;
 }
-#partnerHero-new div.col-sm-4 {
+#partnerHero div.col-sm-4 {
   background: #F3F183;
   display: flex;
   align-items: center;
@@ -6907,17 +6853,17 @@ section#partnerHero-new {
   padding: 10% 5%;
   text-align: center; 
 }
-#partnerHero-new div.col-sm-4 img {
+#partnerHero div.col-sm-4 img {
   margin-left: -30px;
 }
-#partnerHero-new div.col-sm-4 h6 {
+#partnerHero div.col-sm-4 h6 {
   color: #141c52;
   font-size: 20px;
   margin-top: 45px;
   margin-bottom: 15px;
   font-weight: 600;
 }
-#partnerHero-new div.col-sm-4 a.btn-blue {
+#partnerHero div.col-sm-4 a.btn-blue {
   background: #141c52;
   color: #fff;
   min-width: 200px;
@@ -6925,11 +6871,11 @@ section#partnerHero-new {
   font-weight: 600;
   line-height: 1.25em;
 }
-#partnerHero-new div.col-sm-4 a.btn-blue:hover {
+#partnerHero div.col-sm-4 a.btn-blue:hover {
   background:#fff ;
   color: #141c52;
 }
-#partnerHero-new div.col-sm-4 p {
+#partnerHero div.col-sm-4 p {
   color: #141c52;
   font-size: 17.5px;
   line-height: 25px;
@@ -6940,12 +6886,12 @@ section#partnerHero-new {
   margin-top: 20px;
 }
 @media only screen and (max-width: 999px) {
-  #partnerHero-new div.col-sm-8 h1 {
+  #partnerHero div.col-sm-8 h1 {
     font-size: 45px;
   }
 }
 @media only screen and (max-width: 767px) {
-  #partnerHero-new div.col-sm-8, #partnerHero-new div.col-sm-4 {
+  #partnerHero div.col-sm-8, #partnerHero div.col-sm-4 {
     flex: none;
     max-width: 100%;
     display: block;
