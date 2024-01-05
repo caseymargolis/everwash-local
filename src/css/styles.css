@@ -2598,6 +2598,14 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   padding: 10% 0;
 }
+#ewGetStarted a.btn-blue {
+  background: #141c52;
+  color: #fff;
+}
+#ewGetStarted a.btn-blue:hover {
+  background: #fcfa6c;
+  color: #141c52;
+}
 
 /************************************ 
 *********** OMNI-X *************
