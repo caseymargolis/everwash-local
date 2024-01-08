@@ -4341,7 +4341,13 @@ footer #footerBottom p {
 *********** MEDIA QUERIES*************
 *************************************/
 /* Large Laptop */
-@media (max-width: 1440px) {
+@media (max-width: 1315px) and (min-width: 1200px) {
+  .navbar ul li {
+    padding: 0 0.5rem;
+  }
+  .navbar ul li a.nav-link {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 1200px) {
