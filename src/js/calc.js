@@ -92,8 +92,7 @@ const calculator = {
   calculate: function () {
     const washes = Number(document.getElementById("txtCount").value);
     const revenue = Number(document.getElementById("txtRevenue").value);
-    const revenue_1 = locale.atof(revenue);
-    console.log(revenue_1);
+    console.log(revenue);
     const averageWashAmount = 4;
     const membershipMultiplier = 2;
     const averageWashPrice = revenue / washes;
