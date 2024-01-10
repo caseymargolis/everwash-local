@@ -951,6 +951,7 @@ function submitpopupForm() {
   .then(response => response.json())
   .then(data => {
     // Handle the response data
+    console.log('Success!!!')
     window.location.href = "../wash-owners/wash-owners-success#partnerCalc"; 
   })
   .catch(error => {
