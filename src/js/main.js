@@ -944,7 +944,7 @@ function submitpopupForm() {
   var popupform = document.getElementById('washOwnerPopup');
   var popupformData = new FormData(popupform);
 
-  fetch('http://go.everwash.com/l/996891/2024-01-05/zf7r', {
+  fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
     method: 'POST',
     body: popupformData
   })
