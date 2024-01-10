@@ -941,21 +941,8 @@ $(function() {
 
 // popup form submit and redirect to self
 function submitpopupForm() {
-  var popupform = document.getElementById('washOwnerPopup');
-  var popupformData = new FormData(popupform);
-
-  fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
-    method: 'POST',
-    body: popupformData
-  })
-  .then(response => response.json())
-  .then(data => {
-    // Handle the response data
-    console.log('Success!!!');
-    window.location.href = "../wash-owners/wash-owners-success#partnerCalc"; 
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+  window.location.href = "../wash-owners/wash-owners-success#partnerCalc";
+  // Return false to prevent the default form submission behavior
+  return false;
 }
 
