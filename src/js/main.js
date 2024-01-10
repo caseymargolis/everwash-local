@@ -941,7 +941,7 @@ $(function() {
 
 // popup form submit and redirect to self
 function submitpopupForm() {
-  window.location.href = "../wash-owners/wash-owners-success#partnerCalc";
+  window.location.href = "./wash-owners-success#partnerCalc";
   // Return false to prevent the default form submission behavior
   return false;
 }
