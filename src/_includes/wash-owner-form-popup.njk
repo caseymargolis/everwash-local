@@ -1,0 +1,200 @@
+<div class="bot-field">
+    <label>
+        Don't fill this out if you're human: <input name="bot-field"/>
+    </label>
+</div>
+<div class="input-row">
+    <div class="input-wrapper">
+        <input
+            name="name"
+            id="name"
+            class="form-control"
+            type="text"
+            required="required"
+            placeholder=" "
+            aria-label="Enter your first name"/>
+        <label for="name">First Name</label>
+    </div>
+    <div class="input-wrapper">
+        <input
+            name="last-name"
+            id="lastName"
+            class="form-control"
+            type="text"
+            required="required"
+            placeholder=" "
+            aria-label="Enter your last name"/>
+        <label for="lastNameInput">Last Name</label>
+    </div>
+</div>
+<div class="input-row">
+    <div class="input-wrapper">
+        <input
+            name="email"
+            id="email"
+            class="form-control"
+            type="email"
+            required="required"
+            placeholder=" "
+            aria-label="Enter your email"/>
+        <label for="email">Email</label>
+    </div>
+    <div class="input-wrapper">
+        <input
+            name="phone"
+            id="phone"
+            class="form-control"
+            type="tel"
+            required="required"
+            placeholder=" "
+            aria-label="Enter your phone number"/>
+        <label for="phone">Phone Number</label>
+    </div>
+</div>
+<div class="input-row">
+    <div class="input-wrapper">
+        <input
+            name="car-wash-name"
+            id="carWashName"
+            class="form-control"
+            type="text"
+            required="required"
+            placeholder=" "
+            aria-label="Enter your car wash name"/>
+        <label for="carWashName">Car Wash Name</label>
+    </div>
+    <select class="form-control form-select" name="wash-type" id="" required="required">
+        <option value="" disabled="" selected="">
+            Choose Wash Type
+        </option>
+        <option value="Tunnel">Tunnel</option>
+        <option value="In-Bay Automatic (IBA)">In-Bay Automatic (IBA)</option>
+        <option value="Self-Serve (Stand Alone)">Self-Serve (Stand Alone)</option>
+    </select>
+    <!-- <select class="form-control form-select" name="wash-type" id="" required="required">
+        <option value="" disabled="" selected="">
+            Choose Wash Type
+        </option>
+        <option value="Tunnel - Full Service">
+            Tunnel - Full Service
+        </option>
+        <option value="Tunnel - Express Exterior">
+            Tunnel - Express Exterior
+        </option>
+        <option value="Tunnel - Flex Serve">Tunnel - Flex Serve</option>
+        <option value="Hand Wash">
+            Hand Wash
+        </option>
+        <option value="In-Bay Automatic (IBA)">In-Bay Automatic (IBA)</option>
+        <option value="IBA &amp; Self Serve">
+            IBA &amp; Self-Serve
+        </option>
+        <option value="Self-Serve (Stand Alone)">
+            Self-Serve (Stand Alone)
+        </option>
+    </select> -->
+</div>
+<div class="input-row">
+    <!-- <div class="input-wrapper">
+        <input
+            name="car-wash-address"
+            id="carWashAddress"
+            class="form-control"
+            type="text"
+            required="required"
+            placeholder=" "
+            aria-label="Enter your car wash address, city, &amp; state"/>
+        <label for="carWashAddress">Address, City, & State</label>
+    </div> -->
+    <select class="form-control form-select" name="car-wash-state" id="" required="required">
+        <option value="" disabled="" selected="">Choose State</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="DC">District Of Columbia</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <option value="ID">Idaho</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="IA">Iowa</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="ME">Maine</option>
+        <option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MI">Michigan</option>
+        <option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option>
+        <option value="MO">Missouri</option>
+        <option value="MT">Montana</option>
+        <option value="NE">Nebraska</option>
+        <option value="NV">Nevada</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NM">New Mexico</option>
+        <option value="NY">New York</option>
+        <option value="NC">North Carolina</option>
+        <option value="ND">North Dakota</option>
+        <option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option>
+        <option value="OR">Oregon</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option>
+        <option value="TX">Texas</option>
+        <option value="UT">Utah</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WA">Washington</option>
+        <option value="WV">West Virginia</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WY">Wyoming</option>
+    </select>
+    <div class="input-wrapper">
+        <input
+            name="car-wash-zipcode"
+            id="carWashZipcode"
+            class="form-control"
+            type="number"
+            required="required"
+            value=""
+            placeholder=" "
+            aria-label="Enter your car wash zipcode"/>
+        <label for="carWashZipcode">Zip Code</label>
+    </div>
+</div>
+<!-- <select class="form-control" name="how-you-heard" id="">
+    <option value="" disabled="" selected="">
+        How'd you hear about us?
+    </option>
+    <option value="Trade Show">Trade Show</option>
+    <option value="Magazine Ad">Magazine Ad</option>
+    <option value="Online Search">Online Search</option>
+    <option value="Online Ad">Online Ad</option>
+    <option value="TalkCarWash">
+        TalkCarWash Facebook Group
+    </option>
+    <option value="Cryptopay">Cryptopay</option>
+    <option value="Word of Mouth">Word of Mouth</option>
+    <option value="Other">Other</option>
+</select> -->
+<p class="disclaimer">
+    * This form is specifically for Car Wash Owners who wish to contact EverWash about setting up a membership program at
+    their location. If you are a current EverWash member looking for customer support, please contact our Member Support
+    Team at support@everwash.com or call 215-618-8808 to speak with an agent.
+</p>
+<div class="d-c">
+    <button class="btn btn-accent btn-large" onclick="submitpopupForm()">
+        Submit
+    </button>
+</div>
