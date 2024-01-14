@@ -1,6 +1,7 @@
 
 // Display comfirmation modal on success page load
 window.onload = function () {
+  // document.getElementById("triggerFormConfirmation").click();
   setTimeout(function(){ 
     document.getElementById("triggerFormConfirmation").click();
   }, 1000);
@@ -13,5 +14,5 @@ if ( window.history.replaceState ) {
 
 // Enable tooltips
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
 })
