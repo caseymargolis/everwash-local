@@ -549,9 +549,6 @@ select::-ms-expand {
   }
 }
 @media (max-width: 576px) {
-  #partnerCTA {
-    padding: 0 !important;
-  }
   #partnerCTA .container {
     padding-left: 0;
     padding-right: 0;
