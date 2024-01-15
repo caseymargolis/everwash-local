@@ -946,3 +946,45 @@ $(function() {
 //   return false;
 // }
 
+
+// popup form submit and redirect to self
+document.getElementById('washOwnerPopup').addEventListener('submit', function (event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
+  // Get form data
+  const formData = new FormData(event.target);
+
+  // Send form data to Netlify
+  fetch('/.netlify/functions/submitForm', {
+      method: 'POST',
+      body: formData,
+  })
+  .then(response => response.json())
+  .then(data => {
+      console.log('Netlify Form Submitted:', data);
+
+      // Send form data to external server
+      fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(Object.fromEntries(formData)),
+      })
+      .then(response => response.json())
+      .then(externalServerResponse => {
+          console.log('External Server Response:', externalServerResponse);
+          // Redirect or perform other actions based on the external server response
+      })
+      .catch(error => {
+          console.error('Error submitting to external server:', error);
+          // Handle error accordingly
+      });
+  })
+  .catch(error => {
+      console.error('Error submitting to Netlify:', error);
+      // Handle error accordingly
+  });
+});
+
