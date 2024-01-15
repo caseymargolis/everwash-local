@@ -6,10 +6,6 @@
       max-age=0'''
   Content-Type = "application/json"
   X-Content-Type-Options = "nosniff"
-  
-  Access-Control-Allow-Origin = "*"
-  Access-Control-Allow-Methods = "POST"
-  Access-Control-Allow-Headers = "Content-Type"
 
   [[redirects]]
     from = "/apple-app-site-association"
