@@ -7068,6 +7068,10 @@ section#partnerCTA {
     margin-left: auto;
     margin-right: auto;
   }
+  #partnerCTA div.form-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 section#partnerReviews {
