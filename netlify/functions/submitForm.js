@@ -5,7 +5,7 @@ exports.handler = cors(async function (event, context) {
   try {
     const formData = JSON.parse(event.body);
         // Process the initial form data or perform any additional actions here
-
+    console.log('here is the formdata submitted from frontend', formData);
       // Send additional data to the external server
     const externalServerResponse = await fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
         method: 'POST',
