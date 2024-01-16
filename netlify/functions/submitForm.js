@@ -1,7 +1,5 @@
 // submitForm.js
 import { cors } from '@netlify/functions';
-const fetch = require('node-fetch');
-
 
 exports.handler = cors(async function (event, context) {
   try {
