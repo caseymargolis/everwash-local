@@ -318,9 +318,9 @@
             id="washOwnerPopup"
             name="Wash Owner Popup Form"
             method="POST"
-            action="/netlify/functions/submitForm.js"
-            netlify
-            netlify-honeypot="bot-field">
+            action="/wash-owners-success.html"
+            data-netlify="true" 
+            data-netlify-honeypot="bot-field">
             <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Popup Form Submission"/>
             <input type="hidden" name="formName" value="Wash Owner Popup Form" aria-hidden="true"/>
             {% include 'wash-owner-form.njk' %}

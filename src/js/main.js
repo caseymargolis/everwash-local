@@ -946,3 +946,42 @@ $(function() {
 //   return false;
 // }
 
+document.getElementById('washOwnerPopup').addEventListener('submit', async function (event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
+  // Get form data
+  const formData = new FormData(event.target);
+
+  try {
+    // Send form data to Netlify
+    const netlifyResponse = await fetch('/.netlify/functions/submitForm', {
+      method: 'POST',
+      body: formData,
+    });
+
+    // Check if the Netlify form submission was successful
+    if (netlifyResponse.ok) {
+        // Send additional data to the external server
+      const externalServerResponse = await fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      });
+
+      // Check if the external server request was successful
+      if (externalServerResponse.ok) {
+        console.log('Form submitted successfully to Netlify and external server.');
+        // Optionally redirect or perform other actions
+      } else {
+        console.error('Error submitting to external server:', externalServerResponse.statusText);
+      }
+    } else {
+      console.error('Error submitting to Netlify:', netlifyResponse.statusText);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+});
