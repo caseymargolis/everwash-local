@@ -1,9 +1,9 @@
 [[headers]]
   for = "/apple-app-site-association"
   [headers.values]
-    Access-Control-Allow-Origin = "https://go.everwash.com/l/996891/2024-01-05/zf7r"
-    Access-Control-Allow-Methods = "POST"
-    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Origin: *
+    Access-Control-Allow-Methods: GET, POST, PUT, DELETE
+    Access-Control-Allow-Headers: Content-Type
 
   [[redirects]]
     from = "/apple-app-site-association"
