@@ -1,6 +1,6 @@
 // submitForm.js
 import { cors } from '@netlify/functions';
-
+const fetch = require('node-fetch');
 exports.handler = cors(async function (event, context) {
   try {
     const formData = JSON.parse(event.body);
@@ -21,6 +21,7 @@ exports.handler = cors(async function (event, context) {
         // Optionally redirect or perform other actions
       } else {
         console.error('Error submitting to external server:', externalServerResponse.statusText);
+        throw new Error(`HTTP error! Status: ${externalServerResponse.status}`);
       }
       
 

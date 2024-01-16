@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^2.4.1",
-    "@quasibit/eleventy-plugin-sitemap": "^2.2.0"
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "node-fetch": "^3.3.2"
   }
 }

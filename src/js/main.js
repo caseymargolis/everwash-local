@@ -960,8 +960,6 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
       body: formData,
     });
     console.log('netlify response:', netlifyResponse);
-    const netlifyJson = await netlifyResponse.json();
-    console.log('netlifyJson', netlifyJson);
     // Check if the Netlify form submission was successful
 
   } catch (error) {
