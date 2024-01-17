@@ -971,18 +971,19 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
       body: formData,
     });
 
+    debugger;
+
     // Check if the Netlify form submission was successful
     if (netlifyResponse.ok) {
-
       // Send data to the external server
       // $('#washOwnerPopup-extraaction').trigger( "submit" );
       // Collect form data
-      const formData = new FormData(event.target);
+      //const formData = new FormData(event.target);
   
       // Perform the form submission to the external server
       fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
         method: 'POST',
-        body: formData,
+        body: 'TEST',
       })
         .then(response => {
           if (response.ok) {
