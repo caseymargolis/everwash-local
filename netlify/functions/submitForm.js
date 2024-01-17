@@ -1,7 +1,7 @@
 // submitForm.js
-import { cors } from '@netlify/functions';
+//import { cors } from '@netlify/functions';
 
-exports.handler = cors(async function (event, context) {
+exports.handler = async function (event, context) {
   try {
     // Process the initial form data or perform any additional actions here
     return {
@@ -15,5 +15,5 @@ exports.handler = cors(async function (event, context) {
       body: JSON.stringify({ error: 'Internal server error' }),
     };
   }
-});
+};
   
