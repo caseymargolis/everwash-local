@@ -974,7 +974,7 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     // Check if the Netlify form submission was successful
     if (netlifyResponse.ok) {
       // Send data to the external server
-      $('#washOwnerPopup-extraaction').trigger( "submit" );
+      // $('#washOwnerPopup-extraaction').trigger( "submit" );
       document.getElementById('#washOwnerPopup-extraaction').addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the default form submission
     
