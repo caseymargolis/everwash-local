@@ -939,13 +939,7 @@ $(function() {
 });
 
 
-// popup form submit and redirect to self
-// function submitpopupForm() {
-//   window.location.href = "./wash-owners-success#partnerCalc";
-   // Return false to prevent the default form submission behavior
-//   return false;
-// }
-
+// popup form submit to netlify & extra action link
 document.getElementById('washOwnerPopup').addEventListener('submit', async function (event) {
   // Prevent the default form submission
   event.preventDefault();
@@ -966,6 +960,7 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
   $('#washOwnerPopup-extraaction #car-wash-state').val(carwashstate);
   var carwashzip = $('#washOwnerPopup #carWashZipcode').val();
   $('#washOwnerPopup-extraaction #carWashZipcode').val(carwashzip);
+
   // Get form data
   const formData = new FormData(event.target);
 
@@ -978,7 +973,7 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
 
     // Check if the Netlify form submission was successful
     if (netlifyResponse.ok) {
-      // Send additional data to the external server
+      // Send data to the external server
       $('#washOwnerPopup-extraaction').trigger( "submit" );
     } else {
       console.error('Error submitting to Netlify:', netlifyResponse.statusText);
