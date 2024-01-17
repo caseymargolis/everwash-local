@@ -969,8 +969,9 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     const netlifyResponse = await fetch('/netlify/functions/submitForm', {
       method: 'POST',
       body: formData,
-    })
-      const data = await netlifyResponse.json();
+    });
+
+      const data = await netlifyResponse.text();
       console.log(data);
       debugger;
     
