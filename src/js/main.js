@@ -944,23 +944,6 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
   // Prevent the default form submission
   event.preventDefault();
 
-  var fname = $('#washOwnerPopup #name').val();
-  $('#washOwnerPopup-extraaction #name').val(fname);
-  var lname = $('#washOwnerPopup #lastName').val();
-  $('#washOwnerPopup-extraaction #lastName').val(lname);
-  var washemail = $('#washOwnerPopup #email').val();
-  $('#washOwnerPopup-extraaction #email').val(washemail);
-  var washphone = $('#washOwnerPopup #phone').val();
-  $('#washOwnerPopup-extraaction #phone').val(washphone);
-  var carwashname = $('#washOwnerPopup #carWashName').val();
-  $('#washOwnerPopup-extraaction #carWashName').val(carwashname);
-  var washtype = $('#washOwnerPopup #wash-type').val();
-  $('#washOwnerPopup-extraaction #wash-type').val(washtype);
-  var carwashstate = $('#washOwnerPopup #car-wash-state').val();
-  $('#washOwnerPopup-extraaction #car-wash-state').val(carwashstate);
-  var carwashzip = $('#washOwnerPopup #carWashZipcode').val();
-  $('#washOwnerPopup-extraaction #carWashZipcode').val(carwashzip);
-
   // Get form data
   const formData = new FormData(event.target);
 
@@ -970,45 +953,11 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
       method: 'POST',
       body: formData,
     });
-
-      const data = await netlifyResponse.text();
-      console.log(data);
-      debugger;
-    
-
-    // debugger;
-
-    // // Check if the Netlify form submission was successful
-    // if (netlifyResponse.ok) {
-    //   // Send data to the external server
-    //   // $('#washOwnerPopup-extraaction').trigger( "submit" );
-    //   // Collect form data
-    //   //const formData = new FormData(event.target);
-  
-    //   // Perform the form submission to the external server
-    //   fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
-    //     method: 'POST',
-    //     body: 'TEST',
-    //   })
-    //     .then(response => {
-    //       if (response.ok) {
-    //         // Form submitted successfully, redirect to the success page
-    //         window.location.href = '/wash-owners-success#partnerCalc'; // Replace with your actual success page URL
-    //       } else {
-    //         // Handle the case where the server responds with an error
-    //         console.error('Form submission failed:', response.status, response.statusText);
-    //         // Redirect to an error page or display an error message
-            
-    //       }
-    //     })
-    //     .catch(error => {
-    //       console.error('Error during form submission:', error);
-    //       // Redirect to an error page or display an error message
-          
-    //     });
-    // } else {
-    //   console.error('Error submitting to Netlify:', netlifyResponse.statusText);
-    // }
+    if (netlifyResponse.ok) {
+      console.log('Form Submit Successfully!!!');
+    } else {
+      console.error('Error submitting to Netlify:', netlifyResponse.statusText);
+    }
   } catch (error) {
     console.error('Error:', error);
   }
