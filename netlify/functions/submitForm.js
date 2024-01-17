@@ -4,7 +4,7 @@ import { cors } from '@netlify/functions';
 exports.handler = async function (event, context) {
   try {
     // Process the initial form data or perform any additional actions here
-    //const requestBody = JSON.parse(event.body);
+    const requestBody = JSON.parse(event.body);
     return {
       statusCode: 200,
       body: JSON.stringify({ message: 'success' }),
@@ -13,7 +13,7 @@ exports.handler = async function (event, context) {
     console.error('Error processing form submission:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Internal server error!' }),
+      body: JSON.stringify({ error: error }),
     };
   }
 };
