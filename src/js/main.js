@@ -952,20 +952,20 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
 
   var fname = $('#washOwnerPopup #name').val();
   $('#washOwnerPopup-extraaction #name').val(fname);
-  var fname = $('#washOwnerPopup #lastName').val();
-  $('#washOwnerPopup-extraaction #lastName').val(fname);
-  var fname = $('#washOwnerPopup #email').val();
-  $('#washOwnerPopup-extraaction #email').val(fname);
-  var fname = $('#washOwnerPopup #phone').val();
-  $('#washOwnerPopup-extraaction #phone').val(fname);
-  var fname = $('#washOwnerPopup #carWashName').val();
-  $('#washOwnerPopup-extraaction #carWashName').val(fname);
-  var fname = $('#washOwnerPopup #wash-type').val();
-  $('#washOwnerPopup-extraaction #wash-type').val(fname);
-  var fname = $('#washOwnerPopup #car-wash-state').val();
-  $('#washOwnerPopup-extraaction #car-wash-state').val(fname);
-  var fname = $('#washOwnerPopup #carWashZipcode').val();
-  $('#washOwnerPopup-extraaction #carWashZipcode').val(fname);
+  var lname = $('#washOwnerPopup #lastName').val();
+  $('#washOwnerPopup-extraaction #lastName').val(lname);
+  var washemail = $('#washOwnerPopup #email').val();
+  $('#washOwnerPopup-extraaction #email').val(washemail);
+  var washphone = $('#washOwnerPopup #phone').val();
+  $('#washOwnerPopup-extraaction #phone').val(washphone);
+  var carwashname = $('#washOwnerPopup #carWashName').val();
+  $('#washOwnerPopup-extraaction #carWashName').val(carwashname);
+  var washtype = $('#washOwnerPopup #wash-type').val();
+  $('#washOwnerPopup-extraaction #wash-type').val(washtype);
+  var carwashstate = $('#washOwnerPopup #car-wash-state').val();
+  $('#washOwnerPopup-extraaction #car-wash-state').val(carwashstate);
+  var carwashzip = $('#washOwnerPopup #carWashZipcode').val();
+  $('#washOwnerPopup-extraaction #carWashZipcode').val(carwashzip);
   // Get form data
   const formData = new FormData(event.target);
 
