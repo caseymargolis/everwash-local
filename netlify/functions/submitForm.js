@@ -3,6 +3,9 @@
 
 exports.handler = async function (event, context) {
   try {
+    // Parse the form data from the request body
+    const formData = JSON.parse(event.body);
+
     // Process the initial form data or perform any additional actions here
     // const requestData = JSON.parse(event.body);
     // fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
@@ -35,9 +38,10 @@ exports.handler = async function (event, context) {
     };
   } catch (error) {
     console.error('Error processing form submission:', error);
+    
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Internal server error' }),
+      body: JSON.stringify({ error: 'Internal server error!' }),
     };
   }
 };

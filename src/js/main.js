@@ -942,7 +942,7 @@ $(function() {
 // popup form submit to netlify & extra action link
 document.getElementById('washOwnerPopup').addEventListener('submit', async function (event) {
   // Prevent the default form submission
-  event.preventDefault();
+  //event.preventDefault();
 
   // Get form data
   const formData = new FormData(event.target);
@@ -953,6 +953,10 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
       method: 'POST',
       body: formData,
     });
+      const data = await netlifyResponse.json();
+      console.log(data);
+      debugger
+
     if (netlifyResponse.ok) {
       console.log('Form Submit Successfully!!!');
     } else {
@@ -962,4 +966,5 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     console.error('Error:', error);
   }
 });
+
 
