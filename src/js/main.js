@@ -942,7 +942,7 @@ $(function() {
 // popup form submit to netlify & extra action link
 document.getElementById('washOwnerPopup').addEventListener('submit', async function (event) {
   // Prevent the default form submission
-  //event.preventDefault();
+  event.preventDefault();
 
   // Get form data
   const formData = new FormData(event.target);
