@@ -1,5 +1,5 @@
 // submitForm.js
-//import { cors } from '@netlify/functions';
+import { cors } from '@netlify/functions';
 
 exports.handler = async function (event, context) {
   try {
