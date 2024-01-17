@@ -975,6 +975,34 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     if (netlifyResponse.ok) {
       // Send data to the external server
       $('#washOwnerPopup-extraaction').trigger( "submit" );
+      document.getElementById('#washOwnerPopup-extraaction').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        // Collect form data
+        const formData = new FormData(event.target);
+    
+        // Perform the form submission to the external server
+        fetch('https://go.everwash.com/l/996891/2024-01-05/zf7r', {
+          method: 'POST',
+          body: formData,
+        })
+          .then(response => {
+            if (response.ok) {
+              // Form submitted successfully, redirect to the success page
+              window.location.href = '/wash-owners-success#partnerCalc'; // Replace with your actual success page URL
+            } else {
+              // Handle the case where the server responds with an error
+              console.error('Form submission failed:', response.status, response.statusText);
+              // Redirect to an error page or display an error message
+             
+            }
+          })
+          .catch(error => {
+            console.error('Error during form submission:', error);
+            // Redirect to an error page or display an error message
+            
+          });
+      });
     } else {
       console.error('Error submitting to Netlify:', netlifyResponse.statusText);
     }
@@ -982,3 +1010,4 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     console.error('Error:', error);
   }
 });
+
