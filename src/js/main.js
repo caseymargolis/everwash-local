@@ -944,6 +944,23 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
   // Prevent the default form submission
   event.preventDefault();
 
+  var fname = $('#washOwnerPopup #name').val();
+  $('#washOwnerPopup-extraaction #name').val(fname);
+  var lname = $('#washOwnerPopup #lastName').val();
+  $('#washOwnerPopup-extraaction #lastName').val(lname);
+  var washemail = $('#washOwnerPopup #email').val();
+  $('#washOwnerPopup-extraaction #email').val(washemail);
+  var washphone = $('#washOwnerPopup #phone').val();
+  $('#washOwnerPopup-extraaction #phone').val(washphone);
+  var carwashname = $('#washOwnerPopup #carWashName').val();
+  $('#washOwnerPopup-extraaction #carWashName').val(carwashname);
+  var washtype = $('#washOwnerPopup #wash-type').val();
+  $('#washOwnerPopup-extraaction #wash-type').val(washtype);
+  var carwashstate = $('#washOwnerPopup #car-wash-state').val();
+  $('#washOwnerPopup-extraaction #car-wash-state').val(carwashstate);
+  var carwashzip = $('#washOwnerPopup #carWashZipcode').val();
+  $('#washOwnerPopup-extraaction #carWashZipcode').val(carwashzip);
+
   // Get form data
   const formData = new FormData(event.target);
 
@@ -951,7 +968,16 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     // Send form data to Netlify
     const netlifyResponse = await fetch('/.netlify/functions/submitForm', {
       method: 'POST',
-      body: JSON.stringify({name: 'tttt'}),
+      body: JSON.stringify({
+        fname: fname,
+        lname: lname,
+        washemail: washemail, 
+        washphone: washphone,
+        carwashname: carwashname,
+        washtype: washtype,
+        carwashstate: carwashstate,
+        carwashzip: carwashzip,
+      }),
     });
       const data = await netlifyResponse.json();
       console.log(data);
@@ -966,5 +992,4 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     console.error('Error:', error);
   }
 });
-
 
