@@ -6,10 +6,7 @@ exports.handler = async function (event, context) {
   try {
     // Your data to be sent in the POST request
     const parsedData = JSON.parse(event.body);
-    return {
-      statusCode: 200,
-      body: JSON.stringify(parsedData)
-    };
+
     const postData = new URLSearchParams(parsedData).toString();
 
     // API endpoint details
@@ -55,10 +52,10 @@ exports.handler = async function (event, context) {
       req.end();
     });
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify(parsedData)
-    };
+    // return {
+    //   statusCode: 200,
+    //   body: JSON.stringify(parsedData)
+    // };
   } catch (error) {
     console.error('Error in Netlify function:', error);
     return {
