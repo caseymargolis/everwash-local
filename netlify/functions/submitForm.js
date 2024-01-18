@@ -57,14 +57,11 @@ exports.handler = async function (event, context, callback) {
     });
 
     // Send the POST request with the form data
-    req.write(formData);
+    req.write(postData);
     req.end();
 
 
-    // return {
-    //   statusCode: 200,
-    //   body: JSON.stringify(parsedData)
-    // };
+
   } catch (error) {
     console.error('Error in Netlify function:', error);
     return {
