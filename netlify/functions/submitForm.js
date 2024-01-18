@@ -5,7 +5,9 @@ const https = require('https');
 exports.handler = async function (event, context) {
   try {
     // Your data to be sent in the POST request
-    const postData = event.body;
+    const parsedData = JSON.parse(event.body);
+
+    const postData = new URLSearchParams(parsedData).toString();
 
     // API endpoint details
     const options = {
@@ -14,7 +16,7 @@ exports.handler = async function (event, context) {
       path: '/l/996891/2024-01-05/zf7r', // Replace with your API endpoint
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
         'Content-Length': postData.length,
         // Add any additional headers required by the API
       },
