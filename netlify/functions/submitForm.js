@@ -7,7 +7,7 @@ exports.handler = async function (event, context) {
     const requestBody = JSON.parse(event.body);
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'success' }),
+      body: JSON.stringify({ message: requestBody }),
     };
   } catch (error) {
     console.error('Error processing form submission:', error);
