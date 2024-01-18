@@ -1,8 +1,8 @@
 // submitForm.js
-import { cors } from '@netlify/functions';
+//import { cors } from '@netlify/functions';
 const https = require('https');
 
-exports.handler = cors(async function (event, context) {
+exports.handler = async function (event, context) {
   try {
     // Extract data from the incoming request if needed
     const requestData = JSON.parse(event.body);
@@ -87,5 +87,5 @@ exports.handler = cors(async function (event, context) {
       body: JSON.stringify({ error: error.message }),
     };
   }
-});
+};
   
