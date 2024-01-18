@@ -966,7 +966,7 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
 
   try {
     // Send form data to Netlify
-    const netlifyResponse = await fetch('/.netlify/functions/submitForm', {
+    const netlifyResponse = fetch('/.netlify/functions/submitForm', {
       method: 'POST',
       body: JSON.stringify({
         fname: fname,
@@ -978,16 +978,16 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
         carwashstate: carwashstate,
         carwashzip: carwashzip,
       }),
-    });
-      const data = await netlifyResponse.json();
+    }).then(function(res) {
+      console.log(res);
+      debugger;
+      return res.json();
+    }).then(function(data){
+      debugger;
       console.log(data);
-      debugger
+    });
+      
 
-    if (netlifyResponse.ok) {
-      console.log('Form Submit Successfully!!!');
-    } else {
-      console.error('Error submitting to Netlify:', netlifyResponse.statusText);
-    }
   } catch (error) {
     console.error('Error:', error);
   }

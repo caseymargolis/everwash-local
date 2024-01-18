@@ -2,7 +2,7 @@
 //import { cors } from '@netlify/functions';
 const https = require('https');
 
-exports.handler = async function (event, context) {
+exports.handler = async function (event, context, callback) {
   try {
     // Your data to be sent in the POST request
     const parsedData = JSON.parse(event.body);
@@ -23,34 +23,43 @@ exports.handler = async function (event, context) {
     };
 
     // Perform the HTTPS POST request
-    const response = await new Promise((resolve, reject) => {
-      const req = https.request(options, (res) => {
-        let responseData = '';
+    const req = https.request(options, (res) => {
+      let responseData = '';
 
-        res.on('data', (chunk) => {
-          responseData += chunk;
-        });
-
-        res.on('end', () => {
-          resolve({
-            statusCode: res.statusCode,
-            headers: res.headers,
-            body: responseData,
-          });
-        });
+      res.on('data', (chunk) => {
+        responseData += chunk;
       });
 
-      req.on('error', (error) => {
-        reject({
-          statusCode: 500,
-          body: JSON.stringify({ error: error.message }),
+      res.on('end', () => {
+        callback(null, {
+          statusCode: res.statusCode,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            'message': responseData
+          }),
         });
       });
-
-      // Send the POST request with the data
-      req.write(postData);
-      req.end();
     });
+
+    req.on('error', (error) => {
+      console.error('Error in Netlify function:', error);
+      callback(null, {
+        statusCode: 500,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          'message': error.message
+        })
+      });
+    });
+
+    // Send the POST request with the form data
+    req.write(formData);
+    req.end();
+
 
     // return {
     //   statusCode: 200,
@@ -60,7 +69,7 @@ exports.handler = async function (event, context) {
     console.error('Error in Netlify function:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Internal server error' }),
+      body: JSON.stringify({ error: error.message || 'Internal server error' }),
     };
   }
 };
