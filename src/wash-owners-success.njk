@@ -349,6 +349,7 @@
             <strong>Excel at Membership with EverWash!</strong>
           </p>
           <form
+            style="display: none;" 
             id="washOwnerPopup"
             name="Wash Owner Popup Form"
             method="POST"
@@ -357,10 +358,10 @@
             data-netlify-honeypot="bot-field">
             <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Popup Form Submission"/>
             <input type="hidden" name="formName" value="Wash Owner Popup Form" aria-hidden="true"/>
-            {% include 'wash-owner-form.njk' %}
+            {% include 'wash-owner-form-popup.njk' %}
           </form>
 
-          <form style="display: none;" id="washOwnerPopup-extraaction" action="https://go.everwash.com/l/996891/2024-01-05/zf7r" method="POST">
+          <form id="washOwnerPopup-external" action="https://go.everwash.com/l/996891/2024-01-05/zf7r" method="POST">
             {% include 'wash-owner-form-popup.njk' %}
           </form>
         </div>

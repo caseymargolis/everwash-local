@@ -940,26 +940,26 @@ $(function() {
 
 
 // popup form submit to netlify & extra action link
-document.getElementById('washOwnerPopup').addEventListener('submit', async function (event) {
+document.getElementById('washOwnerPopup-external').addEventListener('submit', async function (event) {
   // Prevent the default form submission
   event.preventDefault();
 
-  var fname = $('#washOwnerPopup #name').val();
-  $('#washOwnerPopup-extraaction #name').val(fname);
-  var lname = $('#washOwnerPopup #lastName').val();
-  $('#washOwnerPopup-extraaction #lastName').val(lname);
-  var washemail = $('#washOwnerPopup #email').val();
-  $('#washOwnerPopup-extraaction #email').val(washemail);
-  var washphone = $('#washOwnerPopup #phone').val();
-  $('#washOwnerPopup-extraaction #phone').val(washphone);
-  var carwashname = $('#washOwnerPopup #carWashName').val();
-  $('#washOwnerPopup-extraaction #carWashName').val(carwashname);
-  var washtype = $('#washOwnerPopup #wash-type').val();
-  $('#washOwnerPopup-extraaction #wash-type').val(washtype);
-  var carwashstate = $('#washOwnerPopup #car-wash-state').val();
-  $('#washOwnerPopup-extraaction #car-wash-state').val(carwashstate);
-  var carwashzip = $('#washOwnerPopup #carWashZipcode').val();
-  $('#washOwnerPopup-extraaction #carWashZipcode').val(carwashzip);
+  var fname = $('#washOwnerPopup-external #name').val();
+  $('#washOwnerPopup #name').val(fname);
+  var lname = $('#washOwnerPopup-external #lastName').val();
+  $('#washOwnerPopup #lastName').val(lname);
+  var washemail = $('#washOwnerPopup-external #email').val();
+  $('#washOwnerPopup #email').val(washemail);
+  var washphone = $('#washOwnerPopup-external #phone').val();
+  $('#washOwnerPopup #phone').val(washphone);
+  var carwashname = $('#washOwnerPopup-external #carWashName').val();
+  $('#washOwnerPopup #carWashName').val(carwashname);
+  var washtype = $('#washOwnerPopup-external #wash-type').val();
+  $('#washOwnerPopup #wash-type').val(washtype);
+  var carwashstate = $('#washOwnerPopup-external #car-wash-state').val();
+  $('#washOwnerPopup #car-wash-state').val(carwashstate);
+  var carwashzip = $('#washOwnerPopup-external #carWashZipcode').val();
+  $('#washOwnerPopup #carWashZipcode').val(carwashzip);
 
   // Get form data
   const formData = new FormData(event.target);
@@ -974,7 +974,7 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
     // Check if the Netlify form submission was successful
     if (netlifyResponse.ok) {
       // Send data to the external server
-      $('#washOwnerPopup-extraaction').trigger( "submit" );
+      $('#washOwnerPopup').trigger( "submit" );
     } else {
       console.error('Error submitting to Netlify:', netlifyResponse.statusText);
     }
