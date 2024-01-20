@@ -977,7 +977,8 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
     });
 
     if (externalResponse.ok) {
-      console.log(externalResponse);
+      const responseData = await externalResponse.json();
+      console.log(responseData.message);
       //$('#washOwnerPopup').trigger( "submit" );
     } else {
       console.error('Error submitting to External Server:', externalResponse.statusText);
