@@ -966,13 +966,14 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
 
   try {
     // Send form data to Netlify
-    const netlifyResponse = await fetch('/netlify/functions/submitForm', {
+    const netlifyResponse = await fetch('/.netlify/functions/submitForm', {
       method: 'POST',
       body: formData,
     });
 
     // Check if the Netlify form submission was successful
     if (netlifyResponse.ok) {
+      console.log(netlifyResponse.body.message);
       // Send data to the external server
       $('#washOwnerPopup').trigger( "submit" );
     } else {
