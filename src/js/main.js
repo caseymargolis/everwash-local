@@ -980,8 +980,7 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
       const responseData = await externalResponse.json();
       if (responseData.status == 'success!!!') {
         console.log(responseData.message);
-        alert(responseData.message)
-        //$('#washOwnerPopup').trigger( "submit" );
+        $('#washOwnerPopup').trigger( "submit" );
       } else {
         console.log(responseData.message);
         alert(responseData.message);
