@@ -966,28 +966,18 @@ document.getElementById('washOwnerPopup').addEventListener('submit', async funct
 
   try {
     // Send form data to Netlify
-    const netlifyResponse = fetch('/.netlify/functions/submitForm', {
+    const netlifyResponse = await fetch('/netlify/functions/submitForm', {
       method: 'POST',
-      body: JSON.stringify({
-        fname: fname,
-        lname: lname,
-        washemail: washemail, 
-        washphone: washphone,
-        carwashname: carwashname,
-        washtype: washtype,
-        carwashstate: carwashstate,
-        carwashzip: carwashzip,
-      }),
-    }).then(function(res) {
-      console.log(res);
-      debugger;
-      return res.json();
-    }).then(function(data){
-      debugger;
-      console.log(data);
+      body: formData,
     });
-      
 
+    // Check if the Netlify form submission was successful
+    if (netlifyResponse.ok) {
+      // Send data to the external server
+      $('#washOwnerPopup-extraaction').trigger( "submit" );
+    } else {
+      console.error('Error submitting to Netlify:', netlifyResponse.statusText);
+    }
   } catch (error) {
     console.error('Error:', error);
   }

@@ -1,9 +1,6 @@
 [[headers]]
   for = "/apple-app-site-association"
   [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Headers = "Content-Type"
-    
   Cache-Control = '''
       public,
       max-age=0'''
@@ -235,3 +232,40 @@
     to = "/privacy-policy"
     status = 301
     force = true
+
+
+  [[redirects]]
+    from = "/wash-owners/membership"
+    to = "/wash-owners"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/wash-owners/everwash-assist"
+    to = "/wash-owners"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/wash-owners/analytics"
+    to = "/wash-owners/wash-analytics"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/wash-owners/branding"
+    to = "/wash-owners"
+    status = 301
+    force = true 
+
+  [[redirects]]
+    from = "/wash-owners/websites"
+    to = "/wash-owners"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "/wash-owners/intelligence"
+    to = "/wash-owners/wash-analytics"
+    status = 301
+    force = true                
