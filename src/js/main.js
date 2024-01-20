@@ -980,15 +980,11 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
       const responseData = await externalResponse.json();
       if (responseData.status == 'success!!!') {
         console.log(responseData.message);
-        console.log(responseData.fname);
-        console.log(responseData.lname);
-        console.log(responseData.washemail);
-        console.log(responseData.washphone);
-        console.log(responseData.carwashname);
-        console.log(responseData.washtype);
-        console.log(responseData.carwashstate);
-        console.log(responseData.carwashzip);
+        alert(responseData.message)
         //$('#washOwnerPopup').trigger( "submit" );
+      } else {
+        console.log(responseData.message);
+        alert(responseData.message);
       }
     } else {
       console.error('Error submitting to External Server:', externalResponse.statusText);
