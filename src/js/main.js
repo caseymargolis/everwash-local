@@ -980,6 +980,14 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
       const responseData = await externalResponse.json();
       if (responseData.status == 'success!!!') {
         console.log(responseData.message);
+        console.log(responseData.fname);
+        console.log(responseData.lname);
+        console.log(responseData.washemail);
+        console.log(responseData.washphone);
+        console.log(responseData.carwashname);
+        console.log(responseData.washtype);
+        console.log(responseData.carwashstate);
+        console.log(responseData.carwashzip);
         //$('#washOwnerPopup').trigger( "submit" );
       }
     } else {
