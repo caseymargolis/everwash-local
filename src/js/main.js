@@ -939,7 +939,7 @@ $(function() {
 });
 
 
-// popup form submit to netlify & extra action link
+// popup form submit to external action link & netlify
 document.getElementById('washOwnerPopup-external').addEventListener('submit', async function (event) {
   // Prevent the default form submission
   event.preventDefault();
@@ -961,23 +961,26 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
   var carwashzip = $('#washOwnerPopup-external #carWashZipcode').val();
   $('#washOwnerPopup #carWashZipcode').val(carwashzip);
 
-  // Get form data
-  const formData = new FormData(event.target);
-
   try {
-    // Send form data to Netlify
-    const netlifyResponse = await fetch('/.netlify/functions/submitForm', {
+    const externalResponse = await fetch('https://slynerds.com/everwash-external.php', {
       method: 'POST',
-      body: formData,
+      body: JSON.stringify({
+        fname: fname,
+        lname: lname,
+        washemail: washemail,
+        washphone: washphone,
+        carwashname: carwashname,
+        washtype: washtype,
+        carwashstate: carwashstate,
+        carwashzip: carwashzip,
+      }),
     });
 
-    // Check if the Netlify form submission was successful
-    if (netlifyResponse.ok) {
-      console.log(netlifyResponse.body.message);
-      // Send data to the external server
-      $('#washOwnerPopup').trigger( "submit" );
+    if (externalResponse.ok) {
+      console.log(externalResponse.data);
+      //$('#washOwnerPopup').trigger( "submit" );
     } else {
-      console.error('Error submitting to Netlify:', netlifyResponse.statusText);
+      console.error('Error submitting to External Server:', externalResponse.statusText);
     }
   } catch (error) {
     console.error('Error:', error);
