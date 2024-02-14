@@ -1,13 +1,44 @@
 ---
-  title: Partner with EverWash to Expand Your Network | Become a Distributor Today
-  description: Partner with EverWash and become a distributor of our innovative car wash technology. Find out how you can join our growing network of partners and bring a smarter, more convenient car wash experience to your customers.
+  title: Distributors
+  description: An EverWash membership gains you access to monthly unlimited car wash plans at your neighborhood’s best car washes. Wash Smart. Save Hard.
   permalink: "{{ page.filePathStem }}.html"
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
-    priority: 0.8
+    ignore: true
   layout: 'base-default.njk'
 ---
 
+<!-- Start of Confirmation Modal -->
+<button
+  class="btn btn-primary d-none"
+  type="button"
+  data-toggle="modal"
+  data-target="#formConfirmation"
+  id="triggerFormConfirmation">
+  Learn More
+</button><div class="modal fade partnerModal" id="formConfirmation" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">
+        <i class="fal fa-times"></i>
+      </span>
+    </button>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-xs">
+          <i class="fas fa-envelope-open-text"></i>
+          <h3>Your form was <br/>successfully submited</h3>
+          <p>
+            Thanks for your interest! An EverWash representative will be in contact with you
+                      shortly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><!-- End of Confirmation Modal -->
 <main id="distributorMain">
   <!-- Partners Navigation -->
   <!-- Distributor Hero -->
@@ -279,181 +310,176 @@
       </div>
     </div>
   </section>
-  <!-- Distributor Contact Form -->
-  <!-- CTA -->
-  <section id="distributorCTA">
-    <div class="container   slide-up on-scroll-animation">
-      <h2 class="brand-nubolts">Partner with EverWash</h2>
-      <p>
-        Learn more about the benefits of becoming an EverWash distributor by clicking here.</p>
-      <button class="btn btn-accent" type="button" data-toggle="modal" data-target="#distributorFormModal">
-        Get In Touch
-      </button>
+<!-- Distributor Contact Form -->
+<!-- CTA -->
+<section id="distributorCTA">
+  <div class="container  slide-up on-scroll-animation">
+    <h2 class="brand-nubolts">Partner with EverWash</h2>
+    <p>
+      Learn more about the benefits of becoming an EverWash distributor by clicking here.</p>
+    <button class="btn btn-accent" type="button" data-toggle="modal" data-target="#distributorFormModal">
+      Get In Touch
+    </button>
+  </div>
+</section>
+{# <section id="distributorsForm">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="img-container">
+            <img
+              src="../img/EverWash_Logo_White.png"
+              alt="EverWash logo"
+              class="img-fluid"
+            />
+          </div>
+          <h5>Contact Information</h5>
+          <p>
+            Fill out the form or contact us directly and our team will get
+            back to you within 24 hours.
+          </p>
+          <div>
+            <p>
+              <i class="fas fa-phone-alt"></i
+              ><a href="tel:8554927477">(855) 492-7477</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i
+              ><a href="mailto:sales@everwash.com">sales@everwash.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form
+            id="distributorFormData"
+            name="Distributor Form"
+            method="POST"
+            action="./distributors-success.html"
+            data-form="formData"
+            netlify
+            netlify-honeypot="bot-field"
+          >
+            <input
+              type="hidden"
+              name="Subject"
+              data-email-subject="emailSubject"
+              value="New Form Submission"
+            />
+            <input
+              type="hidden"
+              name="formName"
+              value="Distributor Form"
+              aria-hidden="true"
+            />
+            <div class="bot-field">
+              <label>
+                Don't fill this out if you're human:
+                <input name="bot-field" />
+              </label>
+            </div>
+            <h5>Send a Message</h5>
+            <div class="input-wrapper">
+              <input
+                name="name"
+                id="name"
+                class="form-control"
+                type="text"
+                required="required"
+                placeholder=" "
+                aria-label="Enter your full name"
+              />
+              <label for="name"> Your full name </label>
+            </div>
+
+            <div class="input-wrapper">
+              <input
+                name="email"
+                id="email"
+                class="form-control"
+                type="email"
+                required="required"
+                placeholder=" "
+                aria-label="Enter your email"
+              />
+              <label for="email">Email</label>
+            </div>
+
+            <div class="input-wrapper">
+              <input
+                name="phone"
+                id="phone"
+                class="form-control"
+                type="tel"
+                required="required"
+                placeholder=" "
+                aria-label="Enter your phone number"
+              />
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="input-wrapper">
+              <input
+                name="company-name"
+                id="companyName"
+                class="form-control"
+                type="text"
+                required="required"
+                placeholder=" "
+              />
+              <label for="companyName">Company Name</label>
+            </div>
+
+            <select class="form-control" name="how-you-heard" id="">
+              <option value="" disabled="" selected="">
+                How'd you hear about us?
+              </option>
+              <option value="Trade Show">Trade Show</option>
+              <option value="Magazine Ad">Magazine Ad</option>
+              <option value="Online Search">Online Search</option>
+              <option value="Online Ad">Online Ad</option>
+              <option value="TalkCarWash">
+                TalkCarWash Facebook Group
+              </option>
+              <option value="Word of Mouth">Word of Mouth</option>
+              <option value="Other">Other</option>
+            </select>
+            <p class="disclaimer">
+              * This form is specifically for Car Wash Owners who wish to
+              contact EverWash about setting up a membership program at
+              their location. If you are a current EverWash member looking
+              for customer support, please contact our Member Support Team
+              at support@everwash.com or call 215-618-8808 to speak with an
+              agent.
+            </p>
+            <div class="d-c">
+              <button id="submitFormBtn" type="submit" class="btn btn-blue">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  </section>
-  {# <section id="distributorsForm">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="img-container">
-                  <img
-                    src="../img/EverWash_Logo_White.png"
-                    alt="EverWash logo"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5>Contact Information</h5>
-                <p>
-                  Fill out the form or contact us directly and our team will get
-                  back to you within 24 hours.
-                </p>
-                <div>
-                  <p>
-                    <i class="fas fa-phone-alt"></i
-                    ><a href="tel:8554927477">(855) 492-7477</a>
-                  </p>
-                  <p>
-                    <i class="fas fa-envelope"></i
-                    ><a href="mailto:sales@everwash.com">sales@everwash.com</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <form
-                  id="distributorFormData"
-                  name="Distributor Form"
-                  method="POST"
-                  action="./distributors-success.html"
-                  data-form="formData"
-                  netlify
-                  netlify-honeypot="bot-field"
-                >
-                  <input
-                    type="hidden"
-                    name="Subject"
-                    data-email-subject="emailSubject"
-                    value="New Form Submission"
-                  />
-                  <input
-                    type="hidden"
-                    name="formName"
-                    value="Distributor Form"
-                    aria-hidden="true"
-                  />
-                  <div class="bot-field">
-                    <label>
-                      Don't fill this out if you're human:
-                      <input name="bot-field" />
-                    </label>
-                  </div>
-                  <h5>Send a Message</h5>
-                  <div class="input-wrapper">
-                    <input
-                      name="name"
-                      id="name"
-                      class="form-control"
-                      type="text"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your full name"
-                    />
-                    <label for="name"> Your full name </label>
-                  </div>
-  
-                  <div class="input-wrapper">
-                    <input
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      type="email"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your email"
-                    />
-                    <label for="email">Email</label>
-                  </div>
-  
-                  <div class="input-wrapper">
-                    <input
-                      name="phone"
-                      id="phone"
-                      class="form-control"
-                      type="tel"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your phone number"
-                    />
-                    <label for="phone">Phone Number</label>
-                  </div>
-                  <div class="input-wrapper">
-                    <input
-                      name="company-name"
-                      id="companyName"
-                      class="form-control"
-                      type="text"
-                      required="required"
-                      placeholder=" "
-                    />
-                    <label for="companyName">Company Name</label>
-                  </div>
-  
-                  <select class="form-control" name="how-you-heard" id="">
-                    <option value="" disabled="" selected="">
-                      How'd you hear about us?
-                    </option>
-                    <option value="Trade Show">Trade Show</option>
-                    <option value="Magazine Ad">Magazine Ad</option>
-                    <option value="Online Search">Online Search</option>
-                    <option value="Online Ad">Online Ad</option>
-                    <option value="TalkCarWash">
-                      TalkCarWash Facebook Group
-                    </option>
-                    <option value="Word of Mouth">Word of Mouth</option>
-                    <option value="Other">Other</option>
-                  </select>
-                  <p class="disclaimer">
-                    * This form is specifically for Car Wash Owners who wish to
-                    contact EverWash about setting up a membership program at
-                    their location. If you are a current EverWash member looking
-                    for customer support, please contact our Member Support Team
-                    at support@everwash.com or call 215-618-8808 to speak with an
-                    agent.
-                  </p>
-                  <div class="d-c">
-                    <button id="submitFormBtn" type="submit" class="btn btn-blue">
-                      Send Message
-                    </button>
-                  </div>
-                </form>
-              </div>
+  </section> #}
+<div class="modal fade" id="distributorFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <img src="../img/logos/EverWash_HorizontalLogo_RGB_White.png" alt="EverWash logo" class="img-fluid"/>
+            <p>Fill out the form or contact us.</p>
+            <div class="contact-info">
+              <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:sales@everwash.com">sales@everwash.com</a>
+              </p>
+              <p>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:8554927477">(855) 492-7477</a>
+              </p>
             </div>
           </div>
-        </section> #}
-  <div class="modal fade" id="distributorFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row" id="contactSalesForm">
-            <div class="col-lg-5">
-              <img src="../img/logos/EverWash_HorizontalLogo_RGB_White.png" alt="EverWash logo" class="img-fluid"/>
-              <button type="button" class="close d-lg-none" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">
-                  <i class="fal fa-times"></i>
-                </span>
-              </button>
-              <p>Fill out the form or contact us.</p>
-              <div class="contact-info">
-                <p>
-                  <i class="fas fa-envelope"></i>
-                  <a href="mailto:sales@everwash.com">sales@everwash.com</a>
-                </p>
-                <p>
-                  <i class="fas fa-phone-alt"></i>
-                  <a href="tel:8554927477">(855) 492-7477</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-7">
+          <div class="col-lg-7">
               <div id="omnixModalHeader">
                 <div class="header-content">
                   <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
@@ -473,7 +499,7 @@
                   id="distributorFormData"
                   name="Partner Form"
                   method="POST"
-                  action="./partners-success.html"
+                  action="./partner-success.html"
                   data-form="formData"
                   netlify
                   netlify-honeypot="bot-field">
@@ -559,16 +585,15 @@
                 </form>
               </div>  
             </div>
-          </div>
         </div>
-        <!-- <div class="modal-footer"> <button
-            type="button"
-            class="btn btn-secondary"
-            data-dismiss="modal"
-        >
-            Close
-        </button> </div> -->
       </div>
+      <!-- <div class="modal-footer"> <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+      >
+          Close
+      </button> </div> -->
     </div>
   </div>
-</main>
+</div></main>
