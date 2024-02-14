@@ -2324,13 +2324,15 @@ input::-webkit-inner-spin-button {
   font-size: 4.3rem;
   line-height: 1.1;
 }
-#distributorFilter {
-  padding: 5%;
+a.read_more {
+  font-size: 1rem!important;
+  color: var(--primary);
+  font-weight: 500;
+}
+a.read_more:hover {
+  text-decoration: underline!important;
 }
 
-#distributorFilter img {
-  margin-bottom: 1rem;
-}
 
 /************************************ 
 *********** GET STARTED SECTION *************
