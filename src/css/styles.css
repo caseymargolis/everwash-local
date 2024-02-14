@@ -2308,6 +2308,31 @@ input::-webkit-inner-spin-button {
 }
 
 /************************************ 
+*********** PARTNERS *************
+*************************************/
+#partnerHome {
+  padding: 7% 0;
+  color: var(--white);
+  background: url(../img/hero_images/partners-hero-img-gradient.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#partnerHome h1 {
+  font-family: var(--font-family-headings);
+  font-weight: 400;
+  font-size: 4.3rem;
+  line-height: 1.1;
+}
+#distributorFilter {
+  padding: 5%;
+}
+
+#distributorFilter img {
+  margin-bottom: 1rem;
+}
+
+/************************************ 
 *********** GET STARTED SECTION *************
 *************************************/
 #ewGetStarted {
