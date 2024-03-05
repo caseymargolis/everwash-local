@@ -26,7 +26,7 @@ const calculator = {
       // After 2.5s, form popup display
       setTimeout(function() {
         $('#excelFormview').click();
-      }, 5000);
+      }, 3500);
     }
     return false;
   },
