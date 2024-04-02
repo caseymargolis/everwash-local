@@ -993,6 +993,7 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
   }
 });
 
+
 // Disable spaces and strings (non-numeric characters) in a phone number field
 function validatePhoneNumber(input) {
   // Remove non-numeric characters
