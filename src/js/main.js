@@ -1035,7 +1035,7 @@ document.getElementById('casestudyPopup-external').addEventListener('submit', as
       const responseData = await externalResponse.json();
       if (responseData.status == 'success!!!') {
         console.log(responseData.message);
-        $('#casestudyPopup').trigger( "submit" );
+        //$('#casestudyPopup').trigger( "submit" );
       } else {
         console.log(responseData.message);
         alert(responseData.message);
