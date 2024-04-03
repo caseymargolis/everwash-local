@@ -150,9 +150,11 @@ section#caseStudyCTA h2 {
   color: #FFF;
   font-size: 45px;
   font-weight: bold;
-  max-width: 600px;
   line-height: 1.15em;
   position: relative;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 30px;
 }
 section#caseStudyCTA h2:after {
   content: "";
@@ -161,12 +163,17 @@ section#caseStudyCTA h2:after {
   background: #F3F183;
   position: absolute;
   left: 5%;
-  bottom: -3.5px;
+  bottom: -7.5px;
+  margin: auto;
 }
 section#caseStudyCTA p {
   color: #FFF;
   font-size: 22.5px;
   font-weight: bold;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.25em;
 }
 
 @media only screen and (max-width: 999px) {
@@ -191,6 +198,12 @@ section#caseStudyCTA p {
     max-width: 100%;
     display: block;
     padding: 10%;
+  }
+  section#caseStudyCTA h2 {
+    font-size: 30px;
+  }
+  section#caseStudyCTA p {
+    font-size: 18.5px;
   }
 }
 
