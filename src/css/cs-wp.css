@@ -142,12 +142,47 @@ section#caseStudyPopup {
   background:#fff ;
   color: #141c52;
 }
+
+section#caseStudyCTA {
+  background: #141C52;
+}
+section#caseStudyCTA h2 {
+  color: #FFF;
+  font-size: 45px;
+  font-weight: bold;
+  max-width: 600px;
+  line-height: 1.15em;
+  position: relative;
+}
+section#caseStudyCTA h2:after {
+  content: "";
+  width: 90%;
+  height: 2.5px;
+  background: #F3F183;
+  position: absolute;
+  left: 5%;
+  bottom: -3.5px;
+}
+section#caseStudyCTA p {
+  color: #FFF;
+  font-size: 22.5px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 999px) {
   #caseStudyHero div.col-sm-9 h3 {
     font-size: 30px;
   }
   #caseStudyPopup div.col-sm-9 h3 {
     font-size: 35px;
+  }
+  #caseStudyHero div.col-sm-3 a.btn-blue {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  #caseStudyPopup div.col-sm-9 a.btn-blue {
+    font-size: 15px;
+    margin-top: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
