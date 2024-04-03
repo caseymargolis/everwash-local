@@ -940,6 +940,7 @@ $(function() {
 
 
 // popup form submit to external action link & netlify
+// Wash Owner Popup
 document.getElementById('washOwnerPopup-external').addEventListener('submit', async function (event) {
   // Prevent the default form submission
   event.preventDefault();
@@ -981,6 +982,59 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
       if (responseData.status == 'success!!!') {
         console.log(responseData.message);
         $('#washOwnerPopup').trigger( "submit" );
+      } else {
+        console.log(responseData.message);
+        alert(responseData.message);
+      }
+    } else {
+      console.error('Error submitting to External Server:', externalResponse.statusText);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+});
+
+// Casey Study Popup
+document.getElementById('casestudyPopup-external').addEventListener('submit', async function (event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
+  var fname = $('#casestudyPopup-external #name').val();
+  $('#casestudyPopup #name').val(fname);
+  var lname = $('#casestudyPopup-external #lastName').val();
+  $('#casestudyPopup #lastName').val(lname);
+  var washemail = $('#casestudyPopup-external #email').val();
+  $('#casestudyPopup #email').val(washemail);
+  var washphone = $('#casestudyPopup-external #phone').val();
+  $('#casestudyPopup #phone').val(washphone);
+  var carwashname = $('#casestudyPopup-external #carWashName').val();
+  $('#casestudyPopup #carWashName').val(carwashname);
+  var washtype = $('#casestudyPopup-external #wash-type').val();
+  $('#casestudyPopup #wash-type').val(washtype);
+  var carwashstate = $('#casestudyPopup-external #car-wash-state').val();
+  $('#casestudyPopup #car-wash-state').val(carwashstate);
+  var carwashzip = $('#casestudyPopup-external #carWashZipcode').val();
+  $('#casestudyPopup #carWashZipcode').val(carwashzip);
+
+  try {
+    const externalResponse = await fetch('https://slynerds.com/everwash-external.php', {
+      method: 'POST',
+      body: JSON.stringify({
+        fname: fname,
+        lname: lname,
+        washemail: washemail,
+        washphone: washphone,
+        carwashname: carwashname,
+        washtype: washtype,
+        carwashstate: carwashstate,
+        carwashzip: carwashzip,
+      }),
+    });
+
+    if (externalResponse.ok) {
+      const responseData = await externalResponse.json();
+      if (responseData.status == 'success!!!') {
+        console.log(responseData.message);
         $('#casestudyPopup').trigger( "submit" );
       } else {
         console.log(responseData.message);
