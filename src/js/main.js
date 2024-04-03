@@ -981,6 +981,7 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
       if (responseData.status == 'success!!!') {
         console.log(responseData.message);
         $('#washOwnerPopup').trigger( "submit" );
+        $('#casestudyPopup').trigger( "submit" );
       } else {
         console.log(responseData.message);
         alert(responseData.message);
