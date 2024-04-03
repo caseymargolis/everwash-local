@@ -86,10 +86,10 @@ section#caseStudyHero {
   color: #141c52;
 }
 
-section#caseStudyPopup {
+section#caseStudy-Popup {
   padding: 0!important;
 }
-#caseStudyPopup .container {
+#caseStudy-Popup .container {
   max-width: 100%;
   padding: 0!important;
   background-color: #9AAAEB;
@@ -98,11 +98,11 @@ section#caseStudyPopup {
   background-repeat: no-repeat;
   background-size: contain;
 }
-#caseStudyPopup .row {
+#caseStudy-Popup .row {
   align-items: stretch;
   margin: 0 !important;
 }
-#caseStudyPopup div.col-sm-9 {
+#caseStudy-Popup div.col-sm-9 {
   padding: 12.5% 5%;
   flex: 0 0 65%;
   max-width: 65%;
@@ -110,17 +110,17 @@ section#caseStudyPopup {
   align-items: center;
   justify-content: center;
 }
-#caseStudyPopup div.col-sm-9 h3 {
+#caseStudy-Popup div.col-sm-9 h3 {
   color: #141C52;
   font-size: 50px;
   font-weight: 600;
   max-width: 500px;
   line-height: 1.25em;
 }
-#caseStudyPopup div.col-sm-9 h3 span {
+#caseStudy-Popup div.col-sm-9 h3 span {
   position: relative;
 }
-#caseStudyPopup div.col-sm-9 h3 span:after {
+#caseStudy-Popup div.col-sm-9 h3 span:after {
   content: "";
   width: 100%;
   height: 3.5px;
@@ -129,7 +129,7 @@ section#caseStudyPopup {
   left: 0;
   bottom: -4.5px;
 }
-#caseStudyPopup div.col-sm-9 button.btn-blue {
+#caseStudy-Popup div.col-sm-9 button.btn-blue {
   background: #141c52;
   color: #fff;
   min-width: 200px;
@@ -138,7 +138,7 @@ section#caseStudyPopup {
   line-height: 1.25em;
   margin-top: 45px;
 }
-#caseStudyPopup div.col-sm-9 button.btn-blue:hover {
+#caseStudy-Popup div.col-sm-9 button.btn-blue:hover {
   background:#fff ;
   color: #141c52;
 }
@@ -180,20 +180,20 @@ section#caseStudyCTA p {
   #caseStudyHero div.col-sm-9 h3 {
     font-size: 30px;
   }
-  #caseStudyPopup div.col-sm-9 h3 {
+  #caseStudy-Popup div.col-sm-9 h3 {
     font-size: 35px;
   }
   #caseStudyHero div.col-sm-3 a.btn-blue {
     font-size: 15px;
     margin-top: 20px;
   }
-  #caseStudyPopup div.col-sm-9 button.btn-blue {
+  #caseStudy-Popup div.col-sm-9 button.btn-blue {
     font-size: 15px;
     margin-top: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
-  #caseStudyHero div.col-sm-9, #caseStudyHero div.col-sm-3, #caseStudyPopup div.col-sm-9 {
+  #caseStudyHero div.col-sm-9, #caseStudyHero div.col-sm-3, #caseStudy-Popup div.col-sm-9 {
     flex: none;
     max-width: 100%;
     display: block;

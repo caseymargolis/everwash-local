@@ -999,35 +999,35 @@ document.getElementById('casestudyPopup-external').addEventListener('submit', as
   // Prevent the default form submission
   event.preventDefault();
 
-  var fname = $('#casestudyPopup-external #name').val();
-  $('#casestudyPopup #name').val(fname);
-  var lname = $('#casestudyPopup-external #lastName').val();
-  $('#casestudyPopup #lastName').val(lname);
-  var washemail = $('#casestudyPopup-external #email').val();
-  $('#casestudyPopup #email').val(washemail);
-  var washphone = $('#casestudyPopup-external #phone').val();
-  $('#casestudyPopup #phone').val(washphone);
-  var carwashname = $('#casestudyPopup-external #carWashName').val();
-  $('#casestudyPopup #carWashName').val(carwashname);
-  var washtype = $('#casestudyPopup-external #wash-type').val();
-  $('#casestudyPopup #wash-type').val(washtype);
-  var carwashstate = $('#casestudyPopup-external #car-wash-state').val();
-  $('#casestudyPopup #car-wash-state').val(carwashstate);
-  var carwashzip = $('#casestudyPopup-external #carWashZipcode').val();
-  $('#casestudyPopup #carWashZipcode').val(carwashzip);
+  var fname1 = $('#casestudyPopup-external #name').val();
+  $('#casestudyPopup #name').val(fname1);
+  var lname1 = $('#casestudyPopup-external #lastName').val();
+  $('#casestudyPopup #lastName').val(lname1);
+  var washemail1 = $('#casestudyPopup-external #email').val();
+  $('#casestudyPopup #email').val(washemail1);
+  var washphone1 = $('#casestudyPopup-external #phone').val();
+  $('#casestudyPopup #phone').val(washphone1);
+  var carwashname1 = $('#casestudyPopup-external #carWashName').val();
+  $('#casestudyPopup #carWashName').val(carwashname1);
+  var washtype1 = $('#casestudyPopup-external #wash-type').val();
+  $('#casestudyPopup #wash-type').val(washtype1);
+  var carwashstate1 = $('#casestudyPopup-external #car-wash-state').val();
+  $('#casestudyPopup #car-wash-state').val(carwashstate1);
+  var carwashzip1 = $('#casestudyPopup-external #carWashZipcode').val();
+  $('#casestudyPopup #carWashZipcode').val(carwashzip1);
 
   try {
     const externalResponse = await fetch('https://slynerds.com/everwash-external.php', {
       method: 'POST',
       body: JSON.stringify({
-        fname: fname,
-        lname: lname,
-        washemail: washemail,
-        washphone: washphone,
-        carwashname: carwashname,
-        washtype: washtype,
-        carwashstate: carwashstate,
-        carwashzip: carwashzip,
+        fname: fname1,
+        lname: lname1,
+        washemail: washemail1,
+        washphone: washphone1,
+        carwashname: carwashname1,
+        washtype: washtype1,
+        carwashstate: carwashstate1,
+        carwashzip: carwashzip1,
       }),
     });
 
