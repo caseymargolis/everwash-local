@@ -85,13 +85,70 @@ section#caseStudyHero {
   background:#fff ;
   color: #141c52;
 }
+
+section#caseStudyPopup {
+  padding: 0!important;
+}
+#caseStudyPopup .container {
+  max-width: 100%;
+  padding: 0!important;
+}
+#caseStudyPopup .row {
+  align-items: stretch;
+  margin: 0 !important;
+}
+#caseStudyPopup div.col-sm-12 {
+  background-color: #9AAAEB;
+  background-image: url("/img/new-update/casestudy_img.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10% 5%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#caseStudyPopup div.col-sm-9 h3 {
+  color: #141C52;
+  font-size: 50px;
+  font-weight: 600;
+  max-width: 600px;
+  line-height: 1.25em;
+}
+#caseStudyPopup div.col-sm-9 h3 span:after {
+  content: "";
+  width: 100%;
+  height: 2.5px;
+  background: #F3F183;
+  position: absolute;
+  left: 0;
+  bottom: -3.5px;
+}
+#caseStudyPopup div.col-sm-12 a.btn-blue {
+  background: #141c52;
+  color: #fff;
+  min-width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-top: 30px;
+}
+#caseStudyPopup div.col-sm-12 a.btn-blue:hover {
+  background:#fff ;
+  color: #141c52;
+}
 @media only screen and (max-width: 999px) {
   #caseStudyHero div.col-sm-9 h3 {
     font-size: 30px;
   }
+  #caseStudyPopup div.col-sm-9 h3 {
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 767px) {
-  #caseStudyHero div.col-sm-9, #caseStudyHero div.col-sm-3 {
+  #caseStudyHero div.col-sm-9, #caseStudyHero div.col-sm-3, #caseStudyPopup div.col-sm-9 {
     flex: none;
     max-width: 100%;
     display: block;
