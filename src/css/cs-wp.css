@@ -129,7 +129,7 @@ section#caseStudyPopup {
   left: 0;
   bottom: -4.5px;
 }
-#caseStudyPopup div.col-sm-9 a.btn-blue {
+#caseStudyPopup div.col-sm-9 button.btn-blue {
   background: #141c52;
   color: #fff;
   min-width: 200px;
@@ -138,7 +138,7 @@ section#caseStudyPopup {
   line-height: 1.25em;
   margin-top: 45px;
 }
-#caseStudyPopup div.col-sm-9 a.btn-blue:hover {
+#caseStudyPopup div.col-sm-9 button.btn-blue:hover {
   background:#fff ;
   color: #141c52;
 }
@@ -187,7 +187,7 @@ section#caseStudyCTA p {
     font-size: 15px;
     margin-top: 20px;
   }
-  #caseStudyPopup div.col-sm-9 a.btn-blue {
+  #caseStudyPopup div.col-sm-9 button.btn-blue {
     font-size: 15px;
     margin-top: 30px;
   }
