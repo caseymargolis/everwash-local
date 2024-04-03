@@ -103,7 +103,7 @@ section#caseStudyPopup {
   margin: 0 !important;
 }
 #caseStudyPopup div.col-sm-12 {
-  padding: 10% 5%;
+  padding: 12.5% 5%;
   flex: 0 0 65%;
   max-width: 65%;
   display: flex;
@@ -151,7 +151,7 @@ section#caseStudyPopup {
   }
 }
 @media only screen and (max-width: 767px) {
-  #caseStudyHero div.col-sm-9, #caseStudyHero div.col-sm-3, #caseStudyPopup div.col-sm-9 {
+  #caseStudyHero div.col-sm-9, #caseStudyHero div.col-sm-3, #caseStudyPopup div.col-sm-12 {
     flex: none;
     max-width: 100%;
     display: block;
