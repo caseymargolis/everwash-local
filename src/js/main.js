@@ -997,7 +997,7 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
 // Casey Study Popup
 document.getElementById('casestudyPopup-external').addEventListener('submit', async function (event) {
   // Prevent the default form submission
-  event.preventDefault();
+  event.preventDefault();  
 
   var fname1 = $('#casestudyPopup-external #name').val();
   $('#casestudyPopup #name').val(fname1);
