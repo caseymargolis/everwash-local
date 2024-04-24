@@ -939,6 +939,7 @@ $(function() {
 });
 
 
+
 // popup form submit to external action link & netlify
 // Wash Owner Popup
 document.getElementById('washOwnerPopup-external').addEventListener('submit', async function (event) {
@@ -963,7 +964,7 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
   $('#washOwnerPopup #carWashZipcode').val(carwashzip);
 
   try {
-    const externalResponse = await fetch('https://slynerds.com/everwash-external.php', {
+    const externalResponse = await fetch('https://slynerds.com/everwash-rev-calc-external.php', {
       method: 'POST',
       body: JSON.stringify({
         fname: fname,
@@ -993,6 +994,61 @@ document.getElementById('washOwnerPopup-external').addEventListener('submit', as
     console.error('Error:', error);
   }
 });
+
+// Case Study Popup
+document.getElementById('caseStudyPopup-external').addEventListener('submit', async function (event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
+  var fname = $('#caseStudyPopup-external #name').val();
+  $('#caseStudyPopup #name').val(fname);
+  var lname = $('#caseStudyPopup-external #lastName').val();
+  $('#caseStudyPopup #lastName').val(lname);
+  var washemail = $('#caseStudyPopup-external #email').val();
+  $('#caseStudyPopup #email').val(washemail);
+  var washphone = $('#caseStudyPopup-external #phone').val();
+  $('#caseStudyPopup #phone').val(washphone);
+  var carwashname = $('#caseStudyPopup-external #carWashName').val();
+  $('#caseStudyPopup #carWashName').val(carwashname);
+  var washtype = $('#caseStudyPopup-external #wash-type').val();
+  $('#caseStudyPopup #wash-type').val(washtype);
+  var carwashstate = $('#caseStudyPopup-external #car-wash-state').val();
+  $('#caseStudyPopup #car-wash-state').val(carwashstate);
+  var carwashzip = $('#caseStudyPopup-external #carWashZipcode').val();
+  $('#caseStudyPopup #carWashZipcode').val(carwashzip);
+
+  try {
+    const externalResponse = await fetch('https://slynerds.com/everwash-external.php', {
+      method: 'POST',
+      body: JSON.stringify({
+        fname: fname,
+        lname: lname,
+        washemail: washemail,
+        washphone: washphone,
+        carwashname: carwashname,
+        washtype: washtype,
+        carwashstate: carwashstate,
+        carwashzip: carwashzip,
+      }),
+    });
+
+    if (externalResponse.ok) {
+      const responseData = await externalResponse.json();
+      if (responseData.status == 'success!!!') {
+        console.log(responseData.message);
+        $('#caseStudyPopup').trigger( "submit" );
+      } else {
+        console.log(responseData.message);
+        alert(responseData.message);
+      }
+    } else {
+      console.error('Error submitting to External Server:', externalResponse.statusText);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+});
+
 
 
 // Disable spaces and strings (non-numeric characters) in a phone number field
