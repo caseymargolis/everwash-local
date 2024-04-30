@@ -7630,7 +7630,7 @@ section#webinarsHero {
   color: #141C52;
   font-size: 37.5px;
   font-weight: 600;
-  max-width: 600px;
+  max-width: 550px;
   line-height: 1.15em;
   margin-bottom: 15px;
 }
@@ -7660,10 +7660,10 @@ section#webinarsHero {
   padding: 10% 5%;
   text-align: center; 
 }
-#webinarsHero div.col-sm-3 img {
-  margin: auto;
-  max-width: 200px;
-  display: block;
+#webinarsHero div.col-sm-3 h4 {
+  color: #28D5CB;
+  font-size: 37.5px;
+  font-weight: 600;
 }
 #webinarsHero div.col-sm-3 .btn-blue {
   background: #141c52;
