@@ -1022,7 +1022,7 @@ if ($('#caseStudyPopup-external').length) {
     $('#caseStudyPopup #carWashZipcode').val(carwashzip);
   
     try {
-      const externalResponse = await fetch('https://slynerds.com/everwash-external.php', {
+      const externalResponse = await fetch('https://slynerds.com/everwash-casestudy-external.php', {
         method: 'POST',
         body: JSON.stringify({
           fname: fname,
