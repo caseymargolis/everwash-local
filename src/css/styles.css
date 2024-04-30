@@ -7610,33 +7610,48 @@ section#webinarsHero {
   position: relative;
   width: max-content;
   margin-bottom: 45px;
+  text-transform: uppercase;
 }
 #webinarsHero div.col-sm-9 h4:after {
   content: "";
   width: 100%;
-  height: 2.5px;
+  height: 3.5px;
   background: #F3F183;
   position: absolute;
   left: 0;
   bottom: -3.5px;
 }
+#webinarsHero div.col-sm-9 .box-content {
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+}
 #webinarsHero div.col-sm-9 h3 {
-  color: #FFF;
+  color: #141C52;
   font-size: 37.5px;
   font-weight: 600;
   max-width: 600px;
   line-height: 1.15em;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+}
+#webinarsHero div.col-sm-9 h5 {
+  color: #28D5CB;
+  font-size: 22.5px;
+  font-weight: 800;
+  max-width: 600px;
+  line-height: 1.15em;
+  margin-bottom: 25px;
+  text-transform: uppercase;
 }
 #webinarsHero div.col-sm-9 P {
-  color: #F3F183;
-  font-size: 20px;
-  line-height: 30px;
+  color: #6c6c6c;
+  font-size: 15px;
+  line-height: 26.5px;
   max-width: 600px;
-  font-weight: 500;
+  font-weight: 400;
 }
 #webinarsHero div.col-sm-3 {
-  background: #F3F183;
+  background: #141C52;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7662,6 +7677,126 @@ section#webinarsHero {
 #webinarsHero div.col-sm-3 .btn-blue:hover {
   background:#fff ;
   color: #141c52;
+}
+
+section#caseStudy-Popup {
+  padding: 0!important;
+}
+#caseStudy-Popup .container {
+  max-width: 100%;
+  padding: 0!important;
+  background-color: #9AAAEB;
+  background-image: url("/img/new-update/casestudy_img.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+#caseStudy-Popup .row {
+  align-items: stretch;
+  margin: 0 !important;
+}
+#caseStudy-Popup div.col-sm-9 {
+  padding: 7.5% 5%;
+  flex: 0 0 65%;
+  max-width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#caseStudy-Popup div.col-sm-9 h3 {
+  color: #141C52;
+  font-size: 45px;
+  font-weight: 600;
+  max-width: 600px;
+  line-height: 1.15em;
+  margin-bottom: 30px;
+}
+#caseStudy-Popup div.col-sm-9 P {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 600px;
+  font-weight: 500;
+}
+#caseStudy-Popup div.col-sm-9 .btn-blue {
+  background: #141c52;
+  color: #fff;
+  min-width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-top: 45px;
+}
+#caseStudy-Popup div.col-sm-9 .btn-blue:hover {
+  background:#fff ;
+  color: #141c52;
+}
+
+section#caseStudyCTA {
+  background: #141C52;
+}
+section#caseStudyCTA h2 {
+  color: #FFF;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.15em;
+  position: relative;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 30px;
+}
+section#caseStudyCTA h2:after {
+  content: "";
+  width: 90%;
+  height: 2.5px;
+  background: #F3F183;
+  position: absolute;
+  left: 5%;
+  bottom: -7.5px;
+  margin: auto;
+}
+section#caseStudyCTA p {
+  color: #FFF;
+  font-size: 22.5px;
+  font-weight: bold;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.25em;
+}
+
+@media only screen and (max-width: 999px) {
+  #caseStudyHero div.col-sm-9 h3 {
+    font-size: 30px;
+  }
+  #caseStudy-Popup div.col-sm-9 h3 {
+    font-size: 30px;
+  }
+  #caseStudyHero div.col-sm-3 .btn-blue {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  #caseStudy-Popup div.col-sm-9 .btn-blue {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  #caseStudy-Popup .container {
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #caseStudyHero div.col-sm-9, #caseStudyHero div.col-sm-3, #caseStudy-Popup div.col-sm-9 {
+    flex: none;
+    max-width: 100%;
+    display: block;
+    padding: 15% 7.5%;
+  }
+  section#caseStudyCTA h2 {
+    font-size: 30px;
+  }
+  section#caseStudyCTA p {
+    font-size: 18.5px;
+  }
 }
 
 #webinarsBody #webinarsCTA {
