@@ -7708,7 +7708,7 @@ section#webinarsHero {
   background-image: url(/img/new-update/webinars-second-banner.png);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
 }
 #webinarsPrevious .header-content {
   text-align: center;
@@ -7776,7 +7776,7 @@ section#webinarsHero {
   line-height: 1.25em;
   margin-top: 15px;
 }
-#webinarsPrevious div.col-sm-5 .btn-blue:hover {
+#webinarsPrevious div.col-sm-5 .btn-green:hover {
   background:#141c52 ;
   color: #FFF;
 }
@@ -7816,6 +7816,9 @@ section#webinarsCTA p {
   margin-right: auto;
   line-height: 1.25em;
   margin-bottom: 2rem;
+}
+section#webinarsCTA .btn-accent {
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 999px) {
