@@ -48,7 +48,7 @@
       <div class="row">
         <div class="col-sm-7">
           <div class="video-box">
-            <iframe
+            <iframe width="100%" height="350"
               src="https://www.youtube.com/embed/wWWBSbPxiSc?si=oErCNJPy_C4IDLZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
           </div>
@@ -74,7 +74,7 @@
         </div>
         <div class="col-sm-7">
           <div class="video-box">
-            <iframe
+            <iframe width="100%" height="350"
               src="https://www.youtube.com/embed/Dm4VT2PZlcI?si=-rA5d4FU70hGBR86" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
           </div>
@@ -88,14 +88,14 @@
     <div class="container">
       <h2>Partner With EverWash</h2>
       <p>Learn more about the benefits of becoming an EverWash wash partner by clicking here.</p>
-      <button class="btn btn-accent" type="button" data-toggle="modal" data-target="#distributorFormModal">
+      <button class="btn btn-accent" type="button" data-toggle="modal" data-target="#webinarsFormModal">
         Get In Touch
       </button>
     </div>
   </section>
 
   <!-- Webinars Sales Lead Form -->
-  <div class="modal fade" id="distributorFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal fade" id="webinarsFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-body">
@@ -136,143 +136,19 @@
                   Talk to a membership professional about how the EverWash Platform can increase the overall profitability of your wash
                 </p>
                 <form
-                  id="distributorFormData"
-                  name="Case Study Sales Lead Form"
+                  id="webinarsFormData"
+                  name="Webinars Sales Lead Form"
                   method="POST"
-                  action="../wash-owners/case-study-success.html"
+                  action="../wash-owners/webinars-success.html"
                   data-form="formData"
                   netlify
                   netlify-honeypot="bot-field">
-                  <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Case Study Sales Lead Form"/>
-                  <input type="hidden" name="formName" value="Case Study Sales Lead Form" aria-hidden="true"/>
+                  <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Webinars Sales Lead Form"/>
+                  <input type="hidden" name="formName" value="Webinars Sales Lead Form" aria-hidden="true"/>
                   {% include 'wash-owner-form.njk' %}
-                  <!--
-                  <div class="bot-field">
-                    <label>
-                      Don't fill this out if you're human: <input name="bot-field"/>
-                    </label>
-                  </div>
-                  <div class="input-row">
-                    <div class="input-wrapper">
-                      <input
-                        name="name"
-                        id="name"
-                        class="form-control"
-                        type="text"
-                        required="required"
-                        placeholder=" "
-                        aria-label="Enter your first name"/>
-                      <label for="name">First Name</label>
-                    </div>
-                    <div class="input-wrapper">
-                      <input
-                        name="last-name"
-                        id="lastName"
-                        class="form-control"
-                        type="text"
-                        required="required"
-                        placeholder=" "
-                        aria-label="Enter your last name"/>
-                      <label for="lastNameInput">Last Name</label>
-                    </div>
-                  </div>
-                  <div class="input-wrapper">
-                    <input
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      type="email"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your email"/>
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="input-wrapper">
-                    <input
-                      name="phone"
-                      id="phone"
-                      class="form-control"
-                      type="tel"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your phone number"/>
-                    <label for="phone">Phone Number</label>
-                  </div>
-                  <div class="input-wrapper">
-                    <input name="company-name" id="companyName" class="form-control" type="text" required="required" placeholder=" "/>
-                    <label for="companyName">Company Name</label>
-                  </div>
-                  <select class="form-control" name="how-you-heard" id="">
-                    <option value="" disabled="" selected="">
-                      How'd you hear about us?
-                    </option>
-                    <option value="Trade Show">Trade Show</option>
-                    <option value="Magazine Ad">Magazine Ad</option>
-                    <option value="Online Search">Online Search</option>
-                    <option value="Online Ad">Online Ad</option>
-                    <option value="TalkCarWash">
-                      TalkCarWash Facebook Group
-                    </option>
-                    <option value="Word of Mouth">Word of Mouth</option>
-                    <option value="Other">Other</option>
-                  </select>
-                  <div class="d-c">
-                    <button id="submitFormBtn" type="submit" class="btn btn-blue">
-                      Submit
-                    </button>
-                  </div>
-                  -->
                 </form>
               </div>  
             </div>
-          </div>
-        </div>
-        <!-- <div class="modal-footer"> <button
-            type="button"
-            class="btn btn-secondary"
-            data-dismiss="modal"
-        >
-            Close
-        </button> </div> -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Excel Membership With EverWash Form -->
-  <div class="modal fade" id="excelmembershipModal" tabindex="-1" aria-label="Excel Membership With EverWash Form" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">
-              <i class="fal fa-times"></i>
-            </span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-container">
-            <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
-            <h4>Meet Your Customers Where They Are!</h4>
-            <p>
-              Complete the form below, and we'll send over a copy of our 2024 Membership Marketing Plan & Case Study.  It encompasses three core strategies: reactivating expired members, upselling to current members, and incentivizing referrals.<br>
-              <strong>Excel at Membership with EverWash!</strong>
-            </p>
-            <form
-              style="display: none;" 
-              id="caseStudyPopup"
-              name="Case Study Popup Form"
-              method="POST"
-              action="../wash-owners/case-study-success.html"
-              data-netlify="true" 
-              data-netlify-honeypot="bot-field">
-              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Case Study Popup Form Submission"/>
-              <input type="hidden" name="formName" value="Case Study Popup Form" aria-hidden="true"/>
-              {% include 'wash-owner-form-popup.njk' %}
-            </form>
-
-            <form id="caseStudyPopup-external" action="https://go.everwash.com/l/996891/2024-03-18/26ddb" method="POST">
-              {% include 'wash-owner-form-popup.njk' %}
-            </form>
           </div>
         </div>
       </div>
