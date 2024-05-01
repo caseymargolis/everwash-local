@@ -7849,10 +7849,6 @@ section#webinarsCTA .btn-accent {
   #webinarsHero div.col-sm-9 h3 {
     font-size: 30px;
   }
-  #webinarsHero div.col-sm-3 .btn-blue {
-    font-size: 15px;
-    margin-top: 20px;
-  }
 }
 @media only screen and (max-width: 767px) {
   #webinarsHero div.col-sm-9 {
@@ -7865,6 +7861,33 @@ section#webinarsCTA .btn-accent {
     flex: none;
     max-width: 100%;
     padding: 15% 7.5%;
+  }
+  #webinarsPrevious .header-content img {
+    max-width: 250px;
+  }
+  #webinarsPrevious .header-content h4 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  #webinarsPrevious div.col-sm-7, #webinarsPrevious div.col-sm-5 {
+    flex: none;
+    max-width: 100%;
+    display: block;
+  }
+  #webinarsPrevious div.col-sm-7.left {
+    margin-bottom: 20px;
+  }
+  #webinarsPrevious div.col-sm-7.right {
+    margin-top: 20px;
+  }
+  #webinarsPrevious div.col-sm-7 .video-box {
+    width: 100%;
+  }
+  #webinarsPrevious .hr-content {
+    padding: 5px;
+  }
+  #webinarsPrevious div.col-sm-7 iframe {
+    height: 300px;
   }
   section#webinarsCTA h2 {
     font-size: 30px;
