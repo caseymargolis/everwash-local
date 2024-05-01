@@ -7676,6 +7676,14 @@ section#webinarsHero {
   left: 0;
   bottom: -10.5px;
 }
+#webinarsHero div.col-sm-3 .form-content {
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+}
+#webinarsHero div.col-sm-3 .form-content img {
+  max-width: 80%;
+}
 #webinarsHero div.col-sm-3 .btn-blue {
   background: #141c52;
   color: #fff;
