@@ -7782,6 +7782,15 @@ section#webinarsHero {
   color: #FFF;
 }
 
+#webinarsPrevious .hr-content {
+  width: 97.5%;
+  margin: auto;
+  padding: 25px 5px;
+}
+#webinarsPrevious .hr-content hr {
+  border: solid 1px #141c52;
+}
+
 #webinarsBody #webinarsCTA {
   padding-top: max(5%, 7rem);
   padding-bottom: max(5%, 7rem);
