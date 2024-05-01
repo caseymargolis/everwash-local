@@ -7701,23 +7701,23 @@ section#webinarsHero {
   color: #fff;
 }
 
-section#caseStudy-Popup {
+section#webinarsPrevious {
   padding: 0!important;
 }
-#caseStudy-Popup .container {
+#webinarsPrevious .container {
   max-width: 100%;
   padding: 0!important;
-  background-color: #9AAAEB;
-  background-image: url("/img/new-update/casestudy_img.png");
-  background-position: center right;
+  background-color: #FFF;
+  background-image: url("/img/new-update/webinars-second-banner.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
 }
-#caseStudy-Popup .row {
+#webinarsPrevious .row {
   align-items: stretch;
   margin: 0 !important;
 }
-#caseStudy-Popup div.col-sm-9 {
+#webinarsPrevious div.col-sm-9 {
   padding: 7.5% 5%;
   flex: 0 0 65%;
   max-width: 65%;
@@ -7725,7 +7725,7 @@ section#caseStudy-Popup {
   align-items: center;
   justify-content: center;
 }
-#caseStudy-Popup div.col-sm-9 h3 {
+#webinarsPrevious div.col-sm-9 h3 {
   color: #141C52;
   font-size: 45px;
   font-weight: 600;
@@ -7733,14 +7733,14 @@ section#caseStudy-Popup {
   line-height: 1.15em;
   margin-bottom: 30px;
 }
-#caseStudy-Popup div.col-sm-9 P {
+#webinarsPrevious div.col-sm-9 P {
   color: #fff;
   font-size: 20px;
   line-height: 30px;
   max-width: 600px;
   font-weight: 500;
 }
-#caseStudy-Popup div.col-sm-9 .btn-blue {
+#webinarsPrevious div.col-sm-9 .btn-blue {
   background: #141c52;
   color: #fff;
   min-width: 200px;
@@ -7749,15 +7749,17 @@ section#caseStudy-Popup {
   line-height: 1.25em;
   margin-top: 45px;
 }
-#caseStudy-Popup div.col-sm-9 .btn-blue:hover {
+#webinarsPrevious div.col-sm-9 .btn-blue:hover {
   background:#fff ;
   color: #141c52;
 }
 
-section#caseStudyCTA {
+#webinarsBody #webinarsCTA {
+  padding-top: max(5%, 7rem);
+  padding-bottom: max(5%, 7rem);
   background: #141C52;
 }
-section#caseStudyCTA h2 {
+section#webinarsCTA h2 {
   color: #FFF;
   font-size: 45px;
   font-weight: bold;
@@ -7767,7 +7769,7 @@ section#caseStudyCTA h2 {
   margin: auto;
   margin-bottom: 30px;
 }
-section#caseStudyCTA h2:after {
+section#webinarsCTA h2:after {
   content: "";
   width: 90%;
   height: 2.5px;
@@ -7777,7 +7779,7 @@ section#caseStudyCTA h2:after {
   bottom: -7.5px;
   margin: auto;
 }
-section#caseStudyCTA p {
+section#webinarsCTA p {
   color: #FFF;
   font-size: 22.5px;
   font-weight: bold;
@@ -7787,11 +7789,6 @@ section#caseStudyCTA p {
   line-height: 1.25em;
 }
 
-#webinarsBody #webinarsCTA {
-  padding-top: max(5%, 7rem);
-  padding-bottom: max(5%, 7rem);
-}
-
 @media only screen and (max-width: 999px) {
   #webinarsHero div.col-sm-9 h4 {
     font-size: 25px;
@@ -7799,23 +7796,23 @@ section#caseStudyCTA p {
   #webinarsHero div.col-sm-9 h3 {
     font-size: 30px;
   }
-  #caseStudy-Popup div.col-sm-9 h3 {
+  #webinarsPrevious div.col-sm-9 h3 {
     font-size: 30px;
   }
   #webinarsHero div.col-sm-3 .btn-blue {
     font-size: 15px;
     margin-top: 20px;
   }
-  #caseStudy-Popup div.col-sm-9 .btn-blue {
+  #webinarsPrevious div.col-sm-9 .btn-blue {
     font-size: 15px;
     margin-top: 30px;
   }
-  #caseStudy-Popup .container {
+  #webinarsPrevious .container {
     background-size: contain;
   }
 }
 @media only screen and (max-width: 767px) {
-  #webinarsHero div.col-sm-9, #caseStudy-Popup div.col-sm-9 {
+  #webinarsHero div.col-sm-9, #webinarsPrevious div.col-sm-9 {
     flex: none;
     max-width: 100%;
     display: block;
@@ -7826,10 +7823,10 @@ section#caseStudyCTA p {
     max-width: 100%;
     padding: 15% 7.5%;
   }
-  section#caseStudyCTA h2 {
+  section#webinarsCTA h2 {
     font-size: 30px;
   }
-  section#caseStudyCTA p {
+  section#webinarsCTA p {
     font-size: 18.5px;
   }
 }
