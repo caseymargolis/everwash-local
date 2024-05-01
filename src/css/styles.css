@@ -7787,7 +7787,15 @@ section#caseStudyCTA p {
   line-height: 1.25em;
 }
 
+#webinarsBody #webinarsCTA {
+  padding-top: max(5%, 7rem);
+  padding-bottom: max(5%, 7rem);
+}
+
 @media only screen and (max-width: 999px) {
+  #webinarsHero div.col-sm-9 h4 {
+    font-size: 25px;
+  }
   #webinarsHero div.col-sm-9 h3 {
     font-size: 30px;
   }
@@ -7807,7 +7815,7 @@ section#caseStudyCTA p {
   }
 }
 @media only screen and (max-width: 767px) {
-  #webinarsHero div.col-sm-9, #webinarsHero div.col-sm-3, #caseStudy-Popup div.col-sm-9 {
+  #webinarsHero div.col-sm-9, #caseStudy-Popup div.col-sm-9 {
     flex: none;
     max-width: 100%;
     display: block;
@@ -7819,9 +7827,4 @@ section#caseStudyCTA p {
   section#caseStudyCTA p {
     font-size: 18.5px;
   }
-}
-
-#webinarsBody #webinarsCTA {
-  padding-top: max(5%, 7rem);
-  padding-bottom: max(5%, 7rem);
 }
