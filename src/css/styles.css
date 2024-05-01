@@ -7821,6 +7821,11 @@ section#caseStudyCTA p {
     display: block;
     padding: 15% 7.5%;
   }
+  #webinarsHero div.col-sm-3 {
+    flex: none;
+    max-width: 100%;
+    padding: 15% 7.5%;
+  }
   section#caseStudyCTA h2 {
     font-size: 30px;
   }
