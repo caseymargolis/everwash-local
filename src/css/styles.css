@@ -7747,6 +7747,15 @@ section#webinarsHero {
   display: flex;
   justify-content: center;
 }
+#webinarsPrevious div.col-sm-7.left {
+  justify-content: flex-start;
+}
+#webinarsPrevious div.col-sm-7.right {
+  justify-content: flex-end;
+}
+#webinarsPrevious div.col-sm-7 .video-box {
+  width: 95%;
+}
 #webinarsPrevious div.col-sm-7 iframe {
   border-radius: 15px;
 }
