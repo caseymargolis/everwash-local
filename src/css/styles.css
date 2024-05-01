@@ -7653,7 +7653,7 @@ section#webinarsHero {
 #webinarsHero div.col-sm-3 {
   background: #141C52;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   flex: 0 0 35%;
   max-width: 35%;
@@ -7680,12 +7680,15 @@ section#webinarsHero {
   padding: 30px;
   background: #fff;
   border-radius: 15px;
+  max-width: 265px;
+  margin-top: 30px;
+  max-width: 265px;
 }
 #webinarsHero div.col-sm-3 .form-content img {
-  max-width: 80%;
+  max-width: 60%;
 }
 #webinarsHero div.col-sm-3 .btn-blue {
-  background: #141c52;
+  background: #2D8CFF;
   color: #fff;
   min-width: 200px;
   font-size: 20px;
@@ -7694,8 +7697,8 @@ section#webinarsHero {
   margin-top: 30px;
 }
 #webinarsHero div.col-sm-3 .btn-blue:hover {
-  background:#fff ;
-  color: #141c52;
+  background:#141c52 ;
+  color: #fff;
 }
 
 section#caseStudy-Popup {
