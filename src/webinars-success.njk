@@ -8,6 +8,38 @@
   layout: 'base-default.njk'
 ---
 
+<!-- Start of Confirmation Form Modal -->
+<button
+  class="btn btn-blue d-none"
+  type="button"
+  data-toggle="modal"
+  data-target="#formConfirmation"
+  id="triggerFormConfirmation">
+  Learn More</button>
+<div class="modal fade partnerModal" id="formConfirmation" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fal fa-times"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs">
+            <i class="fas fa-envelope-open-text"></i>
+            <h3>Your form was <br/>successfully submited</h3>
+            <p>
+              Thanks for your interest! An EverWash representative will be in contact with you shortly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Confirmation Form Modal -->
+
 <main id="webinarsBody">
   <!-- Webinars Hero -->
   <section id="webinarsHero">
