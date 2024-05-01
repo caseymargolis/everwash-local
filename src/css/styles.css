@@ -7758,6 +7758,7 @@ section#webinarsPrevious {
   padding-top: max(5%, 7rem);
   padding-bottom: max(5%, 7rem);
   background: #141C52;
+  text-align: center;
 }
 section#webinarsCTA h2 {
   color: #FFF;
