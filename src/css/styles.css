@@ -7723,7 +7723,6 @@ section#webinarsHero {
   position: relative;
   width: max-content;
   margin-bottom: 45px;
-  text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   margin-top: 35px;
@@ -7732,7 +7731,7 @@ section#webinarsHero {
   content: "";
   width: 100%;
   height: 3.5px;
-  background: #F3F183;
+  background: #66D2CA;
   position: absolute;
   left: 0;
   bottom: -3.5px;
@@ -7768,14 +7767,14 @@ section#webinarsHero {
   line-height: 21.5px;
   font-weight: 400;
 }
-#webinarsPrevious div.col-sm-5 .btn-blue {
-  background: #1fbfb7;
+#webinarsPrevious div.col-sm-5 .btn-green {
+  background: #66D2CA;
   color: #fff;
-  min-width: 200px;
+  min-width: 225px;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.25em;
-  margin-top: 45px;
+  margin-top: 15px;
 }
 #webinarsPrevious div.col-sm-5 .btn-blue:hover {
   background:#141c52 ;
@@ -7826,23 +7825,13 @@ section#webinarsCTA p {
   #webinarsHero div.col-sm-9 h3 {
     font-size: 30px;
   }
-  #webinarsPrevious div.col-sm-9 h3 {
-    font-size: 30px;
-  }
   #webinarsHero div.col-sm-3 .btn-blue {
     font-size: 15px;
     margin-top: 20px;
   }
-  #webinarsPrevious div.col-sm-9 .btn-blue {
-    font-size: 15px;
-    margin-top: 30px;
-  }
-  #webinarsPrevious .container {
-    background-size: contain;
-  }
 }
 @media only screen and (max-width: 767px) {
-  #webinarsHero div.col-sm-9, #webinarsPrevious div.col-sm-9 {
+  #webinarsHero div.col-sm-9 {
     flex: none;
     max-width: 100%;
     display: block;
