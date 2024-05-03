@@ -96,7 +96,7 @@ section#caseStudy-Popup {
   background-image: url("/img/new-update/casestudy_img-new.png");
   background-position: center right;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
 }
 #caseStudy-Popup .row {
   align-items: stretch;
