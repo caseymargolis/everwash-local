@@ -7842,6 +7842,14 @@ section#webinarsCTA .btn-accent {
   font-weight: 600;
 }
 
+#zoomSignupmodal .modal-content {
+  padding: 1.5%;
+}
+#zoomSignupmodal .modal-content iframe {
+  width: 100%;
+  min-height: 85vh;
+}
+
 @media only screen and (max-width: 999px) {
   #webinarsHero div.col-sm-9 h4 {
     font-size: 25px;
