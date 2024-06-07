@@ -98,20 +98,22 @@ section#caseStudy-Popup {
   background-size: contain; */
   background-repeat: no-repeat;
 }
-#caseStudy-Popup .container img {
-  width: 50%;
-  height: auto;
-  margin-bottom: 30px;
+#caseStudy-Popup .container .col-sm-9 {
+  position: initial;
 }
-@media only screen and (min-width: 768px) {
+#caseStudy-Popup .container img {
+  position: absolute;
+  opacity: 0.75;
+  width: 21.5%;
+  height: auto;
+  right: 10%;
+}
+@media only screen and (max-width: 767px) {
   #caseStudy-Popup .container img {
-    display: none!important;
-  }
-  #caseStudy-Popup .container {
-    background-image: url("/img/new-update/money-bag.svg");
-    background-size: 25%;
-    background-position-y: center;
-    background-position-x: 85%;
+    position: initial;
+    width: 50%;
+    height: auto;
+    margin-bottom: 30px;
   }
 }
 
