@@ -93,11 +93,28 @@ section#caseStudy-Popup {
   max-width: 100%;
   padding: 0!important;
   background-color: #9AAAEB;
-  background-image: url("/img/new-update/casestudy_img-new.png");
+  /* background-image: url("/img/new-update/casestudy_img-new.png");
   background-position: center right;
+  background-size: contain; */
   background-repeat: no-repeat;
-  background-size: contain;
 }
+#caseStudy-Popup .container img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  #caseStudy-Popup .container img {
+    display: none!important;
+  }
+  #caseStudy-Popup .container {
+    background-image: url("/img/new-update/money-bag.svg");
+    background-size: 25%;
+    background-position-y: center;
+    background-position-x: 85%;
+  }
+}
+
 #caseStudy-Popup .row {
   align-items: stretch;
   margin: 0 !important;
@@ -186,9 +203,6 @@ section#caseStudyCTA p {
   #caseStudy-Popup div.col-sm-9 .btn-blue {
     font-size: 15px;
     margin-top: 30px;
-  }
-  #caseStudy-Popup .container {
-    background-size: contain;
   }
 }
 @media only screen and (max-width: 767px) {
