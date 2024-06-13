@@ -5,7 +5,7 @@
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
     priority: 0.64
-  layout: 'base-default.njk'
+    layout: 'base-default.njk'
 ---
 
 <main id="partnerMain">
@@ -93,46 +93,5 @@
         </div>
       </div>
     </div>
-   </section>    
+  </section>    
 </main>
-
-<!-- Excel Membership With EverWash Form -->
-<div class="modal fade" id="excelmembershipModal" tabindex="-1" aria-label="Excel Membership With EverWash Form" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-container">
-          <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
-          <h4>Sound too good to be true? It's really not!</h4>
-          <p>
-            Complete the form below and we'll send over a full report to show your revenue potential. Don't sell yourself short.<br>
-            <strong>Excel at Membership with EverWash!</strong>
-          </p>
-          <form
-            style="display: none;" 
-            id="washOwnerPopup"
-            name="Wash Owner Popup Form"
-            method="POST"
-            action="/wash-owners-success.html"
-            data-netlify="true" 
-            data-netlify-honeypot="bot-field">
-            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Popup Form Submission"/>
-            <input type="hidden" name="formName" value="Wash Owner Popup Form" aria-hidden="true"/>
-            {% include 'wash-owner-form-popup.njk' %}
-          </form>
-
-          <form id="washOwnerPopup-external" action="https://go.everwash.com/l/996891/2024-01-05/zf7r" method="POST">
-            {% include 'wash-owner-form-popup.njk' %}
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
