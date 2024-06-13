@@ -7636,7 +7636,8 @@ section#webinarsHero {
   font-weight: 600;
   max-width: 550px;
   line-height: 1.15em;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-bottom: 0px;
 }
 #webinarsHero div.col-sm-9 h5 {
   color: #28D5CB;
