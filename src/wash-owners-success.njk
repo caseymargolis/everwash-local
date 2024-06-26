@@ -1,11 +1,11 @@
 ---
-  title: EverWash | Excel at Membership | Increase Car Wash Revenue
-  description: Discover the benefits of partnering with EverWash as a car wash owner. Find out how our innovative analytics and membership technology can help you grow your business, increase customer satisfaction, and improve your bottom line.
+  title: Wash Owners
+  description: An EverWash membership gains you access to monthly unlimited car wash plans at your neighborhood’s best car washes. Wash Smart. Save Hard.
   permalink: "{{ page.filePathStem }}.html"
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
     ignore: true
-  layout: 'base-revenueCal-sales.njk'
+  layout: 'base-noindex.njk'
 ---
 
 <!-- Start of Confirmation Form Modal -->
@@ -39,77 +39,271 @@
   </div>
 </div>
 <!-- End of Confirmation Form Modal -->
-
-
-<main id="partnerMain">
+{% include 'partner-nav.njk' %}
+<main
+  id="partnerMain">
   <!-- Hero -->
   <section id="partnerHero">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8">
-          <div class="info-box">
-            <h4>CAR WASH OWNERS:</h4>
-            <h1>Membership can grow your revenue by <span>90%</span></h1>
-            <p>within the first <span>12 months</span> of launching your membership program.</p>
+        <div class="col-lg-6" id="partnerHeroHeading">
+          <h1 class="brand-nubolts">Stay
+            <span class="gradient-text-01 dash-gradient-01">competitive</span>
+            in a crowded industry</h1>
+          <p>An end-to-end solution that manages your customer interactions and delivers the right data and recommendations that
+            improve your business.</p>
+          <a href="#partnerCTA" class="btn btn-accent">Get Started</a>
+        </div>
+        <div class="col-lg-6 d-c">
+          <img src="/img/man-with-car-3.png" alt="Happy man smiling with his car" class="img-fluid"></div>
+        </div>
+      </div>
+    </section>
+    {# Rotating Carousel #}
+    <section id="partnerCarouselSection">
+      <div class="container">
+        <div id="partnerCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row carousel-card" id="carousel-card-1">
+                <div class="col-lg-5">
+                  <h2>Guarantee a recurring revenue stream regardless of wash output</h2>
+                </div>
+                <div class="col-lg-7">
+                  <img src="/img/wash-attendant.png" alt="Car wash attendant" class="img-fluid"/>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row carousel-card" id="carousel-card-2">
+                <div class="col-lg-5">
+                  <h2>Enhance your customer’s experience with membership perks</h2>
+                </div>
+                <div class="col-lg-7">
+                  <img src="/img/woman-holding-phone.png" alt="Woman smiling at her phone" class="img-fluid"/>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row carousel-card" id="carousel-card-3">
+                <div class="col-lg-5">
+                  <h2>Maximize revenue and profitability with smart analytics</h2>
+                </div>
+                <div class="col-lg-7">
+                  <img src="/img/man-with-laptop.png" alt="Man looking at a laptop" class="img-fluid"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-control">
+            <a class="carousel-control-prev" href="#partnerCarousel" role="button" data-slide="prev">
+              <i class="far fa-arrow-circle-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <ol class="carousel-indicators">
+              <li data-target="#partnerCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#partnerCarousel" data-slide-to="1"></li>
+              <li data-target="#partnerCarousel" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-next" href="#partnerCarousel" role="button" data-slide="next">
+              <i class="far fa-arrow-circle-right"></i>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="info-box">
-            <img src="/img/new-update/wash_owner_banner_image.png" alt="Car Wash Customers" class="img-fluid">
-            <h6>Use Our</h6>
-            <a href="/wash-owners#partnerCalc" class="btn btn-blue">Revenue Calculator</a>
-            <p>to see how much money you're leaving on the table.</p>
+      </div>
+    </section>
+    <!-- What EverWash Does -->
+    <section id="partnerOffers">
+      <div class="container">
+        <h2>It’s all here for you to
+          <span class="gradient-text-01">keep growing</span>
+        </h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href="/wash-owners/membership.html">
+              <div class="icon-container" id="iconContainerMembership">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.74 61.2" height="45px" width="45px">
+                  <g id="Icons">
+                    <g><path
+                        class="cls-1"
+                        d="M21.89,41.41c-5.47,0-9.9,4.43-9.9,9.9s4.43,9.9,9.9,9.9,9.9-4.43,9.9-9.9-4.43-9.9-9.9-9.9Zm6.27,11.27h-4.9v4.9h-2.75v-4.9h-4.9v-2.75h4.9v-4.9h2.75v4.9h4.9v2.75Z"/><path
+                        class="cls-1"
+                        d="M60.4,25.81h-2.61c2.33-2.03,3.8-5,3.8-8.32,0-6.1-4.96-11.06-11.05-11.06s-11.05,4.96-11.05,11.06c0,3.32,1.48,6.3,3.8,8.32h-.03c2.32,2.2,3.77,5.3,3.77,8.74v12.4h19.7v-14.79c0-3.5-2.85-6.35-6.35-6.35Zm-3.95-5.71c-1.27,1.92-3.43,3.02-5.91,3.02s-4.63-1.1-5.91-3.02c-.14-.21-.11-.48,.06-.66,.17-.18,.45-.22,.66-.09,2.32,1.41,3.87,1.6,5.19,1.6s2.87-.19,5.19-1.6c.21-.13,.49-.09,.66,.09,.17,.18,.2,.45,.06,.66Z"/><path
+                        class="cls-1"
+                        d="M34.98,25.75h-2.52c2.76-2.73,4.48-6.51,4.48-10.69C36.94,6.75,30.19,0,21.89,0S6.84,6.75,6.84,15.05c0,4.18,1.71,7.96,4.48,10.69h-2.52c-4.85,0-8.8,3.95-8.8,8.8v20.02H9.64c-.28-1.04-.44-2.13-.44-3.26s.16-2.21,.44-3.26h-3.13v-13.5c0-1.26,1.03-2.29,2.29-2.29h26.19c1.26,0,2.29,1.03,2.29,2.29v13.5h-3.13c.28,1.04,.44,2.13,.44,3.26s-.16,2.21-.44,3.26h9.64v-20.02c0-4.85-3.95-8.8-8.8-8.8Zm-13.09-2.15c-4.71,0-8.54-3.83-8.54-8.54s3.83-8.54,8.54-8.54,8.54,3.83,8.54,8.54-3.83,8.54-8.54,8.54Z"/><path
+                        class="cls-1"
+                        d="M21.89,18.29c-1.47,0-3.18-.21-5.75-1.77-.23-.14-.54-.1-.73,.1-.19,.2-.22,.5-.07,.73,1.41,2.13,3.8,3.35,6.54,3.35s5.13-1.22,6.54-3.35c.15-.23,.13-.53-.07-.73-.19-.2-.49-.24-.73-.1-2.57,1.56-4.28,1.77-5.75,1.77Z"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="link-dark">Membership</h3>
+              <p>Build your membership program and increase recurring revenue.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href="/wash-owners/analytics.html">
+              <div class="icon-container" id="iconContainerAnalytics">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.8 48.18" height="45px" width="45px">
+                  <g id="Icons">
+                    <g><path
+                        class="cls-1"
+                        d="M45.94,11.16c-2.84-.57-5.72,.36-7.92,2.56-2.2,2.2-3.13,5.09-2.56,7.93,.06,.31,.33,.53,.64,.53,.31,0,.59-.2,.66-.51,.81-3.31,2.01-4.85,3.18-6.03,1.17-1.17,2.72-2.37,6.03-3.18,.3-.07,.51-.35,.51-.66,0-.31-.23-.58-.53-.64Z"/><path
+                        class="cls-1"
+                        d="M22.29,12.08c-4.05,0-8.09,.08-12.13,.25,.47-1.61,.86-3.22,1.6-4.83,.64-1.34,1.17-2.6,3-2.6h11.69c.42-.5,.85-.99,1.32-1.46,.72-.72,1.48-1.36,2.26-1.97H14.77c-3.94,0-5.36,3-6.04,4.44l-.06,.12v.02l-.02,.02c-.72,1.56-1.13,3.02-1.53,4.44-.2,.69-.39,1.36-.61,2.01-.05,0-.09,.01-.13,.02v-.21c0-.67-.54-1.2-1.2-1.2H1.2c-.66,0-1.2,.54-1.2,1.2v1.42c0,.66,.54,1.2,1.2,1.2H3.47c-.23,.55-.34,1.16-.28,1.77,.34,3.97,.29,7.15,.65,11.14,.08,.9,.65,1.61,1.43,1.93v2.57c0,.66,.54,1.2,1.2,1.2h3.94c.66,0,1.2-.54,1.2-1.2v-2.5c3.71-.06,7.47-.08,11.24-.08-2.46-5.61-2.65-11.96-.56-17.69Zm-12.54,8.02c-1.43,0-2.58-1.16-2.58-2.58s1.16-2.58,2.58-2.58,2.58,1.16,2.58,2.58-1.16,2.58-2.58,2.58Z"/><path
+                        class="cls-1"
+                        d="M58.88,5.92c-3.95-3.95-9.12-5.92-14.3-5.92s-10.35,1.97-14.3,5.92c-6.46,6.46-7.63,16.19-3.52,23.85l-3.34,3.34,1.62,1.62-8.42,8.42,5.03,5.03,8.42-8.42,1.62,1.62,3.34-3.34c2.97,1.59,6.26,2.4,9.55,2.4,5.18,0,10.35-1.97,14.3-5.92,7.9-7.9,7.9-20.7,0-28.6Zm-5.03,23.57c-2.48,2.48-5.77,3.84-9.27,3.84s-6.79-1.36-9.27-3.84c-5.11-5.11-5.11-13.42,0-18.53,2.48-2.48,5.77-3.84,9.27-3.84s6.79,1.36,9.27,3.84c2.48,2.48,3.84,5.77,3.84,9.27,0,3.5-1.36,6.79-3.84,9.27Z"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="link-dark">Analytics</h3>
+              <p>Maintain your competitive edge in a crowded market by getting the right data.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href="/wash-owners/branding.html">
+              <div class="icon-container" id="iconContainerMarketing">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.6 62.51" height="45px" width="45px">
+                  <g id="Icons">
+                    <g><path
+                        class="cls-1"
+                        d="M25.3,8.16c-1.06-.43-2.15-.63-3.22-.63-3.4,0-6.63,2.03-7.98,5.38-1.78,4.41,.35,9.42,4.76,11.2,1.06,.43,2.15,.63,3.22,.63,3.4,0,6.63-2.03,7.98-5.38,1.78-4.41-.35-9.42-4.76-11.2Zm2,10.09c-.87,2.14-2.92,3.53-5.23,3.53-.72,0-1.43-.14-2.11-.41-2.88-1.16-4.28-4.46-3.12-7.34,.87-2.14,2.92-3.53,5.23-3.53,.72,0,1.43,.14,2.11,.41,1.4,.56,2.49,1.64,3.08,3.02,.59,1.39,.6,2.92,.04,4.32Z"/><path
+                        class="cls-1"
+                        d="M44.15,19.58V0H0V32.28H8.83v10.66l13.09-10.66h9.53v19.58h22.23l13.09,10.66v-10.66h8.83V19.58h-31.45Zm-12.7,7.85h-11.26l-6.51,5.3v-5.3H4.85V4.85H39.3v14.73h-7.85v7.85Zm39.3,19.58h-8.83v5.3l-6.51-5.3h-19.1V24.43h34.45v22.57Z"/><path
+                        class="cls-1"
+                        d="M53.52,42.41l7.07-7.06c1.45-1.45,1.45-3.79,0-5.24-1.45-1.45-3.79-1.45-5.24,0l-1.82,1.82-1.82-1.82c-1.45-1.45-3.79-1.45-5.24,0-1.45,1.45-1.45,3.79,0,5.24l7.06,7.06Z"/><path
+                        class="cls-1"
+                        d="M23.46,12.83c-1.9-.77-4.06,.15-4.82,2.05-.77,1.9,.15,4.06,2.05,4.82,1.9,.77,4.06-.15,4.82-2.05,.77-1.9-.15-4.06-2.05-4.82Z"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="link-dark">Marketing & Ads</h3>
+              <p>Customized marketing campaigns that drive recurring revenue  and engage customers.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href="/wash-owners/websites.html">
+              <div class="icon-container" id="iconContainerWebsites">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.38 62.64" height="45px" width="45px">
+                  <g id="Icons">
+                    <g><path
+                        class="cls-1"
+                        d="M10.68,12.31c1.01,.41,2.17-.08,2.58-1.09s-.08-2.17-1.09-2.58c-1.01-.41-2.17,.08-2.58,1.09-.41,1.01,.08,2.17,1.09,2.58Z"/><path
+                        class="cls-1"
+                        d="M21.8,12.31c1.01,.41,2.17-.08,2.58-1.09,.41-1.01-.08-2.17-1.09-2.58-1.01-.41-2.17,.08-2.58,1.09-.41,1.01,.08,2.17,1.09,2.58Z"/><path
+                        class="cls-1"
+                        d="M16.24,12.31c1.01,.41,2.17-.08,2.58-1.09s-.08-2.17-1.09-2.58c-1.01-.41-2.17,.08-2.58,1.09-.41,1.01,.08,2.17,1.09,2.58Z"/><path
+                        class="cls-1"
+                        d="M23.72,34.82c-3.66,0-6.64,2.98-6.64,6.64,0,2.93,1.91,5.42,4.55,6.3l1.01,6.77h4.84l-.95-6.36,12.39,2.82V31.94l-12.67,2.89h-2.53Zm1.2,10.27h-1.2c-2,0-3.64-1.63-3.64-3.64s1.63-3.64,3.64-3.64h1.2v7.27Zm3-7.58l8-1.82v11.53l-8-1.82v-7.88Z"/><path d="M0,62.64H56.38V23.47H0V62.64ZM5,28.47H51.38v29.17H5V28.47Z"/><path d="M0,0V20.95H56.38V0H0ZM51.38,15.95H5V5H51.38V15.95Z"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="link-dark">Websites</h3>
+              <p>SEO-friendly website design and development for a higher Google ranking.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href="/wash-owners/Intelligence.html">
+              <div class="icon-container" id="iconContainerIntelligence">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.66 54.59" height="45px" width="45px">
+                  <g id="Icons">
+                    <g><path class="cls-1" d="M43.96,15.62l6.09-3.51C45.45,5.23,37.83,.56,29.1,0V7.03c6.14,.53,11.5,3.81,14.87,8.59Z"/><path
+                        class="cls-1"
+                        d="M51.82,15.17l-6.09,3.52c1.22,2.61,1.93,5.51,1.93,8.58,0,1.21-.13,2.38-.33,3.53l6.8,1.82c.34-1.73,.53-3.52,.53-5.35,0-4.34-1.02-8.45-2.83-12.1Z"/><path
+                        class="cls-1"
+                        d="M27.33,47.59c-1.21,0-2.38-.13-3.53-.33l-1.82,6.8c1.73,.34,3.52,.53,5.35,.53,12,0,22.22-7.78,25.88-18.56l-6.8-1.82c-2.85,7.79-10.31,13.38-19.08,13.38Z"/><path
+                        class="cls-1"
+                        d="M7,27.26C7,16.65,15.18,7.93,25.56,7.03V0C11.31,.92,0,12.79,0,27.26c0,12,7.78,22.22,18.56,25.88l1.82-6.8c-7.79-2.85-13.38-10.31-13.38-19.08Z"/><rect class="cls-1" x="22.12" y="18.47" width="4" height="15.61"/><rect class="cls-1" x="15.64" y="25.6" width="4" height="8.48"/><rect class="cls-1" x="28.6" y="21.07" width="4" height="13.02"/><rect class="cls-1" x="35.08" y="25.6" width="4" height="8.48"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="link-dark">Intelligence</h3>
+              <p>Predict churn and present relevant offers to maintain customer loyalty.</p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="icon-container" id="iconContainerSignage">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.38 68.19" height="45px" width="45px">
+                <g id="Icons">
+                  <g><path
+                      class="cls-1"
+                      d="M56.38,19.51V0H0V19.51H5v2.51H0V61.2H5v6.99h5v-6.99H46.38v6.99h5v-6.99h5V22.03h-5v-2.51h5ZM5,5H51.38V14.51H5V5ZM51.38,56.2H5V27.03H51.38v29.17Zm-5-34.17H10v-2.51H46.38v2.51Z"/><path
+                      class="cls-1"
+                      d="M10.74,34.59c.93,.38,1.99-.07,2.37-1.01,.38-.93-.07-1.99-1.01-2.37-.93-.38-1.99,.07-2.37,1.01-.38,.93,.07,1.99,1.01,2.37Z"/><path
+                      class="cls-1"
+                      d="M43.56,34.27c-.57,0-1.21-.18-1.7-.47l-.56,1.27c.44,.27,1.16,.47,1.89,.52v.71h1.04v-.74c1.14-.2,1.71-.89,1.71-1.69,0-1.9-2.85-1.38-2.85-2,0-.18,.16-.32,.67-.32,.45,0,.93,.13,1.43,.38l.52-1.26c-.42-.24-.95-.38-1.49-.43v-.71h-1.04v.73c-1.21,.17-1.81,.87-1.81,1.7,0,1.92,2.85,1.4,2.85,2.05,0,.18-.18,.28-.67,.28Z"/><path
+                      class="cls-1"
+                      d="M10.74,43.3c.93,.38,1.99-.07,2.37-1.01,.38-.93-.07-1.99-1.01-2.37-.93-.38-1.99,.07-2.37,1.01-.38,.93,.07,1.99,1.01,2.37Z"/><path
+                      class="cls-1"
+                      d="M43.19,45h1.04v-.74c1.14-.2,1.71-.89,1.71-1.69,0-1.9-2.85-1.38-2.85-2,0-.18,.16-.32,.67-.32,.45,0,.93,.13,1.43,.38l.52-1.26c-.42-.24-.95-.38-1.49-.43v-.71h-1.04v.73c-1.21,.17-1.81,.87-1.81,1.7,0,1.92,2.85,1.4,2.85,2.05,0,.18-.18,.28-.67,.28-.57,0-1.21-.18-1.7-.47l-.56,1.27c.44,.27,1.16,.47,1.89,.52v.71Z"/><path
+                      class="cls-1"
+                      d="M10.74,52.01c.93,.38,1.99-.07,2.37-1.01s-.07-1.99-1.01-2.37c-.93-.38-1.99,.07-2.37,1.01-.38,.93,.07,1.99,1.01,2.37Z"/><path
+                      class="cls-1"
+                      d="M43.19,53.71h1.04v-.74c1.14-.2,1.71-.89,1.71-1.68,0-1.9-2.85-1.38-2.85-2,0-.18,.16-.32,.67-.32,.45,0,.93,.13,1.43,.38l.52-1.26c-.42-.24-.95-.38-1.49-.43v-.71h-1.04v.73c-1.21,.17-1.81,.87-1.81,1.7,0,1.92,2.85,1.4,2.85,2.05,0,.18-.18,.28-.67,.28-.57,0-1.21-.18-1.7-.47l-.56,1.27c.44,.27,1.16,.47,1.89,.52v.71Z"/><rect class="cls-1" x="14.84" y="30.53" width="24.32" height="4.74"/><rect class="cls-1" x="14.84" y="39.24" width="24.32" height="4.74"/><rect class="cls-1" x="14.84" y="47.96" width="24.32" height="4.74"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h3>Signage</h3>
+            <p>Signage that engages, streamlines, and enhances your onsite experience.</p>
           </div>
         </div>
-      </div>  
-    </div>
-  </section>
-
-  <!-- Revenue Calculator -->
-  <section id="partnerCalc">
-    <div class="container">
-      <h3>How much money are you leaving on the table?</h3>
-      <h2>Revenue Calculator</h2>
-      <div class="row">
-        <div class="col-lg-5">
-          <form action="" id="frmCalculator" class="partnerCalcModule text-dark">
-            <label for="annualCarCountInput">Annual Car Count:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="txtCount"
-              type="number"
-              required="required"
-              pattern="[0-9]*"
-              placeholder="Number of Cars"/>
-            <label for="annualWashRevenue">Annual Car Wash Revenue:</label>
-            <div class="input-container">
-              <span>$</span>
+      </div>
+    </section>
+    <!-- Revenue Calculator -->
+    <section id="partnerCalc">
+      <div class="container">
+        <h2>Revenue Calculator</h2>
+        <h3>How much money are you leaving on the table?</h3>
+        <p class="subheading">Estimate how much additional recurring revenue EverWash can generate for your wash.</p>
+        <div class="row">
+          <div class="col-lg-5">
+            <form action="" id="frmCalculator" class="partnerCalcModule text-dark">
+              <label for="annualCarCountInput">Annual Car Count:</label>
               <input
                 type="text"
                 class="form-control"
-                id="txtRevenue"
+                id="txtCount"
                 type="number"
                 required="required"
-                pattern="[0-9,.]*"
-                placeholder="Annual Revenue"/>
-            </div>
-            <button class="btn btn-accent btn-large" id="btnSubmit">Estimate Earnings</button>
-          </form>
-          <button style="display: none;" id ="excelFormview" data-toggle="modal" data-target="#excelmembershipModal">Form View</button>
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-6" id="partnerCalcResultsContainer">
-          <h4>Additional Annual Revenue</h4>
-          <div
-            id="results" class="mt-3">
-            <!--d-none-->
-            <div id="breakdownSm">
-              <span class="calc_annual_ew_membership_conversion_revenue">$0</span>
-            </div>
+                pattern="[0-9]*"
+                placeholder="Number of Cars"/>
+              <label for="annualWashRevenue">Annual Car Wash Revenue:</label>
+              <div class="input-container">
+                <span>$</span><input
+                  type="text"
+                  class="form-control"
+                  id="txtRevenue"
+                  type="number"
+                  required="required"
+                  pattern="[0-9]*"
+                  placeholder="Annual Revenue"/></div>
+              <button class="btn btn-accent btn-large" id="btnSubmit">Estimate Earnings</button>
+            </form>
           </div>
-          <p>
-            Based on a 15% Customer-To-Member Conversion Rate.
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6" id="partnerCalcResultsContainer">
+            <h4>Additional Annual Revenue:</h4>
+            <div
+              id="results" class="mt-3">
+              <!--d-none-->
+              <div id="breakdownSm">
+                <span class="calc_annual_ew_membership_conversion_revenue gradient-text-01">$0</span>
+              </div>
+            </div>
+          </p>
+          <p>Based on a 15% Customer-To-Member Conversion Rate.
           </p>
           {# <a href="" class="link-light">Learn how we estimate your earnings</a> #}
         </div>
@@ -117,255 +311,194 @@
       <div class="row"></div>
     </div>
   </section>
-
-  <!-- Car Wash Industry -->
-  <section id="partnerIndustry">
-    <div class="container">
-      <h3>Don't let fear and uncertainty hold you back.</h3>
-      <h2><span>Membership</span> is your path to thriving in the car wash industry.</h2>
-      <div class="row">
-        <div id="owl-carousel-infobox" class="owl-carousel owl-theme">
-          <div class="item carousel-shadow">
-            <img src="/img/new-update/industry_icon1.png" class="img-fluid">
-            <p>Does tomorrow's weather forecast keep you up at night?</p>
-          </div>
-          <div class="item carousel-shadow">
-            <img src="/img/new-update/industry_icon2.png" class="img-fluid">
-            <p>Are you worried about new competitors or existing rivals chipping away at your customer base?</p>
-          </div>
-          <div class="item carousel-shadow">
-            <img src="/img/new-update/industry_icon3.png" class="img-fluid">
-            <p>Are you looking to start offering membership at your wash or facing challenges with low membership numbers on your existing program?</p>
-          </div>
-          <div class="item carousel-shadow">
-            <img src="/img/new-update/industry_icon1.png" class="img-fluid">
-            <p>Does tomorrow's weather forecast keep you up at night?</p>
-          </div>
-          <div class="item carousel-shadow">
-            <img src="/img/new-update/industry_icon2.png" class="img-fluid">
-            <p>Are you worried about new competitors or existing rivals chipping away at your customer base?</p>
-          </div>
-          <div class="item carousel-shadow">
-            <img src="/img/new-update/industry_icon3.png" class="img-fluid">
-            <p>Are you looking to start offering membership at your wash or facing challenges with low membership numbers on your existing program?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="partnerCTA">
+  <!-- How EverWash Markets Car Washes -->
+  <section id="partnerMarketing">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div class="form-container">
-            <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
-            <h4>Excel at Membership with EverWash</h4>
-            <p>
-              Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
-            </p>
-            <form
-              id="washOwnerForm"
-              name="Wash Owner Form"
-              method="POST"
-              action="/wash-owners-success.html"
-              netlify
-              netlify-honeypot="bot-field">
-              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Form Submission"/>
-              <input type="hidden" name="formName" value="Wash Owner Form" aria-hidden="true"/>
-              {% include 'wash-owner-form.njk' %}
-            </form>
-          </div>
+          <img src="/img/beach-bubbles-website.png" alt="Website designed and built by EverWash" class="img-fluid"/>
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-5">
-          <div>
-            <h5>Membership is the most profitable way to grow and protect your business by creating recurring revenue and ensuring customer loyalty.</h5>
-            <h4>Excel at Membership</h4>
-          </div>
+          <h2>Digital Marketing, Website Design & Management, Signage and More</h2>
+          <p>You can rely on us to manage all your marketing needs and increase the sales of your car wash services. Using our
+            tools, we simplify marketing and engage customers on your behalf.</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Reviews from Wash Owners -->
-  <section id="partnerReviews">
-    <div class="container">
-      <div id="partnerReviewsHeading">
-        <img src="/img/new-update/partner_review.png" alt="Wash Partner Growth and Success Stories" class="img-fluid"/>
-        <h2>Wash Partner Growth and Success Stories</h2>
-        <p>Join us on the journey to secure your future success. See the success for yourself, and join our network of car wash operators and partners.</p>
-      </div>
-      <div class="row">
-        <div id="owl-carousel-video" class="owl-carousel owl-theme owl-center owl-loaded">
-          <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=aUMrOd1b-H4&list=PLb_t4jhLuCPhnHzx3oC6TomU3jEvyZXPK&index=2&t=625s"></a></div>
-          <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=Av9b3O-lMRY&list=PLb_t4jhLuCPhnHzx3oC6TomU3jEvyZXPK&index=3&t=1s"></a></div>
-          <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=ypJEeds7dvk&list=PLb_t4jhLuCPhnHzx3oC6TomU3jEvyZXPK&index=4&t=2s"></a></div>
-          <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=q2ktgobz4WM&list=PLb_t4jhLuCPhnHzx3oC6TomU3jEvyZXPK&index=5&t=282s"></a></div>
-          <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=_-zDuat4whc&list=PLb_t4jhLuCPhnHzx3oC6TomU3jEvyZXPK&index=7&t=87s"></a></div>
-        </div>
-      </div>
-    </div>  
-  </section>
-
-  <!-- Membership Success Story-->
-  <section id="partnerMembershipstory">
-    <div class="container">
-      <a href="/wash-owners#partnerCTA" class="btn btn-blue">Click Here</a>
-      <h5>or speak with a Membership Expert to learn how you can become the industry's next membership success story.</h5>
-    </div>
-  </section>
-
-  <!-- Membership Solution Software-->
-  <section id="partnerSoftware">
-    <div class="container">
-      <h1>A complete car wash membership solution, not just software</h1>
-      <div class="row reverse-row">
-        <div class="col-lg-7">
-          <div class="box-info">
-            <h4>Works With All Washes and Equipment:</h4>
-            <p>Do you think your site is ill-equipped to handle membership or lacks the necessary systems to run a successful membership program?</p>
-            <hr>
-            <h6>No matter what type of wash system you operate — whether you have a POS or pay station or not — revenue growth is achievable through membership. Wash operators have been able to run successful membership programs, regardless of whether they have advanced systems or are operating out of cigar boxes.</h6>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="image-info">
-            <img src="/img/new-update/wash-equipment.png" class="img-fluid">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="image-info">
-            <img src="/img/new-update/risk-launch.png" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="box-info">
-            <h4>Risk-Free Membership Launch:</h4>
-            <p>Does the start-up cost behind launching and running a membership program concern you? Does the start-up cost behind launching and running a membership program concern you?</p>
-            <hr>
-            <h6>Discover a risk-free solution that allows car washes to start and succeed with no up-front cost. Minimize your financial risk while maximizing your potential for membership success.</h6>
-          </div>
-        </div>
-      </div>
-      <div class="row reverse-row">
-        <div class="col-lg-7">
-          <div class="box-info">
-            <h4>Education and Partnership:</h4>
-            <p>Are you looking for a membership partner that supports you with more than just software and equipment?</p>
-            <hr>
-            <h6>A membership program that is poorly set up, inadequately supported, and unfocused is destined to fail. You need a dedicated partner — not just a vendor — to join your team and provide the knowledge and ongoing support you need to thrive.</h6>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="image-info">
-            <img src="/img/new-update/education-partnership.png" class="img-fluid">
-          </div>
-        </div>
-      </div>  
-    </div>
-  </section>
-
-  <!-- Keys To Drive Success -->
-  <section id="partnerMembershipsuccess">
-    <div class="container">
-      <h2>Keys to Drive Your Membership <span>Success</span></h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="infobox col_1">
-            <img src="/img/new-update/ongoing-support.png" class="img-fluid">
-            <h5>Ongoing Member Engagement, Retention, and Support:</h5>
-            <hr>
-            <p>Is keeping your existing clientele engaged, informed, and happy important to you?</p>
-            <h6>Using comprehensive marketing strategies, engagement opportunities, and an in-house call center drives industry-leading lifetime value, retention rates, and exceptional customer support, setting your car wash apart.</h6>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="infobox col_3">
-            <img src="/img/new-update/retain-employees.png" class="img-fluid">
-            <h5>Retain Your Best<br>Employees:</h5>
-            <hr>
-            <p>Struggling with staffing, or experiencing unexpected turnover with your best employees?</p>
-            <h6>Employee retention is a constant challenge, but with a strong membership program, you can overcome it. Membership means more cars and tips for your team. Empower your employees through ongoing training and education. Help your attendants be their best, creating a happier, more efficient, and more successful staff.</h6>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="infobox col_2">
-            <img src="/img/new-update/seamless-app-based.png" class="img-fluid">
-            <h5>Seamless App-Based Membership Experience:</h5>
-            <hr>
-            <p>Looking for easy opportunities to sell memberships and market your wash off-site? Meet your customers where they are</p>
-            <h6>With an easy-to-use app, attendants can sell using a smartphone or tablet, while members enjoy easy sign-ups, plan management, vehicle additions, and referrals, both on and off-site.</h6>
-          </div>  
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- OmniX -->
   <section id="partnerOmnix">
     <div class="container">
+      <h2>Know your customers like you know yourself</h2>
       <div class="row">
         <div class="col-lg-6">
-          <div class="infobox">
-            <h2>Know your <span>customers</span> like you know yourself</h2>
-            <h5>Automate many of the tasks associated with managing a car wash.</h5>
-            <p>Your customers deserve more than just a good wash experience. Your customers deserve the best possible experience.
-              Completely managed by our platform, you can predict outcomes better and ensure your business is running at its best.
-            </p>
-            <a href="/wash-owners/wash-analytics.html" class="btn btn-blue">Learn More</a>
-          </div>  
+          <h3>Automate many of the tasks associated with managing a car wash.</h3>
+          <p>Your customers deserve more than just a good wash experience. Your customers deserve the best possible experience.
+            Completely managed by our platform, you can predict outcomes better and ensure your business is running at its best.
+          </p>
+          <a href="/wash-owners/wash-analytics.html" class="link-light">Learn More</a>
         </div>
         <div class="col-lg-6">
-          <div class="imagebox">
-            <img src="/img/new-update/know-customers.png" alt="Car Wash analytics using cameras" class="img-fluid" />
+          <img src="/img/illustrations/car-wash-scene-16.png" alt="Car Wash analytics using cameras" class="img-fluid d-c p-5"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Distributors -->
+    <section id="partnerDistributors">
+      <div class="container">
+        <h2>We’re thankful to work with amazing partners</h2>
+        <p>EverWash reaches millions of consumers to washes like yours through exclusive partnerships with
+          <strong>employee, fleet, group benefit
+                                                                                programs,</strong>
+          and
+          <strong>national brands</strong>.</p>
+        {% include 'distributors-slider.njk' %}
+      </div>
+    </section>
+    <!-- Reviews from Wash Owners -->
+    <section id="partnerReviews">
+      <div class="container">
+        <div id="partnerReviewsHeading">
+          <i class="fas fa-quote-left"></i>
+          <h2>Customer Growth & Success Stories</h2>
+          <h3>Changing lives and ensuring financial security</h3>
+        </div>
+        <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row partnerReviewContainer">
+                <div class="col-lg">
+                  <div class="aspect-ratio-container-2-3">
+                    <img src="/img/vermont-lazerwash.png" alt="Vermont Lazerwash" class="img-fluid aspect-ratio-content"/>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg">
+                  <p class="partnerReviewContent">“Only four short years ago, we were washing 31,000 cars per year with no membership
+                    program. We then introduced EverWash's recommendations related to pricing and training. I am pleased to report that our
+                    wash will surpass 102,000 cars washed in 2021.”</p>
+                  <div class="ownerInfoContainer">
+                    <img src="/img/dan-armstrong.png" alt="Dan Armstrong, owner of Vermont Lazerwash" class="img-fluid"/>
+                    <div class="ownerInfo">
+                      <p>Dan Armstrong</p>
+                      <p>Vermont Lazerwash</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row partnerReviewContainer">
+                <div class="col-lg">
+                  <div class="aspect-ratio-container-2-3">
+                    <img src="/img/sudz-car-wash.jpeg" alt="Sudz Car Wash" class="img-fluid aspect-ratio-content"/>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg">
+                  <p class="partnerReviewContent">“With EverWash's technology and simple-to-use app, what IBA operators can achieve with
+                    their membership program is unlimited. I was able to renovate my wash thanks to my increased revenues, and now have the
+                    busiest IBA in the area.”</p>
+                  <div class="ownerInfoContainer">
+                    <img src="/img/craig-gilham.png" alt="Craig Gilham, owner of Sudz Car Wash" class="img-fluid"/>
+                    <div class="ownerInfo">
+                      <p>Craig Gilham</p>
+                      <p>Sudz Car Wash</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row partnerReviewContainer">
+                <div class="col-lg">
+                  <div class="aspect-ratio-container-2-3">
+                    <img src="/img/proclean-autowash.png" alt="Proclean Autowash" class="img-fluid aspect-ratio-content"/>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg">
+                  <p class="partnerReviewContent">“Whether it's raining all month, whether there's snow — it's just consistent, consistent
+                    revenue. You still get your regular customers, but now you have more customers because they're members.”</p>
+                  <div class="ownerInfoContainer">
+                    <img
+                      src="/img/kim-allen.png"
+                      alt="Kim Allen, owner of Proclean Auto Wash and National Pride Car Wash"
+                      class="img-fluid"/>
+                    <div class="ownerInfo">
+                      <p>Kim Allen</p>
+                      <p>ProClean Auto Wash &amp; National Pride Car Wash</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-control">
+            <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-slide="prev">
+              <i class="far fa-arrow-circle-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <ol class="carousel-indicators">
+              <li data-target="#reviewCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#reviewCarousel" data-slide-to="1"></li>
+              <li data-target="#reviewCarousel" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-next" href="#reviewCarousel" role="button" data-slide="next">
+              <i class="far fa-arrow-circle-right"></i>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-   </section>    
-</main>
-
-<!-- Excel Membership With EverWash Form -->
-<div class="modal fade" id="excelmembershipModal" tabindex="-1" aria-label="Excel Membership With EverWash Form" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </span>
-        </button>
+    </section>
+    <!-- News -->
+    <section id="partnerNews">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" id="partnerNewsHeading">
+            <h2>The Latest from EverWash</h2>
+            <a href="/blog" class="link-dark">Visit the EverWash Blog</a>
+          </div>
+        </div>
+        <div class="row article-row article-no-container">
+          {% set count = 0 %}
+          {%- for post in collections.featured  | reverse -%}
+            {% if post.data.tags.includes("newsroom") and count < 3 %}
+              {% include 'article-snippet.njk' %}
+              {% set count = count  + 1 %}
+            {% endif %}
+          {%- endfor -%}
+        </div>
       </div>
-      <div class="modal-body">
+    </div>
+  </section>
+  <!-- Common Questions -->
+  {% include 'wash-owner-faq.njk' %}
+  <!-- CTA -->
+  <section id="partnerCTA">
+    <div class="container">
+      <div class="col-lg-12" id="partnerFormCol">
         <div class="form-container">
           <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
-          <h4>Sound too good to be true? It's really not!</h4>
+          <h4>Get Started with EverWash</h4>
           <p>
-            Complete the form below and we'll send over a full report to show your revenue potential. Don't sell yourself short.<br>
-            <strong>Excel at Membership with EverWash!</strong>
+            Get a demo of how the EverWash platform can increase the overall profitability of your wash.
           </p>
           <form
-            style="display: none;" 
-            id="washOwnerPopup"
-            name="Wash Owner Popup Form"
+            id="washOwnerForm"
+            name="Wash Owner Form"
             method="POST"
             action="/wash-owners-success.html"
-            data-netlify="true" 
-            data-netlify-honeypot="bot-field">
-            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Popup Form Submission"/>
-            <input type="hidden" name="formName" value="Wash Owner Popup Form" aria-hidden="true"/>
-            {% include 'wash-owner-form-popup.njk' %}
-          </form>
-
-          <form id="washOwnerPopup-external" action="https://go.everwash.com/l/996891/2024-01-05/zf7r" method="POST">
-            {% include 'wash-owner-form-popup.njk' %}
+            netlify
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+            <input type="hidden" name="formName" value="Wash Owner Form" aria-hidden="true"/>
+            {% include 'wash-owner-form.njk' %}
           </form>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+</main>

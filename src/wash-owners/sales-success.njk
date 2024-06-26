@@ -5,7 +5,7 @@
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
     ignore: true
-  layout: 'base-revenueCal-sales.njk'
+  layout: 'base-noindex.njk'
 ---
 
 <!-- Start of Confirmation Form Modal -->
@@ -45,8 +45,8 @@
   </div>
 </div>
 <!-- End of Confirmation Form Modal -->
-
 <main id="salesBody">
+  {% include 'partner-nav.njk' %}
   <!-- Hero -->
   <section id="contactSales">
     <div class="container">
@@ -55,11 +55,16 @@
           <h1 class="brand-nubolts">Get in Touch with Sales</h1>
           <p>EverWash’s platform is designed to help you succeed by:</p>
           <ul>
-            <li>Reducing customer wait times</li>
-            <li>Improving customer loyalty</li>
-            <li>Growing your membership base</li>
-            <li>Marketing to your customers on your behalf</li>
-            <li>Giving you peace of mind</li>
+            <li>
+              <i class="fas fa-check"></i>Reducing customer wait times</li>
+            <li>
+              <i class="fas fa-check"></i>Improving customer loyalty</li>
+            <li>
+              <i class="fas fa-check"></i>Growing your membership base</li>
+            <li>
+              <i class="fas fa-check"></i>Marketing to your customers on your behalf</li>
+            <li>
+              <i class="fas fa-check"></i>Giving you peace of mind</li>
           </ul>
           <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
           <div>
@@ -80,9 +85,9 @@
         <div class="col-xl-7" id="partnerFormCol">
           <div class="form-container">
             <img src="/img/illustrations/car-wash-scene-2.png" alt="" class="img-fluid"/>
-            <h4>Excel at Membership with EverWash</h4>
+            <h4>Get Started with EverWash</h4>
             <p>
-              Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+              Get a demo of how the EverWash platform can increase the overall profitability of your wash.
             </p>
             <form
               id="salesForm"
@@ -91,7 +96,7 @@
               action="/wash-owners/sales-success.html"
               netlify
               netlify-honeypot="bot-field">
-              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Sales Form Submission"/>
+              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
               <input type="hidden" name="formName" value="Sales Form" aria-hidden="true"/>
               {% include 'wash-owner-form.njk' %}
             </form>

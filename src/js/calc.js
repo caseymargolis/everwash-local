@@ -22,12 +22,8 @@ const calculator = {
     console.log(calculator);
     if (calculator.validateFields() === true) {
       calculator.calculate();
-
-      // After 2.5s, form popup display
-      setTimeout(function() {
-        $('#excelFormview').click();
-      }, 3500);
     }
+
     return false;
   },
 
@@ -91,7 +87,7 @@ const calculator = {
 
   calculate: function () {
     const washes = Number(document.getElementById("txtCount").value);
-    const revenue = Number(document.getElementById("txtRevenue").value.replace(/([,])+/g, ''));
+    const revenue = Number(document.getElementById("txtRevenue").value);
     const averageWashAmount = 4;
     const membershipMultiplier = 2;
     const averageWashPrice = revenue / washes;
@@ -160,7 +156,6 @@ const calculator = {
     this.results.classList.remove("d-none");
     this.results.classList.add("activated-calc");
   },
-
 };
 
 calculator.init();

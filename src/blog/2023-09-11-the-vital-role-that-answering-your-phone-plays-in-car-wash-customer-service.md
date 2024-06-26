@@ -2,7 +2,7 @@
 title: The Vital Role That Answering Your Phone Plays In Car Wash Customer Service
 description: Understand how meeting customer needs over the phone helps create
   happier consumers and more profitable businesses
-author: EverWash Newsroom
+author: Mike Christie
 date: 2023-09-11T15:11:04.679Z
 tags:
   - post

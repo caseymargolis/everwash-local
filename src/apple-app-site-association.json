@@ -7,7 +7,7 @@
 		"details": [
 		    {
 		        "appID": "A46DR6UZN3.com.everwashcarclub.everwash",
-						"paths": ["/invite-friend", "/gift", "/payment-info", "/membership-plans/*", "/locations", "/memberships/*", "/memberships", "/faq", "/map", "/change-plan/*", "/edit-details/*", "/redeem-gift", "/discover"]
+		        "paths": ["/invite-friend", "/gift", "/payment-info", "/membership-plans/*", "/locations", "/memberships/*", "/memberships", "/faq", "/map", "/change-plan/*", "/edit-details/*", "/redeem-gift"]
 		    }
 		]
 	}   
