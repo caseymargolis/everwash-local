@@ -1061,3 +1061,11 @@ function validatePhoneNumber(input) {
   // Remove non-numeric characters
   input.value = input.value.replace(/\D/g, '');
 }
+
+//reCaptcha call back
+function recaptcha_callback() {
+  var submitBtn =  document.querySelector("#submit-btn");
+  submitBtn.removeAttribute('disabled');
+  submitBtn.style.cursor = 'pointer';
+}
+
