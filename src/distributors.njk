@@ -5,7 +5,7 @@
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
     priority: 0.8
-  layout: 'base.njk'
+  layout: 'base-default.njk'
 ---
 
 <main id="distributorMain">
@@ -455,98 +455,111 @@
             </div>
             <div class="col-lg-7">
               <div id="omnixModalHeader">
-                <h5>Learn More</h5>
-                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">
-                    <i class="fal fa-times"></i>
-                  </span>
-                </button>
-              </div>
-              <form
-                id="distributorFormData"
-                name="Distributor Form"
-                method="POST"
-                action="./distributors-success.html"
-                data-form="formData"
-                netlify
-                netlify-honeypot="bot-field">
-                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
-                <input type="hidden" name="formName" value="Distributor Form" aria-hidden="true"/>
-                <div class="bot-field">
-                  <label>
-                    Don't fill this out if you're human: <input name="bot-field"/>
-                  </label>
-                </div>
-                <div class="input-row">
-                  <div class="input-wrapper">
-                    <input
-                      name="name"
-                      id="name"
-                      class="form-control"
-                      type="text"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your first name"/>
-                    <label for="name">First Name</label>
-                  </div>
-                  <div class="input-wrapper">
-                    <input
-                      name="last-name"
-                      id="lastName"
-                      class="form-control"
-                      type="text"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your last name"/>
-                    <label for="lastNameInput">Last Name</label>
-                  </div>
-                </div>
-                <div class="input-wrapper">
-                  <input
-                    name="email"
-                    id="email"
-                    class="form-control"
-                    type="email"
-                    required="required"
-                    placeholder=" "
-                    aria-label="Enter your email"/>
-                  <label for="email">Email</label>
-                </div>
-                <div class="input-wrapper">
-                  <input
-                    name="phone"
-                    id="phone"
-                    class="form-control"
-                    type="tel"
-                    required="required"
-                    placeholder=" "
-                    aria-label="Enter your phone number"/>
-                  <label for="phone">Phone Number</label>
-                </div>
-                <div class="input-wrapper">
-                  <input name="company-name" id="companyName" class="form-control" type="text" required="required" placeholder=" "/>
-                  <label for="companyName">Company Name</label>
-                </div>
-                <select class="form-control" name="how-you-heard" id="">
-                  <option value="" disabled="" selected="">
-                    How'd you hear about us?
-                  </option>
-                  <option value="Trade Show">Trade Show</option>
-                  <option value="Magazine Ad">Magazine Ad</option>
-                  <option value="Online Search">Online Search</option>
-                  <option value="Online Ad">Online Ad</option>
-                  <option value="TalkCarWash">
-                    TalkCarWash Facebook Group
-                  </option>
-                  <option value="Word of Mouth">Word of Mouth</option>
-                  <option value="Other">Other</option>
-                </select>
-                <div class="d-c">
-                  <button id="submitFormBtn" type="submit" class="btn btn-blue">
-                    Submit
+                <div class="header-content">
+                  <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fal fa-times"></i>
+                    </span>
                   </button>
                 </div>
-              </form>
+              </div>
+              <div id="standard-form">
+                <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+                <h5>Excel at Membership with EverWash</h5>
+                <p>
+                  Talk to a membership professional about how the EverWash Platform can increase the overall profitability of your wash
+                </p>
+                <form
+                  id="distributorFormData"
+                  name="Distributor Form"
+                  method="POST"
+                  action="./distributors-success.html"
+                  data-form="formData"
+                  netlify
+                  data-netlify-recaptcha="true"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field">
+                  <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Distributor Form Submission"/>
+                  <input type="hidden" name="formName" value="Distributor Form" aria-hidden="true"/>
+                  {% include 'wash-owner-form.njk' %}
+                  <!--
+                  <div class="bot-field">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field"/>
+                    </label>
+                  </div>
+                  <div class="input-row">
+                    <div class="input-wrapper">
+                      <input
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        type="text"
+                        required="required"
+                        placeholder=" "
+                        aria-label="Enter your first name"/>
+                      <label for="name">First Name</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input
+                        name="last-name"
+                        id="lastName"
+                        class="form-control"
+                        type="text"
+                        required="required"
+                        placeholder=" "
+                        aria-label="Enter your last name"/>
+                      <label for="lastNameInput">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="input-wrapper">
+                    <input
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      type="email"
+                      required="required"
+                      placeholder=" "
+                      aria-label="Enter your email"/>
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input
+                      name="phone"
+                      id="phone"
+                      class="form-control"
+                      type="tel"
+                      required="required"
+                      placeholder=" "
+                      aria-label="Enter your phone number"/>
+                    <label for="phone">Phone Number</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input name="company-name" id="companyName" class="form-control" type="text" required="required" placeholder=" "/>
+                    <label for="companyName">Company Name</label>
+                  </div>
+                  <select class="form-control" name="how-you-heard" id="">
+                    <option value="" disabled="" selected="">
+                      How'd you hear about us?
+                    </option>
+                    <option value="Trade Show">Trade Show</option>
+                    <option value="Magazine Ad">Magazine Ad</option>
+                    <option value="Online Search">Online Search</option>
+                    <option value="Online Ad">Online Ad</option>
+                    <option value="TalkCarWash">
+                      TalkCarWash Facebook Group
+                    </option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="d-c">
+                    <button id="submitFormBtn" type="submit" class="btn btn-blue">
+                      Submit
+                    </button>
+                  </div>
+                  -->
+                </form>
+              </div>  
             </div>
           </div>
         </div>

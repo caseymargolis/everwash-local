@@ -5,7 +5,7 @@
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
     ignore: true
-  layout: 'base-noindex.njk'
+  layout: 'base-default.njk'
 ---
 
 <!-- Start of Confirmation Form Modal -->
@@ -41,8 +41,8 @@
   </div>
 </div>
 <!-- End of Confirmation Form Modal -->
+
 <main id="omnixBody">
-  {% include 'partner-nav.njk' %}
   <!-- Hero -->
   <section id="omnixHero">
     <div class="container">
@@ -94,74 +94,83 @@
             </div>
             <div class="col-lg-7">
               <div id="omnixModalHeader">
-                <h5>Learn More</h5>
-                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">
-                    <i class="fal fa-times"></i>
-                  </span>
-                </button>
-              </div>
-              <p>
-                Interested in learning more about omniX? Fill out the form below for a demo of how omniX can increase the overall
-                profitability of your wash.
-              </p>
-              <form
-                id="omnixFormData"
-                name="omniX Form"
-                method="POST"
-                action="../wash-owners/wash-analytics-success.html"
-                data-form="formData"
-                netlify
-                netlify-honeypot="bot-field">
-                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
-                <input type="hidden" name="formName" value="omniX Form" aria-hidden="true"/>
-                <div class="bot-field">
-                  <label>
-                    Don't fill this out if you're human: <input name="bot-field"/>
-                  </label>
-                </div>
-                <div class="input-row">
-                  <div class="input-wrapper">
-                    <input
-                      name="name"
-                      id="name"
-                      class="form-control"
-                      type="text"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your first name"/>
-                    <label for="name">First Name</label>
-                  </div>
-                  <div class="input-wrapper">
-                    <input
-                      name="last-name"
-                      id="lastName"
-                      class="form-control"
-                      type="text"
-                      required="required"
-                      placeholder=" "
-                      aria-label="Enter your last name"/>
-                    <label for="lastNameInput">Last Name</label>
-                  </div>
-                </div>
-                <div class="input-wrapper">
-                  <input name="email" id="email" class="form-control" type="email" required="required" placeholder=" "/>
-                  <label for="email">Email</label>
-                </div>
-                <div class="input-wrapper">
-                  <input name="phone" id="phone" class="form-control" type="tel" required="required" placeholder=" "/>
-                  <label for="phone">Phone</label>
-                </div>
-                <div class="input-wrapper">
-                  <textarea name="message" id="message" class="form-control" rows="5" placeholder=" "></textarea>
-                  <label for="message">Message</label>
-                </div>
-                <div class="d-c">
-                  <button class="btn btn-primary" onclick="submitBtn();" type="submit">
-                    Submit
+                <div class="header-content">
+                  <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fal fa-times"></i>
+                    </span>
                   </button>
                 </div>
-              </form>
+              </div>
+              <div id="standard-form">
+                <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+                <h5>Excel at Membership with EverWash</h5>
+                <p>
+                  Talk to a membership professional about how the EverWash Platform can increase the overall profitability of your wash
+                </p>
+                <form
+                  id="omnixFormData"
+                  name="OmniX 2024 Form"
+                  method="POST"
+                  action="../wash-owners/wash-analytics-success.html"
+                  data-form="formData"
+                  netlify
+                  data-netlify-recaptcha="true"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field">
+                  <input type="hidden" name="Subject" data-email-subject="emailSubject" value="OmniX 2024 Form Submission"/>
+                  <input type="hidden" name="formName" value="OmniX 2024 Form" aria-hidden="true"/>
+                  {% include 'wash-owner-form.njk' %}
+                  <!--
+                  <div class="bot-field">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field"/>
+                    </label>
+                  </div>
+                  <div class="input-row">
+                    <div class="input-wrapper">
+                      <input
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        type="text"
+                        required="required"
+                        placeholder=" "
+                        aria-label="Enter your first name"/>
+                      <label for="name">First Name</label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input
+                        name="last-name"
+                        id="lastName"
+                        class="form-control"
+                        type="text"
+                        required="required"
+                        placeholder=" "
+                        aria-label="Enter your last name"/>
+                      <label for="lastNameInput">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="input-wrapper">
+                    <input name="email" id="email" class="form-control" type="email" required="required" placeholder=" "/>
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input name="phone" id="phone" class="form-control" type="tel" required="required" placeholder=" "/>
+                    <label for="phone">Phone</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <textarea name="message" id="message" class="form-control" rows="5" placeholder=" "></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <div class="d-c">
+                    <button class="btn btn-primary" onclick="submitBtn();" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                  -->
+                </form>
+              </div>  
             </div>
           </div>
         </div>

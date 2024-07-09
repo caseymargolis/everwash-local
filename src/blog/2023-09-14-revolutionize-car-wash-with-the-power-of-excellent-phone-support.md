@@ -1,7 +1,7 @@
 ---
 title: The Power of Car Wash Phone Support
 description: How does excellent phone-based customer support improve car wash operations?
-author: Mike Christie
+author: EverWash Newsroom
 date: 2023-09-26T16:00:24.494Z
 tags:
   - post

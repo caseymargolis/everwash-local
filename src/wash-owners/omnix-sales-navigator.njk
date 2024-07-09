@@ -50,6 +50,8 @@
                             method="POST"
                             action="/wash-owners/omnix-sales-navigator-download.html"
                             netlify
+                            data-netlify-recaptcha="true"
+                            data-netlify="true"
                             netlify-honeypot="bot-field">
                             {# <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/> #}
                             <input type="hidden" name="formName" value="omniX Sales Navigator Form" aria-hidden="true"/>
@@ -129,6 +131,9 @@
                                     Other
                                 </option>
                             </select>
+
+                            <div data-netlify-recaptcha="true" style="margin-bottom: 15px;"></div>
+                            
                             <div class="d-c">
                                 <button class="btn btn-black btn-large" type="submit">
                                     Download the case study

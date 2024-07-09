@@ -41,6 +41,8 @@
               method="POST"
               data-form="formData"
               netlify
+              data-netlify-recaptcha="true"
+              data-netlify="true"
               netlify-honeypot="bot-field">
               {# <input
                                             type="hidden"
@@ -90,6 +92,9 @@
                 <textarea name="message" id="message" class="form-control" rows="5" placeholder=" "></textarea>
                 <label for="message">Message</label>
               </div>
+
+              <div data-netlify-recaptcha="true" style="margin-bottom: 15px;"></div>
+              
               <div class="d-c">
                 <button class="btn btn-primary" onclick="submitBtn();" type="submit">
                   Submit

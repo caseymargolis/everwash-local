@@ -285,6 +285,7 @@ function addTopBar() {
         color: white;
         text-align: center;
         padding: 10px;
+        display: none !important;
       }
       .text-part1, .text-part2 {
         color: white;
@@ -866,4 +867,198 @@ window.addEventListener("beforeunload", function(event) {
   carWashNameInput.value = "";
 });
 
+
+
+// Owl Carousel
+$(function() {
+  $('#owl-carousel-infobox').owlCarousel({
+    margin: 5,
+    loop: true,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+  });
+
+  $('#owl-carousel-video').owlCarousel({
+    items: 1,
+    merge:true,
+    loop:true,
+    margin:10,
+    video:true,
+    lazyLoad:true,
+    center:true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      768: {
+        items: 2,
+        nav: true
+      },
+      1000: {
+        items: 3,
+        nav: true
+      }
+    }
+  });
+
+  $('#owl-carousel-video div.owl-item').each(function(){
+    var poster_img = $(this).find('.owl-video-wrapper .owl-video-tn').attr('srctype');
+    $(this).find('.owl-video-wrapper').css('background-image', 'url(https:' + poster_img + ')');
+  });
+  
+  setInterval(function () {
+    var i = 1;
+    $('#partnerReviews .owl-stage .owl-item').each(function(){
+      if($(this).hasClass('active')) {
+        $(this).attr('data-number', i);
+        i = i + 1;
+      } else {
+        $(this).attr('data-number', 0);
+      }
+
+      var iframe_check = $(this).find('.item-video .owl-video-wrapper iframe').length;
+      if(iframe_check) {
+        $(this).find('.item-video .owl-video-wrapper .owl-video-play-icon').addClass('hide');
+      }
+    });
+  }, 300);
+});
+
+
+
+// popup form submit to external action link & netlify
+// Wash Owner Popup
+if ($('#washOwnerPopup-external').length) {
+  document.getElementById('washOwnerPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#washOwnerPopup-external #name').val();
+    $('#washOwnerPopup #name').val(fname);
+    var lname = $('#washOwnerPopup-external #lastName').val();
+    $('#washOwnerPopup #lastName').val(lname);
+    var washemail = $('#washOwnerPopup-external #email').val();
+    $('#washOwnerPopup #email').val(washemail);
+    var washphone = $('#washOwnerPopup-external #phone').val();
+    $('#washOwnerPopup #phone').val(washphone);
+    var carwashname = $('#washOwnerPopup-external #carWashName').val();
+    $('#washOwnerPopup #carWashName').val(carwashname);
+    var washtype = $('#washOwnerPopup-external #wash-type').val();
+    $('#washOwnerPopup #wash-type').val(washtype);
+    var carwashstate = $('#washOwnerPopup-external #car-wash-state').val();
+    $('#washOwnerPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#washOwnerPopup-external #carWashZipcode').val();
+    $('#washOwnerPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-rev-calc-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#washOwnerPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+} 
+
+
+// Case Study Popup
+if ($('#caseStudyPopup-external').length) {
+  document.getElementById('caseStudyPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#caseStudyPopup-external #name').val();
+    $('#caseStudyPopup #name').val(fname);
+    var lname = $('#caseStudyPopup-external #lastName').val();
+    $('#caseStudyPopup #lastName').val(lname);
+    var washemail = $('#caseStudyPopup-external #email').val();
+    $('#caseStudyPopup #email').val(washemail);
+    var washphone = $('#caseStudyPopup-external #phone').val();
+    $('#caseStudyPopup #phone').val(washphone);
+    var carwashname = $('#caseStudyPopup-external #carWashName').val();
+    $('#caseStudyPopup #carWashName').val(carwashname);
+    var washtype = $('#caseStudyPopup-external #wash-type').val();
+    $('#caseStudyPopup #wash-type').val(washtype);
+    var carwashstate = $('#caseStudyPopup-external #car-wash-state').val();
+    $('#caseStudyPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#caseStudyPopup-external #carWashZipcode').val();
+    $('#caseStudyPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-casestudy-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#caseStudyPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+}
+
+
+
+// Disable spaces and strings (non-numeric characters) in a phone number field
+function validatePhoneNumber(input) {
+  // Remove non-numeric characters
+  input.value = input.value.replace(/\D/g, '');
+}
 

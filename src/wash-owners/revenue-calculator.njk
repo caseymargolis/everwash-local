@@ -5,10 +5,9 @@
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
     priority: 0.64
-  layout: 'base.njk'
+  layout: 'base-default.njk'
 ---
     <main>
-      {% include 'partner-nav.njk' %}
       <section id="revCalc">
         <div class="container-fluid">
           <div id="formSection">
@@ -44,7 +43,7 @@
                       placeholder=""
                       type="number"
                       required="required"
-                      pattern="[0-9]*"
+                      pattern="[0-9,.]*"
                     />
                     <label for="txtRevenue">Annual Car Wash Revenue</label>
                   </div>

@@ -35,6 +35,8 @@
               method="POST"
               action="/ebook/customer-journey-download.html"
               netlify
+              data-netlify-recaptcha="true"
+              data-netlify="true"
               netlify-honeypot="bot-field">
               <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
               <input type="hidden" name="formName" value="eBook Form" aria-hidden="true"/>
@@ -100,6 +102,9 @@
                   aria-label="Enter your car wash name"/>
                 <label for="carWashName">Car Wash Name</label>
               </div>
+
+              <div data-netlify-recaptcha="true" style="margin-bottom: 15px;"></div>
+
               <div class="d-c">
                 <button class="btn btn-accent btn-large" type="submit">
                   Download the guide

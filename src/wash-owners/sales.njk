@@ -5,11 +5,10 @@
   image: https://everwash.com/img/everwash-main-meta-img.png
   sitemap:
     priority: 0.64
-  layout: 'base.njk'
+  layout: 'base-revenueCal-sales.njk'
 ---
 
 <main id="salesBody">
-  {% include 'partner-nav.njk' %}
   <!-- Hero -->
   <section id="contactSales">
     <div class="container">
@@ -43,9 +42,9 @@
         <div class="col-xl-7" id="partnerFormCol">
           <div class="form-container">
             <img src="/img/illustrations/car-wash-scene-2.png" alt="" class="img-fluid"/>
-            <h4>Get Started with EverWash</h4>
+            <h4>Excel at Membership with EverWash</h4>
             <p>
-              Get a demo of how the EverWash platform can increase the overall profitability of your wash.
+              Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
             </p>
             <form
               id="salesForm"
@@ -53,8 +52,10 @@
               method="POST"
               action="/wash-owners/sales-success.html"
               netlify
+              data-netlify-recaptcha="true"
+              data-netlify="true"
               netlify-honeypot="bot-field">
-              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="New Form Submission"/>
+              <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Sales Form Submission"/>
               <input type="hidden" name="formName" value="Sales Form" aria-hidden="true"/>
               {% include 'wash-owner-form.njk' %}
             </form>

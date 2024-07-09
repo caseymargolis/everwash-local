@@ -313,6 +313,8 @@
                 action="../wash-owners/everwash-assist-success.html"
                 data-form="formData"
                 netlify
+                data-netlify-recaptcha="true"
+                data-netlify="true"
                 netlify-honeypot="bot-field">
                 <input type="hidden" name="formName" value="EverWash Assist Form" aria-hidden="true"/>
                 <div class="bot-field">
@@ -364,6 +366,9 @@
                     aria-label="Enter your phone number"/>
                   <label for="phone">Phone Number</label>
                 </div>
+
+                <div data-netlify-recaptcha="true" style="margin-bottom: 15px;"></div>
+
                 <div class="d-c">
                   <button class="btn btn-primary btn-large" type="submit">
                     Submit
