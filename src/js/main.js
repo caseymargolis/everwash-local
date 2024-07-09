@@ -1061,19 +1061,3 @@ function validatePhoneNumber(input) {
   // Remove non-numeric characters
   input.value = input.value.replace(/\D/g, '');
 }
-
-
-// render and verify by ajax
-var onloadCallback = function() {
-  grecaptcha.render('recaptcha', {
-      'sitekey' : '6LeDawsqAAAAAPC63SLaGLXJz1qxC_gI_s9UbV0u',
-      'callback' : verifyCallback,
-  });
-}
-
-var verifyCallback = function(response) {
-  $.post('recaptcha.php', {'g-recaptcha-response' : response}, function(data){
-      alert(data);
-  });
-};
-
