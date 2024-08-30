@@ -815,12 +815,12 @@ button.navbar-toggler {
 #mainNav {
   text-align: center;
 }
-#mainNav .navy-btn {
+#mainNav .navy-btn, #navbar .washOwner .navy-btn {
   background-color: #141c52!important;
   color: #fff;
   padding: 12.5px 25px;
 }
-#mainNav .navy-btn:hover {
+#mainNav .navy-btn:hover, #navbar .washOwner .navy-btn:hover {
   background-color: #1fbfb7!important;
 }
 
