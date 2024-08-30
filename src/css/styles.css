@@ -7420,6 +7420,60 @@ section#partnerReviews {
   }
 }
 
+section#ourprovenplan {
+  background: #28D5CB;
+  text-align: center;
+  padding-top: max(5%, 2.5rem);
+  padding-bottom: max(5%, 2.5rem);
+}
+section#ourprovenplan a.btn-blue {
+  background: #141c52;
+  color: #fff;
+  min-width: 245px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+section#ourprovenplan a.btn-blue:hover {
+  background:#fff ;
+  color: #141c52;
+}
+section#ourprovenplan h5 {
+  font-size: 21.5px;
+  line-height: 27.5px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+section#partnerMemberwhatsatstake {
+  background: #F3F183;
+  text-align: center;
+  padding-top: max(5%, 2.5rem);
+  padding-bottom: max(5%, 2.5rem);
+}
+section#partnerMemberwhatsatstake a.btn-blue {
+  background: #141c52;
+  color: #fff;
+  min-width: 245px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+section#partnerMemberwhatsatstake a.btn-blue:hover {
+  background:#fff ;
+  color: #141c52;
+}
+section#partnerMemberwhatsatstake h5 {
+  font-size: 21.5px;
+  line-height: 27.5px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
 section#partnerMembershipstory {
   background: #F3F183;
   text-align: center;
