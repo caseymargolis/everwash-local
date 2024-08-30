@@ -560,16 +560,9 @@ button.navbar-toggler {
   max-width: 1500px;
 }
 #navbar .container-fluid.home {
-  justify-content: space-between;
+  justify-content: center;
 }
-#navbar .container-fluid.home .navy-btn {
-  background-color: #141c52 !important;
-  color: #fff;
-  padding: 12.5px 25px;
-}
-#navbar .container-fluid.home .navy-btn:hover {
-  background-color: #1fbfb7 !important;
-}
+
 #navbar .compressed-btn-group {
   display: none;
   position: absolute;
