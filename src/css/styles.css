@@ -6980,6 +6980,22 @@ section#partnerHero {
   }
 }
 
+section#explainervideowashOwner {
+  background: #28D5CB;
+  text-align: center;
+  padding-top: max(5%, 2.5rem);
+  padding-bottom: max(5%, 2.5rem);
+}
+
+section#explainervideowashOwner p {
+  font-size: 18.5px;
+  line-height: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
 section#partnerCalc {
   background-image: url("/img/new-update/revenue_calculator_background.png");
   background-position: center right;
