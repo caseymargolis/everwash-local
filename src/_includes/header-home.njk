@@ -9,123 +9,12 @@
           class="img-fluid img-nav"
         />
       </a>
-
-      <!--
-      <div class="compressed-btn-group">
-        <button
-          class="btn"
-          type="button"
-          data-toggle="modal"
-          data-target="#loginModal"
-        >
-          Log In
-        </button>
-        <button
-          class="btn btn-primary"
-          type="button"
-          data-toggle="modal"
-          data-target="#signupModal"
-        >
-          Sign Up
-        </button>
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="toggle navigation"
-      >
-        <div id="nav-icon3">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <button class="btn navy-btn" type="button" data-toggle="modal" data-target="#bookacallFormModal">
+        Book A Call
       </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul id="navList" class="navbar-nav mx-auto" style="margin-right: 0 !important;">
-          <li class="nav-item">
-            <a class="nav-link" href="/members">Members</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Wash Owners</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/wash-owners.html"
-                >Why EverWash?</a
-              >
-              <a class="dropdown-item" href="/wash-owners/membership.html"
-                >Membership</a
-              >
-              <a class="dropdown-item" href="/wash-owners/analytics.html"
-                >Analytics</a
-              >
-               <a class="dropdown-item" href="/wash-owners/everwash-assist.html"
-                >Retention Solutions</a
-              >
-              <a class="dropdown-item" href="/wash-owners/branding.html"
-                >Marketing &amp; Ads</a
-              >
-              <a class="dropdown-item" href="/wash-owners/websites.html"
-                >Websites</a
-              >
-              <a class="dropdown-item" href="/wash-owners/intelligence.html"
-                >Intelligence</a
-              >
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Distributors</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/distributors/cryptopay/"
-                >Cryptopay</a
-              >
-              <a class="dropdown-item" href="/distributors">View All</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Company</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/about">About Us</a>
-              <a class="dropdown-item" href="/blog">Blog</a>
-              <a class="dropdown-item" href="/newsroom">Newsroom</a>
-              <a class="dropdown-item" href="/careers">Careers</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/support">Help &amp; Support</a>
-          </li>
-        </ul>
-      </div>
-      -->
     </div>
   </nav>
+
   <!-- Login -->
   <div
     class="modal fade"
@@ -240,3 +129,73 @@
     </div>
   </div>
 </header>
+
+
+<!-- Book A Call Sales Lead Form -->
+<div class="modal fade" id="bookacallFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <h2>Get in Touch with Sales</h2>
+            <p>EverWash’s platform is designed to help you succeed by:</p>
+            <ul>
+              <li>Reducing customer wait times</li>
+              <li>Improving customer loyalty</li>
+              <li>Growing your membership base</li>
+              <li>Marketing to your customers on your behalf</li>
+              <li>Giving you peace of mind</li>
+            </ul>
+            <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+            <div>
+              <p>
+                <a href="mailto:sales@everwash.com">
+                  <span>sales@everwash.com</span>
+                </a>
+              </p>
+              <p>
+                <a href="tel:8554927477">
+                  <span>(855)-492-7477</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="omnixModalHeader">
+              <div class="header-content">
+                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="fal fa-times"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="standard-form">
+              <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+              <h5>Excel at Membership with EverWash</h5>
+              <p>
+                Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+              </p>
+              <form
+                style="display: none;" 
+                id="bookacallPopup"
+                name="Book A Call New Form"
+                method="POST"
+                action="/bookacall-success.html"
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field">
+                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Book A Call New Form Submission"/>
+                <input type="hidden" name="formName" value="Book A Call New Form" aria-hidden="true"/>
+                {% include 'wash-owner-form-popup.njk' %}
+              </form>
+              <form id="bookacallPopup-external" action="https://go.everwash.com/l/996891/2024-08-02/2lzf5" method="POST">
+                {% include 'wash-owner-form-popup-php.njk' %}
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
