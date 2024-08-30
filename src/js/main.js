@@ -1055,6 +1055,63 @@ if ($('#caseStudyPopup-external').length) {
 }
 
 
+// Book A Call Popup
+if ($('#bookacallPopup-external').length) {
+  document.getElementById('bookacallPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#bookacallPopup-external #name').val();
+    $('#bookacallPopup #name').val(fname);
+    var lname = $('#bookacallPopup-external #lastName').val();
+    $('#bookacallPopup #lastName').val(lname);
+    var washemail = $('#bookacallPopup-external #email').val();
+    $('#bookacallPopup #email').val(washemail);
+    var washphone = $('#bookacallPopup-external #phone').val();
+    $('#bookacallPopup #phone').val(washphone);
+    var carwashname = $('#bookacallPopup-external #carWashName').val();
+    $('#bookacallPopup #carWashName').val(carwashname);
+    var washtype = $('#bookacallPopup-external #wash-type').val();
+    $('#bookacallPopup #wash-type').val(washtype);
+    var carwashstate = $('#bookacallPopup-external #car-wash-state').val();
+    $('#bookacallPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#bookacallPopup-external #carWashZipcode').val();
+    $('#bookacallPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-bookacall-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#bookacallPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+}
+
+
 
 // Disable spaces and strings (non-numeric characters) in a phone number field
 function validatePhoneNumber(input) {
