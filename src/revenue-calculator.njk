@@ -1,0 +1,105 @@
+---
+  title: EverWash | Excel at Membership | Increase Car Wash Revenue
+  description: Discover the benefits of partnering with EverWash as a car wash owner. Find out how our innovative analytics and membership technology can help you grow your business, increase customer satisfaction, and improve your bottom line.
+  permalink: "{{ page.filePathStem }}.html"
+  image: https://everwash.com/img/everwash-main-meta-img.png
+  sitemap:
+    priority: 0.8
+  layout: 'base-revenueCal.njk'
+---
+
+<main id="partnerMain">
+  <!-- Revenue Calculator -->
+  <section id="partnerCalc">
+    <div class="container">
+      <h3>How much money are you leaving on the table?</h3>
+      <h2>Revenue Calculator</h2>
+      <div class="row">
+        <div class="col-lg-5">
+          <form action="" id="frmCalculator" class="partnerCalcModule text-dark">
+            <label for="annualCarCountInput">Annual Car Count:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtCount"
+              type="number"
+              required="required"
+              pattern="[0-9]*"
+              placeholder="Number of Cars"/>
+            <label for="annualWashRevenue">Annual Car Wash Revenue:</label>
+            <div class="input-container">
+              <span>$</span>
+              <input
+                type="text"
+                class="form-control"
+                id="txtRevenue"
+                type="number"
+                required="required"
+                pattern="[0-9,.]*"
+                placeholder="Annual Revenue"/>
+            </div>
+            <button class="btn btn-accent btn-large" id="btnSubmit">Estimate Earnings</button>
+          </form>
+          <button style="display: none;" id ="excelFormview" data-toggle="modal" data-target="#excelmembershipModal">Form View</button>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6" id="partnerCalcResultsContainer">
+          <h4>Additional Annual Revenue</h4>
+          <div
+            id="results" class="mt-3">
+            <!--d-none-->
+            <div id="breakdownSm">
+              <span class="calc_annual_ew_membership_conversion_revenue">$0</span>
+            </div>
+          </div>
+          <p>
+            Based on a 15% Customer-To-Member Conversion Rate.
+          </p>
+          {# <a href="" class="link-light">Learn how we estimate your earnings</a> #}
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </section>
+</main>
+
+<!-- Excel Membership With EverWash Form -->
+<div class="modal fade" id="excelmembershipModal" tabindex="-1" aria-label="Excel Membership With EverWash Form" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fal fa-times"></i>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-container">
+          <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+          <h4>Sound too good to be true? It's really not!</h4>
+          <p>
+            Complete the form below and we'll send over a full report to show your revenue potential. Don't sell yourself short.<br>
+            <strong>Excel at Membership with EverWash!</strong>
+          </p>
+          <form
+            style="display: none;" 
+            id="washOwnerPopup"
+            name="Wash Owner Popup Form"
+            method="POST"
+            action="/revenue-calculator-success.html"
+            data-netlify="true" 
+            data-netlify-honeypot="bot-field">
+            <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Wash Owner Popup Form Submission"/>
+            <input type="hidden" name="formName" value="Wash Owner Popup Form" aria-hidden="true"/>
+            {% include 'wash-owner-form-popup.njk' %}
+          </form>
+
+          <form id="washOwnerPopup-external" action="https://go.everwash.com/l/996891/2024-01-05/zf7r" method="POST">
+            {% include 'wash-owner-form-popup-php.njk' %}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
