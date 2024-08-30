@@ -562,6 +562,9 @@ button.navbar-toggler {
 #navbar .container-fluid.home {
   justify-content: center;
 }
+#navbar .container-fluid.washOwner {
+  justify-content: space-between;
+}
 
 #navbar .compressed-btn-group {
   display: none;
@@ -1444,7 +1447,9 @@ button.navbar-toggler {
   margin-bottom: 1.3rem;
 }
 input[type="number"] {
+  -webkit-appearance: textfield;
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
