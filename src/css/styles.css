@@ -7426,25 +7426,26 @@ section#ourprovenplan {
   padding-top: max(5%, 2.5rem);
   padding-bottom: max(5%, 2.5rem);
 }
-section#ourprovenplan a.btn-blue {
-  background: #141c52;
-  color: #fff;
-  min-width: 245px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.25em;
+section#ourprovenplan .container {
+  max-width: 850px;
 }
-section#ourprovenplan a.btn-blue:hover {
-  background:#fff ;
-  color: #141c52;
+section#ourprovenplan h2 {
+  font-size: 36.5px;
+  line-height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 section#ourprovenplan h5 {
   font-size: 21.5px;
   line-height: 27.5px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 35px;
+  margin: 35px 0 15px;
+  text-align: left;
+}
+section#ourprovenplan ol {
+  text-align: left;
+  padding-left: 25px;
+  margin-bottom: 45px;
 }
 
 section#partnerMemberwhatsatstake {
@@ -7452,6 +7453,9 @@ section#partnerMemberwhatsatstake {
   text-align: center;
   padding-top: max(5%, 2.5rem);
   padding-bottom: max(5%, 2.5rem);
+}
+section#partnerMemberwhatsatstake .container {
+  max-width: 850px;
 }
 section#partnerMemberwhatsatstake a.btn-blue {
   background: #141c52;
@@ -7465,13 +7469,23 @@ section#partnerMemberwhatsatstake a.btn-blue:hover {
   background:#fff ;
   color: #141c52;
 }
+section#partnerMemberwhatsatstake h2 {
+  font-size: 36.5px;
+  line-height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 section#partnerMemberwhatsatstake h5 {
   font-size: 21.5px;
   line-height: 27.5px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 35px;
+  margin: 35px 0 15px;
+  text-align: left;
+}
+section#partnerMemberwhatsatstake ul {
+  text-align: left;
+  padding-left: 25px;
+  margin-bottom: 45px;
 }
 
 section#partnerMembershipstory {
