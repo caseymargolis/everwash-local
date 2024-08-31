@@ -7135,6 +7135,39 @@ section#partnerCalc {
   }
 }
 
+section#partnerwashOperator {
+  background: #F5F6FC;
+}
+section#partnerwashOperator .container {
+  max-width: 850px;
+}
+#partnerwashOperator h2 {
+  color: #141C52;
+  text-align: center;
+  font-size:35.5px;
+  line-height: 45px;
+  margin-bottom: max(3.5%, 3.5rem);
+  margin-top: 15px;
+}
+#partnerwashOperator ul {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 20.5px;
+}
+#partnerwashOperator ul li {
+  margin-top: 7.5px;
+}
+@media only screen and (max-width: 767px) {
+  #partnerwashOperator h2 {
+    margin-bottom: max(5%, 2.5rem);
+    font-size: 27.5px;
+    line-height: 35px;
+  }
+  #partnerwashOperator ul {
+    font-size: 17.5px;
+  }
+}
+
 section#partnerIndustry {
   background: #F5F6FC;
 }
