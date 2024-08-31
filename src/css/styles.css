@@ -7274,12 +7274,15 @@ section#partnerCTA {
   color: #fff;
   line-height: 1.25em;
 }
+#partnerCTA .col-lg-5 .guide-content {
+  width: 100%;
+}
 #partnerCTA .col-lg-5 h4 {
   margin-bottom: 35px;
   font-size: 33.5px;
   color: #2BD5CB;
   font-weight: bold;
-  width: max-content;
+  line-height: 1.5em;
 }
 #partnerCTA .col-lg-5 h4 span {
   position: relative;
@@ -7325,6 +7328,11 @@ section#partnerCTA {
   #partnerCTA div.form-container {
     margin-left: 5%;
     margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #partnerCTA .col-lg-5 .guide-content {
+    padding: 0 25px;
   }
 }
 
