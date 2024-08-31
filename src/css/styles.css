@@ -6878,7 +6878,7 @@ section#partnerHero {
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10% 5%;
+  padding: 6.5% 5%;
   flex: 0 0 60%;
   max-width: 60%;
   display: flex;
@@ -6921,11 +6921,16 @@ section#partnerHero {
   font-weight: 600;
   max-width: 500px;
   line-height: 1.15em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 #partnerHero div.col-sm-8 h2 span {
   color: #28D5CB;
   font-weight: bold;
+}
+#partnerHero .cta-options-btn {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
 }
 #partnerHero div.col-sm-8 a.btn-green {
   background: #28D5CB;
@@ -6934,23 +6939,25 @@ section#partnerHero {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.25em;
-  margin-top: 30px;
+  margin-bottom: 15px;
 }
 #partnerHero div.col-sm-8 a.btn-green:hover {
   background: #fff;
   color: #141c52;
 }
-section#partnerMemberwhatsatstake ul {
+#partnerHero div.col-sm-8 ul {
   text-align: left;
   padding-left: 25px;
+  color: #fff;
 }
 
 #partnerHero div.col-sm-8 P {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 22.5px;
   line-height: 30px;
   max-width: 500px;
   font-weight: 600;
+  margin-top: 25px;
 }
 #partnerHero div.col-sm-8 P span {
   color: #28D5CB;
