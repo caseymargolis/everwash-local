@@ -7269,20 +7269,20 @@ section#partnerCTA {
   display: flex;
   align-items: center;
 }
-#partnerCTA .col-lg-5 h5 {
-  font-size: 27.5px;
+#partnerCTA .col-lg-5 p {
+  font-size: 17.5px;
   color: #fff;
-  line-height: 1.35em;
+  line-height: 1.25em;
 }
 #partnerCTA .col-lg-5 h4 {
-  margin-top: 35px;
+  margin-bottom: 30px;
   font-size: 33.5px;
   color: #2BD5CB;
   position: relative;
   font-weight: bold;
   width: max-content;
 }
-#partnerCTA .col-lg-5 h4:after {
+#partnerCTA .col-lg-5 h4 span:after {
   content: "";
   width: 100%;
   height: 4.5px;
@@ -7290,6 +7290,18 @@ section#partnerCTA {
   position: absolute;
   left: 0;
   bottom: -5px;
+}
+#partnerCTA .col-lg-5 a.btn-green {
+  background: #28D5CB;
+  color: #fff;
+  min-width: 245px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+#partnerCTA .col-lg-5 a.btn-green:hover {
+  background: #fff;
+  color: #141c52;
 }
 @media only screen and (max-width: 991px) {
   #partnerCTA div.form-container {
