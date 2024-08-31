@@ -6914,6 +6914,37 @@ section#partnerHero {
   color: #28D5CB;
   font-weight: bold;
 }
+
+#partnerHero div.col-sm-8 h2 {
+  color: #FFF;
+  font-size: 45px;
+  font-weight: 600;
+  max-width: 500px;
+  line-height: 1.15em;
+  margin-bottom: 50px;
+}
+#partnerHero div.col-sm-8 h2 span {
+  color: #28D5CB;
+  font-weight: bold;
+}
+#partnerHero div.col-sm-8 a.btn-green {
+  background: #28D5CB;
+  color: #fff;
+  min-width: 245px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-top: 30px;
+}
+#partnerHero div.col-sm-8 a.btn-green:hover {
+  background: #fff;
+  color: #141c52;
+}
+section#partnerMemberwhatsatstake ul {
+  text-align: left;
+  padding-left: 25px;
+}
+
 #partnerHero div.col-sm-8 P {
   color: #FFFFFF;
   font-size: 20px;
@@ -7143,7 +7174,6 @@ section#partnerwashOperator .container {
 }
 #partnerwashOperator h2 {
   color: #141C52;
-  text-align: center;
   font-size:35.5px;
   line-height: 45px;
   margin-bottom: max(3.5%, 3.5rem);
