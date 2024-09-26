@@ -7275,6 +7275,246 @@ section#partnerMemberconsulationtoday a.btn-blue:hover {
   color: #141c52;
 }
 
+/* Success Stries */
+section#partnersuccessStory {
+  background: #141C52;
+}
+#partnersuccessStory div.video-testimonials {
+
+}
+#partnersuccessStory .col-lg-5 {
+  display: flex;
+  align-items: center;
+}
+#partnersuccessStory .col-lg-5 h3 {
+  font-size: 36.05px;
+  color: #fff;
+  line-height: 1.25em;
+  font-weight: 600;
+}
+#partnersuccessStory .col-lg-5 h4 {
+  font-size: 28.85px;
+  color: #28D5CB;
+  line-height: 1.25em;
+  font-weight: 600;
+}
+#partnersuccessStory .col-lg-5 hr {
+  background: #F3F183;
+}
+#partnersuccessStory .col-lg-5 h6 {
+  font-size: 16.5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 1.25em;
+  text-transform: uppercase;
+}
+#partnersuccessStory .col-lg-5 a.btn-green {
+  background: #F3F183;
+  color: #141C52;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-top: 30px;
+}
+#partnersuccessStory .col-lg-5 a.btn-green:hover {
+  background: #2BD5CB;
+}
+@media only screen and (max-width: 767px) {
+  
+}
+
+/* Membership Solution Software */
+#partnerSoftware h1 {
+  font-size: 36.5px;
+  line-height: 43.5px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: capitalize;
+}
+#partnerSoftware div.row {
+  margin-top: 75px;
+}
+#partnerSoftware .box-info {
+  background: #E8ECFF;
+  border-radius: 15px;
+  webkit-box-shadow: 0px 5px 10px 5px rgba(225,225,225,1);
+  -moz-box-shadow: 0px 5px 10px 5px rgba(225,225,225,1);
+  box-shadow: 0px 5px 10px 5px rgba(225,225,225,1);
+  padding: 5% 7.5%;
+}
+#partnerSoftware .box-info h4 {
+  color: #141C52;
+  font-size: 24.5px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+#partnerSoftware .box-info p {
+  font-size: 13.5px;
+  line-height: 21.5px;
+  color: #000;
+}
+#partnerSoftware .box-info hr {
+  background: #91A0E4;
+  height: 1.5px;
+}
+#partnerSoftware .box-info h6 {
+  font-size: 12px;
+  line-height: 22.5px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+#partnerSoftware .image-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section#partnerSoftware a.btn-blue {
+  background: #141c52;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.15em;
+}
+section#partnerSoftware a.btn-blue:hover {
+  background:#28D5CB ;
+  color: #141c52;
+}
+@media only screen and (max-width: 991px) {
+  #partnerSoftware .image-info {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  #partnerSoftware div.reverse-row {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #partnerSoftware h1 {
+    font-size: 28.5px;
+    line-height: 38.5px;
+  }
+  #partnerSoftware div.row {
+    margin-top: 50px;
+  }
+  #partnerSoftware .image-info img {
+    max-width: 150px;
+  }
+  #partnerSoftware .box-info {
+    padding: 7.5% 10%;
+  }
+  #partnerSoftware .box-info h4 {
+    color: #141C52;
+    font-size: 20px;
+    line-height: 27.5px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Keys To Drive Success */
+section#partnerMembershipsuccess {
+  background: #141C52;
+}
+#partnerMembershipsuccess h2 {
+  color: #fff;
+  font-size: 41.5px;
+  line-height: 48.5px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#partnerMembershipsuccess h2 span {
+  color: #F3F183;
+  position: relative;
+}
+#partnerMembershipsuccess h2 span:after {
+  content: "";
+  width: 100%;
+  height: 4.5px;
+  background: #28D5CB;
+  position: absolute;
+  left: 0;
+  bottom: -3.5px;
+}
+#partnerMembershipsuccess .infobox img {
+  max-height: 50px;
+  margin-bottom: 15px;
+}
+#partnerMembershipsuccess .infobox h5 {
+  color: #141C52;
+  font-size: 17.5px;
+  line-height: 25px;
+  font-weight: bold;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#partnerMembershipsuccess .infobox hr {
+  background: #141C52;
+  height: 1.5px;
+}
+#partnerMembershipsuccess .infobox p {
+  color: #000;
+  font-size: 12.5px;
+  line-height: 20px;
+  text-align: left;
+}
+#partnerMembershipsuccess .infobox h6 {
+  color: #000;
+  font-size: 12.5px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: left;
+  letter-spacing: 0.25px;
+}
+#partnerMembershipsuccess .infobox {
+  border-radius: 15px;
+  padding: 7.5%;
+  text-align: center;
+  min-height: 435px;
+}
+#partnerMembershipsuccess .infobox.col_1 {
+  background: #C4CBEB;
+}
+#partnerMembershipsuccess .infobox.col_2 {
+  background: #ACF4F0;
+}
+#partnerMembershipsuccess .infobox.col_3 {
+  background: #FFFEBC;
+}
+section#partnerMembershipsuccess a.btn-blue {
+  background: #F3F183;
+  color: #141c52;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.15em;
+}
+section#partnerMembershipsuccess a.btn-blue:hover {
+  background:#28D5CB ;
+}
+@media only screen and (max-width: 991px) {
+  #partnerMembershipsuccess h2 {
+    margin-bottom: 15px;
+  }
+  #partnerMembershipsuccess .infobox {
+    min-height: max-content;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #partnerMembershipsuccess h2 {
+    font-size: 30px;
+    line-height: 38.5px;
+  }
+}
+
 section#partnerCalc {
   background-image: url("/img/new-update/revenue_calculator_background.png");
   background-position: center right;
@@ -7738,175 +7978,6 @@ section#partnerMembershipstory h5 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 35px;
-}
-
-#partnerSoftware h1 {
-  font-size: 36.5px;
-  line-height: 43.5px;
-  max-width: 850px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  text-transform: capitalize;
-}
-#partnerSoftware div.row {
-  margin-top: 75px;
-}
-#partnerSoftware .box-info {
-  background: #E8ECFF;
-  border-radius: 15px;
-  webkit-box-shadow: 0px 5px 10px 5px rgba(225,225,225,1);
-  -moz-box-shadow: 0px 5px 10px 5px rgba(225,225,225,1);
-  box-shadow: 0px 5px 10px 5px rgba(225,225,225,1);
-  padding: 5% 7.5%;
-}
-#partnerSoftware .box-info h4 {
-  color: #141C52;
-  font-size: 24.5px;
-  line-height: 30px;
-  margin-bottom: 25px;
-}
-#partnerSoftware .box-info p {
-  font-size: 13.5px;
-  line-height: 21.5px;
-  color: #000;
-}
-#partnerSoftware .box-info hr {
-  background: #91A0E4;
-  height: 1.5px;
-}
-#partnerSoftware .box-info h6 {
-  font-size: 12px;
-  line-height: 22.5px;
-  color: #000;
-  font-weight: 600;
-  letter-spacing: 0.25px;
-}
-#partnerSoftware .image-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 991px) {
-  #partnerSoftware .image-info {
-    position: static;
-    transform: none;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  #partnerSoftware div.reverse-row {
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #partnerSoftware h1 {
-    font-size: 28.5px;
-    line-height: 38.5px;
-  }
-  #partnerSoftware div.row {
-    margin-top: 50px;
-  }
-  #partnerSoftware .image-info img {
-    max-width: 150px;
-  }
-  #partnerSoftware .box-info {
-    padding: 7.5% 10%;
-  }
-  #partnerSoftware .box-info h4 {
-    color: #141C52;
-    font-size: 20px;
-    line-height: 27.5px;
-    margin-bottom: 20px;
-  }
-}
-
-section#partnerMembershipsuccess {
-  background: #141C52;
-}
-#partnerMembershipsuccess h2 {
-  color: #fff;
-  font-size: 41.5px;
-  line-height: 48.5px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-#partnerMembershipsuccess h2 span {
-  color: #F3F183;
-  position: relative;
-}
-#partnerMembershipsuccess h2 span:after {
-  content: "";
-  width: 100%;
-  height: 4.5px;
-  background: #28D5CB;
-  position: absolute;
-  left: 0;
-  bottom: -3.5px;
-}
-#partnerMembershipsuccess .infobox img {
-  max-height: 50px;
-  margin-bottom: 15px;
-}
-#partnerMembershipsuccess .infobox h5 {
-  color: #141C52;
-  font-size: 17.5px;
-  line-height: 25px;
-  font-weight: bold;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#partnerMembershipsuccess .infobox hr {
-  background: #141C52;
-  height: 1.5px;
-}
-#partnerMembershipsuccess .infobox p {
-  color: #000;
-  font-size: 12.5px;
-  line-height: 20px;
-  text-align: left;
-}
-#partnerMembershipsuccess .infobox h6 {
-  color: #000;
-  font-size: 12.5px;
-  line-height: 20px;
-  font-weight: 600;
-  margin-bottom: 0;
-  text-align: left;
-  letter-spacing: 0.25px;
-}
-#partnerMembershipsuccess .infobox {
-  border-radius: 15px;
-  padding: 7.5%;
-  text-align: center;
-  min-height: 435px;
-}
-#partnerMembershipsuccess .infobox.col_1 {
-  background: #C4CBEB;
-}
-#partnerMembershipsuccess .infobox.col_2 {
-  background: #ACF4F0;
-}
-#partnerMembershipsuccess .infobox.col_3 {
-  background: #FFFEBC;
-}
-@media only screen and (max-width: 991px) {
-  #partnerMembershipsuccess h2 {
-    margin-bottom: 15px;
-  }
-  #partnerMembershipsuccess .infobox {
-    min-height: max-content;
-    margin-top: 30px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #partnerMembershipsuccess h2 {
-    font-size: 30px;
-    line-height: 38.5px;
-  }
 }
 
 section#partnerOmnix {
