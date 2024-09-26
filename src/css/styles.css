@@ -6933,7 +6933,6 @@ section#partnerHero {
   font-size: 13.15px;
   font-weight: 600;
   line-height: 1.25em;
-  margin-bottom: 12.5px;
   padding: 10.5px 20.5px;
 }
 #partnerHero div.col-sm-9 a.btn-yellow:hover {
@@ -6954,7 +6953,8 @@ section#partnerHero {
   font-size: 47.85px;
   font-weight: bold;
   line-height: 1.15em;
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
+  max-width: 300px;
 }
 #partnerHero .content-box {
   text-align: center;
@@ -6972,16 +6972,13 @@ section#partnerHero {
   #partnerHero div.col-sm-9 h2 {
     font-size: 50px;
   }
-  #partnerHero div.col-sm-3 h3 {
-    font-size: 35px;
-  }
 }
 @media only screen and (max-width: 767px) {
   #partnerHero div.col-sm-9, #partnerHero div.col-sm-3 {
     flex: none;
     max-width: 100%;
     display: block;
-    padding: 10%;
+    padding: 12.5% 10% 10%;
   }
 }
 
