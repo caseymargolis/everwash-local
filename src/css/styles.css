@@ -7090,7 +7090,7 @@ section#excellingatMembership .container {
 #excellingatMembership p {
   color: #2B2B2B;
   font-size: 22.25px;
-  line-height: 1.25em;
+  line-height: 1.45em;
   font-weight: 400;
   max-width: 650px;
 }
@@ -7116,10 +7116,15 @@ section#excellingatMembership .container {
     display: block;
   }
   #excellingatMembership .content {
-    border-radius: 0;
     padding-top: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+  }
+  #excellingatMembership a.btn-blue {
+    font-size: 17.5px;
+  }
+  #excellingatMembership img {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 0;
   }
 }
 
