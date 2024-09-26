@@ -7293,14 +7293,14 @@ section#partnersuccessStory .content-box {
   line-height: 1.45em;
   font-weight: 600;
 }
-#partnersuccessStory .col-lg-5 a {
+#partnersuccessStory .col-lg-5 a.sub-header {
   font-size: 28.85px;
   color: #28D5CB;
   line-height: 1.25em;
   font-weight: 600;
   text-decoration: underline;
 }
-#partnersuccessStory .col-lg-5 a:hover {
+#partnersuccessStory .col-lg-5 a.sub-header:hover {
   color: #F3F183;
 }
 #partnersuccessStory .col-lg-5 hr {
