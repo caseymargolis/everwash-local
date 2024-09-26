@@ -6875,12 +6875,12 @@ section#partnerHero {
 }
 #partnerHero div.col-sm-9 {
   background-image: url("/img/new-update/washowner-banner.png");
-  background-position: center left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6.5% 5%;
-  flex: 0 0 60%;
-  max-width: 60%;
+  padding: 7.5% 5%;
+  flex: 0 0 72.5%;
+  max-width: 72.5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6889,30 +6889,41 @@ section#partnerHero {
   color: #FFF;
   font-size: 61.15px;
   font-weight: 600;
-  max-width: 500px;
+  max-width: 625px;
   line-height: 1.15em;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 #partnerHero div.col-sm-9 h2 span {
   color: #28D5CB;
   font-weight: bold;
 }
 #partnerHero .cta-options-btn {
-  max-width: 500px;
+  max-width: 750px;
   display: flex;
   flex-wrap: wrap;
+  gap: 12.5px;
 }
 #partnerHero div.col-sm-9 a.btn-yellow {
   background: #F3F183;
   color: #141C52;
-  min-width: 245px;
-  font-size: 20px;
+  font-size: 13.15px;
   font-weight: 600;
   line-height: 1.25em;
-  margin-bottom: 15px;
+  margin-bottom: 12.5px;
+  padding: 10.5px 20.5px;
 }
 #partnerHero div.col-sm-9 a.btn-yellow:hover {
   background: #fff;
+}
+#partnerHero div.col-sm-3 {
+  background: #F3F183;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 27.5%;
+  max-width: 27.5%;
+  padding: 10% 5%;
+  text-align: center;
 }
 #partnerHero div.col-sm-3 h3 {
   color: #141C52;
