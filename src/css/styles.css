@@ -6989,6 +6989,11 @@ section#partnerwashOperator {
 section#partnerwashOperator .container {
   max-width: 100%;
 }
+#partnerwashOperator .sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #partnerwashOperator h4 {
   color: #2B2B2B;
   font-size:33.15px;
@@ -7004,9 +7009,14 @@ section#partnerwashOperator .container {
 }
 #partnerwashOperator .content-box {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 15px;
 }
 #partnerwashOperator .img-box {
   display: flex;
+  gap: 15px;
+  align-items: center;
 }
 #partnerwashOperator .img-box img {
   max-width: 38.5px;
@@ -7016,6 +7026,7 @@ section#partnerwashOperator .container {
   font-weight: 600;
   color: #141C52;
   line-height: 1.15em;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
 
