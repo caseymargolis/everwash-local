@@ -7332,10 +7332,10 @@ section#partnersuccessStory .content-box {
   display: none!important;
 }
 #partnersuccessStory .owl-carousel .item-video {
-  height: 315px;
+  height: 305px;
 }
 #partnersuccessStory .owl-carousel .item-video iframe {
-  height: calc(315px - 10px);
+  height: calc(305px - 10px);
   border-radius: 15px;
 }
 #partnersuccessStory .item-video .owl-video-wrapper {
