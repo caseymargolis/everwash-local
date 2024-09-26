@@ -565,6 +565,9 @@ button.navbar-toggler {
 #navbar .container-fluid.washOwner {
   justify-content: space-between;
 }
+#navbar .container-fluid.washOwner .navbar-brand img {
+  padding: 0!important;
+}
 
 #navbar .compressed-btn-group {
   display: none;
@@ -6879,8 +6882,8 @@ section#partnerHero {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 7.5% 5%;
-  flex: 0 0 72.5%;
-  max-width: 72.5%;
+  flex: 0 0 70%;
+  max-width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6920,8 +6923,8 @@ section#partnerHero {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 27.5%;
-  max-width: 27.5%;
+  flex: 0 0 30%;
+  max-width: 30%;
   padding: 10% 5%;
   text-align: center;
 }
@@ -6934,6 +6937,8 @@ section#partnerHero {
 }
 #partnerHero .content-box {
   text-align: center;
+  max-width: 325px;
+  margin: auto;
 }
 #partnerHero .content-box p {
   color: #141C52;
