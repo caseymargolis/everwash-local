@@ -7496,13 +7496,14 @@ section#partnerMembershipsuccess {
 }
 section#partnerMembershipsuccess .btn-row .col-lg-12 {
   text-align: center;
+  margin-top: max(6.5%, 3.5rem);
 }
 section#partnerMembershipsuccess a.btn-blue {
   background: #F3F183;
   color: #141c52;
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.15em;
+  line-height: 1.25em;
 }
 section#partnerMembershipsuccess a.btn-blue:hover {
   background:#28D5CB ;
