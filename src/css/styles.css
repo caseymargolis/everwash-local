@@ -3033,6 +3033,9 @@ footer #footerBottom a i {
   color: var(--white);
   padding: 0 0.5rem;
 }
+footer #footerBottom a:hover i {
+  color: var(--gray-500);
+}
 
 footer #footerBottom a,
 footer #footerBottom p {
