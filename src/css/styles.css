@@ -7374,7 +7374,7 @@ section#partnersuccessStory {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-section#partnerSoftware .btn-row {
+section#partnerSoftware .btn-row .col-lg-12 {
   text-align: center;
 }
 section#partnerSoftware a.btn-blue {
@@ -7494,7 +7494,7 @@ section#partnerMembershipsuccess {
 #partnerMembershipsuccess .infobox.col_3 {
   background: #FFFEBC;
 }
-section#partnerMembershipsuccess .btn-row {
+section#partnerMembershipsuccess .btn-row .col-lg-12 {
   text-align: center;
 }
 section#partnerMembershipsuccess a.btn-blue {
