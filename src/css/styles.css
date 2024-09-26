@@ -7323,17 +7323,20 @@ section#partnersuccessStory .content-box {
   background: #2BD5CB;
 }
 #partnersuccessStory #owl-carousel-onevideo {
-  margin-top: 50px;
+  margin-top: 45px;
+}
+#partnersuccessStory #owl-carousel-onevideo .owl-nav {
+  display: none!important;
 }
 #partnersuccessStory .owl-carousel .item-video {
-  height: 300px;
+  height: 315px;
 }
 #partnersuccessStory .owl-carousel .item-video iframe {
-  height: calc(300px - 20px);
+  height: calc(315px - 20px);
 }
 #partnersuccessStory .item-video .owl-video-wrapper {
   border-radius: 15px;
-  border: solid 10px #28D5CB;
+  border: solid 5px #28D5CB;
   background-size: cover;
   background-position: center;
 }
@@ -7346,64 +7349,10 @@ section#partnersuccessStory .content-box {
   height: 11.5px;
 }
 #partnersuccessStory .owl-carousel .owl-dots button.owl-dot:hover span {
-  background: #141C52;
+  background: #F3F183;
 }
 #partnersuccessStory .owl-carousel .owl-dots button.owl-dot.active span {
-  background: #141C52;
-}
-#partnersuccessStory .owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  top: 37.5%;
-  left: -50px;
-  transform: translateY(-50%);
-  color: #91A0E4;
-  font-size: 75px;
-  opacity: 1;
-}
-#partnersuccessStory .owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  top: 37.5%;
-  right: -50px;
-  transform: translateY(-50%);
-  color: #91A0E4;
-  font-size: 75px;
-  opacity: 1;
-}
-#partnersuccessStory .owl-carousel .owl-nav .owl-prev:hover, #partnersuccessStory .owl-carousel .owl-nav .owl-next:hover {
-  background: none !important;
-  opacity: 0.75;
-}
-#partnersuccessStory .owl-carousel .owl-nav .owl-prev:focus, #partnersuccessStory .owl-carousel .owl-nav .owl-next:focus {
-  outline: none !important;
-}
-@media only screen and (min-width: 1000px) {
-  #partnersuccessStory #owl-carousel-onevideo .owl-video-play-icon {
-    display: none; 
-  }
-  #partnersuccessStory #owl-carousel-onevideo .owl-item.active[data-number="2"] .owl-video-play-icon {
-    display: block; 
-  }
-  #partnersuccessStory #owl-carousel-onevideo .owl-video-play-icon.hide {
-    display: none !important; 
-  }
-  #partnersuccessStory .owl-item.active[data-number="1"] .item-video, #partnersuccessStory .owl-item.active[data-number="3"] .item-video {
-    perspective:400px;
-    transform: scale(0.85);
-  }
-  #partnersuccessStory .owl-item.active[data-number="1"] .item-video .owl-video-wrapper {
-    animation: y-axis-animation 10000s ease-in-out 0s infinite;
-  }
-  @keyframes y-axis-animation {
-    from {transform: rotateY(20deg);}
-    to {transform: rotateY(-20deg);}
-  }
-  #partnersuccessStory .owl-item.active[data-number="3"] .item-video .owl-video-wrapper {
-    animation: y-axis-animation1 10000s ease-in-out 0s infinite;
-  }
-  @keyframes y-axis-animation1 {
-    from {transform: rotateY(-20deg);}
-    to {transform: rotateY(20deg);}
-  }
+  background: #F3F183;
 }
 @media only screen and (max-width: 767px) {
   
