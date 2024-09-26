@@ -7195,16 +7195,17 @@ section#ourprovenplan {
 #partnerWhatsatstake h2 {
   font-size: 36.05px;
   line-height: 1.15em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
 }
 #partnerWhatsatstake p.sub-header {
   color: #2B2B2B;
   font-size: 16.75px;
+  text-align: center;
+  margin: 15px auto;
 }
 #partnerWhatsatstake div.row {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 #partnerWhatsatstake .box-info {
   background: #E8ECFF;
