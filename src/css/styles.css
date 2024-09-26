@@ -6984,9 +6984,9 @@ section#partnerHero {
 }
 
 section#partnerwashOperator {
-  background: #F5F6FC;
-  padding-top: max(5%, 3.15rem);
-  padding-bottom: max(5%, 3.15rem);
+  background: #ffffff;
+  padding-top: max(6.5%, 3.5rem);
+  padding-bottom: max(6.5%, 3.5rem);
 }
 section#partnerwashOperator .container {
   max-width: 100%;
@@ -7059,6 +7059,57 @@ section#partnerwashOperator .container {
     border-radius: 15px;
     margin-bottom: -7.5px;
     height: 350px!important;
+  }
+}
+
+section#excellingatMembership {
+  background: #F5F6FC;
+  padding-top: max(4.5%, 2.5rem);
+  padding-bottom: max(4.5%, 2.5rem);
+}
+section#excellingatMembership .container {
+  max-width: 100%;
+}
+#excellingatMembership img {
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#excellingatMembership h4 {
+  color: #141C52;
+  font-size: 36.05px;
+  line-height: 1.15em;
+  margin-bottom: 25px;
+}
+#excellingatMembership p {
+  background: #2B2B2B;
+  font-size: 22.25px;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+#excellingatMembership a.btn-blue {
+  background: #141c52;
+  color: #fff;
+  min-width: 225px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+#excellingatMembership a.btn-blue:hover {
+  background: #F3F183;
+  color: #141c52;
+}
+@media only screen and (max-width: 767px) {
+  #excellingatMembership .col-sm-6 {
+    flex: none;
+    max-width: 100%;
+    display: block;
+  }
+  #excellingatMembership .content {
+    border-radius: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
   }
 }
 
