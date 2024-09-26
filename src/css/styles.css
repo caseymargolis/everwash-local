@@ -6990,8 +6990,8 @@ section#partnerHero {
 /* Car Wash Operator */
 section#partnerwashOperator {
   background: #ffffff;
-  padding-top: max(6.5%, 3.5rem);
-  padding-bottom: max(6.5%, 3.5rem);
+  padding-top: max(6.5%, 4.15rem);
+  padding-bottom: max(6.5%, 4.15rem);
 }
 section#partnerwashOperator .container {
   max-width: 100%;
@@ -7070,8 +7070,8 @@ section#partnerwashOperator .container {
 /* Excelling at Membership */
 section#excellingatMembership {
   background: #F5F6FC;
-  padding-top: max(4.5%, 2.5rem);
-  padding-bottom: max(4.5%, 2.5rem);
+  padding-top: max(5%, 3.5rem);
+  padding-bottom: max(5%, 3.5rem);
 }
 section#excellingatMembership .container {
   max-width: 100%;
