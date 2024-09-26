@@ -7317,12 +7317,12 @@ section#partnersuccessStory .content-box {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.25em;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 #partnersuccessStory .col-lg-5 a.btn-green:hover {
   background: #2BD5CB;
 }
-#partnersuccessStory #owl-carousel-video {
+#partnersuccessStory #owl-carousel-onevideo {
   margin-top: 50px;
 }
 #partnersuccessStory .owl-carousel .item-video {
@@ -7377,13 +7377,13 @@ section#partnersuccessStory .content-box {
   outline: none !important;
 }
 @media only screen and (min-width: 1000px) {
-  #partnersuccessStory #owl-carousel-video .owl-video-play-icon {
+  #partnersuccessStory #owl-carousel-onevideo .owl-video-play-icon {
     display: none; 
   }
-  #partnersuccessStory #owl-carousel-video .owl-item.active[data-number="2"] .owl-video-play-icon {
+  #partnersuccessStory #owl-carousel-onevideo .owl-item.active[data-number="2"] .owl-video-play-icon {
     display: block; 
   }
-  #partnersuccessStory #owl-carousel-video .owl-video-play-icon.hide {
+  #partnersuccessStory #owl-carousel-onevideo .owl-video-play-icon.hide {
     display: none !important; 
   }
   #partnersuccessStory .owl-item.active[data-number="1"] .item-video, #partnersuccessStory .owl-item.active[data-number="3"] .item-video {
