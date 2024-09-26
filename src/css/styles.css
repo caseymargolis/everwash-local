@@ -565,8 +565,11 @@ button.navbar-toggler {
 #navbar .container-fluid.washOwner {
   justify-content: space-between;
 }
-#navbar .container-fluid.washOwner .navbar-brand img {
-  padding: 0!important;
+
+@media only screen and (min-width: 650px) {
+  #navbar .container-fluid.washOwner .navbar-brand img {
+    padding: 0!important;
+  }
 }
 #navbar .container-fluid.washOwner .socialicons-btn {
   display: flex;
@@ -7137,6 +7140,8 @@ section#excellingatMembership .container {
 /* Our Proven Plan to Get You Started */
 section#ourprovenplan {
   background: #141C52;
+  padding-top: max(5%, 4.5rem);
+  padding-bottom: max(7.5%, 4.5rem);
 }
 #ourprovenplan h4 {
   color: #fff;
