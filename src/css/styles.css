@@ -7268,7 +7268,7 @@ section#partnerMemberconsulationtoday a.btn-blue {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.15em;
+  line-height: 1.25em;
 }
 section#partnerMemberconsulationtoday a.btn-blue:hover {
   background:#28D5CB ;
@@ -7278,6 +7278,8 @@ section#partnerMemberconsulationtoday a.btn-blue:hover {
 /* Success Stries */
 section#partnersuccessStory {
   background: #141C52;
+  padding-top: max(6.5%, 4.5rem);
+  padding-bottom: max(6.5%, 4.5rem);
 }
 #partnersuccessStory div.video-testimonials {
 
@@ -7372,12 +7374,15 @@ section#partnersuccessStory {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+section#partnerSoftware .btn-row {
+  text-align: center;
+}
 section#partnerSoftware a.btn-blue {
   background: #141c52;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.15em;
+  line-height: 1.25em;
 }
 section#partnerSoftware a.btn-blue:hover {
   background:#28D5CB ;
@@ -7488,6 +7493,9 @@ section#partnerMembershipsuccess {
 }
 #partnerMembershipsuccess .infobox.col_3 {
   background: #FFFEBC;
+}
+section#partnerMembershipsuccess .btn-row {
+  text-align: center;
 }
 section#partnerMembershipsuccess a.btn-blue {
   background: #F3F183;
