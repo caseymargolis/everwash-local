@@ -7332,7 +7332,8 @@ section#partnersuccessStory .content-box {
   height: 315px;
 }
 #partnersuccessStory .owl-carousel .item-video iframe {
-  height: calc(315px - 20px);
+  height: calc(315px - 10px);
+  border-radius: 15px;
 }
 #partnersuccessStory .item-video .owl-video-wrapper {
   border-radius: 15px;
@@ -7353,9 +7354,6 @@ section#partnersuccessStory .content-box {
 }
 #partnersuccessStory .owl-carousel .owl-dots button.owl-dot.active span {
   background: #F3F183;
-}
-@media only screen and (max-width: 767px) {
-  
 }
 
 /* Membership Solution Software */
