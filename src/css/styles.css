@@ -6927,11 +6927,10 @@ section#partnerHero {
 }
 #partnerHero div.col-sm-3 h3 {
   color: #141C52;
-  font-size: 47.5px;
+  font-size: 47.85px;
   font-weight: bold;
-  max-width: 500px;
   line-height: 1.15em;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 #partnerHero .content-box {
   text-align: center;
@@ -6939,12 +6938,8 @@ section#partnerHero {
 #partnerHero .content-box p {
   color: #141C52;
   font-size: 21.5px;
-  line-height: 25px;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.15em;
   font-weight: 600;
-  margin-top: 20px;
 }
 @media only screen and (max-width: 999px) {
   #partnerHero div.col-sm-9 h2 {
