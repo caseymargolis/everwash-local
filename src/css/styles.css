@@ -6936,7 +6936,8 @@ section#partnerHero {
   padding: 10.5px 20.5px;
 }
 #partnerHero div.col-sm-9 a.btn-yellow:hover {
-  background: #fff;
+  background: #28D5CB;
+  color: #fff;
 }
 #partnerHero div.col-sm-3 {
   background: #F3F183;
@@ -6980,6 +6981,36 @@ section#partnerHero {
     display: block;
     padding: 12.5% 10% 10%;
   }
+}
+
+section#partnerwashOperator {
+  background: #F5F6FC;
+}
+section#partnerwashOperator .container {
+  max-width: 850px;
+}
+#partnerwashOperator h4 {
+  color: #2B2B2B;
+  font-size:33.15px;
+  line-height:1.15em;
+}
+#partnerwashOperator .contentbox {
+  background: #92A1E4;
+}
+#partnerwashOperator .img-box {
+  display: flex;
+}
+#partnerwashOperator .img-box img {
+  max-width: 38.5px;
+}
+#partnerwashOperator .img-box p {
+  font-size: 19.45px;
+  font-weight: 600;
+  color: #141C52;
+  line-height: 1.15em;
+}
+@media only screen and (max-width: 767px) {
+
 }
 
 section#explainervideowashOwner {
@@ -7134,38 +7165,6 @@ section#partnerCalc {
   }
   #partnerCalc .partnerCalcModule .btn {
     font-size: 1.05rem;
-  }
-}
-
-section#partnerwashOperator {
-  background: #F5F6FC;
-}
-section#partnerwashOperator .container {
-  max-width: 850px;
-}
-#partnerwashOperator h2 {
-  color: #141C52;
-  font-size:35.5px;
-  line-height: 45px;
-  margin-bottom: max(3.5%, 3.5rem);
-  margin-top: 15px;
-}
-#partnerwashOperator ul {
-  text-align: left;
-  padding-left: 30px;
-  font-size: 20.5px;
-}
-#partnerwashOperator ul li {
-  margin-top: 7.5px;
-}
-@media only screen and (max-width: 767px) {
-  #partnerwashOperator h2 {
-    margin-bottom: max(5%, 2.5rem);
-    font-size: 27.5px;
-    line-height: 35px;
-  }
-  #partnerwashOperator ul {
-    font-size: 17.5px;
   }
 }
 
