@@ -586,7 +586,8 @@ button.navbar-toggler {
 }
 #navbar .container-fluid.washOwner .socialicons-btn .social-icons a.youtube {
   color: #141C52;
-  font-size: 42.5px!important;
+  font-size: 41.5px!important;
+  margin-top: 1.5px;
 }
 #navbar .container-fluid.washOwner .socialicons-btn .social-icons a.youtube:hover {
   color: #1fbfb7;
