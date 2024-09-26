@@ -6987,15 +6987,23 @@ section#partnerwashOperator {
   background: #F5F6FC;
 }
 section#partnerwashOperator .container {
-  max-width: 850px;
+  max-width: 100%;
 }
 #partnerwashOperator h4 {
   color: #2B2B2B;
   font-size:33.15px;
   line-height:1.15em;
 }
-#partnerwashOperator .contentbox {
+#partnerwashOperator .content {
   background: #92A1E4;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#partnerwashOperator .content-box {
+  display: flex;
 }
 #partnerwashOperator .img-box {
   display: flex;
