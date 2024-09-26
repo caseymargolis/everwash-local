@@ -580,12 +580,23 @@ button.navbar-toggler {
   margin-bottom: 0!important;
 }
 #navbar .container-fluid.washOwner .socialicons-btn .social-icons a {
-  color: #141C52;
-  font-size: 25px;
   margin-right: 7.5px;
 }
-#navbar .container-fluid.washOwner .socialicons-btn .social-icons a:hover {
+#navbar .container-fluid.washOwner .socialicons-btn .social-icons a.youtube {
+  color: #141C52;
+  font-size: 30px;
+}
+#navbar .container-fluid.washOwner .socialicons-btn .social-icons a.youtube:hover {
   color: #1fbfb7;
+}
+#navbar .container-fluid.washOwner a.facebook i,
+#navbar .container-fluid.washOwner a.instagram i,
+#navbar .container-fluid.washOwner a.linkedin i {
+  width: 45px;
+  height: 45px;
+  background: #141C52;
+  color: #fff;
+  border-radius: 30px;
 }
 @media only screen and (max-width: 650px) {
   #navbar .container-fluid.washOwner .socialicons-btn .social-icons {
