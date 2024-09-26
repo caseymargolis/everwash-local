@@ -7144,18 +7144,21 @@ section#ourprovenplan {
   line-height: 1.25em;
   text-align: center;
 }
-#ourprovenplan p {
+#ourprovenplan p.sub-header {
   color: #fff;
   font-size: 16.75px;
   line-height: 1.25em;
   font-weight: 400;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 20px auto 60px;
 }
 #ourprovenplan .infobox {
   background: #FFFFFF;
   border-radius: 15px;
   padding: 7.5%;
   text-align: center;
-  min-height: 435px;
+  min-height: 215px;
 }
 #ourprovenplan .infobox img {
   max-height: 54.5px;
@@ -7171,6 +7174,7 @@ section#ourprovenplan {
   color: #2B2B2B;
   font-size: 13.65px;
   line-height: 1.25em;
+  margin: 10px auto;
 }
 @media only screen and (max-width: 991px) {
   #ourprovenplan .infobox {
