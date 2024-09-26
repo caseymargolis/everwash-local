@@ -6886,6 +6886,9 @@ section#homeHero-new {
 }
 
 /* Wash Owners New Page Custom CSS */
+.washowners-main {
+  overflow-x: hidden;
+}
 section#partnerHero {
   padding: 0!important;
 }
