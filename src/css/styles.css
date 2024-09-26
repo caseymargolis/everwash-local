@@ -7220,6 +7220,7 @@ section#ourprovenplan {
   font-size: 23.15px;
   line-height: 1.25em;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 #partnerWhatsatstake .box-info p {
   font-size: 16.75px;
@@ -7251,7 +7252,6 @@ section#ourprovenplan {
     padding: 7.5% 10%;
   }
   #partnerWhatsatstake .box-info h4 {
-    color: #141C52;
     font-size: 20px;
   }
 }
