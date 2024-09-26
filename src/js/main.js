@@ -968,6 +968,20 @@ $(function() {
 });
 
 
+// Buttons group rotate...
+$(document).ready(function() {
+  var ctas = ['#cta1', '#cta2', '#cta3'];
+  var currentCta = 0;
+  function rotateCTA() {
+      $('#partnerHero a.btn').hide();
+      $(ctas[currentCta]).fadeIn();
+      currentCta = (currentCta + 1) % ctas.length;
+  }
+  setInterval(rotateCTA, 10000);
+  rotateCTA();
+});
+
+
 
 // popup form submit to external action link & netlify
 // Wash Owner Popup
