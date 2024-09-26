@@ -568,6 +568,22 @@ button.navbar-toggler {
 #navbar .container-fluid.washOwner .navbar-brand img {
   padding: 0!important;
 }
+#navbar .container-fluid.washOwner .socialicons-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#navbar .container-fluid.washOwner .socialicons-btn .social-icons {
+  margin-bottom: 0!important;
+}
+#navbar .container-fluid.washOwner .socialicons-btn .social-icons a {
+  color: #141C52;
+  font-size: 25px;
+  margin-right: 5px;
+}
+#navbar .container-fluid.washOwner .socialicons-btn .social-icons a:hover {
+  color: #000;
+}
 
 #navbar .compressed-btn-group {
   display: none;
