@@ -6886,6 +6886,7 @@ section#homeHero-new {
 }
 
 /* Wash Owners New Page Custom CSS */
+/* Hero Section */
 .washowners-main {
   overflow-x: hidden;
 }
@@ -6986,6 +6987,7 @@ section#partnerHero {
   }
 }
 
+/* Car Wash Operator */
 section#partnerwashOperator {
   background: #ffffff;
   padding-top: max(6.5%, 3.5rem);
@@ -7065,6 +7067,7 @@ section#partnerwashOperator .container {
   }
 }
 
+/* Excelling at Membership */
 section#excellingatMembership {
   background: #F5F6FC;
   padding-top: max(4.5%, 2.5rem);
@@ -7128,6 +7131,51 @@ section#excellingatMembership .container {
     width: 100%;
     border-radius: 15px;
     margin-left: 0;
+  }
+}
+
+/* Our Proven Plan to Get You Started */
+section#ourprovenplan {
+  background: #141C52;
+}
+#ourprovenplan h4 {
+  color: #fff;
+  font-size: 36.05px;
+  line-height: 1.25em;
+  text-align: center;
+}
+#ourprovenplan p {
+  color: #fff;
+  font-size: 16.75px;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+#ourprovenplan .infobox {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 7.5%;
+  text-align: center;
+  min-height: 435px;
+}
+#ourprovenplan .infobox img {
+  max-height: 54.5px;
+  margin-bottom: 15px;
+}
+#ourprovenplan .infobox h5 {
+  color: #141C52;
+  font-size: 16.75px;
+  line-height: 1.15em;
+  font-weight: bold;
+}
+#ourprovenplan .infobox p {
+  color: #2B2B2B;
+  font-size: 13.65px;
+  line-height: 1.25em;
+}
+@media only screen and (max-width: 991px) {
+  #ourprovenplan .infobox {
+    min-height: max-content;
+    margin-top: 30px;
   }
 }
 
@@ -7593,32 +7641,6 @@ section#partnerReviews {
   }
 }
 
-section#ourprovenplan {
-  background: #28D5CB;
-  text-align: center;
-  padding-top: max(5%, 2.5rem);
-  padding-bottom: max(5%, 2.5rem);
-}
-section#ourprovenplan .container {
-  max-width: 850px;
-}
-section#ourprovenplan h2 {
-  font-size: 36.5px;
-  line-height: 45px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-section#ourprovenplan h5 {
-  font-size: 21.5px;
-  line-height: 27.5px;
-  margin: 35px 0 15px;
-  text-align: left;
-}
-section#ourprovenplan ol {
-  text-align: left;
-  padding-left: 25px;
-}
 
 section#partnerMemberwhatsatstake {
   background: #F3F183;
