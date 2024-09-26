@@ -6909,7 +6909,7 @@ section#partnerHero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 7.5% 5%;
+  padding: 7.5% 5% 7.5% 15px;
   flex: 0 0 70%;
   max-width: 70%;
   display: flex;
