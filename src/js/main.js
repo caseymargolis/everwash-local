@@ -977,7 +977,7 @@ $(document).ready(function() {
       $(ctas[currentCta]).fadeIn();
       currentCta = (currentCta + 1) % ctas.length;
   }
-  setInterval(rotateCTA, 10000);
+  setInterval(rotateCTA, 15000);
   rotateCTA();
 });
 
