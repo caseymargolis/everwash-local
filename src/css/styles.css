@@ -7158,7 +7158,7 @@ section#ourprovenplan {
   border-radius: 15px;
   padding: 7.5%;
   text-align: center;
-  min-height: 215px;
+  min-height: 235px;
 }
 #ourprovenplan .infobox img {
   max-height: 54.5px;
@@ -7177,6 +7177,9 @@ section#ourprovenplan {
   margin: 10px auto;
 }
 @media only screen and (max-width: 991px) {
+  #ourprovenplan p.sub-header {
+    margin: 15px auto;
+  }
   #ourprovenplan .infobox {
     min-height: max-content;
     margin-top: 30px;
