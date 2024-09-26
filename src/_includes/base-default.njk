@@ -12,6 +12,25 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <script>
+      // Helper function to delay opening a URL until a gtag event is sent.
+      // Call it in response to an action that should navigate to a URL.
+      function gtagSendEvent(url) {
+        var callback = function () {
+          if (typeof url === 'string') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion_event_submit_lead_form', {
+          'event_callback': callback,
+          'event_timeout': 2000,
+          // <event_parameters>
+        });
+        return false;
+      }
+    </script>
     
     <!-- Google Tag Manager -->
     <script>
@@ -139,9 +158,9 @@
               }
             ],
             "sameAs": [
-              "https://www.facebook.com/EverWash",
+              "https://www.facebook.com/everwashforbusiness",
               "https://twitter.com/EverWash",
-              "https://www.instagram.com/everwashcc/",
+              "https://www.instagram.com/everwashforbiz/",
               "https://www.youtube.com/channel/UCv3ZMElXRnResR_Dv9dd1GA",
               "https://www.linkedin.com/company/everwash/"
             ]
