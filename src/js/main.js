@@ -968,19 +968,15 @@ $(function() {
 });
 
 
-// Buttons group rotate...
-$(document).ready(function() {
-  var ctas = ['#cta1', '#cta2', '#cta3'];
-  var currentCta = 0;
-  function rotateCTA() {
-      $('#partnerHero a.btn').hide();
-      $(ctas[currentCta]).fadeIn();
-      currentCta = (currentCta + 1) % ctas.length;
-  }
-  setInterval(rotateCTA, 15000);
-  rotateCTA();
-});
-
+// Randomly button display on washowner page banner...
+window.onload = function() {
+  var buttons = document.querySelectorAll('.cta-options-btn a');
+  buttons.forEach(function(button) {
+    button.style.display = 'none';
+  });
+  var randomIndex = Math.floor(Math.random() * buttons.length);
+  buttons[randomIndex].style.display = 'inline-block';
+};
 
 
 // popup form submit to external action link & netlify
