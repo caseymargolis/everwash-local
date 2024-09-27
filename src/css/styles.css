@@ -6928,39 +6928,31 @@ section#homeHero-new {
   overflow-x: hidden;
 }
 section#partnerHero {
-  padding: 0!important;
-}
-#partnerHero .container {
-  max-width: 100%;
-  padding: 0!important;
-}
-#partnerHero .row {
-  align-items: stretch;
-  margin: 0 !important;
-}
-#partnerHero div.col-sm-9 {
+  padding-top: max(6.5%, 4.5rem);
+  padding-bottom: max(6.5%, 4.5rem);
   background-image: url("/img/new-update/washowner-banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 7.5% 5% 7.5% 15px;
-  flex: 0 0 70%;
-  max-width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-#partnerHero div.col-sm-9 h2 {
+#partnerHero div.col-sm-12 h2 {
   color: #FFF;
   font-size: 61.15px;
   font-weight: 600;
   max-width: 625px;
   line-height: 1.15em;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
-#partnerHero div.col-sm-9 h2 span {
+#partnerHero div.col-sm-12 h2 span {
   color: #28D5CB;
   font-weight: bold;
+}
+#partnerHero div.col-sm-12 h5 {
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.15em;
+  margin-bottom: 45px;
 }
 #partnerHero .cta-options-btn {
   max-width: 750px;
@@ -6968,7 +6960,7 @@ section#partnerHero {
   flex-wrap: wrap;
   gap: 12.5px;
 }
-#partnerHero div.col-sm-9 a.btn-yellow {
+#partnerHero div.col-sm-12 a.btn-yellow {
   background: #F3F183;
   color: #141C52;
   font-weight: 600;
@@ -6976,51 +6968,13 @@ section#partnerHero {
   /* font-size: 13.15px;
   padding: 10.5px 20.5px; */
 }
-#partnerHero div.col-sm-9 a.btn-yellow:hover {
+#partnerHero div.col-sm-12 a.btn-yellow:hover {
   background: #28D5CB;
   color: #fff;
-}
-#partnerHero div.col-sm-3 {
-  background: #F3F183;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 30%;
-  max-width: 30%;
-  padding: 10% 5%;
-  text-align: center;
-}
-#partnerHero div.col-sm-3 h3 {
-  color: #141C52;
-  font-size: 47.85px;
-  font-weight: bold;
-  line-height: 1.15em;
-  margin: 0 auto 35px;
-  max-width: 300px;
-}
-#partnerHero .content-box {
-  text-align: center;
-  max-width: 300px;
-  margin: auto;
-}
-#partnerHero .content-box p {
-  color: #141C52;
-  font-size: 21.5px;
-  line-height: 1.15em;
-  font-weight: 600;
-  letter-spacing: 0!important;
 }
 @media only screen and (max-width: 999px) {
   #partnerHero div.col-sm-9 h2 {
     font-size: 50px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #partnerHero div.col-sm-9, #partnerHero div.col-sm-3 {
-    flex: none;
-    max-width: 100%;
-    display: block;
-    padding: 12.5% 10% 10%;
   }
 }
 
