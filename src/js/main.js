@@ -961,10 +961,21 @@ $(function() {
     }
   });
 
+  // add poster for video
   $('#owl-carousel-onevideo div.owl-item').each(function(){
     var poster_img = $(this).find('.owl-video-wrapper .owl-video-tn').attr('srctype');
     $(this).find('.owl-video-wrapper').css('background-image', 'url(https:' + poster_img + ')');
   });
+
+  // When active video, hidden play button
+  var checkinterval = setInterval(function() {
+    var activeItem = document.querySelector('#owl-carousel-onevideo div.owl-item.active');
+    if (activeItem && activeItem.querySelector('iframe')) {
+      console.log("Iframe exists!");
+    } else {
+      console.log("Iframe not found yet...");
+    }
+  }, 1000);
 });
 
 
