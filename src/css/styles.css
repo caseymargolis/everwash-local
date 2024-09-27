@@ -6928,8 +6928,8 @@ section#homeHero-new {
   overflow-x: hidden;
 }
 section#partnerHero {
-  padding-top: max(6.5%, 4.5rem);
-  padding-bottom: max(6.5%, 4.5rem);
+  padding-top: max(7.5%, 4.5rem);
+  padding-bottom: max(7.5%, 4.5rem);
   background-image: url("/img/new-update/washowner-banner.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -6939,7 +6939,7 @@ section#partnerHero {
   color: #FFF;
   font-size: 61.15px;
   font-weight: 600;
-  max-width: 625px;
+  max-width: 750px;
   line-height: 1.15em;
   margin-bottom: 30px;
 }
@@ -6949,10 +6949,11 @@ section#partnerHero {
 }
 #partnerHero div.col-sm-12 h5 {
   color: #FFF;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 1.15em;
-  margin-bottom: 45px;
+  line-height: 1.25em;
+  max-width: 750px;
+  margin-bottom: 60px;
 }
 #partnerHero .cta-options-btn {
   max-width: 750px;
@@ -6965,16 +6966,17 @@ section#partnerHero {
   color: #141C52;
   font-weight: 600;
   line-height: 1.25em;
-  /* font-size: 13.15px;
-  padding: 10.5px 20.5px; */
 }
 #partnerHero div.col-sm-12 a.btn-yellow:hover {
   background: #28D5CB;
   color: #fff;
 }
 @media only screen and (max-width: 999px) {
-  #partnerHero div.col-sm-9 h2 {
+  #partnerHero div.col-sm-12 h2 {
     font-size: 50px;
+  }
+  #partnerHero div.col-sm-12 h5 {
+    font-size: 25px;
   }
 }
 
