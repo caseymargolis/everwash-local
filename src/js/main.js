@@ -972,6 +972,7 @@ $(function() {
     var activeItem = document.querySelector('#owl-carousel-onevideo div.owl-item.active');
     if (activeItem && activeItem.querySelector('iframe')) {
       console.log("Iframe exists!");
+      clearInterval(interval);
     } else {
       console.log("Iframe not found yet...");
     }
