@@ -6944,9 +6944,13 @@ section#partnerHero:after {
   width: 100%;
   height: 100%;
   background: #141C52;
-  opacity: 0.5;
+  opacity: 0.75;
 }
-#partnerHero div.col-sm-12 h2 {
+#partnerHero .info-box {
+  position: relative;
+  z-index: 9;
+}
+#partnerHero .info-box h2 {
   color: #FFF;
   font-size: 61.15px;
   font-weight: 600;
@@ -6954,11 +6958,11 @@ section#partnerHero:after {
   line-height: 1.15em;
   margin-bottom: 30px;
 }
-#partnerHero div.col-sm-12 h2 span {
+#partnerHero .info-box h2 span {
   color: #28D5CB;
   font-weight: bold;
 }
-#partnerHero div.col-sm-12 h5 {
+#partnerHero .info-box h5 {
   color: #FFF;
   font-size: 30px;
   font-weight: 600;
@@ -6972,21 +6976,21 @@ section#partnerHero:after {
   flex-wrap: wrap;
   gap: 12.5px;
 }
-#partnerHero div.col-sm-12 a.btn-yellow {
+#partnerHero .info-box a.btn-yellow {
   background: #F3F183;
   color: #141C52;
   font-weight: 600;
   line-height: 1.25em;
 }
-#partnerHero div.col-sm-12 a.btn-yellow:hover {
+#partnerHero .info-box a.btn-yellow:hover {
   background: #28D5CB;
   color: #fff;
 }
 @media only screen and (max-width: 999px) {
-  #partnerHero div.col-sm-12 h2 {
+  #partnerHero .info-box h2 {
     font-size: 50px;
   }
-  #partnerHero div.col-sm-12 h5 {
+  #partnerHero .info-box h5 {
     font-size: 25px;
   }
 }
