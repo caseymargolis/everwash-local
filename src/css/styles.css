@@ -6934,6 +6934,17 @@ section#partnerHero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+section#partnerHero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #141C52;
+  opacity: 0.5;
 }
 #partnerHero div.col-sm-12 h2 {
   color: #FFF;
