@@ -7333,8 +7333,27 @@ section#partnersuccessStory .content-box {
 #partnersuccessStory #owl-carousel-onevideo {
   margin-top: 45px;
 }
-#partnersuccessStory #owl-carousel-onevideo .owl-nav {
-  display: none!important;
+#partnersuccessStory .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 37.5%;
+  left: -50px;
+  transform: translateY(-50%);
+  color: #28D5CB;
+  font-size: 75px;
+  opacity: 1;
+}
+#partnersuccessStory .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 37.5%;
+  right: -50px;
+  transform: translateY(-50%);
+  color: #28D5CB;
+  font-size: 75px;
+  opacity: 1;
+}
+#partnersuccessStory .owl-carousel .owl-nav .owl-prev:hover, #partnersuccessStory .owl-carousel .owl-nav .owl-next:hover {
+  background: none !important;
+  color: #F3F183;
 }
 #partnersuccessStory .owl-carousel .item-video {
   height: 305px;
@@ -7348,6 +7367,9 @@ section#partnersuccessStory .content-box {
   border: solid 5px #28D5CB;
   background-size: cover;
   background-position: center;
+}
+#partnersuccessStory #owl-carousel-onevideo .owl-dots {
+  display: none!important;
 }
 #partnersuccessStory .owl-carousel .owl-dots button.owl-dot {
   margin-top: 30px;
