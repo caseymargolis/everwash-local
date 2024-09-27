@@ -7385,6 +7385,15 @@ section#partnersuccessStory .content-box {
 #partnersuccessStory .owl-carousel .owl-dots button.owl-dot.active span {
   background: #F3F183;
 }
+@media only screen and (max-width: 650px) {
+  #partnersuccessStory .owl-carousel .owl-nav {
+    display: none!important;
+  }
+  #partnersuccessStory #owl-carousel-onevideo .owl-dots {
+    display: block!important;
+  }
+}
+
 
 /* Membership Solution Software */
 #partnerSoftware h1 {
