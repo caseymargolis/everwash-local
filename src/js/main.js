@@ -970,7 +970,7 @@ $(function() {
   // When active video, only show iframe
   setInterval(function() {
     var activeItem = document.querySelector('#owl-carousel-onevideo div.owl-item.active');
-    var iframe = document.querySelector('#owl-carousel-onevideo div.owl-item iframe');
+    var iframe = document.querySelector('#owl-carousel-onevideo div.owl-item');
     if (activeItem && activeItem.querySelector('iframe')) {
       console.log("Iframe exists!");
       // activeItem.querySelector('.owl-video-play-icon').style.display = 'none';
