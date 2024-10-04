@@ -2,9 +2,6 @@
 window.onload = function() {
   // Randomly button display on washowner page banner...
   var buttons = document.querySelectorAll('.cta-options-btn a');
-  if (buttons.length === 0) {
-    return;
-  }
   buttons.forEach(function(button) {
     button.style.display = 'none';
   });
