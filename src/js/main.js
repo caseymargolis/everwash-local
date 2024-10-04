@@ -1441,9 +1441,8 @@ function validatePhoneNumber(input) {
 }
 
 //reCaptcha call back
-// function recaptcha_callback() {
-//   var submitBtn =  document.querySelector("#submit-btn");
-//   submitBtn.removeAttribute('disabled');
-//   submitBtn.style.cursor = 'pointer';
-// }
-
+function recaptcha_callback() {
+  var submitBtn =  document.querySelector("#submit-btn");
+  submitBtn.removeAttribute('disabled');
+  submitBtn.style.cursor = 'pointer';
+}
