@@ -968,17 +968,17 @@ $(function() {
   });
 
   // When active video, only show iframe
-  setInterval(function() {
-    $('#owl-carousel-onevideo div.owl-item').each(function() {
-      if ($(this).hasClass('active')) {
-        console.log('This .owl-item has the active class!');
-      } else {
-        if ($(this).find('iframe').length) {
-          $(this).find('iframe').remove();
-        }
-      }
-    });
-  }, 1000);
+  // setInterval(function() {
+  //   $('#owl-carousel-onevideo div.owl-item').each(function() {
+  //     if ($(this).hasClass('active')) {
+  //       console.log('This .owl-item has the active class!');
+  //     } else {
+  //       if ($(this).find('iframe').length) {
+  //         $(this).find('iframe').remove();
+  //       }
+  //     }
+  //   });
+  // }, 1000);
 });
 
 
