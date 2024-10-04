@@ -6038,9 +6038,9 @@ margin-right: 1rem;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-  content: "\f00c";
   color: var(--accent);
+  content: "✓";
+  font-weight: bold;
 }
 .b2b-subpage-list-section ul {
   list-style: none;
@@ -6453,7 +6453,8 @@ margin-right: 1rem;
 }
 
 #ewAssistAbout p {
-  margin-bottom: 0;
+  max-width: 600px;
+  margin: auto;
 }
 #ewAssistCancellations .container {
   max-width: 900px;
