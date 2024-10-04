@@ -971,10 +971,7 @@ $(function() {
   setInterval(function() {
     var videoItem = document.querySelector('#owl-carousel-onevideo div.owl-item');
     if (!$(videoItem).hasClass('active') && videoItem.querySelector('iframe')) {
-      console.log("0");
-      // videoItem.querySelector('iframe').remove();
-    } else {
-      console.log("1");
+      videoItem.querySelector('iframe').remove();
     }
   }, 1000);
 });
