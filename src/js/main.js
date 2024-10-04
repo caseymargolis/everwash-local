@@ -1432,8 +1432,6 @@ if ($('#scheduleacalltodayPopup-external').length) {
 }
 
 
-
-
 // Disable spaces and strings (non-numeric characters) in a phone number field
 function validatePhoneNumber(input) {
   // Remove non-numeric characters
