@@ -6582,6 +6582,7 @@ margin-right: 1rem;
   color: var(--text-dark);
   border-radius: 15px;
   text-align: left;
+  margin: auto;
 }
 #ewAssistResults table td,
 #ewAssistResults table th {
@@ -6592,7 +6593,7 @@ margin-right: 1rem;
 }
 
 #ewAssistResults table tr:first-of-type {
-  background: var(--variant-turquoise-02);
+  background: #28D5CB;
 }
 #ewAssistResults table tr:first-of-type th:first-of-type {
   border-top-left-radius: 10px;
@@ -6601,8 +6602,8 @@ margin-right: 1rem;
   border-top-right-radius: 10px;
 }
 
-#ewAssistResults table td:first-of-type {
-  font-weight: 700;
+#ewAssistResults table td {
+  color: #141C52;
 }
 #ewAssistResults table tr:first-of-type,
 #ewAssistResults table tr:last-of-type {
