@@ -883,8 +883,8 @@ button.navbar-toggler {
 }
 
 /* Book A Call Popup Form */
-#bookacallFormModal .modal-content,
-#bookacallFormModal .modal-body {
+#washownersForm .modal-content,
+#washownersForm .modal-body {
   padding: 0;
   box-shadow: none;
   border-radius: 10px;
@@ -892,80 +892,73 @@ button.navbar-toggler {
   border: none;
 }
 
-#bookacallFormModal .modal-body .row {
+#washownersForm .modal-body .row {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-#bookacallFormModal #contactSalesForm {
+#washownersForm #contactSalesForm {
   padding: 0;
 }
 
-#bookacallFormModal #contactSalesForm .col-lg-5 {
+#washownersForm #contactSalesForm .col-lg-5 {
   padding: 5%;
 
 }
-#bookacallFormModal #contactSalesForm .col-lg-5 h2 {
+#washownersForm #contactSalesForm .col-lg-5 h2 {
   font-family: "Nubolts Rounded";
 }
-#bookacallFormModal #contactSalesForm .col-lg-5 ul {
+#washownersForm #contactSalesForm .col-lg-5 ul {
   padding-left: 20px;
 }
 
-#bookacallFormModal #contactSalesForm .col-lg-7 {
+#washownersForm #contactSalesForm .col-lg-7 {
   padding: 5% 7%;
   background: var(--white);
 }
 
-#bookacallFormModal .btn {
+#washownersForm .btn {
   background: var(--primary);
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
 }
 
-#bookacallFormModal .btn:hover {
+#washownersForm .btn:hover {
   background: var(--secondary);
 }
 
-#bookacallFormModal button.close {
+#washownersForm button.close {
   background: none;
   padding: 0;
 }
 
-#bookacallFormModal button.close i {
+#washownersForm button.close i {
   color: var(--black);
 }
 
-#bookacallFormModal a {
+#washownersForm a {
   color: var(--white);
   text-decoration: underline;
 }
 
-#bookacallFormModal #bookacallFormModalHeader {
-  display: flex !important;
-  flex-direction: row;
-  justify-content: space-between !important;
-  align-items: start;
-}
-
-#bookacallFormModal p {
+#washownersForm p {
   font-size: 0.85rem;
   margin-bottom: 1.5rem;
 }
 
-#bookacallFormModal img {
+#washownersForm img {
   width: 40%;
   margin-bottom: 2rem;
 }
 
-#bookacallFormModal .col-lg-5 {
+#washownersForm .col-lg-5 {
   background: var(--primary);
   color: var(--white);
 }
 
-#bookacallFormModal .modal-content,
-#bookacallFormModal .modal-body {
+#washownersForm .modal-content,
+#washownersForm .modal-body {
   padding: 0;
   box-shadow: none;
   border-radius: 10px;
@@ -975,22 +968,22 @@ button.navbar-toggler {
 
 #omnixModal .modal-body .row,
 #analyticsModal .modal-body .row,
-#bookacallFormModal .modal-body .row {
+#washownersForm .modal-body .row {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-#bookacallFormModal #contactSalesForm {
+#washownersForm #contactSalesForm {
   padding: 0;
 }
 
-#bookacallFormModal #contactSalesForm .col-lg-7 {
+#washownersForm #contactSalesForm .col-lg-7 {
   padding: 5% 7%;
   background: var(--white);
 }
 
-#bookacallFormModal .btn {
+#washownersForm .btn {
   background: var(--primary);
   font-family: var(--font-family-body);
   font-weight: 500;
@@ -999,46 +992,46 @@ button.navbar-toggler {
   color: var(--white);
 }
 
-#bookacallFormModal .btn:hover {
+#washownersForm .btn:hover {
   background: var(--accent);
 }
 
-#bookacallFormModal button.close {
+#washownersForm button.close {
   background: none;
   padding: 0;
   opacity: 1;
 }
-#bookacallFormModal button.close i {
+#washownersForm button.close i {
   font-size: 1.8rem;
 }
-#bookacallFormModal .col-lg-5 button.close i {
+#washownersForm .col-lg-5 button.close i {
   color: var(--white);
   margin-top: 0.5rem;
   margin-right: 0.5rem;
 }
 
-#bookacallFormModal a {
+#washownersForm a {
   color: var(--white);
   text-decoration: underline;
 }
 
-#bookacallFormModal #omnixModalHeader {
+#washownersForm #omnixModalHeader {
   display: flex !important;
   flex-direction: row;
   justify-content: space-between !important;
   align-items: start;
 }
 
-#bookacallFormModal p {
+#washownersForm p {
   font-size: 0.85rem;
   margin-bottom: 1.5rem;
 }
 
-#bookacallFormModal img {
+#washownersForm img {
   width: 150px;
   margin-bottom: 2rem;
 }
-#bookacallFormModal .contact-info p {
+#washownersForm .contact-info p {
   display: flex;
   align-items: center;
 }

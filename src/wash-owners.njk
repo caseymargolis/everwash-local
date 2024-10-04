@@ -18,9 +18,9 @@
             <h2>Grow Your Car Wash's Revenue by <span>90%</span> with EverWash</h2>
             <h5>Seamless, Profitable, and Reliable Membership Solution for Car Washes Nationwide</h5>
             <div class="cta-options-btn">
-              <a href="#" id="cta1" class="btn btn-yellow" style="display: none;" data-toggle="modal" data-target="#bookacallFormModal">Schedule a Call</a>
-              <a href="#" id="cta2" class="btn btn-yellow" style="display: none;" data-toggle="modal" data-target="#bookacallFormModal">Schedule a Consultation</a>
-              <a href="#" id="cta3" class="btn btn-yellow" style="display: none;" data-toggle="modal" data-target="#bookacallFormModal">Start Boosting Your Revenue Today</a>
+              <a href="#" id="cta1" class="btn btn-yellow" style="display: none;" data-toggle="modal" data-target="#scheduleacallFormModal">Schedule a Call</a>
+              <a href="#" id="cta2" class="btn btn-yellow" style="display: none;" data-toggle="modal" data-target="#bscheduleaconsultationnowFormModal">Schedule a Consultation Now</a>
+              <a href="#" id="cta3" class="btn btn-yellow" style="display: none;" data-toggle="modal" data-target="#startboostingyourrevenuetodayFormModal">Start Boosting Your Revenue Today</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
           <div class="content-box">
             <h4>Excel at Membership</h4>
             <p>At EverWash, we understand your challenges as a car wash operator, and we are here to guide you to success. Our proven strategy and process will help you build a strong and loyal customer base to ensure your car wash operates smoothly and profitably. We take the hassle out of your membership program.</p>
-            <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#bookacallFormModal">Schedule a Consultation Now</a>
+            <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#scheduleaconsultationnowFormModal">Schedule a Consultation Now</a>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
   <!-- Consulation Today -->
   <section id="partnerMemberconsulationtoday">
     <div class="container">
-      <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#bookacallFormModal">Schedule Your Consultation Today</a>
+      <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#scheduleyourconsultationtodayFormModal">Schedule Your Consultation Today</a>
     </div>
   </section>
 
@@ -181,7 +181,7 @@
             <a class="sub-header" href="/testimonials.html">Watch Testimonials from Satisfied Car Wash Operators</a>
             <hr>
             <h6>Ready to Boost Your Revenue?</h6>
-            <a href="#" class="btn btn-green" data-toggle="modal" data-target="#bookacallFormModal">Schedule a Call Today</a>
+            <a href="#" class="btn btn-green" data-toggle="modal" data-target="#scheduleacalltodayFormModal">Schedule a Call Today</a>
           </div>
         </div>
         <div class="col-lg-1"></div>
@@ -247,7 +247,7 @@
       </div>
       <div class="row btn-row">
         <div class="col-lg-12">
-          <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#bookacallFormModal">Schedule Your Consultation Today</a>
+          <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#scheduleyourconsultationtodayFormModal">Schedule Your Consultation Today</a>
         </div>  
       </div>  
     </div>
@@ -288,7 +288,7 @@
       </div>
       <div class="row btn-row">
         <div class="col-lg-12">
-          <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#bookacallFormModal">Schedule a Call Today</a>
+          <a href="#" class="btn btn-blue" data-toggle="modal" data-target="#scheduleacalltodayFormModal">Schedule a Call Today</a>
         </div>
       </div>
     </div>
@@ -502,5 +502,360 @@
       </div>
     </div>
   </section> #}
-
 </main>
+
+
+<!-- Schedule A Call Form -->
+<div class="modal fade" id="scheduleacallFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="washownersForm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <h2>Get in Touch with Sales</h2>
+            <p>EverWash’s platform is designed to help you succeed by:</p>
+            <ul>
+              <li>Reducing customer wait times</li>
+              <li>Improving customer loyalty</li>
+              <li>Growing your membership base</li>
+              <li>Marketing to your customers on your behalf</li>
+              <li>Giving you peace of mind</li>
+            </ul>
+            <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+            <div>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:sales@everwash.com">
+                  <span>sales@everwash.com</span>
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="tel:8554927477">
+                  <span>(855)-492-7477</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="omnixModalHeader">
+              <div class="header-content">
+                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="fa fa-times"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="standard-form">
+              <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+              <h5>Excel at Membership with EverWash</h5>
+              <p>
+                Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+              </p>
+              <form
+                style="display: none;" 
+                id="scheduleacallPopup"
+                name="Schedule A Call Form"
+                method="POST"
+                action="/wash-owners-success.html"
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field">
+                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Schedule A Call Form Submission"/>
+                <input type="hidden" name="formName" value="Schedule A Call Form" aria-hidden="true"/>
+                {% include 'wash-owner-form-popup.njk' %}
+              </form>
+              <form id="scheduleacallPopup-external" action="http://go.everwash.com/l/996891/2024-10-04/2t1gj" method="POST">
+                {% include 'wash-owner-form-popup-php.njk' %}
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Boosting Your Revenue Today Form -->
+<div class="modal fade" id="startboostingyourrevenuetodayFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="washownersForm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <h2>Get in Touch with Sales</h2>
+            <p>EverWash’s platform is designed to help you succeed by:</p>
+            <ul>
+              <li>Reducing customer wait times</li>
+              <li>Improving customer loyalty</li>
+              <li>Growing your membership base</li>
+              <li>Marketing to your customers on your behalf</li>
+              <li>Giving you peace of mind</li>
+            </ul>
+            <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+            <div>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:sales@everwash.com">
+                  <span>sales@everwash.com</span>
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="tel:8554927477">
+                  <span>(855)-492-7477</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="omnixModalHeader">
+              <div class="header-content">
+                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="fa fa-times"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="standard-form">
+              <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+              <h5>Excel at Membership with EverWash</h5>
+              <p>
+                Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+              </p>
+              <form
+                style="display: none;" 
+                id="startboostingyourrevenuetodayPopup"
+                name="Start Boosting Your Revenue Today Form"
+                method="POST"
+                action="/wash-owners-success.html"
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field">
+                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Start Boosting Your Revenue Today Form Submission"/>
+                <input type="hidden" name="formName" value="Start Boosting Your Revenue Today Form" aria-hidden="true"/>
+                {% include 'wash-owner-form-popup.njk' %}
+              </form>
+              <form id="startboostingyourrevenuetodayPopup-external" action="http://go.everwash.com/l/996891/2024-10-04/2t1gq" method="POST">
+                {% include 'wash-owner-form-popup-php.njk' %}
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Schedule a Consultation Now Form -->
+<div class="modal fade" id="scheduleaconsultationnowFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="washownersForm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <h2>Get in Touch with Sales</h2>
+            <p>EverWash’s platform is designed to help you succeed by:</p>
+            <ul>
+              <li>Reducing customer wait times</li>
+              <li>Improving customer loyalty</li>
+              <li>Growing your membership base</li>
+              <li>Marketing to your customers on your behalf</li>
+              <li>Giving you peace of mind</li>
+            </ul>
+            <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+            <div>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:sales@everwash.com">
+                  <span>sales@everwash.com</span>
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="tel:8554927477">
+                  <span>(855)-492-7477</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="omnixModalHeader">
+              <div class="header-content">
+                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="fa fa-times"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="standard-form">
+              <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+              <h5>Excel at Membership with EverWash</h5>
+              <p>
+                Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+              </p>
+              <form
+                style="display: none;" 
+                id="scheduleaconsultationnowPopup"
+                name="Schedule a Consultation Now Form"
+                method="POST"
+                action="/wash-owners-success.html"
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field">
+                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Schedule a Consultation Now Form Submission"/>
+                <input type="hidden" name="formName" value="Schedule a Consultation Now Form" aria-hidden="true"/>
+                {% include 'wash-owner-form-popup.njk' %}
+              </form>
+              <form id="scheduleaconsultationnowPopup-external" action="http://go.everwash.com/l/996891/2024-10-04/2t1gt" method="POST">
+                {% include 'wash-owner-form-popup-php.njk' %}
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Schedule your Consultation Today Form -->
+<div class="modal fade" id="scheduleyourconsultationtodayFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="washownersForm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <h2>Get in Touch with Sales</h2>
+            <p>EverWash’s platform is designed to help you succeed by:</p>
+            <ul>
+              <li>Reducing customer wait times</li>
+              <li>Improving customer loyalty</li>
+              <li>Growing your membership base</li>
+              <li>Marketing to your customers on your behalf</li>
+              <li>Giving you peace of mind</li>
+            </ul>
+            <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+            <div>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:sales@everwash.com">
+                  <span>sales@everwash.com</span>
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="tel:8554927477">
+                  <span>(855)-492-7477</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="omnixModalHeader">
+              <div class="header-content">
+                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="fa fa-times"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="standard-form">
+              <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+              <h5>Excel at Membership with EverWash</h5>
+              <p>
+                Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+              </p>
+              <form
+                style="display: none;" 
+                id="scheduleyourconsultationtodayPopup"
+                name="Schedule your Consultation Today Form"
+                method="POST"
+                action="/wash-owners-success.html"
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field">
+                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Schedule your Consultation Today Form Submission"/>
+                <input type="hidden" name="formName" value="Schedule your Consultation Today Form" aria-hidden="true"/>
+                {% include 'wash-owner-form-popup.njk' %}
+              </form>
+              <form id="scheduleyourconsultationtodayPopup-external" action="http://go.everwash.com/l/996891/2024-10-04/2t1h1" method="POST">
+                {% include 'wash-owner-form-popup-php.njk' %}
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Schedule a Call Today Form -->
+<div class="modal fade" id="scheduleacalltodayFormModal" tabindex="-1" aria-labelledby="Contact Us" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="washownersForm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row" id="contactSalesForm">
+          <div class="col-lg-5">
+            <h2>Get in Touch with Sales</h2>
+            <p>EverWash’s platform is designed to help you succeed by:</p>
+            <ul>
+              <li>Reducing customer wait times</li>
+              <li>Improving customer loyalty</li>
+              <li>Growing your membership base</li>
+              <li>Marketing to your customers on your behalf</li>
+              <li>Giving you peace of mind</li>
+            </ul>
+            <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+            <div>
+              <p>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:sales@everwash.com">
+                  <span>sales@everwash.com</span>
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <a href="tel:8554927477">
+                  <span>(855)-492-7477</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div id="omnixModalHeader">
+              <div class="header-content">
+                <button type="button" class="close d-none d-lg-block" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="fa fa-times"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="standard-form">
+              <img src="/img/illustrations/car-wash-scene-2.png" alt="Activating unlimited car washes with an app" class="img-fluid"/>
+              <h5>Excel at Membership with EverWash</h5>
+              <p>
+                Talk to a membership professional about how the EverWash platform can increase the overall profitability of your wash
+              </p>
+              <form
+                style="display: none;" 
+                id="scheduleacalltodayPopup"
+                name="Schedule a Call Today Form"
+                method="POST"
+                action="/wash-owners-success.html"
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field">
+                <input type="hidden" name="Subject" data-email-subject="emailSubject" value="Schedule a Call Today Form Submission"/>
+                <input type="hidden" name="formName" value="Schedule a Call Today Form" aria-hidden="true"/>
+                {% include 'wash-owner-form-popup.njk' %}
+              </form>
+              <form id="scheduleacalltodayPopup-external" action="http://go.everwash.com/l/996891/2024-10-04/2t1gj" method="POST">
+                {% include 'wash-owner-form-popup-php.njk' %}
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
