@@ -973,9 +973,9 @@ $(function() {
     if (activeItem && activeItem.querySelector('iframe')) {
       console.log("Iframe exists!");
     } else {
-      var iframeItem = document.querySelector('#owl-carousel-onevideo div.owl-item iframe');
-      if(iframeItem.length) {
-        iframeItem.remove();
+      var sliderItem = document.querySelector('#owl-carousel-onevideo div.owl-item');
+      if(sliderItem.querySelector('iframe')) {
+        sliderItem.querySelector('iframe').remove();
       }
     }
   }, 1000);
