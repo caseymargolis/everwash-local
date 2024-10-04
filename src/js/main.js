@@ -974,7 +974,7 @@ $(function() {
       console.log("Iframe exists!");
     } else {
       var iframeItem = document.querySelector('#owl-carousel-onevideo div.owl-item iframe');
-      if(iframeItem.length > 0) {
+      if(iframeItem.length) {
         iframeItem.remove();
       }
     }
