@@ -968,33 +968,18 @@ $(function() {
   });
 
   // When active video, only show iframe
-  // setInterval(function() {
-  //   $('#owl-carousel-onevideo div.owl-item').each(function() {
-  //     if ($(this).hasClass('active')) {
-  //       console.log('This .owl-item has the active class!');
-  //     } else {
-  //       if ($(this).find('iframe').length) {
-  //         $(this).find('iframe').remove();
-  //       }
-  //     }
-  //   });
-  // }, 1000);
+  setInterval(function() {
+    $('#owl-carousel-onevideo div.owl-item').each(function() {
+      if ($(this).hasClass('active')) {
+        console.log('This .owl-item has the active class!');
+      } else {
+        if ($(this).find('iframe').length) {
+          $(this).find('iframe').remove();
+        }
+      }
+    });
+  }, 1000);
 });
-
-
-// Randomly button display on washowner page banner...
-// window.onload = function() {
-//   var buttons = document.querySelectorAll('.cta-options-btn a');
-//   if (buttons.length === 0) {
-//     console.log('No buttons found!');
-//     return; // Exit if no buttons are found
-//   }
-//   buttons.forEach(function(button) {
-//     button.style.display = 'none';
-//   });
-//   var randomIndex = Math.floor(Math.random() * buttons.length);
-//   buttons[randomIndex].style.display = 'block';
-// };
 
 
 // popup form submit to external action link & netlify
