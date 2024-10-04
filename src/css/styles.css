@@ -6415,10 +6415,15 @@ margin-right: 1rem;
   color: var(--white);
 }
 #ewAssistMain h2 {
-  font-size: 2.2rem;
+  font-size: 2.15rem;
 }
 #ewAssistMain p {
   font-size: 1.1rem;
+}
+#ewAssistMain p.excelatcustomersupport {
+  font-weight: 500;
+  line-height: 1.35em;
+  margin-bottom: 1.5rem;
 }
 #ewAssistMain .ew-assist-logo {
   max-width: 90%;
@@ -6535,8 +6540,8 @@ margin-right: 1rem;
   color: var(--variant-yellow-04);
 }
 #ewAssistResults h3 {
-  margin: 4rem 0 2rem 0;
-  font-size: 1.5rem;
+  margin: 4.5rem 0 1.5rem 0;
+  font-size: 2.15rem;
   color: var(--variant-yellow-04);
   text-align: center;
 }
@@ -6595,11 +6600,11 @@ margin-right: 1rem;
 #ewAssistResults table tr:first-of-type {
   background: #28D5CB;
 }
-#ewAssistResults table tr:first-of-type th:first-of-type {
-  border-top-left-radius: 10px;
+#ewAssistResults table tr:first-of-type td:first-of-type {
+  border-top-left-radius: 15px;
 }
-#ewAssistResults table tr:first-of-type th:last-of-type {
-  border-top-right-radius: 10px;
+#ewAssistResults table tr:first-of-type td:last-of-type {
+  border-top-right-radius: 15px;
 }
 
 #ewAssistResults table td {
