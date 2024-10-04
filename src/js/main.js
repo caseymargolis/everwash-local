@@ -973,7 +973,10 @@ $(function() {
     if (activeItem && activeItem.querySelector('iframe')) {
       console.log("Iframe exists!");
     } else {
-      document.querySelector('#owl-carousel-onevideo div.owl-item iframe').remove();
+      var iframeItem = document.querySelector('#owl-carousel-onevideo div.owl-item iframe');
+      if(iframeItem.length > 0) {
+        iframeItem.remove();
+      }
     }
   }, 1000);
 });
