@@ -3,7 +3,7 @@
 window.onload = function() {
   var buttons = document.querySelectorAll('.cta-options-btn a');
   if (buttons.length === 0) {
-    console.error('No buttons found!');
+    console.log('No buttons found!');
     return; // Exit if no buttons are found
   }
   buttons.forEach(function(button) {
