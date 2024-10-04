@@ -971,18 +971,13 @@ $(function() {
   setInterval(function() {
     $('#owl-carousel-onevideo div.owl-item').each(function() {
       if ($(this).hasClass('active')) {
-        console.log('This .owl-item has the active class.');
+        console.log('This .owl-item has the active class!');
       } else {
-          console.log('This .owl-item does not have the active class.');
+        if ($(this).find('iframe').length) {
+          $(this).find('iframe').remove();
+        }
       }
     });
-
-    var activeItem = document.querySelector('#owl-carousel-onevideo div.owl-item.active');
-    if (activeItem && activeItem.querySelector('iframe')) {
-      console.log("Iframe exists!");
-    } else {
-      document.querySelector('#owl-carousel-onevideo div.owl-item iframe').remove();
-    }
   }, 1000);
 });
 
