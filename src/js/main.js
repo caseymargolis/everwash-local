@@ -1039,7 +1039,6 @@ if ($('#washOwnerPopup-external').length) {
   });
 } 
 
-
 // Case Study Popup
 if ($('#caseStudyPopup-external').length) {
   document.getElementById('caseStudyPopup-external').addEventListener('submit', async function (event) {
@@ -1096,7 +1095,6 @@ if ($('#caseStudyPopup-external').length) {
   });
 }
 
-
 // Book A Call Popup
 if ($('#bookacallPopup-external').length) {
   document.getElementById('bookacallPopup-external').addEventListener('submit', async function (event) {
@@ -1152,6 +1150,287 @@ if ($('#bookacallPopup-external').length) {
     }
   });
 }
+
+// Schedule a Call Popup
+if ($('#scheduleacallPopup-external').length) {
+  document.getElementById('scheduleacallPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#scheduleacallPopup-external #name').val();
+    $('#scheduleacallPopup #name').val(fname);
+    var lname = $('#scheduleacallPopup-external #lastName').val();
+    $('#scheduleacallPopup #lastName').val(lname);
+    var washemail = $('#scheduleacallPopup-external #email').val();
+    $('#scheduleacallPopup #email').val(washemail);
+    var washphone = $('#scheduleacallPopup-external #phone').val();
+    $('#scheduleacallPopup #phone').val(washphone);
+    var carwashname = $('#scheduleacallPopup-external #carWashName').val();
+    $('#scheduleacallPopup #carWashName').val(carwashname);
+    var washtype = $('#scheduleacallPopup-external #wash-type').val();
+    $('#scheduleacallPopup #wash-type').val(washtype);
+    var carwashstate = $('#scheduleacallPopup-external #car-wash-state').val();
+    $('#scheduleacallPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#scheduleacallPopup-external #carWashZipcode').val();
+    $('#scheduleacallPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-scheduleacall-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#scheduleacallPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+}
+
+// Start Boosting Your Revenue Today Popup
+if ($('#startboostingyourrevenuetodayPopup-external').length) {
+  document.getElementById('startboostingyourrevenuetodayPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#startboostingyourrevenuetodayPopup-external #name').val();
+    $('#startboostingyourrevenuetodayPopup #name').val(fname);
+    var lname = $('#startboostingyourrevenuetodayPopup-external #lastName').val();
+    $('#startboostingyourrevenuetodayPopup #lastName').val(lname);
+    var washemail = $('#startboostingyourrevenuetodayPopup-external #email').val();
+    $('#startboostingyourrevenuetodayPopup #email').val(washemail);
+    var washphone = $('#startboostingyourrevenuetodayPopup-external #phone').val();
+    $('#startboostingyourrevenuetodayPopup #phone').val(washphone);
+    var carwashname = $('#startboostingyourrevenuetodayPopup-external #carWashName').val();
+    $('#startboostingyourrevenuetodayPopup #carWashName').val(carwashname);
+    var washtype = $('#startboostingyourrevenuetodayPopup-external #wash-type').val();
+    $('#startboostingyourrevenuetodayPopup #wash-type').val(washtype);
+    var carwashstate = $('#startboostingyourrevenuetodayPopup-external #car-wash-state').val();
+    $('#startboostingyourrevenuetodayPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#startboostingyourrevenuetodayPopup-external #carWashZipcode').val();
+    $('#startboostingyourrevenuetodayPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-startboostingyourrevenuetoday-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#startboostingyourrevenuetodayPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+}
+
+// Schedule a Consultation Now Popup
+if ($('#scheduleaconsultationnowPopup-external').length) {
+  document.getElementById('scheduleaconsultationnowPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#scheduleaconsultationnowPopup-external #name').val();
+    $('#scheduleaconsultationnowPopup #name').val(fname);
+    var lname = $('#scheduleaconsultationnowPopup-external #lastName').val();
+    $('#scheduleaconsultationnowPopup #lastName').val(lname);
+    var washemail = $('#scheduleaconsultationnowPopup-external #email').val();
+    $('#scheduleaconsultationnowPopup #email').val(washemail);
+    var washphone = $('#scheduleaconsultationnowPopup-external #phone').val();
+    $('#scheduleaconsultationnowPopup #phone').val(washphone);
+    var carwashname = $('#scheduleaconsultationnowPopup-external #carWashName').val();
+    $('#scheduleaconsultationnowPopup #carWashName').val(carwashname);
+    var washtype = $('#scheduleaconsultationnowPopup-external #wash-type').val();
+    $('#scheduleaconsultationnowPopup #wash-type').val(washtype);
+    var carwashstate = $('#scheduleaconsultationnowPopup-external #car-wash-state').val();
+    $('#scheduleaconsultationnowPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#scheduleaconsultationnowPopup-external #carWashZipcode').val();
+    $('#scheduleaconsultationnowPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-scheduleaconsultationnow-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#scheduleaconsultationnowPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+}
+
+// Schedule your Consultation Today Popup
+if ($('#scheduleyourconsultationtodayPopup-external').length) {
+  document.getElementById('scheduleyourconsultationtodayPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#scheduleyourconsultationtodayPopup-external #name').val();
+    $('#scheduleyourconsultationtodayPopup #name').val(fname);
+    var lname = $('#scheduleyourconsultationtodayPopup-external #lastName').val();
+    $('#scheduleyourconsultationtodayPopup #lastName').val(lname);
+    var washemail = $('#scheduleyourconsultationtodayPopup-external #email').val();
+    $('#scheduleyourconsultationtodayPopup #email').val(washemail);
+    var washphone = $('#scheduleyourconsultationtodayPopup-external #phone').val();
+    $('#scheduleyourconsultationtodayPopup #phone').val(washphone);
+    var carwashname = $('#scheduleyourconsultationtodayPopup-external #carWashName').val();
+    $('#scheduleyourconsultationtodayPopup #carWashName').val(carwashname);
+    var washtype = $('#scheduleyourconsultationtodayPopup-external #wash-type').val();
+    $('#scheduleyourconsultationtodayPopup #wash-type').val(washtype);
+    var carwashstate = $('#scheduleyourconsultationtodayPopup-external #car-wash-state').val();
+    $('#scheduleyourconsultationtodayPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#scheduleyourconsultationtodayPopup-external #carWashZipcode').val();
+    $('#scheduleyourconsultationtodayPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-scheduleyourconsultationtoday-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#scheduleyourconsultationtodayPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+}
+
+// Schedule a Call Today Popup
+if ($('#scheduleacalltodayPopup-external').length) {
+  document.getElementById('scheduleacalltodayPopup-external').addEventListener('submit', async function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+  
+    var fname = $('#scheduleacalltodayPopup-external #name').val();
+    $('#scheduleacalltodayPopup #name').val(fname);
+    var lname = $('#scheduleacalltodayPopup-external #lastName').val();
+    $('#scheduleacalltodayPopup #lastName').val(lname);
+    var washemail = $('#scheduleacalltodayPopup-external #email').val();
+    $('#scheduleacalltodayPopup #email').val(washemail);
+    var washphone = $('#scheduleacalltodayPopup-external #phone').val();
+    $('#scheduleacalltodayPopup #phone').val(washphone);
+    var carwashname = $('#scheduleacalltodayPopup-external #carWashName').val();
+    $('#scheduleacalltodayPopup #carWashName').val(carwashname);
+    var washtype = $('#scheduleacalltodayPopup-external #wash-type').val();
+    $('#scheduleacalltodayPopup #wash-type').val(washtype);
+    var carwashstate = $('#scheduleacalltodayPopup-external #car-wash-state').val();
+    $('#scheduleacalltodayPopup #car-wash-state').val(carwashstate);
+    var carwashzip = $('#scheduleacalltodayPopup-external #carWashZipcode').val();
+    $('#scheduleacalltodayPopup #carWashZipcode').val(carwashzip);
+  
+    try {
+      const externalResponse = await fetch('https://slynerds.com/everwash-scheduleacalltoday-external.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          fname: fname,
+          lname: lname,
+          washemail: washemail,
+          washphone: washphone,
+          carwashname: carwashname,
+          washtype: washtype,
+          carwashstate: carwashstate,
+          carwashzip: carwashzip,
+        }),
+      });
+  
+      if (externalResponse.ok) {
+        const responseData = await externalResponse.json();
+        if (responseData.status == 'success!!!') {
+          console.log(responseData.message);
+          $('#scheduleacalltodayPopup').trigger( "submit" );
+        } else {
+          console.log(responseData.message);
+          alert(responseData.message);
+        }
+      } else {
+        console.error('Error submitting to External Server:', externalResponse.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+}
+
 
 
 
