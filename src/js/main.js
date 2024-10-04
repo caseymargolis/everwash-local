@@ -989,7 +989,7 @@ window.onload = function() {
     button.style.display = 'none';
   });
   var randomIndex = Math.floor(Math.random() * buttons.length);
-  buttons[randomIndex].style.display = 'inline-block';
+  buttons[randomIndex].style.display = 'block';
 };
 
 
