@@ -13,7 +13,7 @@ window.onload = function() {
   
   // Display comfirmation modal on success page load
   var confirmationBtn = document.getElementById("triggerFormConfirmation");
-  if (confirmationBtn === 0) {
+  if (confirmationBtn.length === 0) {
     return;
   } else {
     confirmationBtn.click();
