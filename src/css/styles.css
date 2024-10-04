@@ -6032,7 +6032,7 @@ margin-right: 1rem;
 }
 .b2b-subpage-list-section ul li::before {
   position: absolute;
-  left: -1.8rem;
+  left: -1.75rem;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -6455,6 +6455,8 @@ margin-right: 1rem;
 #ewAssistAbout p {
   max-width: 600px;
   margin: auto;
+  font-weight: 500;
+  line-height: 1.45em;
 }
 #ewAssistCancellations .container {
   max-width: 900px;
@@ -6503,10 +6505,19 @@ margin-right: 1rem;
   background: var(--variant-turquoise-03);
   margin-right: 1rem;
 }
+#ewAssistBenefits .icon-container.container1 {
+  background: #BCC8FF!important;
+}
+#ewAssistBenefits .icon-container.container1 {
+  background: #AAEEE7!important;
+}
+#ewAssistBenefits .icon-container.container1 {
+  background: #F3F183!important;
+}
 #ewAssistBenefits .icon-container path,
 #ewAssistBenefits .icon-container rect,
 #ewAssistBenefits .icon-container polygon {
-  fill: var(--accent);
+  fill: #141C52;
 }
 #ewAssistResults .container {
   max-width: 800px;
