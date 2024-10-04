@@ -969,10 +969,17 @@ $(function() {
 
   // When active video, only show iframe
   setInterval(function() {
-    var videoItem = document.querySelector('#owl-carousel-onevideo div.owl-item');
-    if (!$(videoItem).hasClass('active') && videoItem.querySelector('iframe')) {
-      videoItem.querySelector('iframe').remove();
-    }
+    var activeItem = document.querySelector('#owl-carousel-onevideo div.owl-item.active');
+    var iframeItem = document.querySelector('#owl-carousel-onevideo div.owl-item iframe');
+    if (activeItem && iframeItem) {
+      if (!activeItem.contains(iframeItem)) {
+          // Do something if the active item does not contain the iframe
+          console.log('The active item does not contain the iframe.');
+      } else {
+          // Do something if the active item contains the iframe
+          console.log('The active item contains the iframe.');
+      }
+   }
   }, 1000);
 });
 
