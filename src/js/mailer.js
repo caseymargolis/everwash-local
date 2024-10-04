@@ -12,12 +12,7 @@ window.onload = function() {
   buttons[randomIndex].style.display = 'block';
   
   // Display comfirmation modal on success page load
-  var confirmationBtn = document.getElementById("triggerFormConfirmation");
-  if (confirmationBtn.length === 0) {
-    return;
-  } else {
-    confirmationBtn.click();
-  }
+  document.getElementById("triggerFormConfirmation").click();
 };
 
 // Prevent resubmission on reload
